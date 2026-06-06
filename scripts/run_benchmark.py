@@ -1,5 +1,8 @@
 # run_benchmark.py
 # Phase 1 slice: ask an AI model to classify ONE Accord clause.
+#built one complete end-to-end example first — 
+#a single clause, classified by an LLM, scored automatically.. to prove the pipeline worked before I scaled it
+
 
 import json
 import os

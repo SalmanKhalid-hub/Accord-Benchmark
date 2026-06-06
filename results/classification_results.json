@@ -1,0 +1,38 @@
+{
+  "model": "gemini-2.5-flash",
+  "total": 5,
+  "correct": 5,
+  "accuracy": 1.0,
+  "details": [
+    {
+      "id": "acceptance-of-delivery-classify-01",
+      "expected": "acceptance-of-delivery",
+      "model_answer": "acceptance-of-delivery",
+      "correct": true
+    },
+    {
+      "id": "bill-of-lading-classify-01",
+      "expected": "bill-of-lading",
+      "model_answer": "bill-of-lading",
+      "correct": true
+    },
+    {
+      "id": "car-rental-tr-classify-01",
+      "expected": "car-rental-tr",
+      "model_answer": "car-rental-tr",
+      "correct": true
+    },
+    {
+      "id": "certificate-of-incorporation-classify-01",
+      "expected": "certificate-of-incorporation",
+      "model_answer": "certificate-of-incorporation",
+      "correct": true
+    },
+    {
+      "id": "company-information-classify-01",
+      "expected": "company-information",
+      "model_answer": "company-information",
+      "correct": true
+    }
+  ]
+}
