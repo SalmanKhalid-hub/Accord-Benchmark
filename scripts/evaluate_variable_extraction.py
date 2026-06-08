@@ -1,17 +1,17 @@
 # evaluate_variable_extraction.py
-# Phase 2: run an LLM across the variable-extraction benchmark and score it (field-level).
+# Phase 2: run an LLM (via OpenRouter) across the variable-extraction benchmark; field-level scoring.
 
 import json
 import os
 import time
 from dotenv import load_dotenv
-from google import genai
+from openai import OpenAI
 
-MODEL = "gemini-2.5-flash"
-LIMIT = 5   # start small; set to None to run ALL
+MODEL = "google/gemini-2.5-flash"
+LIMIT = None   # start small; set to None to run ALL
 
 load_dotenv()
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.environ["OPENROUTER_API_KEY"])
 
 with open("data/variable_extraction.json") as f:
     questions = json.load(f)
@@ -19,7 +19,6 @@ if LIMIT:
     questions = questions[:LIMIT]
 
 def extract(question, max_retries=4):
-    """Ask the model to extract the listed variables from the clause as JSON."""
     fields = list(question["expected_output"].keys())
     prompt = f"""You are extracting variables from a legal contract clause.
 Extract the value for each of these fields from the clause below:
@@ -32,8 +31,12 @@ Clause:
 """
     for attempt in range(max_retries):
         try:
-            response = client.models.generate_content(model=MODEL, contents=prompt)
-            return response.text.strip()
+            response = client.chat.completions.create(
+                model=MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0,
+            )
+            return response.choices[0].message.content.strip()
         except Exception as e:
             if attempt < max_retries - 1:
                 wait = 5 * (attempt + 1)
@@ -44,7 +47,6 @@ Clause:
     return None
 
 def parse_json(text):
-    """Best-effort parse of the model's JSON answer (handles ```json code fences)."""
     if text is None:
         return None
     t = text.strip()
@@ -58,7 +60,6 @@ def parse_json(text):
         return None
 
 def score(gold, predicted):
-    """Field-level: how many gold fields did the model get right?"""
     if not isinstance(predicted, dict):
         return 0, len(gold)
     correct = 0
@@ -78,18 +79,13 @@ for i, q in enumerate(questions, start=1):
     total_fields += n
     results.append({"id": q["id"], "correct_fields": correct, "total_fields": n, "model_raw": raw})
     print(f"[{i}/{len(questions)}] {q['id']}: {correct}/{n} fields correct")
-    time.sleep(4)
+    time.sleep(2)
 
 accuracy = total_correct / total_fields if total_fields else 0
 print(f"\n{MODEL}: {total_correct}/{total_fields} fields correct = {accuracy:.1%} field-level accuracy")
 
 os.makedirs("results", exist_ok=True)
 with open("results/variable_extraction_results.json", "w") as f:
-    json.dump({
-        "model": MODEL,
-        "total_fields": total_fields,
-        "correct_fields": total_correct,
-        "field_accuracy": accuracy,
-        "details": results,
-    }, f, indent=2)
+    json.dump({"model": MODEL, "total_fields": total_fields, "correct_fields": total_correct,
+               "field_accuracy": accuracy, "details": results}, f, indent=2)
 print("Saved -> results/variable_extraction_results.json")
