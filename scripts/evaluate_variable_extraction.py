@@ -3,12 +3,13 @@
 
 import json
 import os
+import re
 import time
 from dotenv import load_dotenv
 from openai import OpenAI
 
 MODEL = "google/gemini-2.5-flash"
-LIMIT = None   # start small; set to None to run ALL
+LIMIT = None   # start small to test; set to None to run ALL
 
 load_dotenv()
 client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.environ["OPENROUTER_API_KEY"])
@@ -59,14 +60,41 @@ def parse_json(text):
     except Exception:
         return None
 
+# ---- Lenient, normalised scoring ----
+def normalize(v):
+    """Lowercase + strip whitespace for text comparison."""
+    return str(v).strip().lower()
+
+def extract_number(v):
+    """Pull a number out of a value, ignoring %, $, commas, units. e.g. '4.5%' -> 4.5"""
+    m = re.search(r"-?\d+(?:\.\d+)?", str(v).replace(",", ""))
+    return float(m.group()) if m else None
+
+def values_match(gold_val, pred_val):
+    """Lenient match: handles numbers, nested objects, and verbose text."""
+    if pred_val is None:
+        return False
+    # 1. nested object (e.g. a Duration {amount, unit}) -> its values should appear in the prediction
+    if isinstance(gold_val, dict):
+        pred_text = normalize(pred_val)
+        return all(normalize(x) in pred_text for x in gold_val.values())
+    # 2. numeric gold -> compare the numbers ('4.5%' matches 4.5)
+    g_num = extract_number(gold_val)
+    if g_num is not None:
+        p_num = extract_number(pred_val)
+        return p_num is not None and g_num == p_num
+    # 3. text gold -> exact match OR one contains the other (handles verbose answers)
+    g, p = normalize(gold_val), normalize(pred_val)
+    return g == p or g in p or p in g
+
 def score(gold, predicted):
+    """Field-level scoring with lenient, normalised matching."""
     if not isinstance(predicted, dict):
         return 0, len(gold)
-    correct = 0
-    for key, gold_val in gold.items():
-        if str(predicted.get(key)).strip().lower() == str(gold_val).strip().lower():
-            correct += 1
+    correct = sum(1 for key, gold_val in gold.items()
+                  if values_match(gold_val, predicted.get(key)))
     return correct, len(gold)
+# ---- end scoring ----
 
 results = []
 total_correct = 0

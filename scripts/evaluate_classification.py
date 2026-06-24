@@ -9,7 +9,7 @@ from openai import OpenAI
 
 MODEL = "google/gemini-2.5-flash"
 
-LIMIT = None   # start small to test; set to None to run ALL
+LIMIT = None  # start small to test; set to None to run ALL
 
 # 1. Connect to OpenRouter (it speaks the OpenAI API "language")
 load_dotenv()
