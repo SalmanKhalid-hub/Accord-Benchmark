@@ -1,0 +1,10 @@
+{
+  "insurerName": "Meridian Assurance Group",
+  "policyholderName": "Bramwell Logistics Inc.",
+  "policyNumber": "MAG-CGL-88214",
+  "coverageAmount": "2500000.00",
+  "deductibleAmount": "10000.00",
+  "effectiveDate": "2024-03-01",
+  "expirationDate": "2025-03-01",
+  "autoRenews": "true"
+}

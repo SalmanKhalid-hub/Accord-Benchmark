@@ -1,0 +1,13 @@
+namespace org.synthetic.personalguarantee01@1.0.0
+
+@template
+concept TemplateModel {
+  o String guarantorName
+  o String principalDebtor
+  o String creditorName
+  o Double maximumLiabilityAmount
+  o DateTime effectiveDate
+  o DateTime expiryDate
+  o Boolean isJointAndSeveral
+  o String currency
+}

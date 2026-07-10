@@ -1,0 +1,3 @@
+# Clause
+
+This offer of employment is extended to Marcus Whitfield for the position of Senior Product Manager, with an anticipated start date of 2024-06-03, subject to satisfactory completion of a background check as a condition of employment. The Company shall pay an annual base salary of 128000.00, along with a one-time signing bonus of 10000.00, payable within thirty days of the start date. The first 3 months of employment shall constitute a probationary period, during which performance and fit for the role will be evaluated. This employment relationship is at-will, meaning either party may terminate the relationship at any time, with or without cause or notice, subject to applicable law.

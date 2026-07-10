@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, Nimbus Data Systems, Inc. ('Licensor') grants to Brightline Logistics LLC ('Licensee') a non-exclusive license to use the software known as CargoTrack Pro, subject to a one-time license fee of 24500.00 payable upon execution of this agreement. The license permits concurrent access by up to 150 authorized users and shall remain in effect for a term of 3 years from the effective date unless earlier terminated in accordance with this agreement. This license is personal to the Licensee and may not be assigned, sublicensed, or otherwise transferred to any third party without the prior written consent of Nimbus Data Systems, Inc. All rights not expressly granted herein are reserved exclusively by the Licensor.

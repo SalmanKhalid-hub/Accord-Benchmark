@@ -1,0 +1,9 @@
+{
+  "franchisorName": "Maple Leaf Coffee Systems Inc.",
+  "franchiseeName": "Riverside Brews LLC",
+  "initialFranchiseFee": "45000.00",
+  "royaltyRate": "6.5",
+  "paymentDueDay": "5",
+  "effectiveDate": "2024-03-01",
+  "lateFeePercentage": "1.5"
+}

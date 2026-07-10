@@ -1,0 +1,10 @@
+{
+  "dataController": "Northbridge Analytics Ltd.",
+  "dataProcessor": "Vertex Cloud Services GmbH",
+  "effectiveDate": "2024-03-01",
+  "breachNotificationHours": "72",
+  "dataRetentionPeriodDays": "365",
+  "transferOutsideEEA": "false",
+  "dataProtectionOfficerEmail": "dpo@northbridgeanalytics.eu",
+  "auditFeePercentage": "2.5"
+}

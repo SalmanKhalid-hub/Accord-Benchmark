@@ -1,0 +1,10 @@
+{
+  "processorName": "DataVault Processing Services LLC",
+  "controllerName": "Meridian Retail Group Inc.",
+  "effectiveDate": "2024-03-01",
+  "notificationDeadlineHours": "72",
+  "affectedRecordsThreshold": "500",
+  "requiresRegulatorNotification": "true",
+  "maximumLiabilityCap": "250000.00",
+  "noticeMethod": "written notice via email and certified mail"
+}

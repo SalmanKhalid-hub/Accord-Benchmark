@@ -1,0 +1,3 @@
+# Clause
+
+This lease is entered into between Harborview Properties LLC ("Landlord") and Bluepoint Retail Group Inc. ("Tenant") for the premises located at 482 Commerce Street, Suite 210, Newark, NJ, commencing on 2024-03-01. Tenant shall pay Landlord a monthly base rent of $8500.00, which shall increase each year on the anniversary of the commencement date by an annual escalation rate of 3.5 percent. Tenant has deposited with Landlord the sum of $17000.00 as a security deposit, to be held and applied in accordance with the terms of this lease. As of the date hereof, Tenant has not exercised any option to renew this lease beyond its initial term.

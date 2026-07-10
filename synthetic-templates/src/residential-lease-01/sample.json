@@ -1,0 +1,10 @@
+{
+  "landlordName": "Marcus Whitfield",
+  "tenantName": "Elena Sorrento",
+  "monthlyRentAmount": "1750.00",
+  "dueDay": "1",
+  "gracePeriodDays": "5",
+  "lateFeeAmount": "75.00",
+  "leaseStartDate": "2024-03-01",
+  "petsAllowed": "false"
+}

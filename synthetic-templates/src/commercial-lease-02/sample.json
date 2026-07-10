@@ -1,0 +1,10 @@
+{
+  "tenantName": "Bluepoint Retail Group LLC",
+  "landlordName": "Harborview Properties Inc.",
+  "leaseCommencementDate": "2024-03-01",
+  "baseRent": "18500.00",
+  "escalationRate": "3.5",
+  "leaseTermYears": "5",
+  "securityDeposit": "37000.00",
+  "renewalOptionAvailable": "Tenant shall have the right to renew this lease for one additional term"
+}

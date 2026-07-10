@@ -1,0 +1,13 @@
+namespace org.synthetic.subleaseagreement02@1.0.0
+
+@template
+concept TemplateModel {
+  o String sublessor
+  o String sublessee
+  o String premisesAddress
+  o Double monthlyRent
+  o DateTime sublemStartDate
+  o DateTime sublemEndDate
+  o Boolean requiresLandlordConsent
+  o Double securityDeposit
+}

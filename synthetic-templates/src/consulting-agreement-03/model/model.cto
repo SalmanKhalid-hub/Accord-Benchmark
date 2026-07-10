@@ -1,0 +1,13 @@
+namespace org.synthetic.consultingagreement03@1.0.0
+
+@template
+concept TemplateModel {
+  o String consultantName
+  o String clientName
+  o DateTime effectiveDate
+  o Double hourlyRate
+  o Integer maxHoursPerMonth
+  o String invoiceFrequency
+  o Boolean autoRenew
+  o Integer terminationNoticeDays
+}

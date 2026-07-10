@@ -1,0 +1,12 @@
+namespace org.synthetic.ndamutual03@1.0.0
+
+@template
+concept TemplateModel {
+  o String partyA
+  o String partyB
+  o DateTime effectiveDate
+  o Integer confidentialityPeriodMonths
+  o String governingLaw
+  o Integer returnOfMaterialsDays
+  o Boolean injunctiveReliefAllowed
+}

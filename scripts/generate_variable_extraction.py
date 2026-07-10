@@ -6,20 +6,28 @@ import json
 from urllib.parse import unquote
 
 
-TEMPLATES_DIR = "../cicero-template-library/src"
+TEMPLATES_DIRS = ["../cicero-template-library/src", "synthetic-templates/src"]
 OUTPUT_FILE = "data/variable_extraction.json"
+
+def dir_of(name):
+    for d in TEMPLATES_DIRS:
+        if os.path.isdir(os.path.join(d, name)):
+            return d
+    return TEMPLATES_DIRS[0]
 
 # Same demos/joke templates excluded as in classification.
 EXCLUDE = {"empty", "empty-contract", "helloworld", "helloworldstate", "hellomodule", "eat-apples"}
 
-template_names = sorted(
-    name for name in os.listdir(TEMPLATES_DIR)
-    if os.path.isdir(os.path.join(TEMPLATES_DIR, name)) and name not in EXCLUDE
-)
+template_names = sorted(set(
+    name
+    for d in TEMPLATES_DIRS if os.path.isdir(d)
+    for name in os.listdir(d)
+    if os.path.isdir(os.path.join(d, name)) and name not in EXCLUDE
+))
 
 def read_clause_text(template_name):
     """The clause text from sample.md, heading stripped (same as classification)."""
-    sample_path = os.path.join(TEMPLATES_DIR, template_name, "text", "sample.md")
+    sample_path = os.path.join(dir_of(template_name), template_name, "text", "sample.md")
     if not os.path.exists(sample_path):
         return None
     with open(sample_path) as f:
@@ -51,7 +59,7 @@ def clean_values(obj):
 
 def read_variables(template_name):
     """The filled-in variables from sample.json, cleaned of metadata."""
-    sample_path = os.path.join(TEMPLATES_DIR, template_name, "sample.json")
+    sample_path = os.path.join(dir_of(template_name), template_name, "sample.json")
     if not os.path.exists(sample_path):
         return None
     with open(sample_path) as f:

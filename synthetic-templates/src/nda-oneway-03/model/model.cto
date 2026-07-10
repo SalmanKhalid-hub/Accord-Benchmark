@@ -1,0 +1,13 @@
+namespace org.synthetic.ndaoneway03@1.0.0
+
+@template
+concept TemplateModel {
+  o String disclosingParty
+  o String receivingParty
+  o DateTime effectiveDate
+  o Integer confidentialityPeriodYears
+  o String governingLaw
+  o Boolean returnObligation
+  o Double liquidatedDamages
+  o Integer noticeDays
+}

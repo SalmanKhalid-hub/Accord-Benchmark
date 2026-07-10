@@ -1,0 +1,14 @@
+namespace org.synthetic.contentlicensing02@1.0.0
+
+@template
+concept TemplateModel {
+  o String licensor
+  o String licensee
+  o String workTitle
+  o Double licenseFee
+  o Double royaltyRate
+  o String territory
+  o DateTime effectiveDate
+  o DateTime expirationDate
+  o Boolean exclusiveGrant
+}

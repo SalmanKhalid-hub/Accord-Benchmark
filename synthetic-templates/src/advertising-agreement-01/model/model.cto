@@ -1,0 +1,13 @@
+namespace org.synthetic.advertisingagreement01@1.0.0
+
+@template
+concept TemplateModel {
+  o String advertiserName
+  o String agencyName
+  o DateTime campaignStartDate
+  o DateTime campaignEndDate
+  o Double monthlyMediaBudget
+  o Double agencyCommissionRate
+  o Integer minimumImpressions
+  o Boolean exclusiveEngagement
+}

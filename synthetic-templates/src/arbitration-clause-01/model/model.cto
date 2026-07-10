@@ -1,0 +1,14 @@
+namespace org.synthetic.arbitrationclause01@1.0.0
+
+@template
+concept TemplateModel {
+  o String arbitrationInstitution
+  o String seatOfArbitration
+  o Integer numberOfArbitrators
+  o String governingLaw
+  o String arbitrationRules
+  o String languageOfArbitration
+  o Boolean expeditedProcedure
+  o Double costsCap
+  o DateTime noticeDeadlineDate
+}

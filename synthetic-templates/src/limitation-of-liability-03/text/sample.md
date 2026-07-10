@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, the aggregate liability of Meridian Logistics Inc. arising out of or relating to this agreement, whether in contract, tort, or otherwise, shall not exceed 250000.00 USD in total. In no event shall either party be liable for any indirect, incidental, special, or consequential damages, including loss of profits or business interruption, even if advised of the possibility of such damages. Any claim under this agreement must be brought within 90 days of the event giving rise to the claim, failing which such claim shall be deemed waived. Notwithstanding the foregoing, nothing in this clause shall limit or exclude liability arising from a party's gross negligence or willful misconduct.

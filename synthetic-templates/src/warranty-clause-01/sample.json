@@ -1,0 +1,9 @@
+{
+  "warrantyPeriodMonths": "24",
+  "effectiveDate": "2024-03-01",
+  "supplierName": "Meridian Industrial Components Ltd.",
+  "defectThresholdPercent": "2.5",
+  "replacementCostCap": "50000.00",
+  "extendedCoverageAvailable": "an extended coverage option may be purchased",
+  "governingLaw": "State of Delaware"
+}

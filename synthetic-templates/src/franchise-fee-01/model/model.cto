@@ -1,0 +1,13 @@
+namespace org.synthetic.franchisefee01@1.0.0
+
+@template
+concept TemplateModel {
+  o String franchiseeName
+  o Double initialFranchiseFee
+  o Double royaltyPercentage
+  o Double marketingFeePercentage
+  o Integer paymentDueDay
+  o DateTime effectiveDate
+  o Double latePaymentPenalty
+  o Boolean autoRenewal
+}

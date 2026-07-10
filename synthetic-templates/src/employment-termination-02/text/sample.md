@@ -1,0 +1,3 @@
+# Clause
+
+This Agreement confirms that the employment of Marcus T. Reilly with Brightline Logistics, Inc. will terminate effective 2024-09-30, following the required notice period of 30 days. In consideration of such termination, the Company shall pay Marcus T. Reilly a severance amount of 18500.00, less applicable withholdings, with the final paycheck to be issued no later than 2024-10-07. The Company shall continue Marcus T. Reilly's group health and welfare benefits for the period required under applicable law following the termination date. Marcus T. Reilly acknowledges that acceptance of the severance payment constitutes a full and final release of all claims against Brightline Logistics, Inc. arising out of his employment or its termination.

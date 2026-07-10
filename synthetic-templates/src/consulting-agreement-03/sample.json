@@ -1,0 +1,10 @@
+{
+  "consultantName": "Meridian Strategy Partners LLC",
+  "clientName": "Northbridge Retail Group, Inc.",
+  "effectiveDate": "2024-03-01",
+  "hourlyRate": "225.00",
+  "maxHoursPerMonth": "80",
+  "invoiceFrequency": "monthly",
+  "autoRenew": "false",
+  "terminationNoticeDays": "30"
+}

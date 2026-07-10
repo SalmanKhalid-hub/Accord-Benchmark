@@ -1,0 +1,3 @@
+# Clause
+
+Tenant, Marcus Feldman, shall pay to Landlord a monthly rent of $1850.00, due on the first day of each month commencing 2024-06-01. Should any rental payment remain unpaid more than 5 days after its due date, Tenant shall incur a late fee of $75.00 in addition to the outstanding rent. No animals of any kind, including but not limited to dogs, cats, and caged pets, shall be kept on the premises without prior written consent of the Landlord. Tenant has deposited with Landlord the sum of $1850.00 as a security deposit, to be held and returned in accordance with the terms of this agreement.

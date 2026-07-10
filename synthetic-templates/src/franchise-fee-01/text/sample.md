@@ -1,0 +1,3 @@
+# Clause
+
+As of the effective date of 2024-03-01, Meridian Coffee Ventures LLC shall pay to the Franchisor a one-time initial franchise fee of $45000.00 in consideration for the rights granted under this Agreement. In addition, Franchisee shall remit a continuing royalty equal to 6.5% of Gross Sales and a marketing contribution equal to 2.0% of Gross Sales, both payable monthly no later than the 5th day of each calendar month. Any payment not received by the due date shall incur a late payment charge of $150.00, which shall accrue immediately and be due together with the delinquent amount. This franchise term is fixed and shall not renew automatically upon expiration, requiring the parties to execute a new agreement should they wish to continue the relationship.

@@ -1,0 +1,3 @@
+# Clause
+
+Northbridge Analytics Inc. is pleased to offer Maria Consuelo Ibarra the position of Senior Data Scientist, commencing employment on 2024-03-01. In this role, the Employee shall receive an annual base salary of 118500.00, payable in accordance with the Company's standard payroll practices. The first 3 months of employment shall constitute a probationary period, during which either party may terminate the engagement upon shorter notice as set out elsewhere in this offer. The Employee shall be eligible to participate in the Company's discretionary annual bonus program, subject to individual and company performance targets established by management.

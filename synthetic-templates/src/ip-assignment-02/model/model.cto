@@ -1,0 +1,12 @@
+namespace org.synthetic.ipassignment02@1.0.0
+
+@template
+concept TemplateModel {
+  o String assignorName
+  o String assigneeName
+  o DateTime effectiveDate
+  o String inventionDescription
+  o Double considerationAmount
+  o String governingLaw
+  o Boolean assistWithRegistration
+}

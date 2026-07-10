@@ -1,0 +1,3 @@
+# Clause
+
+Blackstone Ventures LLC (the "Client") hereby retains Harrow & Associates LLP (the "Firm") on a monthly retainer basis, effective 2024-03-01, in consideration of a fixed fee of $7500.00 payable in advance on the first day of each calendar month. The retainer fee entitles the Client to 20 hours of legal services per month, and any hours utilized in excess thereof shall be billed at a rate of $350.00 per hour. This engagement shall continue on a month-to-month basis without need for renewal by either party, subject to earlier termination as provided herein. Either party may terminate this retainer arrangement by providing not less than 30 days written notice to the other party.

@@ -1,0 +1,13 @@
+namespace org.synthetic.residentiallease01@1.0.0
+
+@template
+concept TemplateModel {
+  o String landlordName
+  o String tenantName
+  o Double monthlyRentAmount
+  o Integer dueDay
+  o Integer gracePeriodDays
+  o Double lateFeeAmount
+  o DateTime leaseStartDate
+  o Boolean petsAllowed
+}

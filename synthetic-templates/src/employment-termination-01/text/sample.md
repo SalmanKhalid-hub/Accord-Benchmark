@@ -1,0 +1,3 @@
+# Clause
+
+This Agreement between Bridgeport Analytics LLC and Marcus T. Ellison shall terminate effective 2024-09-15, subject to the 30-day notice period set forth herein. In consideration of such termination, the Company shall pay the Employee severance in the amount of 12500.00, with the final paycheck to be issued no later than 2024-09-29. The Employee's group health and dental benefits shall continue to be covered by the Company for a limited period following separation, notwithstanding the termination of employment. The Employee further agrees to be bound by a non-competition restriction for a period of 6 months following the termination date, during which he shall not engage in any competing business within the same market segment.

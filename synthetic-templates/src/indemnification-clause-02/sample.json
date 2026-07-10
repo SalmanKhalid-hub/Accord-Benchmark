@@ -1,0 +1,9 @@
+{
+  "indemnifyingParty": "Meridian Supply Corp.",
+  "indemnifiedParty": "Halcyon Retail Group LLC",
+  "effectiveDate": "2024-03-01",
+  "capAmount": "500000.00",
+  "noticePeriodDays": "15",
+  "coversThirdPartyClaims": "true",
+  "survivalPeriodMonths": "24"
+}

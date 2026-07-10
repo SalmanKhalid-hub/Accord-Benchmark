@@ -1,0 +1,13 @@
+namespace org.synthetic.gdprprivacyclause01@1.0.0
+
+@template
+concept TemplateModel {
+  o String dataControllerName
+  o String dataProcessorName
+  o DateTime effectiveDate
+  o Integer breachNotificationHours
+  o Integer dataRetentionPeriodDays
+  o Boolean subProcessingAllowed
+  o Double annualComplianceAuditFee
+  o String applicableSupervisoryAuthority
+}

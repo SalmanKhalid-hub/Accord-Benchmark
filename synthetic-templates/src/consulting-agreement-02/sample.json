@@ -1,0 +1,10 @@
+{
+  "consultantName": "Meridian Advisory Partners LLC",
+  "clientName": "Northgate Retail Holdings, Inc.",
+  "effectiveDate": "2024-03-01",
+  "hourlyRate": "225.00",
+  "maxHoursPerMonth": "40",
+  "invoiceFrequency": "monthly",
+  "terminationNoticeDays": "30",
+  "autoRenewal": "false"
+}

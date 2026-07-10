@@ -1,0 +1,13 @@
+namespace org.synthetic.propertypurchase01@1.0.0
+
+@template
+concept TemplateModel {
+  o String buyerName
+  o String sellerName
+  o String propertyAddress
+  o Double purchasePrice
+  o Double depositAmount
+  o DateTime closingDate
+  o Integer inspectionPeriodDays
+  o Boolean financingContingent
+}

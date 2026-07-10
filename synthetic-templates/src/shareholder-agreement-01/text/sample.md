@@ -1,0 +1,3 @@
+# Clause
+
+Should Marcus T. Whitfield wish to sell or otherwise transfer any of his 15000 Class B Common Shares, he shall first deliver written notice to the Company and the remaining shareholders dated 2024-03-01, specifying the number of shares offered and the proposed price of 42.75 per share. The other shareholders shall have a period of 30 days from receipt of such notice within which to elect, pro rata, to purchase all or part of the offered shares on the same terms. Any transfer of shares under this Agreement remains subject to restrictions set forth herein and may not proceed until the applicable procedures have been satisfied. No such transfer shall become effective unless and until it has been approved by resolution of the Board of Directors.

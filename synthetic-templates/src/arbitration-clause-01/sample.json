@@ -1,0 +1,11 @@
+{
+  "arbitrationInstitution": "Singapore International Arbitration Centre",
+  "seatOfArbitration": "Singapore",
+  "numberOfArbitrators": "3",
+  "governingLaw": "laws of Singapore",
+  "arbitrationRules": "SIAC Arbitration Rules",
+  "languageOfArbitration": "English",
+  "expeditedProcedure": "true",
+  "costsCap": "250000.00",
+  "noticeDeadlineDate": "2024-03-01"
+}

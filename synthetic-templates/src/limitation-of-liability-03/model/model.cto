@@ -1,0 +1,12 @@
+namespace org.synthetic.limitationofliability03@1.0.0
+
+@template
+concept TemplateModel {
+  o String supplierName
+  o Double capAmount
+  o String currency
+  o DateTime effectiveDate
+  o Integer claimPeriodDays
+  o Boolean excludesConsequentialDamages
+  o Boolean carveOutForGrossNegligence
+}

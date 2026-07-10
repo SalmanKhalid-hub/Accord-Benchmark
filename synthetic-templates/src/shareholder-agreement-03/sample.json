@@ -1,0 +1,10 @@
+{
+  "shareholderName": "Marcus Feldman",
+  "companyName": "Brightline Analytics, Inc.",
+  "transferShares": "5000",
+  "sharePrice": "12.75",
+  "noticeDays": "30",
+  "effectiveDate": "2024-03-01",
+  "preemptiveRightsApply": true,
+  "remainingShareholdersPercentage": "62.5"
+}

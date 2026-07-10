@@ -1,0 +1,10 @@
+{
+  "serviceProvider": "Meridian Technical Services LLC",
+  "client": "Harborview Medical Center",
+  "effectiveDate": "2024-03-01",
+  "annualFee": "48500.00",
+  "responseTimeHours": "4",
+  "maxServiceCallsPerYear": "24",
+  "autoRenews": "false",
+  "latePaymentPenaltyRate": "1.5"
+}

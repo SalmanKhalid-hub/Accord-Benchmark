@@ -1,0 +1,12 @@
+namespace org.synthetic.warrantyclause01@1.0.0
+
+@template
+concept TemplateModel {
+  o Integer warrantyPeriodMonths
+  o DateTime effectiveDate
+  o String supplierName
+  o Double defectThresholdPercent
+  o Double replacementCostCap
+  o Boolean extendedCoverageAvailable
+  o String governingLaw
+}

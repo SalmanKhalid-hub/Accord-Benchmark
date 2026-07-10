@@ -1,0 +1,314 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "total_fields": 463,
+  "correct_fields": 374,
+  "field_accuracy": 0.8077753779697624,
+  "details": [
+    {
+      "id": "acceptance-of-delivery-extract-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"shipper\": \"Party A\",\n  \"receiver\": \"Party B\",\n  \"deliverable\": \"Widgets\",\n  \"businessDays\": \"10\",\n  \"attachment\": \"Attachment X\"\n}\n```"
+    },
+    {
+      "id": "bill-of-lading-extract-01",
+      "correct_fields": 10,
+      "total_fields": 17,
+      "model_raw": "```json\n{\n  \"accountName\": \"CLAUSE TECHNOLOGIES\",\n  \"scac\": \"MAEU\",\n  \"bolNumber\": \"MAEU-ABC12345678\",\n  \"bookingNumber\": \"2021030264747\",\n  \"exportReferences\": null,\n  \"onwardInstructions\": null,\n  \"shipper\": \"TO ORDER\",\n  \"consignee\": \"SAME AS CONSIGNEE\",\n  \"notifyParty\": null,\n  \"vessel\": \"Lagua\",\n  \"voyageNumber\": \"725\",\n  \"portOfLoading\": \"Shanghai, China\",\n  \"portOfDischarge\": \"Brisbane, Australia\",\n  \"placeOfReceipt\": \"Brisbane, Australia\",\n  \"placeOfDelivery\": \"Brisbane, Australia\",\n  \"commodities\": [\n    {\n      \"amount\": \"15 TONNE\",\n      \"package\": \"CONTAINER\",\n      \"description\": \"Corn\",\n      \"nmfc\": null,\n      \"freightClass\": \"CLASS_400\",\n      \"hazardous\": \"NO\"\n    },\n    {\n      \"amount\": \"35 TONNE\",\n      \"package\": \"CONTAINER\",\n      \"description\": \"Wheat\",\n      \"nmfc\": null,\n      \"freightClass\": \"CLASS_400\",\n      \"hazardous\": \"NO\"\n    }\n  ],\n  \"declaredValue\": null\n}\n```"
+    },
+    {
+      "id": "car-rental-tr-extract-01",
+      "correct_fields": 16,
+      "total_fields": 17,
+      "model_raw": "```json\n{\n  \"lessorName\": \"Acme Car Rental\",\n  \"lessorAddress\": \"Dikmen Caddesi No:48/15 Dikmen Ankara\",\n  \"lessorPhone\": \"+901231231234\",\n  \"lesseeName\": \"Can Do\u011fan\",\n  \"lesseeAddress\": \"John F. Kennedy Sokak No:23/12 Kavakl\u0131dere Ankara\",\n  \"lesseePhone\": \"+901234567890\",\n  \"authorizedCourt\": \"Ankara\",\n  \"plateID\": \"PlakaNo\",\n  \"carBrand\": \"Volkswagen\",\n  \"model\": \"Golf 1.6 TDI Comfortline\",\n  \"modelYear\": \"2017\",\n  \"color\": \"K\u0131rm\u0131z\u0131\",\n  \"vechileID\": \"WVWZZZ3CZXW000001\",\n  \"startDate\": \"13.07.2018\",\n  \"endDate\": \"17.07.2018\",\n  \"deliveryStation\": \"Acme Car Rental Merkez Ofis\",\n  \"paymentClause\": \"\u0130ki Y\u00fcz On Yedi Amerikan Dolar\u0131 (217.99 USD) bank transfer\"\n}\n```"
+    },
+    {
+      "id": "certificate-of-incorporation-extract-01",
+      "correct_fields": 13,
+      "total_fields": 15,
+      "model_raw": "```json\n{\n  \"companyName\": \"ACME\",\n  \"incorporationState\": \"NY\",\n  \"streetAddress\": \"555 main street\",\n  \"addressRegion\": \"NY\",\n  \"addressLocality\": \"New York\",\n  \"postalCode\": \"10001\",\n  \"registeredAgentName\": \"Andie Agent\",\n  \"incorporationDate\": \"04/01/2019\",\n  \"authorizedShareCapital\": \"400\",\n  \"parValue\": \"0.10\",\n  \"incorporatorName\": \"FooBarAtor\",\n  \"incorporatorAddress\": \"555 oak street\",\n  \"incorporatorCity\": \"Baltimore\",\n  \"incorporatorState\": \"MD\",\n  \"incorporatorZip\": \"21201\"\n}\n```"
+    },
+    {
+      "id": "company-information-extract-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"name\": \"Example Corp.\",\n  \"industry\": \"Healthcare\",\n  \"website\": \"https://example.org\",\n  \"address\": \"1 Main Street, Portland, ME, 12345, USA\",\n  \"numberOfEmployees\": 250\n}\n```"
+    },
+    {
+      "id": "contact-information-extract-01",
+      "correct_fields": 6,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"name\": \"Jane Doe\",\n  \"title\": \"CIO\",\n  \"email\": \"jane@example.com\",\n  \"phone\": \"123-456-789\",\n  \"timezone\": \"America_New_York\",\n  \"communicationChannel\": \"EMAIL\"\n}\n```"
+    },
+    {
+      "id": "copyright-license-extract-01",
+      "correct_fields": 11,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"effectiveDate\": \"01/01/2018\",\n  \"licensee\": \"Me\",\n  \"licenseeState\": \"NY\",\n  \"licenseeEntityType\": \"Company\",\n  \"licenseeAddress\": \"1 Broadway\",\n  \"licensor\": \"Myself\",\n  \"licensorState\": \"NY\",\n  \"licensorEntityType\": \"Company\",\n  \"licensorAddress\": \"2 Broadway\",\n  \"territory\": \"United States\",\n  \"purposeDescription\": \"stuff\",\n  \"workDescription\": \"other stuff\",\n  \"paymentClause\": \"Payment. As consideration in full for the rights granted herein, Licensee shall pay Licensor a one-time fee in the amount of \\\"one hundred US Dollars\\\" (100.0 USD) upon execution of this Agreement, payable as follows: \\\"bank transfer\\\".\"\n}\n```"
+    },
+    {
+      "id": "demandforecast-extract-01",
+      "correct_fields": 3,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"purchaser\": \"PETER\",\n  \"supplier\": \"DAN\",\n  \"effectiveDate\": \"04/02/2018\",\n  \"minimumPercentage\": \"85%\"\n}\n```"
+    },
+    {
+      "id": "docusign-connect-extract-01",
+      "correct_fields": 1,
+      "total_fields": 1,
+      "model_raw": "```json\n{\n  \"status\": \"Completed\"\n}\n```"
+    },
+    {
+      "id": "docusign-po-failure-extract-01",
+      "correct_fields": 1,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"buyerName\": \"Buyer Corp\",\n  \"lateOne\": \"1\",\n  \"lateTwo\": \"2\",\n  \"lateThree\": \"10\",\n  \"lateOnePercent\": \"5.0%\",\n  \"lateTwoPercent\": \"10%\",\n  \"lateThreePercent\": \"50%\",\n  \"article\": \"Article 5\",\n  \"thisSection\": \"Section 3.5(c)\",\n  \"maxFailures\": \"5\",\n  \"failureRange\": \"60 days\",\n  \"repeatedFailureCompensationAmount\": \"599.99\",\n  \"repeatedFailureCompensationCurrency\": \"USD\"\n}\n```"
+    },
+    {
+      "id": "fixed-interests-extract-01",
+      "correct_fields": 2,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"loanAmount\": \"\u00a3100,000.00\",\n  \"rate\": \"2.5%\",\n  \"loanDuration\": \"15\"\n}\n```"
+    },
+    {
+      "id": "fixed-interests-static-extract-01",
+      "correct_fields": 3,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"loanAmount\": \"100,000.00 USD\",\n  \"rate\": \"2.5%\",\n  \"loanDuration\": \"15\",\n  \"monthlyPayment\": \"667.00 USD\"\n}\n```"
+    },
+    {
+      "id": "fragile-goods-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"deliveryPrice\": \"1000.00 USD per unit\",\n  \"accelerationMin\": \"-0.5g\",\n  \"accelerationMax\": \"0.5g\",\n  \"accelerationBreachPenalty\": \"5.00 USD\",\n  \"deliveryLimitDuration\": \"10 seconds\",\n  \"lateDeliveryPenalty\": \"200.00 USD\"\n}\n```"
+    },
+    {
+      "id": "full-payment-upon-demand-extract-01",
+      "correct_fields": 3,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"Dan\",\n  \"seller\": \"Jerome\",\n  \"amount\": \"3.14 EUR\"\n}\n```"
+    },
+    {
+      "id": "full-payment-upon-signature-extract-01",
+      "correct_fields": 3,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"Dan\",\n  \"seller\": \"Steve\",\n  \"amount\": \"0.01 USD\"\n}\n```"
+    },
+    {
+      "id": "installment-sale-extract-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"BUYER\": \"Dan\",\n  \"SELLER\": \"Ned\",\n  \"INITIAL_DUE\": null,\n  \"INTEREST_RATE\": \"1.5%\",\n  \"TOTAL_DUE_BEFORE_CLOSING\": \"9,500.00 EUR\",\n  \"MIN_PAYMENT\": \"500.00 EUR\",\n  \"DUE_AT_CLOSING\": \"500.00 EUR\",\n  \"FIRST_MONTH\": \"3\"\n}\n```"
+    },
+    {
+      "id": "interest-rate-swap-extract-01",
+      "correct_fields": 23,
+      "total_fields": 27,
+      "model_raw": "```json\n{\n  \"bank\": \"Deutsche Bank\",\n  \"letterDate\": \"06/30/2005\",\n  \"counterparty\": \"MagnaChip Semiconductor S.A.\",\n  \"bankReference\": \"Global No. N397355N\",\n  \"notionalAmount\": \"300000000.00 USD\",\n  \"tradeDate\": \"06/23/2005\",\n  \"effectiveDate\": \"06/27/2005\",\n  \"terminationDate\": \"06/18/2008\",\n  \"fixedRatePayer\": \"Counterparty\",\n  \"fixedRatePayerPeriodEndDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date with No Adjustment\",\n  \"fixedRatePayerPaymentDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date\",\n  \"fixedRate\": \"4.09%\",\n  \"fixedRateDayCountFraction\": \"30 360\",\n  \"fixedRatePayerBusinessDays\": \"New York\",\n  \"fixedRatePayerBusinessDayConvention\": \"Modified Following\",\n  \"floatingRatePayer\": \"DBAG\",\n  \"floatingRatePayerPeriodEndDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date with No Adjustment\",\n  \"floatingRatePayerPaymentDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date\",\n  \"floatingRateForInitialCalculationPeriod\": \"3.41%\",\n  \"floatingRateOption\": \"USD-LIBOR-BBA\",\n  \"designatedMaturity\": \"Three months\",\n  \"spread\": \"None\",\n  \"floatingRateDayCountFraction\": \"30 360\",\n  \"resetDates\": \"The first Floating Rate Payer Business Day of each Calculation Period or Compounding Period, if Compounding is applicable.\",\n  \"compounding\": \"Inapplicable\",\n  \"floatingRatePayerBusinessDays\": \"New York\",\n  \"floatingRatePayerBusinessDayConvention\": \"Modified Following\"\n}\n```"
+    },
+    {
+      "id": "ip-payment-extract-01",
+      "correct_fields": 6,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"royaltyText\": \"a royalty of \\\"four point five\\\" percent (4.5%) of the Net Sales Price\",\n  \"royaltyRate\": \"4.5%\",\n  \"sublicensingRoyaltyText\": \"\\\"five point two\\\" percent (5.2%) of any royalties and fees received by Licensee from sublicensing any rights granted to it under this Agreement\",\n  \"sublicensingRoyaltyRate\": \"5.2%\",\n  \"paymentPeriod\": \"within 10 days following the end of each Quarterly Period\",\n  \"paymentPeriodWithPermission\": \"within 7 days business days after receiving permission\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": true,\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": \"full days\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-currency-conversion-extract-01",
+      "correct_fields": 11,
+      "total_fields": 11,
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": true,\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": \"full days\",\n  \"conversionSource\": \"the prevailing exchange rate at a major United States bank\",\n  \"fromCurrency\": \"EUR\",\n  \"toCurrency\": \"USD\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-else-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": true,\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": true\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": \"except for Force Majeure cases in a 100 miles radius\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": \"Any fractional part of a days is to be considered a full days\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-this-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": \"except for Force Majeure cases in a 100 miles radius\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": \"Any fractional part of a days is to be considered a full days\"\n}\n```"
+    },
+    {
+      "id": "lateinvoicewithpayment-extract-01",
+      "correct_fields": 3,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"maximumDelay\": \"180 days\",\n  \"purchaser\": \"Betty Buyer\",\n  \"supplier\": \"Steve Seller\"\n}\n```"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-extract-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"buyer\": \"Betty Buyer\",\n  \"seller\": \"Steve Seller\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"maximumDelay\": \"15 days\"\n}\n```"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-capped-extract-01",
+      "correct_fields": 4,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"buyer\": \"Betty Buyer\",\n  \"seller\": \"Steve Seller\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"52%\",\n  \"maximumDelay\": \"15 days\"\n}\n```"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-payment-extract-01",
+      "correct_fields": 4,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"buyer\": \"Betty Buyer\",\n  \"seller\": \"Steve Seller\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"52%\",\n  \"maximumDelay\": \"15 days\"\n}\n```"
+    },
+    {
+      "id": "one-time-payment-tr-extract-01",
+      "correct_fields": 3,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"Can Do\u011fan\",\n  \"seller\": \"ACME Corp.\",\n  \"totalPurchasePrice\": \"1922.99 TRY\"\n}\n```"
+    },
+    {
+      "id": "online-payment-contract-tr-extract-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"buyer\": \"Umut\",\n  \"seller\": \"Serkan\",\n  \"softwareID\": \"AcmeSoftware-1.0\",\n  \"userCount\": \"2\",\n  \"authorizedCourt\": \"ANKARA 1.B\u00f6lge \u0130dare Mahkemesi\"\n}\n```"
+    },
+    {
+      "id": "payment-upon-delivery-extract-01",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"buyer\": \"Michael\",\n  \"seller\": \"Diana\",\n  \"costOfGoods\": \"9.99 USD\",\n  \"deliveryFee\": \"1.99 USD\"\n}\n```"
+    },
+    {
+      "id": "payment-upon-iot-extract-01",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"buyer\": \"Dan\",\n  \"seller\": \"Grant\",\n  \"amountPerUnit\": \"10 USD\",\n  \"paymentCount\": \"5\"\n}\n```"
+    },
+    {
+      "id": "payment-upon-signature-extract-01",
+      "correct_fields": 3,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"Dave\",\n  \"seller\": \"Dan\",\n  \"amount\": \"50 USD\"\n}\n```"
+    },
+    {
+      "id": "perishable-goods-extract-01",
+      "correct_fields": 13,
+      "total_fields": 16,
+      "model_raw": "```json\n{\n  \"grower\": \"PETER\",\n  \"importer\": \"DAN\",\n  \"shipmentId\": \"SHIP_001\",\n  \"dueDate\": \"07/02/2018\",\n  \"unitPrice\": 1.5,\n  \"unit\": \"USD per KG\",\n  \"minUnits\": 3000,\n  \"maxUnits\": 3500,\n  \"product\": \"Grade I, Size 4, Zutano Mexican Avocados\",\n  \"sensorReadingFrequency\": \"1 per hours\",\n  \"duration\": null,\n  \"minTemperature\": 2,\n  \"maxTemperature\": 13,\n  \"minHumidity\": 70,\n  \"maxHumidity\": 90,\n  \"penaltyFactor\": 0.2\n}\n```"
+    },
+    {
+      "id": "project-information-extract-01",
+      "correct_fields": 4,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"name\": \"Katahdin\",\n  \"deadline\": \"01/01/2021\",\n  \"budget\": \"0.00 USD\",\n  \"description\": \"Ensure that signed contract terms are stored in Salesforce\",\n  \"other\": \"I don't work on a Friday.\"\n}\n```"
+    },
+    {
+      "id": "promissory-note-extract-01",
+      "correct_fields": 9,
+      "total_fields": 14,
+      "model_raw": "```json\n{\n  \"amount\": \"1,000.00 USD\",\n  \"date\": \"01/30/2018\",\n  \"maker\": \"Daniel\",\n  \"interestRate\": \"3.8%\",\n  \"individual\": \"Daniel\",\n  \"makerAddress\": \"1 Main Street\",\n  \"lender\": \"Clause Inc.\",\n  \"legalEntity\": \"Clause Inc.\",\n  \"lenderAddress\": \"246 5th Ave, 3rd Fl, New York, NY 10001\",\n  \"principal\": \"500.00 USD\",\n  \"maturityDate\": \"01/20/2019\",\n  \"defaultDays\": \"90\",\n  \"insolvencyDays\": \"90\",\n  \"jurisdiction\": \"New York, NY\"\n}\n```"
+    },
+    {
+      "id": "promissory-note-md-extract-01",
+      "correct_fields": 8,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"amount\": \"1,000.00 USD\",\n  \"date\": \"01/30/2018\",\n  \"maker\": \"Daniel\",\n  \"interestRate\": \"3.8% per annum\",\n  \"individual\": \"Daniel\",\n  \"makerAddress\": \"1 Main Street\",\n  \"lender\": \"Clause Inc.\",\n  \"legalEntity\": \"Clause Inc.\",\n  \"lenderAddress\": \"246 5th Ave, 3rd Fl, New York, NY 10001\",\n  \"maturityDate\": \"01/20/2019\",\n  \"defaultDays\": \"90 days\",\n  \"insolvencyDays\": \"90 days\",\n  \"jurisdiction\": \"New York, NY\"\n}\n```"
+    },
+    {
+      "id": "rental-deposit-extract-01",
+      "correct_fields": 10,
+      "total_fields": 10,
+      "model_raw": "```json\n{\n  \"tenant\": \"Michael\",\n  \"landlord\": \"Parsa\",\n  \"depositAmount\": \"3000 USD\",\n  \"tenantDepositRestorationPeriod\": \"30 days\",\n  \"monthlyBaseRentMultiple\": \"0.98\",\n  \"applicableLaw\": \"New Jersey\",\n  \"statute\": \"NJSD\",\n  \"bankName\": \"Bank of America\",\n  \"landlordDepositReturnPeriod\": \"3 weeks\",\n  \"exhibit\": \"Schedule A\"\n}\n```"
+    },
+    {
+      "id": "rental-deposit-with-extract-01",
+      "correct_fields": 8,
+      "total_fields": 10,
+      "model_raw": "```json\n{\n  \"tenant\": \"Michael\",\n  \"landlord\": \"Parsa\",\n  \"depositAmount\": \"3000 USD\",\n  \"tenantDepositRestorationPeriod\": \"30 days\",\n  \"monthlyBaseRentMultiple\": \"0.98\",\n  \"applicableLaw\": \"New Jersey\",\n  \"statute\": \"NJSD\",\n  \"bankName\": \"Bank of America\",\n  \"landlordDepositReturnPeriod\": \"3 weeks\",\n  \"exhibit\": \"Schedule A\"\n}\n```"
+    },
+    {
+      "id": "roommate-extract-01",
+      "correct_fields": 2,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"holder\": \"Joan\",\n  \"roommate\": \"John\",\n  \"landlord\": \"Jane\",\n  \"address\": \"111 main street, apt 1\",\n  \"spaceOccupied\": \"The first bedroom on the second floor along with a private bathroom and common areas of the apartment\",\n  \"rentAmount\": \"$400.00\",\n  \"depositAmount\": \"$400.00\",\n  \"startDate\": \"04/01/2022\",\n  \"endDate\": \"06/30/2022\",\n  \"holderSignature\": \"Joan\",\n  \"holderDateSigned\": \"03/20/2022\",\n  \"roommateSignature\": \"John\",\n  \"roommateDateSigned\": \"03/18/2022\"\n}\n```"
+    },
+    {
+      "id": "saft-extract-01",
+      "correct_fields": 13,
+      "total_fields": 16,
+      "model_raw": "```json\n{\n  \"token\": \"Clause Token\",\n  \"company\": \"Clause\",\n  \"companyType\": \"corporation\",\n  \"state\": \"NY\",\n  \"amendmentProvision\": \"Any provision of this instrument may be amended, waived or modified only upon the written consent of the Company and the holders of a majority, in the aggregate, of the Purchase Amounts paid to the Company with respect to all SAFTs outstanding at the time of such amendment, waiver or modification.\",\n  \"purchaseAmount\": \"25.00 USD\",\n  \"netProceedLimit\": \"3000000 USD\",\n  \"date\": \"10/04/2017\",\n  \"deadlineDate\": \"04/20/2018\",\n  \"discountRatePercentage\": \"38%\",\n  \"network\": \"Clause Network\",\n  \"coin\": \"Ether\",\n  \"exchanges\": \"itBit\",\n  \"companyRepresentative\": \"Peter Hunn\",\n  \"purchaser\": \"Daniel Charles Selman\",\n  \"description\": \"a decentralized blockchain-based computer network that enables happiness and intergalactic equality\"\n}\n```"
+    },
+    {
+      "id": "safte-extract-01",
+      "correct_fields": 10,
+      "total_fields": 12,
+      "model_raw": "```json\n{\n  \"companyName\": \"ACME\",\n  \"companyRegistrationNumber\": \"555\",\n  \"purchaser\": \"Dan\",\n  \"jurisdiction\": \"NY\",\n  \"purchaseAmount\": \"25.00\",\n  \"discount\": \"7%\",\n  \"projectName\": \"Umbrella\",\n  \"projectDescription\": \"a suite of smart contracts built on the Ethereum Network which \\\"manages umbrella tokens\\\"\",\n  \"months\": \"12\",\n  \"monthsText\": \"twelve\",\n  \"amount\": \"1000.00\",\n  \"amountText\": \"one thousand\"\n}\n```"
+    },
+    {
+      "id": "sales-contract-ru-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"buyer\": \"\u043f\u043e\u043a\u0443\u043f\u0430\u0442\u0435\u043b\u044c\",\n  \"seller\": \"\u043f\u0440\u043e\u0434\u0430\u0432\u0435\u0446\",\n  \"refundPeriod\": \"6 (\u0448\u0435\u0441\u0442\u0438) \u043c\u0435\u0441\u044f\u0446\u0435\u0432\",\n  \"counterparty\": \"\u041f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a\u0443\",\n  \"currencyType\": \"\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u0440\u0443\u0431\u043b\u0438\",\n  \"appealPeriod\": \"7\",\n  \"countryLegislation\": \"\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f\"\n}\n```"
+    },
+    {
+      "id": "servicelevelagreement-extract-01",
+      "correct_fields": 6,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"paymentPeriod\": \"monthly\",\n  \"monthlyCapPercentage\": \"10%\",\n  \"yearlyCapPercentage\": \"10%\",\n  \"availability1\": \"99.8%\",\n  \"serviceCredit1\": \"2.0 GBP\",\n  \"availability2\": \"98.0%\",\n  \"serviceCredit2\": \"3.0 GBP\",\n  \"serviceProvider\": \"Supplier\",\n  \"serviceConsumer\": \"Customer\"\n}\n```"
+    },
+    {
+      "id": "signature-block-title-name-date-extract-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"title\": \"Title\",\n  \"signature\": \"--------\",\n  \"fullName\": \"Full Name\",\n  \"dateSigned\": \"Date Signed\",\n  \"signatory\": \"buyer@example.com\"\n}\n```"
+    },
+    {
+      "id": "simplelatedeliveryandpenalty-extract-01",
+      "correct_fields": 6,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"buyer\": \"Betty Buyer\",\n  \"seller\": \"Steve Seller\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"maximumDelay\": \"15 days\"\n}\n```"
+    },
+    {
+      "id": "supply-agreement-loc-extract-01",
+      "correct_fields": 36,
+      "total_fields": 44,
+      "model_raw": "```json\n{\n  \"executionDate\": \"01/20/2021\",\n  \"exporter\": \"Acme Exports\",\n  \"importer\": \"Dan's Imports\",\n  \"product\": \"Widgets\",\n  \"importerCreditworthiness\": \"Credit worthy.\",\n  \"issueDate\": \"01/21/2021\",\n  \"importerLOCBank\": \"Big Bank Corp.\",\n  \"importerLOCNumber\": \"1234567\",\n  \"importerLOCAmount\": \"1000000.00 SEK\",\n  \"orderBillOfLading\": \"ORDER-001\",\n  \"packingList\": \"PACKING-001\",\n  \"renewalTerms\": \"The \\\"Dan's Imports\\\" may renew this agreement for successive 2 of 5 years, unless terminated earlier, by giving the \\\"Acme Exports\\\" notice of the intent to renew this agreement, at least 90 days before the end of the 2 years\",\n  \"termRenewal\": \"2 of 5 years\",\n  \"termTerminationNotice\": \"90 days\",\n  \"invoice\": \"INVOICE-001\",\n  \"bookingId\": \"BOOKING-001\",\n  \"purchaseOrder\": \"PO-001\",\n  \"exporterAddress\": \"12345 Main Street, California 92705\",\n  \"turnaroundTime\": \"7 Business Days\",\n  \"amountOfEachProduct\": \"100\",\n  \"unitPriceOfEachProduct\": \"300.00 SEK\",\n  \"locationForDelivery\": \"34 Elm Street\",\n  \"deliveryDate\": \"01/30/2021\",\n  \"exporterBankAccount\": null,\n  \"modifiedPurchaseOrder\": \"PO-001-A\",\n  \"cancellationDeadline\": \"7 days before the 01/30/2021\",\n  \"shipper\": \"DHS\",\n  \"importPort\": \"Los Angeles\",\n  \"exportPort\": \"Malmo\",\n  \"productDescription\": \"Widgets\",\n  \"productWeight\": \"100\",\n  \"productMeasurement\": \"50 cm x 10 cm x 60 cm\",\n  \"freightCharges\": \"4000.00 SEK\",\n  \"evaluationTime\": \"7 days\",\n  \"acceptanceCriteria\": \"If \\\"good are acceptable\\\" is true based on Annex B, attached to this agreement, then \\\"Dan's Imports\\\" shall pay \\\"Acme Exports\\\" {{% calculated %}}\",\n  \"termBeginDate\": \"01/20/2021\",\n  \"termPeriod\": \"3 years\",\n  \"currentTerm\": \"Initial Term\",\n  \"shipment\": \"Shipment 001\",\n  \"unitPrice\": \"4000.00 SEK\",\n  \"unit\": \"10\",\n  \"sensorReadingFrequency\": \"10 per days\",\n  \"duration\": \"10 days\",\n  \"countPeriod\": null\n}\n```"
+    },
+    {
+      "id": "supplyagreement-extract-01",
+      "correct_fields": 19,
+      "total_fields": 20,
+      "model_raw": "```json\n{\n  \"effectiveDate\": \"04/02/2018\",\n  \"supplier\": \"DAN\",\n  \"buyer\": \"PETER\",\n  \"shortDescriptionOfTheProducts\": \"Umbrellas\",\n  \"noticeWindow\": \"2 Business Days\",\n  \"cancellationWindow\": \"10 Business Days\",\n  \"minimumPercentage\": \"85%\",\n  \"deliverables\": \"Colorful Umbrellas\",\n  \"deliveryWindow\": \"1 days\",\n  \"deliveryAttachment\": \"Annex A\",\n  \"inspectionWindow\": \"3 Business Days\",\n  \"acceptanceAttachment\": \"Annex B\",\n  \"priceUpdateWindow\": \"15 days before the end of each calendar quarter\",\n  \"accountNumber\": \"XXX-XX\",\n  \"routingNumnber\": \"YYY-YY\",\n  \"termYears\": \"2\",\n  \"renewalYears\": \"1\",\n  \"renewalWindow\": \"30 Business Days\",\n  \"governingState\": \"NY\",\n  \"venueState\": \"NY\"\n}\n```"
+    },
+    {
+      "id": "supplyagreement-perishable-goods-extract-01",
+      "correct_fields": 12,
+      "total_fields": 16,
+      "model_raw": "```json\n{\n  \"grower\": \"SUPPLIER CORPORATION\",\n  \"importer\": \"BUYER CORPORATION\",\n  \"shipment\": \"2995 and 3005 KG\",\n  \"dueDate\": null,\n  \"unitPrice\": \"1.50\",\n  \"unit\": \"KG\",\n  \"minUnits\": 2995,\n  \"maxUnits\": 3005,\n  \"product\": \"Grade I, Size 4, Zutano Mexican Avocados\",\n  \"sensorReadingFrequency\": \"1 per hours\",\n  \"duration\": \"2 years\",\n  \"minTemperature\": 2,\n  \"maxTemperature\": 13,\n  \"minHumidity\": 70,\n  \"maxHumidity\": 90,\n  \"penaltyFactor\": 0.2\n}\n```"
+    },
+    {
+      "id": "volumediscount-extract-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"firstVolume\": \"$1 million\",\n  \"secondVolume\": \"$10 million\",\n  \"firstRate\": \"3.00%\",\n  \"secondRate\": \"2.90%\",\n  \"thirdRate\": \"2.80%\"\n}\n```"
+    },
+    {
+      "id": "volumediscountolist-extract-01",
+      "correct_fields": 0,
+      "total_fields": 1,
+      "model_raw": "```json\n{\n  \"rates\": [\n    {\n      \"volume_min\": \"0.0$ million\",\n      \"volume_max\": \"1.0$ million\",\n      \"rate\": \"3.1%\"\n    },\n    {\n      \"volume_min\": \"1.0$ million\",\n      \"volume_max\": \"10.0$ million\",\n      \"rate\": \"3.1%\"\n    },\n    {\n      \"volume_min\": \"10.0$ million\",\n      \"volume_max\": \"50.0$ million\",\n      \"rate\": \"2.9%\"\n    },\n    {\n      \"volume_min\": \"50.0$ million\",\n      \"volume_max\": \"500.0$ million\",\n      \"rate\": \"2.5%\"\n    },\n    {\n      \"volume_min\": \"500.0$ million\",\n      \"volume_max\": \"1000.0$ million\",\n      \"rate\": \"1.2%\"\n    },\n    {\n      \"volume_min\": \"1000.0$ million\",\n      \"volume_max\": \"1000000.0$ million\",\n      \"rate\": \"0.1%\"\n    }\n  ]\n}\n```"
+    },
+    {
+      "id": "volumediscountulist-extract-01",
+      "correct_fields": 0,
+      "total_fields": 1,
+      "model_raw": "```json\n{\n  \"rates\": [\n    {\n      \"volume_min\": \"0.0$ million\",\n      \"volume_max\": \"1.0$ million\",\n      \"rate\": \"3.1%\"\n    },\n    {\n      \"volume_min\": \"1.0$ million\",\n      \"volume_max\": \"10.0$ million\",\n      \"rate\": \"3.1%\"\n    },\n    {\n      \"volume_min\": \"10.0$ million\",\n      \"volume_max\": \"50.0$ million\",\n      \"rate\": \"2.9%\"\n    },\n    {\n      \"volume_min\": \"50.0$ million\",\n      \"volume_max\": \"500.0$ million\",\n      \"rate\": \"2.5%\"\n    },\n    {\n      \"volume_min\": \"500.0$ million\",\n      \"volume_max\": \"1000.0$ million\",\n      \"rate\": \"1.2%\"\n    },\n    {\n      \"volume_min\": \"1000.0$ million\",\n      \"volume_max\": \"1000000.0$ million\",\n      \"rate\": \"0.1%\"\n    }\n  ]\n}\n```"
+    }
+  ]
+}

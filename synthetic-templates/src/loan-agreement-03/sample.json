@@ -1,0 +1,10 @@
+{
+  "lenderName": "Meridian Capital Partners LLC",
+  "borrowerName": "Hawthorne Retail Group Inc.",
+  "principalAmount": "250000.00",
+  "interestRate": "6.75",
+  "loanStartDate": "2024-03-01",
+  "maturityDate": "2027-03-01",
+  "latePaymentPenalty": "2.5",
+  "prepaymentAllowed": ""
+}

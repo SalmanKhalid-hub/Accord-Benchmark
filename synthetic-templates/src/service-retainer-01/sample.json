@@ -1,0 +1,10 @@
+{
+  "clientName": "Harborview Realty Group LLC",
+  "serviceProviderName": "Calloway & Finch Advisory Partners",
+  "retainerAmount": "7500.00",
+  "effectiveDate": "2024-04-01",
+  "monthlyHoursIncluded": "20",
+  "overageHourlyRate": "225.00",
+  "autoRenewal": "true",
+  "terminationNoticeDays": "30"
+}

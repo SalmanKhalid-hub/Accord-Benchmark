@@ -1,0 +1,10 @@
+{
+  "guarantorName": "Martin J. Cavanaugh",
+  "debtorName": "Cavanaugh Freight Solutions LLC",
+  "lenderName": "Northbridge Commercial Bank",
+  "maximumLiabilityAmount": 250000.0,
+  "currencyCode": "USD",
+  "effectiveDate": "2024-03-01",
+  "interestRate": 6.5,
+  "isContinuingGuarantee": true
+}

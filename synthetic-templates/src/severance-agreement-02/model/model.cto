@@ -1,0 +1,12 @@
+namespace org.synthetic.severanceagreement02@1.0.0
+
+@template
+concept TemplateModel {
+  o String companyName
+  o String employeeName
+  o DateTime separationDate
+  o Double severancePayAmount
+  o Integer severancePaymentWeeks
+  o Integer benefitsContinuationMonths
+  o Boolean releaseOfClaimsRequired
+}

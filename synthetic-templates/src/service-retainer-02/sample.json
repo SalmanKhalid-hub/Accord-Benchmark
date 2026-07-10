@@ -1,0 +1,10 @@
+{
+  "clientName": "Blackstone Ventures LLC",
+  "serviceProvider": "Harrow & Associates LLP",
+  "monthlyRetainerFee": "7500.00",
+  "retainerStartDate": "2024-03-01",
+  "minimumHoursIncluded": "20",
+  "overageRate": "350.00",
+  "autoRenewal": "",
+  "noticePeriodDays": "30"
+}

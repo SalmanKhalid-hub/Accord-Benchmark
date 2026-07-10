@@ -1,0 +1,10 @@
+{
+  "lenderName": "Meridian Capital Partners LLC",
+  "borrowerName": "Halcyon Trading Corp.",
+  "principalAmount": "750000.00",
+  "annualInterestRate": "6.75",
+  "maturityDate": "2027-09-30",
+  "lateFeePercentage": "2.5",
+  "prepaymentPermitted": "",
+  "gracePeriodDays": "10"
+}

@@ -1,0 +1,3 @@
+# Clause
+
+Beginning on the lease start date of 2024-03-01, Tenant Elena Sorrento shall pay to Landlord Marcus Whitfield monthly rent in the amount of 1750.00, due on the 1st day of each calendar month. Should payment not be received within 5 days following the due date, a late fee of 75.00 shall be assessed and become immediately payable in addition to the outstanding rent. No pets of any kind shall be kept on the premises without the prior written consent of the Landlord, such consent to be granted or withheld in Landlord's sole discretion. Tenant acknowledges that timely payment of rent is a material condition of this agreement and that repeated late payments may constitute grounds for termination.

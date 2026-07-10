@@ -1,0 +1,13 @@
+namespace org.synthetic.dataprocessingagreement02@1.0.0
+
+@template
+concept TemplateModel {
+  o String processorName
+  o String controllerName
+  o DateTime effectiveDate
+  o Integer dataBreachNotificationHours
+  o Boolean subProcessingAllowed
+  o Long maxRecordsProcessed
+  o Double annualAuditFee
+  o Integer dataRetentionPeriodDays
+}

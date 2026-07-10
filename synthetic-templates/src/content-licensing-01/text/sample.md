@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, Northwind Media Group LLC ("Licensor") grants to BrightPath Studios Inc. ("Licensee") the right to use the content titled "Coastal Horizons Photo Collection" solely within North America, in exchange for a one-time license fee of 7500.00. This grant is exclusive, such that Licensor shall not authorize any other party to use the content within the specified territory during the term of this agreement. The license shall remain in effect for a period of 24 months from the effective date, unless earlier terminated in accordance with the terms herein. Upon expiration of the term, all rights granted to Licensee shall revert automatically to Licensor without further notice.

@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, Nimbus Software Solutions, Inc. ('Licensor') grants to Brightline Analytics LLC ('Licensee') a non-exclusive license to install and use the software product known as DataForge Suite v4, subject to the terms herein. In consideration of a license fee of 48500.00, payable upon execution, Licensee may deploy the software for use by up to 250 authorized users within its organization for a term of 3 years from the effective date. This license may not be sold, assigned, or otherwise transferred by Licensee to any third party without the prior written consent of Licensor. Upon expiration of the license term, Licensee shall cease all use of the software and certify the destruction or return of all copies in its possession.

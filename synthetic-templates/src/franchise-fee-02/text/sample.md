@@ -1,0 +1,3 @@
+# Clause
+
+In consideration of the rights granted under this franchise agreement, Riverside Brews LLC shall pay Maple Leaf Coffee Systems Inc. a one-time initial franchise fee of $45000.00 upon execution of this agreement, effective as of 2024-03-01. Thereafter, Franchisee shall remit to Franchisor a continuing royalty equal to 6.5% of gross monthly revenue, due on or before the 5th day of each calendar month. Any payment not received by the due date shall accrue a late charge of 1.5% per month on the outstanding balance until paid in full. This franchise relationship does not automatically continue beyond its stated term and must be renewed by mutual written agreement of the parties prior to expiration.

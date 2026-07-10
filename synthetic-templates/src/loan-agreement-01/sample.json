@@ -1,0 +1,10 @@
+{
+  "lenderName": "Meridian Capital Partners LLC",
+  "borrowerName": "Vantage Robotics Inc.",
+  "principalAmount": "250000.00",
+  "interestRate": "6.75",
+  "maturityDate": "2027-09-01",
+  "latePaymentFee": "150.00",
+  "gracePeriodDays": "10",
+  "prepaymentAllowed": "true"
+}

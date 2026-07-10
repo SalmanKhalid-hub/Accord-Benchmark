@@ -1,0 +1,13 @@
+namespace org.synthetic.ipassignment03@1.0.0
+
+@template
+concept TemplateModel {
+  o String assignor
+  o String assignee
+  o DateTime effectiveDate
+  o Double considerationAmount
+  o String workDescription
+  o Boolean moralRightsWaived
+  o Boolean cooperationRequired
+  o String governingLaw
+}

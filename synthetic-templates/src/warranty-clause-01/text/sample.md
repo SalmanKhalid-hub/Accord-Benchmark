@@ -1,0 +1,3 @@
+# Clause
+
+Meridian Industrial Components Ltd. warrants that, from the effective date of 2024-03-01, all goods delivered under this Agreement shall be free from defects in material and workmanship for a period of 24 months. Should the rate of defective units in any shipment exceed 2.5 percent, the Buyer shall be entitled to a full replacement or repair at no additional cost, subject to a maximum aggregate liability of $50000.00 under this warranty. An extended coverage option may be purchased by the Buyer prior to the expiration of the standard warranty period to obtain additional protection beyond the terms stated herein. This warranty and all matters arising from or related to it shall be governed by and construed in accordance with the laws of the State of Delaware.

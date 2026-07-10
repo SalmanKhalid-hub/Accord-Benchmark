@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, Meridian Advisory Partners LLC (the "Consultant") shall provide advisory services to Northgate Retail Holdings, Inc. (the "Client") at a rate of $225.00 per hour, subject to a cap of 40 hours per month absent prior written approval for additional hours. Consultant shall submit invoices on a monthly basis, and Client shall remit payment within thirty (30) days of receipt of each invoice. This engagement is not automatically renewable and shall terminate at the end of its stated term unless the parties execute a new written agreement. Either party may terminate this engagement prior to the end of its term by providing 30 days written notice to the other party.

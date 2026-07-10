@@ -1,0 +1,9 @@
+{
+  "tenantName": "Marcus Feldman",
+  "monthlyRent": "1850.00",
+  "leaseStartDate": "2024-06-01",
+  "lateFeeGracePeriod": "5",
+  "lateFeeAmount": "75.00",
+  "petsAllowed": "false",
+  "securityDeposit": "1850.00"
+}

@@ -1,0 +1,10 @@
+{
+  "landlordName": "Meridian Commercial Holdings LLC",
+  "tenantName": "Brightside Retail Partners Inc.",
+  "leaseStartDate": "2024-03-01",
+  "monthlyRent": "8500.00",
+  "lateFeePercentage": "5.0",
+  "securityDeposit": "17000.00",
+  "renewalOptionYears": "5",
+  "autoRenewal": "the lease shall not renew automatically absent written notice from the Tenant"
+}

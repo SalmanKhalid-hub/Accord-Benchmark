@@ -1,0 +1,3 @@
+# Clause
+
+This Agreement is entered into between Cedar Grove Properties LLC ("Landlord") and Marcus Whitfield ("Tenant") commencing on 2024-03-01. Tenant shall pay monthly rent of $1450.00, due on the first day of each calendar month, with a grace period of 5 days before a late fee applies. Should rent remain unpaid after the grace period, Tenant shall pay a late fee of $75.00 in addition to the outstanding rent. Tenant shall not keep any dogs, cats, or other animals on the premises without Landlord's prior written consent, as pets are not permitted under this lease. Tenant has provided a security deposit of $1450.00, to be held by Landlord in accordance with applicable law and returned, less lawful deductions, upon termination of tenancy.

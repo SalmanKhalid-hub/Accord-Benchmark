@@ -1,0 +1,12 @@
+namespace org.synthetic.distributionagreement03@1.0.0
+
+@template
+concept TemplateModel {
+  o String distributorName
+  o String territory
+  o DateTime effectiveDate
+  o Double minimumAnnualPurchase
+  o Integer termYears
+  o Boolean autoRenewal
+  o Integer terminationNoticeDays
+}

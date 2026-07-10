@@ -1,0 +1,13 @@
+namespace org.synthetic.loanagreement02@1.0.0
+
+@template
+concept TemplateModel {
+  o String lenderName
+  o String borrowerName
+  o Double principalAmount
+  o Double annualInterestRate
+  o DateTime maturityDate
+  o Double lateFeePercentage
+  o Boolean prepaymentPermitted
+  o Integer gracePeriodDays
+}

@@ -1,0 +1,13 @@
+namespace org.synthetic.employmentoffer03@1.0.0
+
+@template
+concept TemplateModel {
+  o String employerName
+  o String employeeName
+  o String jobTitle
+  o DateTime startDate
+  o Double annualSalary
+  o Double signingBonus
+  o Integer probationPeriodMonths
+  o Boolean atWillEmployment
+}

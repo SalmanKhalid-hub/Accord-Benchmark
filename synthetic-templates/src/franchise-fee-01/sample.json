@@ -1,0 +1,10 @@
+{
+  "franchiseeName": "Meridian Coffee Ventures LLC",
+  "initialFranchiseFee": "45000.00",
+  "royaltyPercentage": "6.5",
+  "marketingFeePercentage": "2.0",
+  "paymentDueDay": "5",
+  "effectiveDate": "2024-03-01",
+  "latePaymentPenalty": "150.00",
+  "autoRenewal": "false"
+}

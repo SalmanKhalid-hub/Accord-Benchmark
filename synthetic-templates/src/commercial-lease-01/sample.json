@@ -1,0 +1,10 @@
+{
+  "landlordName": "Harborview Properties LLC",
+  "tenantName": "Bluepoint Retail Group Inc.",
+  "premisesAddress": "482 Commerce Street, Suite 210, Newark, NJ",
+  "leaseCommencementDate": "2024-03-01",
+  "monthlyBaseRent": "8500.00",
+  "annualEscalationRate": "3.5",
+  "securityDeposit": "17000.00",
+  "renewalOptionExercised": "false"
+}

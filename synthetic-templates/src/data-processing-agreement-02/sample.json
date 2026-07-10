@@ -1,0 +1,10 @@
+{
+  "processorName": "Nimbus Cloud Services Inc.",
+  "controllerName": "Meridian Health Group LLC",
+  "effectiveDate": "2024-03-01",
+  "dataBreachNotificationHours": "48",
+  "subProcessingAllowed": "true",
+  "maxRecordsProcessed": "5000000",
+  "annualAuditFee": "12500.00",
+  "dataRetentionPeriodDays": "365"
+}

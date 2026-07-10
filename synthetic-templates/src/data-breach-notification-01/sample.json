@@ -1,0 +1,9 @@
+{
+  "dataProcessor": "Nimbus Cloud Solutions Inc.",
+  "dataController": "Harrow Retail Group Ltd.",
+  "effectiveDate": "2024-03-01",
+  "notificationPeriodHours": "72",
+  "affectedRecordsThreshold": "500",
+  "requiresRegulatorNotification": "true",
+  "lateNotificationPenalty": "10000.00"
+}

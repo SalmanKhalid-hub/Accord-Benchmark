@@ -4,20 +4,28 @@
 import os
 import json
 
-TEMPLATES_DIR = "../cicero-template-library/src"
+TEMPLATES_DIRS = ["../cicero-template-library/src", "synthetic-templates/src"]
 OUTPUT_FILE = "data/clause_classification.json"
+
+def dir_of(name):
+    for d in TEMPLATES_DIRS:
+        if os.path.isdir(os.path.join(d, name)):
+            return d
+    return TEMPLATES_DIRS[0]
 
 # Framework demos / joke templates — not real legal clauses, so exclude them.
 EXCLUDE = {"empty", "empty-contract", "helloworld", "helloworldstate", "hellomodule", "eat-apples"}
-template_names = sorted(
-    name for name in os.listdir(TEMPLATES_DIR)
-    if os.path.isdir(os.path.join(TEMPLATES_DIR, name)) and name not in EXCLUDE
-)
+template_names = sorted(set(
+    name
+    for d in TEMPLATES_DIRS if os.path.isdir(d)
+    for name in os.listdir(d)
+    if os.path.isdir(os.path.join(d, name)) and name not in EXCLUDE
+))
 
 
 def read_clause_text(template_name):
     """Read the filled-in clause from a template's sample.md, with the heading stripped."""
-    sample_path = os.path.join(TEMPLATES_DIR, template_name, "text", "sample.md")
+    sample_path = os.path.join(dir_of(template_name), template_name, "text", "sample.md")
     if not os.path.exists(sample_path):
         return None  # no sample text -> can't make a question
     with open(sample_path) as f:

@@ -1,0 +1,3 @@
+# Clause
+
+This loan is made by Meridian Capital Partners LLC ('Lender') to Hawthorne Retail Group Inc. ('Borrower') in the principal amount of $250000.00, disbursed on 2024-03-01 and repayable in full no later than 2027-03-01. Interest shall accrue on the outstanding principal balance at a fixed rate of 6.75% per annum, calculated on the basis of a 360-day year. Should any scheduled payment remain unpaid for more than ten days following its due date, Borrower shall pay a late payment penalty equal to 2.5% of the overdue amount. Borrower may voluntarily prepay all or any portion of the outstanding principal, together with accrued interest, at any time prior to maturity without incurring any prepayment penalty or premium.

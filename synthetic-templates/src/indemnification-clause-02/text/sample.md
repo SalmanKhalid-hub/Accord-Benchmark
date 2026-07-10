@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, Meridian Supply Corp. (the "Indemnifying Party") shall defend, indemnify, and hold harmless Halcyon Retail Group LLC (the "Indemnified Party") from and against any and all losses, damages, liabilities, and reasonable expenses arising out of or relating to any breach of this Agreement, including claims brought by third parties against the Indemnified Party. The Indemnified Party shall provide written notice of any claim within 15 days of becoming aware of it, and the Indemnifying Party's aggregate liability under this clause shall not exceed 500000.00 in the applicable currency, except in cases of fraud or willful misconduct. This obligation to indemnify shall survive termination of the Agreement for a period of 24 months thereafter.

@@ -1,0 +1,10 @@
+{
+  "disclosingParty": "Meridian Biotech Inc.",
+  "receivingParty": "Northbridge Consulting LLC",
+  "effectiveDate": "2024-03-01",
+  "confidentialityPeriod": "5",
+  "governingLaw": "State of Delaware",
+  "liquidatedDamages": "250000.00",
+  "returnPeriodDays": "15",
+  "permitsInjunctiveRelief": "true"
+}

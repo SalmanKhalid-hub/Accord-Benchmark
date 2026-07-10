@@ -1,0 +1,14 @@
+namespace org.synthetic.patentlicense02@1.0.0
+
+@template
+concept TemplateModel {
+  o String licensorName
+  o String licenseeName
+  o String patentNumber
+  o DateTime effectiveDate
+  o Double royaltyRate
+  o String territory
+  o Boolean isExclusive
+  o Boolean isSublicensable
+  o Double minimumAnnualPayment
+}

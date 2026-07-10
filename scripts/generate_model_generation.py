@@ -5,19 +5,27 @@
 import os
 import json
 
-TEMPLATES_DIR = "../cicero-template-library/src"
+TEMPLATES_DIRS = ["../cicero-template-library/src", "synthetic-templates/src"]
 OUTPUT_FILE = "data/model_generation.json"
 
+def dir_of(name):
+    for d in TEMPLATES_DIRS:
+        if os.path.isdir(os.path.join(d, name)):
+            return d
+    return TEMPLATES_DIRS[0]
+
 EXCLUDE = {"empty", "empty-contract", "helloworld", "helloworldstate", "hellomodule", "eat-apples"}
-template_names = sorted(
-    name for name in os.listdir(TEMPLATES_DIR)
-    if os.path.isdir(os.path.join(TEMPLATES_DIR, name)) and name not in EXCLUDE
-)
+template_names = sorted(set(
+    name
+    for d in TEMPLATES_DIRS if os.path.isdir(d)
+    for name in os.listdir(d)
+    if os.path.isdir(os.path.join(d, name)) and name not in EXCLUDE
+))
 
 
 def read_clause_text(template_name):
     """Read the filled-in clause from sample.md, heading stripped (no answer leakage)."""
-    sample_path = os.path.join(TEMPLATES_DIR, template_name, "text", "sample.md")
+    sample_path = os.path.join(dir_of(template_name), template_name, "text", "sample.md")
     if not os.path.exists(sample_path):
         return None
     with open(sample_path) as f:
@@ -42,7 +50,7 @@ def find_template_cto(model_dir):
 
 def parse_types(template_name):
     """Extract {field: ConcertoType} from the @template block of a template's .cto."""
-    path = find_template_cto(os.path.join(TEMPLATES_DIR, template_name, "model"))
+    path = find_template_cto(os.path.join(dir_of(template_name), template_name, "model"))
     if path is None:
         return None
     with open(path) as f:

@@ -1,0 +1,3 @@
+# Clause
+
+This Sublease Agreement is entered into between Marcus T. Whitfield ("Sublessor") and Bright Horizon Studios LLC ("Sublessee") for the premises located at 482 Kensington Avenue, Suite 3B, Chicago, Illinois 60614. Sublessee shall pay Sublessor a monthly rent of 2450.00, due on the first day of each month, commencing on 2024-06-01 and terminating on 2025-05-31, unless earlier terminated in accordance with the terms herein. Prior to occupancy, Sublessee shall deposit with Sublessor the sum of 2450.00 as a security deposit, to be held and returned subject to the terms of this Agreement. The parties acknowledge that this sublease is contingent upon obtaining the prior written consent of the master landlord, without which this Agreement shall be null and void.

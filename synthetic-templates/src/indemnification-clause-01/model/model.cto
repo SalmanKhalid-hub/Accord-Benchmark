@@ -1,0 +1,12 @@
+namespace org.synthetic.indemnificationclause01@1.0.0
+
+@template
+concept TemplateModel {
+  o String indemnifyingParty
+  o String indemnifiedParty
+  o DateTime effectiveDate
+  o Double liabilityCap
+  o Integer noticePeriodDays
+  o Integer survivalPeriodMonths
+  o Boolean coversThirdPartyClaims
+}

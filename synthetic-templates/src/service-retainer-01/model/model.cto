@@ -1,0 +1,13 @@
+namespace org.synthetic.serviceretainer01@1.0.0
+
+@template
+concept TemplateModel {
+  o String clientName
+  o String serviceProviderName
+  o Double retainerAmount
+  o DateTime effectiveDate
+  o Integer monthlyHoursIncluded
+  o Double overageHourlyRate
+  o Boolean autoRenewal
+  o Integer terminationNoticeDays
+}

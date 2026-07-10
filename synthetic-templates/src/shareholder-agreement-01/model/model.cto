@@ -1,0 +1,13 @@
+namespace org.synthetic.shareholderagreement01@1.0.0
+
+@template
+concept TemplateModel {
+  o String sellingShareholder
+  o String shareClass
+  o Integer shareCount
+  o Double offerPricePerShare
+  o Integer responsePeriodDays
+  o DateTime noticeDate
+  o Boolean isTransferRestricted
+  o Boolean requiresBoardApproval
+}

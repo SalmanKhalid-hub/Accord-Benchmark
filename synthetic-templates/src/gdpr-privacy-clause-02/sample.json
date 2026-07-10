@@ -1,0 +1,10 @@
+{
+  "dataController": "Meridian Health Analytics Ltd.",
+  "dataProcessor": "CloudVault Systems B.V.",
+  "effectiveDate": "2024-03-01",
+  "breachNotificationHours": "72",
+  "dataRetentionPeriodMonths": "36",
+  "transferOutsideEEA": "false",
+  "processingFee": "1250.00",
+  "dataSubjectRequestResponseDays": "14"
+}

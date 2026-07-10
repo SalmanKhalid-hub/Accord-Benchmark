@@ -1,0 +1,9 @@
+{
+  "liabilityCapAmount": "250000.00",
+  "currencyCode": "USD",
+  "capPercentageOfFees": "100.0",
+  "effectiveDate": "2024-03-01",
+  "claimPeriodDays": "90",
+  "excludeConsequentialDamages": "excluded",
+  "carveOutGrossNegligence": "carved out"
+}

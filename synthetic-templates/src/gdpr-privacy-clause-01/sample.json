@@ -1,0 +1,10 @@
+{
+  "dataControllerName": "Northbridge Analytics Ltd.",
+  "dataProcessorName": "Solera Cloud Services B.V.",
+  "effectiveDate": "2024-03-01",
+  "breachNotificationHours": "72",
+  "dataRetentionPeriodDays": "365",
+  "subProcessingAllowed": "false",
+  "annualComplianceAuditFee": "4500.00",
+  "applicableSupervisoryAuthority": "Dutch Data Protection Authority"
+}

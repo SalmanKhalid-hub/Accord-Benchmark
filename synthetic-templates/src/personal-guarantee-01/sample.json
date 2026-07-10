@@ -1,0 +1,10 @@
+{
+  "guarantorName": "Michael J. Harrington",
+  "principalDebtor": "Harrington Logistics LLC",
+  "creditorName": "Meridian Commercial Bank",
+  "maximumLiabilityAmount": "250000.00",
+  "effectiveDate": "2024-03-01",
+  "expiryDate": "2027-03-01",
+  "isJointAndSeveral": "true",
+  "currency": "USD"
+}

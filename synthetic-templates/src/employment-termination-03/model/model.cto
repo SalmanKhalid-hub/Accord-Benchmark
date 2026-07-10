@@ -1,0 +1,13 @@
+namespace org.synthetic.employmenttermination03@1.0.0
+
+@template
+concept TemplateModel {
+  o String employeeName
+  o String employerName
+  o DateTime terminationDate
+  o Integer noticePeriodDays
+  o Double severancePayAmount
+  o Boolean benefitsContinued
+  o DateTime finalPaycheckDate
+  o Integer nonCompeteMonths
+}

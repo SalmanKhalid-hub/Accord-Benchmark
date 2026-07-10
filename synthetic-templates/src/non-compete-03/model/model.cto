@@ -1,0 +1,13 @@
+namespace org.synthetic.noncompete03@1.0.0
+
+@template
+concept TemplateModel {
+  o String employeeName
+  o String companyName
+  o Integer restrictedPeriodMonths
+  o String geographicScope
+  o DateTime effectiveDate
+  o Double liquidatedDamages
+  o Boolean includesAffiliates
+  o String industrySector
+}

@@ -1,0 +1,10 @@
+{
+  "partyA": "Meridian Analytics Inc.",
+  "partyB": "Corvus Dynamics LLC",
+  "effectiveDate": "2024-03-01",
+  "termYears": "3",
+  "confidentialityPeriodMonths": "60",
+  "governingLaw": "State of Delaware",
+  "injunctiveReliefAvailable": "true",
+  "liquidatedDamagesAmount": "50000.00"
+}

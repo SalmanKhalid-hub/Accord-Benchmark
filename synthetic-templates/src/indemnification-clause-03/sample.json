@@ -1,0 +1,9 @@
+{
+  "indemnifyingParty": "Contractor Solutions LLC",
+  "indemnifiedParty": "Beacon Industries Inc.",
+  "liabilityCap": "500000.00",
+  "effectiveDate": "2024-03-01",
+  "noticePeriodDays": "30",
+  "coversThirdPartyClaims": "true",
+  "excludesGrossNegligence": "false"
+}

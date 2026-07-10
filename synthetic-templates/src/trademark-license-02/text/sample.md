@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, Northgate Apparel Inc. ("Licensor") grants to Bright Horizon Retail LLC ("Licensee") an exclusive, non-transferable license to use the trademark SUMMIT PEAK solely in connection with the manufacture, marketing, and sale of licensed products within United States and Canada. In consideration of this license, Licensee shall pay Licensor a royalty of 6.5 percent of net sales of products bearing the trademark, payable quarterly in arrears. This license shall remain in effect for a term of 5 years from the effective date, subject to earlier termination as provided herein. Licensee acknowledges that all goodwill arising from use of the trademark shall inure solely to the benefit of Licensor.

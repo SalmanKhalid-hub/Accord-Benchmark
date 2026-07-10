@@ -1,0 +1,3 @@
+# Clause
+
+Meridian Capital Partners LLC (the "Lender") agrees to advance to Halcyon Trading Corp. (the "Borrower") the principal sum of $750000.00, which shall accrue interest at a fixed annual rate of 6.75% and become due and payable in full on 2027-09-30. Should any scheduled payment remain outstanding beyond a grace period of 10 days following its due date, the Borrower shall incur a late charge equal to 2.5% of the overdue amount. The Borrower may, at its discretion and without penalty, repay all or any portion of the outstanding principal prior to the maturity date. All payments received shall first be applied to accrued interest and late charges, with the remainder credited against the outstanding principal balance.

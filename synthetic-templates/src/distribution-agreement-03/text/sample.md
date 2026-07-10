@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, the Supplier grants Blue Harbor Trading Co. the exclusive right to market, sell, and distribute the Products throughout the Republic of Ireland and Northern Ireland for an initial term of 3 years. Distributor shall purchase Products totaling not less than 250000.00 in each contract year to maintain exclusivity, failing which the Supplier may convert the arrangement to non-exclusive. This Agreement shall automatically renew for successive one-year terms unless either party provides written notice of non-renewal. Either party may terminate this Agreement for convenience upon providing 60 days prior written notice to the other party.

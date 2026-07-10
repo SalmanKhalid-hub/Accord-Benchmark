@@ -1,0 +1,3 @@
+# Clause
+
+Danielle Ortega ("Seller") agrees to sell and Marcus Whitfield ("Buyer") agrees to purchase the property located at 482 Riverbend Lane, Asheville, NC 28801, for a total purchase price of $415000.00. Upon execution of this agreement, Buyer shall deposit $10000.00 as earnest money to be held in escrow pending closing. This transaction remains contingent upon the Buyer securing mortgage financing on terms reasonably satisfactory to Buyer within the applicable contingency period. Buyer shall have 14 days from the date of this agreement to conduct inspections of the property and notify Seller of any objections, and closing shall occur on or before 2024-09-15, subject to satisfaction of all conditions herein.

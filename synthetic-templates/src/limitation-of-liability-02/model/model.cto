@@ -1,0 +1,12 @@
+namespace org.synthetic.limitationofliability02@1.0.0
+
+@template
+concept TemplateModel {
+  o String supplierName
+  o DateTime effectiveDate
+  o Double liabilityCap
+  o String currency
+  o Integer lookbackPeriodMonths
+  o Boolean excludesConsequentialDamages
+  o Boolean carveOutForGrossNegligence
+}

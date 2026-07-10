@@ -1,0 +1,10 @@
+{
+  "serviceProviderName": "Meridian Technical Services LLC",
+  "clientName": "Harbor Point Manufacturing Inc.",
+  "effectiveDate": "2024-03-01",
+  "annualFee": "18500.00",
+  "responseTimeHours": "4",
+  "renewalTermMonths": "12",
+  "autoRenewal": "true",
+  "maxServiceCallsPerYear": "24"
+}

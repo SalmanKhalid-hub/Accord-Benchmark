@@ -1,0 +1,13 @@
+namespace org.synthetic.trademarklicense03@1.0.0
+
+@template
+concept TemplateModel {
+  o String licensorName
+  o String licenseeName
+  o String trademarkName
+  o DateTime effectiveDate
+  o String territory
+  o Double royaltyRate
+  o Integer termYears
+  o Boolean exclusiveGrant
+}

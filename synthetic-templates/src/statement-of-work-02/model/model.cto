@@ -1,0 +1,13 @@
+namespace org.synthetic.statementofwork02@1.0.0
+
+@template
+concept TemplateModel {
+  o String serviceProviderName
+  o String clientName
+  o DateTime projectStartDate
+  o DateTime projectEndDate
+  o Double totalFee
+  o Integer numberOfDeliverables
+  o Boolean expensesReimbursable
+  o Double milestonePaymentPercentage
+}

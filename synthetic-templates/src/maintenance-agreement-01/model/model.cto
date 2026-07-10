@@ -1,0 +1,13 @@
+namespace org.synthetic.maintenanceagreement01@1.0.0
+
+@template
+concept TemplateModel {
+  o String serviceProviderName
+  o String clientName
+  o DateTime effectiveDate
+  o Double annualFee
+  o Integer responseTimeHours
+  o Integer renewalTermMonths
+  o Boolean autoRenewal
+  o Integer maxServiceCallsPerYear
+}

@@ -1,0 +1,13 @@
+namespace org.synthetic.insuranceclause02@1.0.0
+
+@template
+concept TemplateModel {
+  o String insurerName
+  o String policyholderName
+  o String policyNumber
+  o Double coverageAmount
+  o Double deductibleAmount
+  o DateTime effectiveDate
+  o DateTime expirationDate
+  o Boolean autoRenews
+}

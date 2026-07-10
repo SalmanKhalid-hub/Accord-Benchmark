@@ -1,0 +1,12 @@
+namespace org.synthetic.shareholderagreement02@1.0.0
+
+@template
+concept TemplateModel {
+  o String sellingShareholderName
+  o String companyName
+  o Double sharePercentage
+  o Double transferPrice
+  o Integer noticePeriodDays
+  o DateTime effectiveDate
+  o Boolean boardApprovalRequired
+}

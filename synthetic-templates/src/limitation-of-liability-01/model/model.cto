@@ -1,0 +1,12 @@
+namespace org.synthetic.limitationofliability01@1.0.0
+
+@template
+concept TemplateModel {
+  o Double liabilityCapAmount
+  o String currencyCode
+  o Double capPercentageOfFees
+  o DateTime effectiveDate
+  o Integer claimPeriodDays
+  o Boolean excludeConsequentialDamages
+  o Boolean carveOutGrossNegligence
+}

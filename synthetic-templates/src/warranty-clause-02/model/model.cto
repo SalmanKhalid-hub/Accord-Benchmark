@@ -1,0 +1,12 @@
+namespace org.synthetic.warrantyclause02@1.0.0
+
+@template
+concept TemplateModel {
+  o String vendorName
+  o String productName
+  o Integer warrantyPeriodMonths
+  o DateTime effectiveDate
+  o Double liabilityCap
+  o Boolean transferable
+  o Boolean exclusiveRemedy
+}

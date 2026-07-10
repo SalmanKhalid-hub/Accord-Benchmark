@@ -1,0 +1,314 @@
+{
+  "model": "anthropic/claude-haiku-4.5",
+  "total_fields": 468,
+  "correct_fields": 322,
+  "type_accuracy": 0.688034188034188,
+  "details": [
+    {
+      "id": "acceptance-of-delivery-typemap-01",
+      "correct_fields": 2,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"shipper\": \"RentalParty\",\n  \"receiver\": \"RentalParty\",\n  \"deliverable\": \"String\",\n  \"businessDays\": \"Integer\",\n  \"attachment\": \"String\"\n}\n```"
+    },
+    {
+      "id": "bill-of-lading-typemap-01",
+      "correct_fields": 11,
+      "total_fields": 18,
+      "model_raw": "```json\n{\n  \"accountName\": \"String\",\n  \"scac\": \"String\",\n  \"bolNumber\": \"String\",\n  \"bookingNumber\": \"String\",\n  \"exportReferences\": \"String\",\n  \"onwardInstructions\": \"String\",\n  \"shipper\": \"RentalParty\",\n  \"consignee\": \"RentalParty\",\n  \"notifyParty\": \"RentalParty\",\n  \"vessel\": \"String\",\n  \"voyageNumber\": \"String\",\n  \"portOfLoading\": \"PostalAddress\",\n  \"portOfDischarge\": \"PostalAddress\",\n  \"placeOfReceipt\": \"PostalAddress\",\n  \"placeOfDelivery\": \"PostalAddress\",\n  \"commodities\": \"Commodity[]\",\n  \"declaredValue\": \"Double\",\n  \"declaredValueCurrency\": \"String\"\n}\n```"
+    },
+    {
+      "id": "car-rental-tr-typemap-01",
+      "correct_fields": 10,
+      "total_fields": 17,
+      "model_raw": "```json\n{\n  \"lessorName\": \"String\",\n  \"lessorAddress\": \"PostalAddress\",\n  \"lessorPhone\": \"CommunicationChannel\",\n  \"lesseeName\": \"String\",\n  \"lesseeAddress\": \"PostalAddress\",\n  \"lesseePhone\": \"CommunicationChannel\",\n  \"authorizedCourt\": \"String\",\n  \"plateID\": \"String\",\n  \"carBrand\": \"String\",\n  \"model\": \"String\",\n  \"modelYear\": \"Integer\",\n  \"color\": \"String\",\n  \"vechileID\": \"String\",\n  \"startDate\": \"DateTime\",\n  \"endDate\": \"DateTime\",\n  \"deliveryStation\": \"String\",\n  \"paymentClause\": \"PaymentClause\"\n}\n```"
+    },
+    {
+      "id": "certificate-of-incorporation-typemap-01",
+      "correct_fields": 14,
+      "total_fields": 15,
+      "model_raw": "```json\n{\n  \"companyName\": \"String\",\n  \"incorporationState\": \"String\",\n  \"streetAddress\": \"String\",\n  \"addressRegion\": \"String\",\n  \"addressLocality\": \"String\",\n  \"postalCode\": \"String\",\n  \"registeredAgentName\": \"String\",\n  \"incorporationDate\": \"DateTime\",\n  \"authorizedShareCapital\": \"Integer\",\n  \"parValue\": \"Double\",\n  \"incorporatorName\": \"String\",\n  \"incorporatorAddress\": \"String\",\n  \"incorporatorCity\": \"String\",\n  \"incorporatorState\": \"String\",\n  \"incorporatorZip\": \"String\"\n}\n```"
+    },
+    {
+      "id": "company-information-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"name\": \"String\",\n  \"industry\": \"String\",\n  \"website\": \"String\",\n  \"address\": \"PostalAddress\",\n  \"numberOfEmployees\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "contact-information-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"name\": \"String\",\n  \"title\": \"String\",\n  \"email\": \"String\",\n  \"phone\": \"String\",\n  \"timezone\": \"TimeZone\",\n  \"communicationChannel\": \"CommunicationChannel\"\n}\n```"
+    },
+    {
+      "id": "copyright-license-typemap-01",
+      "correct_fields": 11,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"effectiveDate\": \"DateTime\",\n  \"licensee\": \"String\",\n  \"licenseeState\": \"String\",\n  \"licenseeEntityType\": \"String\",\n  \"licenseeAddress\": \"PostalAddress\",\n  \"licensor\": \"String\",\n  \"licensorState\": \"String\",\n  \"licensorEntityType\": \"String\",\n  \"licensorAddress\": \"PostalAddress\",\n  \"territory\": \"String\",\n  \"purposeDescription\": \"String\",\n  \"workDescription\": \"String\",\n  \"paymentClause\": \"PaymentClause\"\n}\n```"
+    },
+    {
+      "id": "demandforecast-typemap-01",
+      "correct_fields": 2,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"purchaser\": \"RentalParty\",\n  \"supplier\": \"RentalParty\",\n  \"effectiveDate\": \"DateTime\",\n  \"minimumPercentage\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "docusign-connect-typemap-01",
+      "correct_fields": 0,
+      "total_fields": 1,
+      "model_raw": "```json\n{\n  \"status\": \"String\"\n}\n```"
+    },
+    {
+      "id": "docusign-po-failure-typemap-01",
+      "correct_fields": 11,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"buyerName\": \"String\",\n  \"lateOne\": \"Duration\",\n  \"lateTwo\": \"Duration\",\n  \"lateThree\": \"Duration\",\n  \"lateOnePercent\": \"Double\",\n  \"lateTwoPercent\": \"Double\",\n  \"lateThreePercent\": \"Double\",\n  \"article\": \"String\",\n  \"thisSection\": \"String\",\n  \"maxFailures\": \"Integer\",\n  \"failureRange\": \"Period\",\n  \"repeatedFailureCompensationAmount\": \"Double\",\n  \"repeatedFailureCompensationCurrency\": \"String\"\n}\n```"
+    },
+    {
+      "id": "fixed-interests-typemap-01",
+      "correct_fields": 2,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"loanAmount\": \"MonetaryAmount\",\n  \"rate\": \"Double\",\n  \"loanDuration\": \"Duration\"\n}\n```"
+    },
+    {
+      "id": "fixed-interests-static-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"loanAmount\": \"MonetaryAmount\",\n  \"rate\": \"Double\",\n  \"loanDuration\": \"Duration\",\n  \"monthlyPayment\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "fragile-goods-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"seller\": \"RentalParty\",\n  \"buyer\": \"RentalParty\",\n  \"deliveryPrice\": \"MonetaryAmount\",\n  \"accelerationMin\": \"Double\",\n  \"accelerationMax\": \"Double\",\n  \"accelerationBreachPenalty\": \"MonetaryAmount\",\n  \"deliveryLimitDuration\": \"Duration\",\n  \"lateDeliveryPenalty\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "full-payment-upon-demand-typemap-01",
+      "correct_fields": 1,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"amount\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "full-payment-upon-signature-typemap-01",
+      "correct_fields": 1,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"amount\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "installment-sale-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"BUYER\": \"RentalParty\",\n  \"SELLER\": \"RentalParty\",\n  \"INITIAL_DUE\": \"MonetaryAmount\",\n  \"INTEREST_RATE\": \"Double\",\n  \"TOTAL_DUE_BEFORE_CLOSING\": \"MonetaryAmount\",\n  \"MIN_PAYMENT\": \"MonetaryAmount\",\n  \"DUE_AT_CLOSING\": \"MonetaryAmount\",\n  \"FIRST_MONTH\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "interest-rate-swap-typemap-01",
+      "correct_fields": 18,
+      "total_fields": 27,
+      "model_raw": "```json\n{\n  \"bank\": \"String\",\n  \"letterDate\": \"DateTime\",\n  \"counterparty\": \"String\",\n  \"bankReference\": \"String\",\n  \"notionalAmount\": \"MonetaryAmount\",\n  \"tradeDate\": \"DateTime\",\n  \"effectiveDate\": \"DateTime\",\n  \"terminationDate\": \"DateTime\",\n  \"fixedRatePayer\": \"RentalParty\",\n  \"fixedRatePayerPeriodEndDates\": \"Period\",\n  \"fixedRatePayerPaymentDates\": \"Period\",\n  \"fixedRate\": \"Double\",\n  \"fixedRateDayCountFraction\": \"DayCountFraction\",\n  \"fixedRatePayerBusinessDays\": \"String\",\n  \"fixedRatePayerBusinessDayConvention\": \"String\",\n  \"floatingRatePayer\": \"RentalParty\",\n  \"floatingRatePayerPeriodEndDates\": \"Period\",\n  \"floatingRatePayerPaymentDates\": \"Period\",\n  \"floatingRateForInitialCalculationPeriod\": \"Double\",\n  \"floatingRateOption\": \"String\",\n  \"designatedMaturity\": \"Duration\",\n  \"spread\": \"Double\",\n  \"floatingRateDayCountFraction\": \"DayCountFraction\",\n  \"resetDates\": \"String\",\n  \"compounding\": \"Boolean\",\n  \"floatingRatePayerBusinessDays\": \"String\",\n  \"floatingRatePayerBusinessDayConvention\": \"String\"\n}\n```"
+    },
+    {
+      "id": "ip-payment-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"royaltyText\": \"String\",\n  \"royaltyRate\": \"Double\",\n  \"sublicensingRoyaltyText\": \"String\",\n  \"sublicensingRoyaltyRate\": \"Double\",\n  \"paymentPeriod\": \"Period\",\n  \"paymentPeriodWithPermission\": \"Duration\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"forceMajeure\": \"Boolean\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"termination\": \"Boolean\",\n  \"fractionalPart\": \"DayCountFraction\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-currency-conversion-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 11,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"forceMajeure\": \"Boolean\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"termination\": \"Boolean\",\n  \"fractionalPart\": \"DayCountFraction\",\n  \"conversionSource\": \"String\",\n  \"fromCurrency\": \"String\",\n  \"toCurrency\": \"String\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-else-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"forceMajeure\": \"Boolean\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"termination\": \"Boolean\",\n  \"fractionalPart\": \"DayCountFraction\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"forceMajeure\": \"Boolean\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"termination\": \"Boolean\",\n  \"fractionalPart\": \"DayCountFraction\"\n}\n```"
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-this-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"forceMajeure\": \"Boolean\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"termination\": \"Boolean\",\n  \"fractionalPart\": \"DayCountFraction\"\n}\n```"
+    },
+    {
+      "id": "lateinvoicewithpayment-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"maximumDelay\": \"Duration\",\n  \"purchaser\": \"String\",\n  \"supplier\": \"String\"\n}\n```"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"maximumDelay\": \"Duration\"\n}\n```"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-capped-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"maximumDelay\": \"Duration\"\n}\n```"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-payment-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"maximumDelay\": \"Duration\"\n}\n```"
+    },
+    {
+      "id": "one-time-payment-tr-typemap-01",
+      "correct_fields": 1,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"totalPurchasePrice\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "online-payment-contract-tr-typemap-01",
+      "correct_fields": 1,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"softwareID\": \"String\",\n  \"userCount\": \"Integer\",\n  \"authorizedCourt\": \"PostalAddress\"\n}\n```"
+    },
+    {
+      "id": "payment-upon-delivery-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"buyer\": \"String\",\n  \"seller\": \"String\",\n  \"costOfGoods\": \"MonetaryAmount\",\n  \"deliveryFee\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "payment-upon-iot-typemap-01",
+      "correct_fields": 2,
+      "total_fields": 4,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"amountPerUnit\": \"MonetaryAmount\",\n  \"paymentCount\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "payment-upon-signature-typemap-01",
+      "correct_fields": 1,
+      "total_fields": 3,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"amount\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "perishable-goods-typemap-01",
+      "correct_fields": 13,
+      "total_fields": 16,
+      "model_raw": "```json\n{\n  \"grower\": \"String\",\n  \"importer\": \"String\",\n  \"shipmentId\": \"String\",\n  \"dueDate\": \"DateTime\",\n  \"unit\": \"Unit\",\n  \"minUnits\": \"Integer\",\n  \"maxUnits\": \"Integer\",\n  \"product\": \"String\",\n  \"sensorReadingFrequency\": \"Duration\",\n  \"duration\": \"Duration\",\n  \"unitPrice\": \"MonetaryAmount\",\n  \"minTemperature\": \"Double\",\n  \"maxTemperature\": \"Double\",\n  \"minHumidity\": \"Double\",\n  \"maxHumidity\": \"Double\",\n  \"penaltyFactor\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "project-information-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"name\": \"String\",\n  \"deadline\": \"DateTime\",\n  \"budget\": \"MonetaryAmount\",\n  \"description\": \"String\",\n  \"other\": \"String\"\n}\n```"
+    },
+    {
+      "id": "promissory-note-typemap-01",
+      "correct_fields": 11,
+      "total_fields": 14,
+      "model_raw": "```json\n{\n  \"amount\": \"MonetaryAmount\",\n  \"date\": \"DateTime\",\n  \"maker\": \"String\",\n  \"interestRate\": \"Double\",\n  \"individual\": \"Boolean\",\n  \"makerAddress\": \"PostalAddress\",\n  \"lender\": \"String\",\n  \"legalEntity\": \"Boolean\",\n  \"lenderAddress\": \"PostalAddress\",\n  \"principal\": \"MonetaryAmount\",\n  \"maturityDate\": \"DateTime\",\n  \"defaultDays\": \"Integer\",\n  \"insolvencyDays\": \"Integer\",\n  \"jurisdiction\": \"String\"\n}\n```"
+    },
+    {
+      "id": "promissory-note-md-typemap-01",
+      "correct_fields": 10,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"amount\": \"MonetaryAmount\",\n  \"date\": \"DateTime\",\n  \"maker\": \"String\",\n  \"interestRate\": \"Double\",\n  \"individual\": \"String\",\n  \"makerAddress\": \"PostalAddress\",\n  \"lender\": \"String\",\n  \"legalEntity\": \"String\",\n  \"lenderAddress\": \"PostalAddress\",\n  \"maturityDate\": \"DateTime\",\n  \"defaultDays\": \"Integer\",\n  \"insolvencyDays\": \"Integer\",\n  \"jurisdiction\": \"String\"\n}\n```"
+    },
+    {
+      "id": "rental-deposit-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 10,
+      "model_raw": "```json\n{\n  \"tenant\": \"RentalParty\",\n  \"landlord\": \"RentalParty\",\n  \"depositAmount\": \"MonetaryAmount\",\n  \"tenantDepositRestorationPeriod\": \"Duration\",\n  \"monthlyBaseRentMultiple\": \"Double\",\n  \"applicableLaw\": \"String\",\n  \"statute\": \"String\",\n  \"bankName\": \"String\",\n  \"landlordDepositReturnPeriod\": \"Duration\",\n  \"exhibit\": \"String\"\n}\n```"
+    },
+    {
+      "id": "rental-deposit-with-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 10,
+      "model_raw": "```json\n{\n  \"tenant\": \"RentalParty\",\n  \"landlord\": \"RentalParty\",\n  \"depositAmount\": \"MonetaryAmount\",\n  \"tenantDepositRestorationPeriod\": \"Duration\",\n  \"monthlyBaseRentMultiple\": \"Double\",\n  \"applicableLaw\": \"String\",\n  \"statute\": \"String\",\n  \"bankName\": \"String\",\n  \"landlordDepositReturnPeriod\": \"Duration\",\n  \"exhibit\": \"String\"\n}\n```"
+    },
+    {
+      "id": "roommate-typemap-01",
+      "correct_fields": 12,
+      "total_fields": 13,
+      "model_raw": "```json\n{\n  \"holder\": \"String\",\n  \"roommate\": \"String\",\n  \"landlord\": \"String\",\n  \"address\": \"PostalAddress\",\n  \"spaceOccupied\": \"String\",\n  \"rentAmount\": \"MonetaryAmount\",\n  \"depositAmount\": \"MonetaryAmount\",\n  \"startDate\": \"DateTime\",\n  \"endDate\": \"DateTime\",\n  \"holderSignature\": \"String\",\n  \"holderDateSigned\": \"DateTime\",\n  \"roommateSignature\": \"String\",\n  \"roommateDateSigned\": \"DateTime\"\n}\n```"
+    },
+    {
+      "id": "saft-typemap-01",
+      "correct_fields": 14,
+      "total_fields": 16,
+      "model_raw": "```json\n{\n  \"token\": \"String\",\n  \"company\": \"String\",\n  \"companyType\": \"String\",\n  \"state\": \"String\",\n  \"amendmentProvision\": \"String\",\n  \"purchaseAmount\": \"MonetaryAmount\",\n  \"netProceedLimit\": \"MonetaryAmount\",\n  \"date\": \"DateTime\",\n  \"deadlineDate\": \"DateTime\",\n  \"discountRatePercentage\": \"Double\",\n  \"network\": \"String\",\n  \"coin\": \"String\",\n  \"exchanges\": \"String\",\n  \"companyRepresentative\": \"String\",\n  \"purchaser\": \"RentalParty\",\n  \"description\": \"String\"\n}\n```"
+    },
+    {
+      "id": "safte-typemap-01",
+      "correct_fields": 10,
+      "total_fields": 12,
+      "model_raw": "```json\n{\n  \"companyName\": \"String\",\n  \"companyRegistrationNumber\": \"String\",\n  \"purchaser\": \"RentalParty\",\n  \"jurisdiction\": \"String\",\n  \"purchaseAmount\": \"MonetaryAmount\",\n  \"discount\": \"Double\",\n  \"projectName\": \"String\",\n  \"projectDescription\": \"String\",\n  \"months\": \"Integer\",\n  \"monthsText\": \"String\",\n  \"amount\": \"MonetaryAmount\",\n  \"amountText\": \"String\"\n}\n```"
+    },
+    {
+      "id": "sales-contract-ru-typemap-01",
+      "correct_fields": 2,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"refundPeriod\": \"Period\",\n  \"counterparty\": \"RentalParty\",\n  \"currencyType\": \"String\",\n  \"appealPeriod\": \"Period\",\n  \"countryLegislation\": \"String\"\n}\n```"
+    },
+    {
+      "id": "servicelevelagreement-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"paymentPeriod\": \"Period\",\n  \"monthlyCapPercentage\": \"Double\",\n  \"yearlyCapPercentage\": \"Double\",\n  \"availability1\": \"Double\",\n  \"serviceCredit1\": \"MonetaryAmount\",\n  \"availability2\": \"Double\",\n  \"serviceCredit2\": \"MonetaryAmount\",\n  \"serviceProvider\": \"RentalParty\",\n  \"serviceConsumer\": \"RentalParty\"\n}\n```"
+    },
+    {
+      "id": "signature-block-title-name-date-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"title\": \"String\",\n  \"signature\": \"String\",\n  \"fullName\": \"String\",\n  \"dateSigned\": \"DateTime\",\n  \"signatory\": \"String\"\n}\n```"
+    },
+    {
+      "id": "simplelatedeliveryandpenalty-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 6,
+      "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"maximumDelay\": \"Duration\"\n}\n```"
+    },
+    {
+      "id": "supply-agreement-loc-typemap-01",
+      "correct_fields": 31,
+      "total_fields": 48,
+      "model_raw": "```json\n{\n  \"executionDate\": \"DateTime\",\n  \"exporter\": \"String\",\n  \"importer\": \"String\",\n  \"product\": \"String\",\n  \"importerCreditworthiness\": \"String\",\n  \"issueDate\": \"DateTime\",\n  \"importerLOCBank\": \"String\",\n  \"importerLOCNumber\": \"String\",\n  \"importerLOCAmount\": \"MonetaryAmount\",\n  \"importerLOCCurrency\": \"String\",\n  \"orderBillOfLading\": \"String\",\n  \"packingList\": \"String\",\n  \"renewalTerms\": \"String\",\n  \"termRenewal\": \"Period\",\n  \"termTerminationNotice\": \"Duration\",\n  \"invoice\": \"String\",\n  \"bookingId\": \"String\",\n  \"purchaseOrder\": \"String\",\n  \"exporterAddress\": \"PostalAddress\",\n  \"turnaroundTime\": \"Duration\",\n  \"amountOfEachProduct\": \"Double\",\n  \"unitPriceOfEachProduct\": \"MonetaryAmount\",\n  \"unitPriceCurrency\": \"String\",\n  \"locationForDelivery\": \"PostalAddress\",\n  \"deliveryDate\": \"DateTime\",\n  \"exporterBankAccount\": \"String\",\n  \"modifiedPurchaseOrder\": \"String\",\n  \"cancellationDeadline\": \"DateTime\",\n  \"shipper\": \"String\",\n  \"importPort\": \"String\",\n  \"exportPort\": \"String\",\n  \"productDescription\": \"String\",\n  \"productWeight\": \"UnitOfMass\",\n  \"productMeasurement\": \"String\",\n  \"freightCharges\": \"MonetaryAmount\",\n  \"freightCurrency\": \"String\",\n  \"evaluationTime\": \"Duration\",\n  \"acceptanceCriteria\": \"String\",\n  \"termBeginDate\": \"DateTime\",\n  \"termPeriod\": \"Period\",\n  \"currentTerm\": \"Period\",\n  \"shipment\": \"String\",\n  \"unitPrice\": \"MonetaryAmount\",\n  \"unitCurrency\": \"String\",\n  \"unit\": \"Unit\",\n  \"sensorReadingFrequency\": \"String\",\n  \"duration\": \"Duration\",\n  \"countPeriod\": \"Period\"\n}\n```"
+    },
+    {
+      "id": "supplyagreement-typemap-01",
+      "correct_fields": 12,
+      "total_fields": 20,
+      "model_raw": "```json\n{\n  \"effectiveDate\": \"DateTime\",\n  \"supplier\": \"RentalParty\",\n  \"buyer\": \"RentalParty\",\n  \"shortDescriptionOfTheProducts\": \"String\",\n  \"noticeWindow\": \"Duration\",\n  \"cancellationWindow\": \"Duration\",\n  \"minimumPercentage\": \"Double\",\n  \"deliverables\": \"String\",\n  \"deliveryWindow\": \"Duration\",\n  \"deliveryAttachment\": \"String\",\n  \"inspectionWindow\": \"Duration\",\n  \"acceptanceAttachment\": \"String\",\n  \"priceUpdateWindow\": \"Duration\",\n  \"accountNumber\": \"String\",\n  \"routingNumnber\": \"String\",\n  \"termYears\": \"Integer\",\n  \"renewalYears\": \"Integer\",\n  \"renewalWindow\": \"Duration\",\n  \"governingState\": \"String\",\n  \"venueState\": \"String\"\n}\n```"
+    },
+    {
+      "id": "supplyagreement-perishable-goods-typemap-01",
+      "correct_fields": 11,
+      "total_fields": 16,
+      "model_raw": "```json\n{\n  \"dueDate\": \"DateTime\",\n  \"grower\": \"String\",\n  \"importer\": \"String\",\n  \"shipment\": \"String\",\n  \"unitPrice\": \"MonetaryAmount\",\n  \"unit\": \"Unit\",\n  \"minUnits\": \"Double\",\n  \"maxUnits\": \"Double\",\n  \"product\": \"Commodity[]\",\n  \"sensorReadingFrequency\": \"Duration\",\n  \"duration\": \"Duration\",\n  \"minTemperature\": \"Double\",\n  \"maxTemperature\": \"Double\",\n  \"minHumidity\": \"Double\",\n  \"maxHumidity\": \"Double\",\n  \"penaltyFactor\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "volumediscount-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 5,
+      "model_raw": "```json\n{\n  \"firstVolume\": \"MonetaryAmount\",\n  \"secondVolume\": \"MonetaryAmount\",\n  \"firstRate\": \"Double\",\n  \"secondRate\": \"Double\",\n  \"thirdRate\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "volumediscountolist-typemap-01",
+      "correct_fields": 1,
+      "total_fields": 1,
+      "model_raw": "```json\n{\n  \"rates\": \"RateRange[]\"\n}\n```"
+    },
+    {
+      "id": "volumediscountulist-typemap-01",
+      "correct_fields": 1,
+      "total_fields": 1,
+      "model_raw": "```json\n{\n  \"rates\": \"RateRange[]\"\n}\n```"
+    }
+  ]
+}

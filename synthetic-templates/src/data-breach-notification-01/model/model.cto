@@ -1,0 +1,12 @@
+namespace org.synthetic.databreachnotification01@1.0.0
+
+@template
+concept TemplateModel {
+  o String dataProcessor
+  o String dataController
+  o DateTime effectiveDate
+  o Integer notificationPeriodHours
+  o Integer affectedRecordsThreshold
+  o Boolean requiresRegulatorNotification
+  o Double lateNotificationPenalty
+}

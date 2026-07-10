@@ -1,0 +1,3 @@
+# Clause
+
+Effective as of 2024-03-01, Meridian Strategy Partners LLC ("Consultant") shall provide advisory services to Northbridge Retail Group, Inc. ("Client") at an hourly rate of $225.00, not to exceed 80 hours per month unless otherwise agreed in writing by both parties. Consultant shall submit invoices to Client on a monthly basis, and Client shall pay all undisputed amounts within thirty (30) days of receipt. This engagement shall not renew automatically upon the expiration of its initial term, and either party may terminate this Agreement by providing 30 days' prior written notice to the other party. Upon termination, Client shall remain liable for all fees accrued for services rendered through the effective date of termination.

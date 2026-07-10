@@ -1,0 +1,14 @@
+namespace org.synthetic.softwarelicense02@1.0.0
+
+@template
+concept TemplateModel {
+  o String licensorName
+  o String licenseeName
+  o String softwareName
+  o DateTime effectiveDate
+  o Double licenseFeeAmount
+  o Integer maxUserCount
+  o Boolean isTransferable
+  o Integer termYears
+  o Integer renewalNoticeDays
+}

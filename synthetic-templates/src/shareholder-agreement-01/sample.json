@@ -1,0 +1,10 @@
+{
+  "sellingShareholder": "Marcus T. Whitfield",
+  "shareClass": "Class B Common Shares",
+  "shareCount": "15000",
+  "offerPricePerShare": "42.75",
+  "responsePeriodDays": "30",
+  "noticeDate": "2024-03-01",
+  "isTransferRestricted": "true",
+  "requiresBoardApproval": "true"
+}

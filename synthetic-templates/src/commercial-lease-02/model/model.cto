@@ -1,0 +1,13 @@
+namespace org.synthetic.commerciallease02@1.0.0
+
+@template
+concept TemplateModel {
+  o String tenantName
+  o String landlordName
+  o DateTime leaseCommencementDate
+  o Double baseRent
+  o Double escalationRate
+  o Integer leaseTermYears
+  o Double securityDeposit
+  o Boolean renewalOptionAvailable
+}

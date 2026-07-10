@@ -1,0 +1,314 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "total": 51,
+  "correct": 36,
+  "accuracy": 0.7058823529411765,
+  "details": [
+    {
+      "id": "acceptance-of-delivery-classify-01",
+      "expected": "acceptance-of-delivery",
+      "model_answer": "acceptance-of-delivery",
+      "correct": true
+    },
+    {
+      "id": "bill-of-lading-classify-01",
+      "expected": "bill-of-lading",
+      "model_answer": "bill-of-lading",
+      "correct": true
+    },
+    {
+      "id": "car-rental-tr-classify-01",
+      "expected": "car-rental-tr",
+      "model_answer": "car-rental-tr",
+      "correct": true
+    },
+    {
+      "id": "certificate-of-incorporation-classify-01",
+      "expected": "certificate-of-incorporation",
+      "model_answer": "certificate-of-incorporation",
+      "correct": true
+    },
+    {
+      "id": "company-information-classify-01",
+      "expected": "company-information",
+      "model_answer": "company-information",
+      "correct": true
+    },
+    {
+      "id": "contact-information-classify-01",
+      "expected": "contact-information",
+      "model_answer": "contact-information",
+      "correct": true
+    },
+    {
+      "id": "copyright-license-classify-01",
+      "expected": "copyright-license",
+      "model_answer": "copyright-license",
+      "correct": true
+    },
+    {
+      "id": "demandforecast-classify-01",
+      "expected": "demandforecast",
+      "model_answer": "demandforecast",
+      "correct": true
+    },
+    {
+      "id": "docusign-connect-classify-01",
+      "expected": "docusign-connect",
+      "model_answer": "docusign-connect",
+      "correct": true
+    },
+    {
+      "id": "docusign-po-failure-classify-01",
+      "expected": "docusign-po-failure",
+      "model_answer": "docusign-po-failure",
+      "correct": true
+    },
+    {
+      "id": "fixed-interests-classify-01",
+      "expected": "fixed-interests",
+      "model_answer": "fixed-interests",
+      "correct": true
+    },
+    {
+      "id": "fixed-interests-static-classify-01",
+      "expected": "fixed-interests-static",
+      "model_answer": "fixed-interests",
+      "correct": false
+    },
+    {
+      "id": "fragile-goods-classify-01",
+      "expected": "fragile-goods",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "full-payment-upon-demand-classify-01",
+      "expected": "full-payment-upon-demand",
+      "model_answer": "full-payment-upon-demand",
+      "correct": true
+    },
+    {
+      "id": "full-payment-upon-signature-classify-01",
+      "expected": "full-payment-upon-signature",
+      "model_answer": "full-payment-upon-signature",
+      "correct": true
+    },
+    {
+      "id": "installment-sale-classify-01",
+      "expected": "installment-sale",
+      "model_answer": "installment-sale",
+      "correct": true
+    },
+    {
+      "id": "interest-rate-swap-classify-01",
+      "expected": "interest-rate-swap",
+      "model_answer": "interest-rate-swap",
+      "correct": true
+    },
+    {
+      "id": "ip-payment-classify-01",
+      "expected": "ip-payment",
+      "model_answer": "ip-payment",
+      "correct": true
+    },
+    {
+      "id": "latedeliveryandpenalty-classify-01",
+      "expected": "latedeliveryandpenalty",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": true
+    },
+    {
+      "id": "latedeliveryandpenalty-currency-conversion-classify-01",
+      "expected": "latedeliveryandpenalty-currency-conversion",
+      "model_answer": "latedeliveryandpenalty-currency-conversion",
+      "correct": true
+    },
+    {
+      "id": "latedeliveryandpenalty-else-classify-01",
+      "expected": "latedeliveryandpenalty-else",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-classify-01",
+      "expected": "latedeliveryandpenalty-optional",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-this-classify-01",
+      "expected": "latedeliveryandpenalty-optional-this",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "lateinvoicewithpayment-classify-01",
+      "expected": "lateinvoicewithpayment",
+      "model_answer": "lateinvoicewithpayment",
+      "correct": true
+    },
+    {
+      "id": "minilatedeliveryandpenalty-classify-01",
+      "expected": "minilatedeliveryandpenalty",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "minilatedeliveryandpenalty-capped-classify-01",
+      "expected": "minilatedeliveryandpenalty-capped",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "minilatedeliveryandpenalty-payment-classify-01",
+      "expected": "minilatedeliveryandpenalty-payment",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "one-time-payment-tr-classify-01",
+      "expected": "one-time-payment-tr",
+      "model_answer": "one-time-payment-tr",
+      "correct": true
+    },
+    {
+      "id": "online-payment-contract-tr-classify-01",
+      "expected": "online-payment-contract-tr",
+      "model_answer": "sales-contract-ru",
+      "correct": false
+    },
+    {
+      "id": "payment-upon-delivery-classify-01",
+      "expected": "payment-upon-delivery",
+      "model_answer": "payment-upon-delivery",
+      "correct": true
+    },
+    {
+      "id": "payment-upon-iot-classify-01",
+      "expected": "payment-upon-iot",
+      "model_answer": "payment-upon-iot",
+      "correct": true
+    },
+    {
+      "id": "payment-upon-signature-classify-01",
+      "expected": "payment-upon-signature",
+      "model_answer": "payment-upon-signature",
+      "correct": true
+    },
+    {
+      "id": "perishable-goods-classify-01",
+      "expected": "perishable-goods",
+      "model_answer": "perishable-goods",
+      "correct": true
+    },
+    {
+      "id": "project-information-classify-01",
+      "expected": "project-information",
+      "model_answer": "project-information",
+      "correct": true
+    },
+    {
+      "id": "promissory-note-classify-01",
+      "expected": "promissory-note",
+      "model_answer": "promissory-note",
+      "correct": true
+    },
+    {
+      "id": "promissory-note-md-classify-01",
+      "expected": "promissory-note-md",
+      "model_answer": "promissory-note",
+      "correct": false
+    },
+    {
+      "id": "rental-deposit-classify-01",
+      "expected": "rental-deposit",
+      "model_answer": "rental-deposit",
+      "correct": true
+    },
+    {
+      "id": "rental-deposit-with-classify-01",
+      "expected": "rental-deposit-with",
+      "model_answer": "rental-deposit",
+      "correct": false
+    },
+    {
+      "id": "roommate-classify-01",
+      "expected": "roommate",
+      "model_answer": "roommate",
+      "correct": true
+    },
+    {
+      "id": "saft-classify-01",
+      "expected": "saft",
+      "model_answer": "saft",
+      "correct": true
+    },
+    {
+      "id": "safte-classify-01",
+      "expected": "safte",
+      "model_answer": "safte",
+      "correct": true
+    },
+    {
+      "id": "sales-contract-ru-classify-01",
+      "expected": "sales-contract-ru",
+      "model_answer": "sales-contract-ru",
+      "correct": true
+    },
+    {
+      "id": "servicelevelagreement-classify-01",
+      "expected": "servicelevelagreement",
+      "model_answer": "servicelevelagreement",
+      "correct": true
+    },
+    {
+      "id": "signature-block-title-name-date-classify-01",
+      "expected": "signature-block-title-name-date",
+      "model_answer": "signature-block-title-name-date",
+      "correct": true
+    },
+    {
+      "id": "simplelatedeliveryandpenalty-classify-01",
+      "expected": "simplelatedeliveryandpenalty",
+      "model_answer": "latedeliveryandpenalty",
+      "correct": false
+    },
+    {
+      "id": "supply-agreement-loc-classify-01",
+      "expected": "supply-agreement-loc",
+      "model_answer": "supplyagreement",
+      "correct": false
+    },
+    {
+      "id": "supplyagreement-classify-01",
+      "expected": "supplyagreement",
+      "model_answer": "supplyagreement",
+      "correct": true
+    },
+    {
+      "id": "supplyagreement-perishable-goods-classify-01",
+      "expected": "supplyagreement-perishable-goods",
+      "model_answer": "supplyagreement-perishable-goods",
+      "correct": true
+    },
+    {
+      "id": "volumediscount-classify-01",
+      "expected": "volumediscount",
+      "model_answer": "volumediscount",
+      "correct": true
+    },
+    {
+      "id": "volumediscountolist-classify-01",
+      "expected": "volumediscountolist",
+      "model_answer": "volumediscount",
+      "correct": false
+    },
+    {
+      "id": "volumediscountulist-classify-01",
+      "expected": "volumediscountulist",
+      "model_answer": "volumediscount",
+      "correct": false
+    }
+  ]
+}

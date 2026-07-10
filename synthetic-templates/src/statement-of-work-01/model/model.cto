@@ -1,0 +1,13 @@
+namespace org.synthetic.statementofwork01@1.0.0
+
+@template
+concept TemplateModel {
+  o String contractorName
+  o String clientName
+  o String projectDescription
+  o DateTime startDate
+  o DateTime completionDate
+  o Double totalFee
+  o Integer milestoneCount
+  o Boolean isFixedPrice
+}

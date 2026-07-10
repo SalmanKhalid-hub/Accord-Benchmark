@@ -1,0 +1,9 @@
+{
+  "supplierName": "Meridian Logistics Inc.",
+  "capAmount": "250000.00",
+  "currency": "USD",
+  "effectiveDate": "2024-03-01",
+  "claimPeriodDays": "90",
+  "excludesConsequentialDamages": "true",
+  "carveOutForGrossNegligence": "true"
+}

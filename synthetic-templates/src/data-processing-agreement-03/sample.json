@@ -1,0 +1,9 @@
+{
+  "processorName": "DataVault Solutions Inc.",
+  "controllerName": "Meridian Health Group LLC",
+  "effectiveDate": "2024-03-01",
+  "breachNotificationHours": "72",
+  "dataRetentionDays": "90",
+  "subprocessingAllowed": "false",
+  "annualAuditFee": "15000.00"
+}

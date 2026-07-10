@@ -1,0 +1,9 @@
+{
+  "indemnifyingParty": "Nova Freight Systems, Inc.",
+  "indemnifiedParty": "Blackstone Retail Holdings LLC",
+  "effectiveDate": "2024-03-01",
+  "liabilityCap": "500000.00",
+  "noticePeriodDays": "15",
+  "survivalPeriodMonths": "24",
+  "coversThirdPartyClaims": true
+}

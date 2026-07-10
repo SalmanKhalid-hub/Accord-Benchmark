@@ -1,0 +1,3 @@
+# Clause
+
+This Lease is entered into by and between Harborview Properties Inc. ("Landlord") and Bluepoint Retail Group LLC ("Tenant"), commencing on 2024-03-01 for an initial term of 5 years. Tenant shall pay Landlord a Base Rent of $18500.00 per month, subject to an annual escalation of 3.5% applied on each anniversary of the commencement date. Upon execution of this Lease, Tenant shall deposit with Landlord the sum of $37000.00 as security for the faithful performance of its obligations hereunder. Tenant shall have the right to renew this lease for one additional term, provided written notice of such election is delivered to Landlord no later than ninety days prior to the expiration of the initial term.

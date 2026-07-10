@@ -1,0 +1,10 @@
+{
+  "tenantName": "Marcus Whitfield",
+  "landlordName": "Cedar Grove Properties LLC",
+  "monthlyRent": "1450.00",
+  "leaseStartDate": "2024-03-01",
+  "gracePeriodDays": "5",
+  "lateFeeAmount": "75.00",
+  "petsAllowed": "",
+  "securityDeposit": "1450.00"
+}
