@@ -7,7 +7,7 @@ from collections import Counter
 from dotenv import load_dotenv
 from openai import OpenAI
 
-MODEL = "google/gemini-2.5-flash"
+MODEL = os.environ.get("BENCH_MODEL", "google/gemini-2.5-flash")
 LIMIT = None
 load_dotenv()
 client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.environ["OPENROUTER_API_KEY"])

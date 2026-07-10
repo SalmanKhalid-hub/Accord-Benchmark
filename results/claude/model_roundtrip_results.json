@@ -1,0 +1,937 @@
+{
+  "model": "anthropic/claude-haiku-4.5",
+  "max_tries": 5,
+  "rules_in_prompt": false,
+  "first_pass": 0,
+  "reached_valid": 51,
+  "total": 51,
+  "details": [
+    {
+      "id": "acceptance-of-delivery-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected identifier but \"*\" found. File UNKNOWN line 3 column 42"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.widgets. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot use an unversioned import org.accordproject.cicero.contract."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "bill-of-lading-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.shipping. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "car-rental-tr-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.carrentalagreement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "certificate-of-incorporation-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.incorporation. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "company-information-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "contact-information-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "copyright-license-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.copyrightlicense. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "demandforecast-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.supplyclause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "docusign-connect-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.docusign. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "docusign-po-failure-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.purchaseorder. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "fixed-interests-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.loan. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "fixed-interests-static-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.loan. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "fragile-goods-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.liquidateddamages. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "full-payment-upon-demand-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "full-payment-upon-signature-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "installment-sale-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.payment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "interest-rate-swap-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.interestswap. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "ip-payment-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.payment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected identifier but \"*\" found. File UNKNOWN line 3 column 42"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.delayeddelivery. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot use an unversioned import org.accordproject.cicero.contract."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-currency-conversion-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected identifier but \"*\" found. File UNKNOWN line 3 column 42"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.delayeddeliverypenalty. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot use an unversioned import org.accordproject.cicero.contract."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-else-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected identifier but \"*\" found. File UNKNOWN line 3 column 42"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.delayeddelivery. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot use an unversioned import org.accordproject.cicero.contract."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.delayeddelivery. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-this-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.delayeddelivery. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "lateinvoicewithpayment-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "minilatedeliveryandpenalty-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypnalty. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "minilatedeliveryandpenalty-capped-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypanelty. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "minilatedeliveryandpenalty-payment-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypanelty. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "one-time-payment-tr-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.payment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "online-payment-contract-tr-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.dlkbilisim. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "payment-upon-delivery-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "payment-upon-iot-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected identifier but \"*\" found. File UNKNOWN line 3 column 42"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.buttonpress. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot use an unversioned import org.accordproject.cicero.contract."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Cannot use an unversioned import org.accordproject.money."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "payment-upon-signature-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "perishable-goods-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.avocado. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "project-information-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.katahdin. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "promissory-note-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.promissorynote. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "promissory-note-md-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.promissorynote. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "rental-deposit-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.security. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "rental-deposit-with-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.securitydeposit. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "roommate-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.roommateagreement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "saft-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.saft. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "safte-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.safte. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "sales-contract-ru-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.salescontract. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "servicelevelagreement-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.servicelevel. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "signature-block-title-name-date-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.signature. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "simplelatedeliveryandpenalty-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypanelty. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "supply-agreement-loc-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.supplyagreement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Undeclared type \"Decimal\" in \"property org.accordproject.supplyagreement@1.0.0.SupplyAgreement.productUnitPrice\"."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "supplyagreement-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.supplyagreement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "supplyagreement-perishable-goods-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.supplyagreement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "volumediscount-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.volumebasedcardacceptance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "volumediscountolist-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.volumebasedcardacceptance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "volumediscountulist-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.card. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    }
+  ]
+}

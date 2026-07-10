@@ -7,7 +7,7 @@ import time
 from dotenv import load_dotenv
 from openai import OpenAI
 
-MODEL = "google/gemini-2.5-flash"
+MODEL = os.environ.get("BENCH_MODEL", "google/gemini-2.5-flash")
 LIMIT = None # start small to test; set to None to run ALL
 
 load_dotenv()

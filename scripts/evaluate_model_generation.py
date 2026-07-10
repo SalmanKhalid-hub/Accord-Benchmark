@@ -11,7 +11,7 @@ from collections import Counter
 from dotenv import load_dotenv
 from openai import OpenAI
 
-MODEL = "google/gemini-2.5-flash"
+MODEL = os.environ.get("BENCH_MODEL", "google/gemini-2.5-flash")
 LIMIT = None  # set to a small int to test; None = run all
 
 load_dotenv()

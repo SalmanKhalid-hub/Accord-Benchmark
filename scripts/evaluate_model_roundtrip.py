@@ -10,10 +10,10 @@ from collections import Counter
 from dotenv import load_dotenv
 from openai import OpenAI
 
-MODEL = "google/gemini-2.5-flash"
+MODEL = os.environ.get("BENCH_MODEL", "google/gemini-2.5-flash")
 MAX_TRIES = 5
 LIMIT = None                # run all 51
-RULES_IN_PROMPT = True     # False = round-trip experiment; True = rules-upfront ceiling
+RULES_IN_PROMPT = False     # False = round-trip experiment; True = rules-upfront ceiling
 NODE_PATH = os.path.expanduser(
     "~/.npm-global/lib/node_modules/@accordproject/concerto-cli/node_modules")
 VALIDATOR = "scripts/validate_cto.js"

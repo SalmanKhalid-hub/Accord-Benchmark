@@ -114,12 +114,12 @@ tries = Counter(r["tries"] for r in rt["details"] if r["valid"])
 never = sum(1 for r in rt["details"] if not r["valid"])
 xs = sorted(tries) + ["never"]
 ys = [tries[t] for t in sorted(tries)] + [never]
-plt.figure(figsize=(7, 4))
+plt.figure(figsize=(8.5, 4.2))
 bars = plt.bar([str(t) for t in xs], ys, color=[ACCENT] * (len(xs) - 1) + ["#c1121f"])
 for b, v in zip(bars, ys):
     plt.text(b.get_x() + b.get_width() / 2, v + 0.3, str(v), ha="center", fontsize=10)
 plt.xlabel("Round trips to reach valid"); plt.ylabel("Number of templates")
-plt.title("Figure 6. Round trips needed to self-correct to valid Concerto (naive start)")
+plt.title("Figure 6. Round trips to self-correct to valid Concerto", fontsize=11)
 plt.tight_layout(); plt.savefig("figures/fig6_tries_distribution.png"); plt.close()
 
 # Fig 7: 1-stage vs 2-stage
