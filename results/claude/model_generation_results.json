@@ -1,8 +1,8 @@
 {
   "model": "anthropic/claude-haiku-4.5",
-  "total_gold_types": 468,
-  "types_covered": 394,
-  "type_recall": 0.8418803418803419,
+  "total_gold_types": 1155,
+  "types_covered": 1023,
+  "type_recall": 0.8857142857142857,
   "details": [
     {
       "id": "acceptance-of-delivery-modelgen-01",
@@ -32,6 +32,159 @@
         "DateTime"
       ],
       "model_raw": "namespace org.accordproject.widgets.acceptance\n\nconcept DeliveryObligation {\n  o String partyA\n  o String partyB\n  o String widgets\n  o String acceptanceCriteria\n  o Integer inspectionPeriodDays\n  o String inspectionPeriodUnit\n  o String acceptanceNotificationMethod\n  o String rejectionNotificationMethod\n  o String attachmentReference\n  o Boolean deliveryCompleted\n  o Boolean widgetsAccepted\n  o DateTime deliveryDate\n  o DateTime notificationDate\n}"
+    },
+    {
+      "id": "advertising-agreement-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "Double",
+        "Long",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.advertising\n\nconcept AdvertisingEngagement {\n  o String advertiserName\n  o String advertiserEntity\n  o String agencyName\n  o String agencyEntity\n  o DateTime campaignStartDate\n  o DateTime campaignEndDate\n  o MonetaryAmount monthlyMediaBudget\n  o Double agencyCommissionPercentage\n  o Long minimumTotalImpressions\n  o Boolean isExclusiveEngagement\n}"
+    },
+    {
+      "id": "advertising-agreement-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "DateTime",
+        "DateTime",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Long",
+        "Boolean",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.advertising\n\nconcept AdvertisingCampaignAgreement {\n  o String advertiserName\n  o String agencyName\n  o String campaignName\n  o DateTime campaignStartDate\n  o DateTime campaignEndDate\n  o Double totalMediaBudget\n  o Long guaranteedImpressions\n  o Boolean exclusivityClause\n  o String exclusivityCategory\n  o Boolean proRataCreditsApplicable\n}"
+    },
+    {
+      "id": "arbitration-clause-01-modelgen-01",
+      "gold_field_count": 9,
+      "pred_field_count": 11,
+      "types_covered": 9,
+      "gold_types": [
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "Double",
+        "DateTime"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Boolean",
+        "Double",
+        "DateTime",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.arbitration\n\nconcept ArbitrationClause {\n  o String disputeDescription\n  o String arbitrationCenter\n  o String arbitrationRules\n  o String conductionLanguage\n  o String arbitrationSeat\n  o Integer tribunalArbitratorCount\n  o String governingLaw\n  o Boolean expeditedProcedureApplied\n  o Double maxLiabilityCap\n  o DateTime noticeDeadline\n  o Boolean claimWaivedUponMissedDeadline\n}"
+    },
+    {
+      "id": "arbitration-clause-02-modelgen-01",
+      "gold_field_count": 9,
+      "pred_field_count": 12,
+      "types_covered": 9,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Boolean",
+        "Integer",
+        "String",
+        "DateTime"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Integer",
+        "Boolean",
+        "DateTime",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.arbitration\n\nconcept ArbitrationClause {\n  o String disputeTypes\n  o String arbitrationAdministrator\n  o String arbitrationRules\n  o String arbitrationSeat\n  o String conductionLanguage\n  o Integer tribunalArbitratorCount\n  o String governingLaw\n  o String conflictOfLawsApproach\n  o Integer noticeOfArbitrationDeadlineDays\n  o Boolean expeditedProcedureAvailable\n  o DateTime effectiveDate\n  o Boolean survivesTermination\n}"
+    },
+    {
+      "id": "arbitration-clause-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 13,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Integer",
+        "Boolean",
+        "DateTime"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "DateTime",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.arbitration\n\nconcept ArbitrationClause {\n  o String disputeTypes\n  o String administeredBy\n  o String arbitrationRules\n  o Integer numberOfArbitrators\n  o String arbitrationLocation\n  o String arbitrationCountry\n  o String proceedingsGoverningLaw\n  o String awardGoverningLaw\n  o Integer noticeOfArbitrationDeadlineDays\n  o Boolean claimDeemedWaivedUponMiss\n  o Boolean expeditedProceduresApplied\n  o DateTime effectiveDate\n  o Boolean survivesTermination\n}"
     },
     {
       "id": "bill-of-lading-modelgen-01",
@@ -200,6 +353,99 @@
       "model_raw": "namespace org.accordproject.incorporation\n\nconcept CorporationDetails {\n  o String corporationName\n  o String registeredOfficeAddress\n  o String registeredOfficeState\n  o String registeredOfficeCity\n  o String registeredOfficeCounty\n  o String registeredOfficeZipCode\n  o String registeredAgentName\n  o String corporationPurpose\n  o Integer authorizedSharesCount\n  o String shareDesignation\n  o Double shareParValue\n  o String managementStructure\n  o Boolean directorElectionByWrittenBallot\n  o Boolean boardAuthorizedToAmendBylaws\n  o Boolean distributionsWithoutPreferentialDividends\n  o String preferentialDividendsArrearsAmount\n  o String preferentialRights\n  o String liabilityLimitationJurisdiction\n  o Boolean directorPersonalLiabilityExemption\n  o Boolean corporateIndemnification\n  o String indemnificationScope\n  o String exclusiveForumJurisdiction\n  o Boolean derivativeActionForum\n  o Boolean fiduciarDutyBreachForum\n  o Boolean corporateClaimForum\n  o Boolean delawereGeneralCorporationLawForum\n  o Boolean internalAffairsDoctrineForum\n  o String incorporatorName\n  o String incorporatorMailingAddress\n  o String incorporatorCity\n  o String incorporatorState\n  o String incorporatorZipCode\n  o DateTime executionDate\n}"
     },
     {
+      "id": "commercial-lease-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 14,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Double",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Double",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.lease\n\nconcept LeaseAgreement {\n  o String landlordName\n  o String landlordEntity\n  o String tenantName\n  o String tenantEntity\n  o String premisesAddress\n  o String premisesSuite\n  o String premisesCity\n  o String premisesState\n  o String premisesZipCode\n  o DateTime commencementDate\n  o Double monthlyBaseRent\n  o Double annualEscalationRate\n  o Double securityDepositAmount\n  o Boolean renewalOptionExercised\n}"
+    },
+    {
+      "id": "commercial-lease-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Integer",
+        "Double",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Double",
+        "Double",
+        "Integer",
+        "Integer"
+      ],
+      "model_raw": "namespace org.accordproject.lease\n\nconcept LeaseAgreement {\n  o String landlordName\n  o String landlordEntity\n  o String tenantName\n  o String tenantEntity\n  o DateTime commencementDate\n  o Integer initialTermYears\n  o Double baseRentMonthly\n  o Double annualEscalationPercentage\n  o Double securityDepositAmount\n  o Integer renewalTerms\n  o Integer renewalNoticeRequiredDays\n}"
+    },
+    {
+      "id": "commercial-lease-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "Integer",
+        "Double",
+        "Double",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.lease\n\nconcept LeaseAgreement {\n  o DateTime commencementDate\n  o String tenantName\n  o String landlordName\n  o Double monthlyRent\n  o String paymentDueDay\n  o Integer lateFeeDays\n  o Double lateFeePercentage\n  o Double securityDepositAmount\n  o Double renewalTermYears\n  o Integer renewalNoticeRequiredDays\n  o Boolean automaticRenewal\n}"
+    },
+    {
       "id": "company-information-modelgen-01",
       "gold_field_count": 5,
       "pred_field_count": 9,
@@ -225,6 +471,190 @@
       "model_raw": "namespace org.accordproject.clause\n\nconcept CompanyInformation {\n  o String name\n  o String industry\n  o String website\n  o String street\n  o String city\n  o String state\n  o String zipCode\n  o String country\n  o Integer numberOfEmployees\n}"
     },
     {
+      "id": "confidentiality-clause-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "String",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime effectiveDate\n  o String receivingPartyName\n  o String disclosingPartyName\n  o Integer confidentialityPeriodYears\n  o Integer returnDestroyDeadlineDays\n  o Double liquidatedDamagesAmount\n  o String governingLaw\n  o Boolean irreparableHarmAcknowledged\n  o Boolean injunctiveReliefEntitled\n}"
+    },
+    {
+      "id": "confidentiality-clause-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "String",
+        "Boolean",
+        "Integer",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Double",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime effectiveDate\n  o String receivingPartyName\n  o String disclosingPartyName\n  o Integer confidentialityPeriodYears\n  o Integer materialsReturnDeadlineDays\n  o Boolean acknowledgesIrreparableHarm\n  o Boolean entitledToInjunctiveRelief\n  o Double liquidatedDamagesAmount\n  o String governingLaw\n}"
+    },
+    {
+      "id": "confidentiality-clause-03-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 17,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "String",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "String",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityClause {\n  o DateTime effectiveDate\n  o String receivingPartyName\n  o String receivingPartyEntity\n  o String disclosingPartyName\n  o String disclosingPartyEntity\n  o String businessRelationshipDescription\n  o Integer confidentialityPeriodYears\n  o Boolean mustReturnUponRequest\n  o Boolean mustDestroyUponRequest\n  o Boolean mustReturnUponTermination\n  o Boolean mustDestroyUponTermination\n  o Boolean retentionOfCopiesProhibited\n  o String governingLaw\n  o Double liquidatedDamagesAmount\n  o String currency\n  o Boolean breachEntitlesDisclosingPartyToLiquidatedDamages\n  o Boolean otherRemediesPreserved\n}"
+    },
+    {
+      "id": "consulting-agreement-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 13,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Boolean",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Double",
+        "Boolean",
+        "Integer",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.engagement\n\nconcept EngagementClause {\n  o String consultantName\n  o String consultantEntity\n  o String clientName\n  o String clientEntity\n  o DateTime commencementDate\n  o Boolean autoRenewal\n  o Double monthlyFee\n  o Integer paymentDueDays\n  o Boolean expenseReimbursementAllowed\n  o Double expenseReimbursementPercentageLimit\n  o Boolean expenseApprovalRequired\n  o Integer terminationNoticeDays\n  o String terminationObligationScope\n}"
+    },
+    {
+      "id": "consulting-agreement-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 12,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "String",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "String",
+        "Integer",
+        "Boolean",
+        "Integer",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.consultingagreement\n\nconcept ConsultingAgreement {\n  o DateTime effectiveDate\n  o String consultantName\n  o String consultantEntity\n  o String clientName\n  o String clientEntity\n  o Double hourlyRate\n  o Integer monthlyHourCap\n  o String invoicingFrequency\n  o Integer paymentTermsDays\n  o Boolean automaticallyRenewable\n  o Integer terminationNoticeDays\n  o String terminationConditions\n}"
+    },
+    {
+      "id": "consulting-agreement-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 12,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "String",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "String",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.consulting\n\nconcept ConsultingAgreement {\n  o DateTime effectiveDate\n  o String consultantName\n  o String consultantEntity\n  o String clientName\n  o String clientEntity\n  o Double hourlyRate\n  o Integer monthlyHourLimit\n  o String invoiceFrequency\n  o Integer paymentDueDays\n  o Integer terminationNoticeDays\n  o Boolean autoRenewal\n  o String terminationLiabilityTerms\n}"
+    },
+    {
       "id": "contact-information-modelgen-01",
       "gold_field_count": 6,
       "pred_field_count": 6,
@@ -246,6 +676,66 @@
         "String"
       ],
       "model_raw": "namespace org.accordproject.clause\n\nconcept PersonalDetails {\n  o String name\n  o String title\n  o String email\n  o String phone\n  o String timeZone\n  o String communicationPreference\n}"
+    },
+    {
+      "id": "content-licensing-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "String",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Boolean",
+        "Integer",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.contentlicense\n\nconcept ContentLicense {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licenseeName\n  o String contentTitle\n  o String territory\n  o MonetaryAmount licenseFee\n  o Boolean isExclusive\n  o Integer termDurationMonths\n  o Boolean autoRevertUponExpiration\n}"
+    },
+    {
+      "id": "content-licensing-02-modelgen-01",
+      "gold_field_count": 9,
+      "pred_field_count": 12,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "Boolean",
+        "String[]",
+        "MonetaryAmount",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.mediaLicense\n\nconcept MediaLicenseAgreement {\n  o String licensorName\n  o String licenseeName\n  o String workTitle\n  o String[] licensedTerritories\n  o Boolean exclusivity\n  o String[] grantedRights\n  o MonetaryAmount oneTimeLicenseFee\n  o Double royaltyPercentage\n  o DateTime effectiveDate\n  o DateTime expirationDate\n  o Boolean automaticReversion\n  o Boolean renewalRequired\n}"
     },
     {
       "id": "copyright-license-modelgen-01",
@@ -310,7 +800,167 @@
         "Boolean",
         "Boolean"
       ],
-      "model_raw": "namespace org.accordproject.copyrightlicense\n\nconcept CopyrightLicenseAgreement {\n  o String agreementName\n  o DateTime effectiveDate\n  o String licenseeName\n  o String licenseeState\n  o String licenseeEntityType\n  o String licenseeAddress\n  o String licensorName\n  o String licensorState\n  o String licensorEntityType\n  o String licensorAddress\n  o String workDefinition\n  o String licenseePurpose\n  o String territory\n  o Boolean isExclusive\n  o Boolean isTransferable\n  o String[] grantedRights\n  o String workDescription\n  o Boolean licensorObtainedPermissions\n  o String permissionsScope\n  o String copyrightNoticeRequirement\n  o String copyrightNoticePosition\n  o String copyrightNoticeOrder\n  o String copyrightNoticeMannerProvided\n  o Boolean licenseeAbideByCopyrightLaws\n  o Boolean licenseeProhibitedConflictingNotices\n  o Double paymentAmount\n  o String paymentCurrency\n  o String paymentTiming\n  o String paymentMethod\n  o Boolean includesWordFollowedByWithoutLimitation\n  o Boolean orIsNonExclusive\n  o Boolean herebyRefersToAgreementAsWhole\n  o Boolean constructedWithoutPresumption\n  o Boolean constitutesEntireAgreement\n  o Boolean supersedePriorUnderstandings\n  o Boolean severabilityClauseIncluded\n  o Boolean partiesNegotiateGoodFaith\n  o Boolean licenseeCanAssignRights\n  o Boolean licenseeCanDelegateObligations\n  o Boolean licenseeCanTransferWithoutConsent\n  o Boolean agreementBindsSuccessorsAndAssigns\n}"
+      "model_raw": "namespace org.accordproject.copyrightlicense\n\nconcept CopyrightLicenseAgreement {\n  o String agreementName\n  o DateTime effectiveDate\n  o String licenseeName\n  o String licenseeState\n  o String licenseeEntityType\n  o String licenseeAddress\n  o String licensorName\n  o String licensorState\n  o String licensorEntityType\n  o String licensorAddress\n  o String workDefinition\n  o String licenseePurpose\n  o String territory\n  o Boolean isExclusive\n  o Boolean isTransferable\n  o String[] grantedRights\n  o String workDescription\n  o Boolean licensorObtainedPermissions\n  o String permissionsScope\n  o String copyrightNoticeRequirement\n  o String copyrightNoticePosition\n  o String copyrightNoticeOrder\n  o String copyrightNoticeMannerProvided\n  o Boolean licenseeAbideByCopyrightLaws\n  o Boolean licenseeProhibitedConflictingNotices\n  o Double paymentAmount\n  o String paymentCurrency\n  o String paymentTiming\n  o String paymentMethod\n  o Boolean includesWordFollowedByWithoutLimitation\n  o Boolean orIsNonExclusive\n  o Boolean herebyRefersToAgreementAsWhole\n  o Boolean constructedWithoutPresumption\n  o Boolean constitutesEntireAgreement\n  o Boolean supersedePriorUnderstandings\n  o Boolean severabilityClauseIncluded\n  o Boolean partiesNegotiateGoodFaith\n  o Boolean licenseeCanAssignRights\n  o Boolean licenseeCanDelegateObligations\n  o Boolean licenseeCanTransferWithoutConsent\n  o Boolean agreementBindingOnSuccessors\n}"
+    },
+    {
+      "id": "data-breach-notification-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 8,
+      "types_covered": 5,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Integer",
+        "MonetaryAmount",
+        "Duration",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.databreachnotification\n\nconcept DataBreachNotificationClause {\n  o DateTime effectiveDate\n  o String dataProcessorName\n  o String dataControllerName\n  o Duration notificationTimeLimit\n  o Integer dataSubjectRecordThreshold\n  o MonetaryAmount liquidatedDamages\n  o Duration paymentDeadline\n  o Boolean cooperationRequired\n}"
+    },
+    {
+      "id": "data-breach-notification-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Double",
+        "String"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "String[]",
+        "String",
+        "String[]",
+        "String[]",
+        "Integer",
+        "Boolean",
+        "Double"
+      ],
+      "model_raw": "namespace org.accordproject.datavault\n\nconcept DataBreachNotificationObligation {\n  o DateTime effectiveDate\n  o String notifyingParty\n  o String notifiedParty\n  o Duration notificationTimeLimit\n  o String[] notificationMethods\n  o String breachNatureDescription\n  o String[] dataCategories\n  o String[] remedialSteps\n  o Integer individualRecordsThreshold\n  o Boolean supervisoryAuthorityNotificationRequired\n  o Double maximumLiability\n}"
+    },
+    {
+      "id": "data-processing-agreement-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 15,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "String",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "String",
+        "Boolean",
+        "Double",
+        "Integer",
+        "String",
+        "String"
+      ],
+      "model_raw": "```concerto\nnamespace org.accordproject.dataprocessing\n\nconcept DataProcessingAgreement {\n  o String processorName\n  o String processorEntity\n  o String controllerName\n  o String controllerEntity\n  o DateTime effectiveDate\n  o String processingScope\n  o Integer breachNotificationHours\n  o Integer dataRetentionDays\n  o Boolean dataTransferOutsideEEA\n  o String safeguardsImplemented\n  o Boolean subProcessorEngaged\n  o Double serviceFeeAdjustmentPercent\n  o Integer auditFrequencyPerYear\n  o String complianceOversightCosts\n  o String dataHandlingUponTermination\n}\n```"
+    },
+    {
+      "id": "data-processing-agreement-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 17,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "Long",
+        "Double",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "String",
+        "Integer",
+        "Boolean",
+        "Integer",
+        "Boolean",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Double",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.dataprocessing\n\nconcept DataProcessingAgreement {\n  o DateTime effectiveDate\n  o String processorName\n  o String processorEntity\n  o String controllerName\n  o String controllerEntity\n  o String processingPurpose\n  o Boolean subProcessorEngagementAllowed\n  o String subProcessorDataProtectionRequirement\n  o Integer maxIndividualRecords\n  o Boolean priorWrittenConsentRequired\n  o Integer dataRetentionDays\n  o Boolean longerRetentionAllowedByLaw\n  o Integer breachNotificationHours\n  o Boolean annualAuditEntitled\n  o Boolean thirdPartyAuditAllowed\n  o Double maxAuditFee\n  o String auditFeeDescription\n}"
+    },
+    {
+      "id": "data-processing-agreement-03-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 16,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Integer",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.dataprocessing\n\nconcept DataProcessingAgreement {\n  o DateTime effectiveDate\n  o String processorName\n  o String processorEntity\n  o String controllerName\n  o String controllerEntity\n  o String processingScope\n  o Integer breachNotificationHours\n  o Integer dataRetentionDays\n  o Boolean subprocessorConsentRequired\n  o Boolean auditRightGranted\n  o Integer auditFrequencyMonths\n  o Double maxAuditCostPerCycle\n  o String currencyCode\n  o Boolean dataDeleteionUponTermination\n  o Boolean dataReturnUponTermination\n  o Boolean lawExemptionAllowed\n}"
     },
     {
       "id": "demandforecast-modelgen-01",
@@ -336,6 +986,70 @@
         "String"
       ],
       "model_raw": "namespace org.accordproject.supplyclause\n\nconcept SupplyForecastObligation {\n  o DateTime initialDeadline\n  o String purchaserName\n  o String supplierName\n  o String forecastType\n  o Integer minimumPurchasePercentage\n  o Double minimumQuantityCommitment\n  o String productName\n  o String commitmentPeriod\n  o Boolean isBindingCommitment\n  o String recurringFrequency\n}"
+    },
+    {
+      "id": "distribution-agreement-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 12,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "Double",
+        "MonetaryAmount",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.distributorship\n\nconcept DistributorshipAgreement {\n  o DateTime effectiveDate\n  o String supplierName\n  o String distributorName\n  o String distributorLegalEntity\n  o String exclusiveRegion\n  o String[] productsScope\n  o Double royaltyPercentage\n  o MonetaryAmount minimumAnnualPurchase\n  o Integer renewalTermYears\n  o Integer noticeRequiredDays\n  o Boolean automaticRenewal\n  o Boolean complianceRequired\n}"
+    },
+    {
+      "id": "distribution-agreement-03-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 16,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "String[]",
+        "String[]",
+        "Integer",
+        "MonetaryAmount",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Integer",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.distributionagreement\n\nconcept DistributionAgreement {\n  o DateTime effectiveDate\n  o String supplierName\n  o String distributorName\n  o String distributorLegalName\n  o Boolean exclusiveRight\n  o String[] authorizedActivities\n  o String[] territory\n  o Integer initialTermYears\n  o MonetaryAmount minimumAnnualPurchase\n  o String currencyCode\n  o Integer renewalTermYears\n  o Boolean automaticRenewal\n  o Boolean requiresWrittenNoticeForNonRenewal\n  o Integer terminationForConvenienceNoticeDays\n  o Boolean requiresWrittenNoticeForTermination\n  o String conversionCondition\n}"
     },
     {
       "id": "docusign-connect-modelgen-01",
@@ -388,6 +1102,173 @@
         "String"
       ],
       "model_raw": "namespace org.accordproject.purchaseorder\n\nconcept PurchaseOrderFailureCompensation {\n  o String buyerName\n  o String productName\n  o DateTime specifiedDeliveryDate\n  o DateTime actualDeliveryDate\n  o Integer daysLate\n  o Double actualPrice\n  o Double discountPercentage\n  o MonetaryAmount discountAmount\n  o Integer purchaseOrderFailureCount\n  o Integer failureCountPeriodDays\n  o MonetaryAmount additionalCompensation\n  o String compensationPaymentMethod\n  o String applicableArticle\n  o String applicableSection\n}"
+    },
+    {
+      "id": "employment-offer-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Boolean",
+        "Double",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.employment\n\nconcept EmploymentOffer {\n  o String candidateName\n  o String position\n  o DateTime anticipatedStartDate\n  o Boolean backgroundCheckRequired\n  o Double annualBaseSalary\n  o Double signingBonus\n  o Integer signingBonusPaymentDays\n  o Integer probationaryPeriodMonths\n  o Boolean atWillEmployment\n}"
+    },
+    {
+      "id": "employment-offer-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 8,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.employment\n\nconcept EmploymentOffer {\n  o String companyName\n  o String employeeName\n  o String jobTitle\n  o DateTime commencementDate\n  o Double annualBaseSalary\n  o Integer probationaryPeriodMonths\n  o Boolean eligibleForBonusProgram\n  o String bonusProgramType\n}"
+    },
+    {
+      "id": "employment-offer-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.employment\n\nconcept EmploymentOffer {\n  o String employerName\n  o String employeeName\n  o String position\n  o DateTime commencementDate\n  o Double annualBaseSalary\n  o Double signingBonus\n  o Integer signingBonusPaymentDays\n  o Integer probationaryPeriodMonths\n  o Boolean fixedTermEmployment\n  o Boolean terminationRequiresCause\n  o Boolean terminationRequiresNotice\n}"
+    },
+    {
+      "id": "employment-termination-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Double",
+        "DateTime",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "DateTime",
+        "Boolean",
+        "Boolean",
+        "Integer",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.termination\n\nconcept TerminationAgreement {\n  o String company\n  o String employee\n  o DateTime terminationEffectiveDate\n  o Integer noticeperiodDays\n  o MonetaryAmount severanceAmount\n  o DateTime finalPaycheckDueDate\n  o Boolean healthBenefitsContinue\n  o Boolean dentalBenefitsContinue\n  o Integer nonCompetitionPeriodMonths\n  o String marketSegment\n}"
+    },
+    {
+      "id": "employment-termination-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 8,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Double",
+        "DateTime",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Double",
+        "DateTime",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.employment.termination\n\nconcept EmploymentTerminationAgreement {\n  o String employeeName\n  o String employerName\n  o DateTime terminationEffectiveDate\n  o Integer noticePeriodDays\n  o Double severanceAmount\n  o DateTime finalPaycheckDueDate\n  o Boolean continueHealthBenefits\n  o Boolean acknowledgesFullRelease\n}"
+    },
+    {
+      "id": "employment-termination-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Boolean",
+        "DateTime",
+        "Integer"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Double",
+        "DateTime",
+        "String",
+        "Integer",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.employment\n\nconcept EmploymentTermination {\n  o String employeeName\n  o String employerName\n  o DateTime terminationEffectiveDate\n  o Integer noticeperiodDays\n  o Double severanceAmount\n  o DateTime finalPaycheckDueDate\n  o String benefitsContinuationDescription\n  o Integer nonCompeteMonths\n  o String nonCompeteTerritory\n}"
     },
     {
       "id": "fixed-interests-modelgen-01",
@@ -462,6 +1343,64 @@
       "model_raw": "```concerto\nnamespace org.accordproject.liquidateddamages\n\nconcept LiquidatedDamagesClause {\n  o String sellerName\n  o String buyerName\n  o DateTime exwDeliveryDate\n  o DateTime scheduledDeliveryDate\n  o MonetaryAmount liquidatedDamagesAmount\n  o Boolean mutualExtensionAgreed\n  o Boolean sellerAtFault\n  o MonetaryAmount contractPricePerUnit\n  o Duration deliverySchedule\n  o Double accelerationLowerBound\n  o Double accelerationUpperBound\n  o MonetaryAmount damagesPerShock\n  o Boolean fragileMarkingRequired\n  o Integer numberOfShocks\n}\n```"
     },
     {
+      "id": "franchise-fee-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "Double",
+        "Double",
+        "Double",
+        "Integer",
+        "DateTime",
+        "Double",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "Double",
+        "Integer",
+        "MonetaryAmount",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.franchiseagreement\n\nconcept FranchisePaymentTerms {\n  o DateTime effectiveDate\n  o String franchiseeName\n  o String franchisorName\n  o MonetaryAmount initialFranchiseFee\n  o Double continuingRoyaltyPercentage\n  o Double marketingContributionPercentage\n  o Integer paymentDueDay\n  o MonetaryAmount latePaymentCharge\n  o Boolean autoRenewal\n}"
+    },
+    {
+      "id": "franchise-fee-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 12,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "Integer",
+        "DateTime",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "Double",
+        "String",
+        "Integer",
+        "String",
+        "Double",
+        "String",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.franchiseagreement\n\nconcept FranchisePaymentTerms {\n  o String franchiseeName\n  o String franchisorName\n  o MonetaryAmount initialFranchiseFee\n  o DateTime initialFeeEffectiveDate\n  o Double royaltyPercentage\n  o String royaltyCalculationBasis\n  o Integer royaltyPaymentDueDay\n  o String royaltyPaymentFrequency\n  o Double lateChargePercentage\n  o String lateChargeAccrualPeriod\n  o Boolean automaticRenewal\n  o String renewalRequirement\n}"
+    },
+    {
       "id": "full-payment-upon-demand-modelgen-01",
       "gold_field_count": 3,
       "pred_field_count": 4,
@@ -497,6 +1436,185 @@
       "model_raw": "namespace org.accordproject.clause\n\nconcept PurchaseAgreement {\n  o String buyerName\n  o String sellerName\n  o MonetaryAmount purchasePrice\n}"
     },
     {
+      "id": "gdpr-privacy-clause-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 12,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Double",
+        "String"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "Integer",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Boolean",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.dataprocessing\n\nconcept DataProcessingAgreement {\n  o DateTime effectiveDate\n  o String processor\n  o String controller\n  o String regulation\n  o Boolean processorMayEngageSubprocessor\n  o Integer breachNotificationHours\n  o Integer dataRetentionDays\n  o Double maxAuditCostPerCycle\n  o Boolean controllerMayAuditProcessor\n  o Boolean controllerMayAppointThirdPartyAuditor\n  o String dataProtectionAuthority\n  o Boolean dataShallBeDeletedOrAnonymized\n}"
+    },
+    {
+      "id": "gdpr-privacy-clause-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 15,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Double",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "String",
+        "String",
+        "Boolean",
+        "Double",
+        "String",
+        "Integer",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.dataprocessing\n\nconcept DataProcessingAgreement {\n  o DateTime effectiveDate\n  o String processorName\n  o String processorEntity\n  o String controllerName\n  o String controllerEntity\n  o String processingScope\n  o Integer breachNotificationHours\n  o Integer dataRetentionMonths\n  o String dataHandlingMethod\n  o String processingLocation\n  o Boolean allowOnwardTransfer\n  o Double monthlyComplianceFee\n  o String feeCurrency\n  o Integer dataSubjectRequestResponseDays\n  o String applicableLaw\n}"
+    },
+    {
+      "id": "gdpr-privacy-clause-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 12,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "String",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.dataprocessing\n\nconcept DataProcessingAgreement {\n  o DateTime effectiveDate\n  o String processorName\n  o String controllerName\n  o String applicableLaw\n  o Integer breachNotificationHours\n  o Integer dataRetentionDays\n  o Boolean transfersOutsideEEAAllowed\n  o Double auditFePercentage\n  o String dpoEmailAddress\n  o Boolean priorWrittenAuthorizationRequired\n  o Boolean secureDeletionRequired\n  o Boolean anonymizationAllowed\n}"
+    },
+    {
+      "id": "indemnification-clause-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 10,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Integer",
+        "String"
+      ],
+      "model_raw": "```\nnamespace org.accordproject.indemnity\n\nconcept IndemnityClause {\n  o DateTime effectiveDate\n  o String indemnitee\n  o String indemnitor\n  o String protectedParty\n  o String breachDescription\n  o Integer noticeRequirementDays\n  o Double aggregateLiabilityCap\n  o Boolean liabilityCapExcludesWillfulMisconduct\n  o Integer survivalPeriodMonths\n  o String survivalTrigger\n}\n```"
+    },
+    {
+      "id": "indemnification-clause-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 10,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Integer"
+      ],
+      "model_raw": "namespace org.accordproject.indemnification\n\nconcept IndemnificationClause {\n  o DateTime effectiveDate\n  o String indemnifyingPartyName\n  o String indemnifiedPartyName\n  o String indemnificationScope\n  o Integer noticeRequirementDays\n  o Double aggregateLiabilityCap\n  o String applicableCurrency\n  o Boolean exceptionForFraud\n  o Boolean exceptionForWillfulMisconduct\n  o Integer survivalPeriodMonths\n}"
+    },
+    {
+      "id": "indemnification-clause-03-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 9,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "MonetaryAmount",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.indemnification\n\nconcept IndemnificationClause {\n  o DateTime effectiveDate\n  o String indemnifyingPartyName\n  o String indemnifiedPartyName\n  o String agreementScope\n  o Integer noticeRequirementDays\n  o Boolean coverageIncludesThirdPartyClaims\n  o Boolean coverageIncludesNegligence\n  o MonetaryAmount aggregateLiabilityCap\n  o Boolean limitationAppliesToAllTheoriesOfLiability\n}"
+    },
+    {
       "id": "installment-sale-modelgen-01",
       "gold_field_count": 8,
       "pred_field_count": 10,
@@ -524,6 +1642,67 @@
         "String"
       ],
       "model_raw": "namespace org.accordproject.payment\n\nconcept PaymentAgreement {\n  o String payerName\n  o String payeeName\n  o MonetaryAmount totalSum\n  o MonetaryAmount closingPayment\n  o MonetaryAmount remainingBalance\n  o MonetaryAmount minimumMonthlyPayment\n  o Integer paymentStartMonth\n  o Integer maxPaymentMonths\n  o Double interestRate\n  o String interestComputationFrequency\n}"
+    },
+    {
+      "id": "insurance-clause-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.insurance\n\nconcept InsurancePolicy {\n  o String policyNumber\n  o String issuerName\n  o Double minimumCoverageAmount\n  o Double deductibleAmount\n  o DateTime effectiveDate\n  o DateTime expirationDate\n  o Double annualPremium\n  o Integer autoRenewalNoticeDays\n  o Boolean autoRenewalEnabled\n  o Boolean certificateOfInsuranceRequired\n  o Boolean notificationOfChangesRequired\n}"
+    },
+    {
+      "id": "insurance-clause-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 12,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "Integer",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.commercialliability\n\nconcept CommercialLiabilityPolicy {\n  o String insurer\n  o String policyholder\n  o String policyNumber\n  o Double aggregateCoverageLimit\n  o Double perClaimDeductible\n  o DateTime coverageStartDate\n  o DateTime coverageEndDate\n  o Integer autoRenewalTermYears\n  o Integer nonRenewalNoticeRequiredDays\n  o Integer claimReportingDeadlineDays\n  o String coverageType\n  o Boolean autoRenewalEnabled\n}"
     },
     {
       "id": "interest-rate-swap-modelgen-01",
@@ -597,6 +1776,89 @@
         "String"
       ],
       "model_raw": "```concerto\nnamespace org.accordproject.interestswap\n\nconcept InterestRateSwapTransaction {\n  o String bankName\n  o DateTime letterDate\n  o String counterpartyName\n  o String counterpartyDepartment\n  o String referenceNumber\n  o String partyAName\n  o String partyBName\n  o DateTime tradeDate\n  o DateTime effectiveDate\n  o DateTime terminationDate\n  o Double notionalAmount\n  o String notionalCurrency\n  o String fixedRatePayer\n  o String fixedRatePeriodEndDates\n  o String fixedRatePaymentDates\n  o Double fixedRate\n  o String fixedRateDayCountFraction\n  o String fixedRateBusinessDays\n  o String fixedRateBusinessDayConvention\n  o String floatingRatePayer\n  o String floatingRatePeriodEndDates\n  o String floatingRatePaymentDates\n  o Double floatingRateInitial\n  o String floatingRateOption\n  o String designatedMaturity\n  o String spread\n  o String floatingRateDayCountFraction\n  o String resetDates\n  o String compounding\n  o String floatingRateBusinessDays\n  o String floatingRateBusinessDayConvention\n  o String governingLaw\n  o String terminationCurrency\n  o String isdaDefinitionsVersion\n  o String isdaMasterAgreementVersion\n}\n```"
+    },
+    {
+      "id": "ip-assignment-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "String",
+        "Boolean",
+        "String",
+        "String"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Boolean",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.musicassignment\n\nconcept MusicAssignment {\n  o DateTime effectiveDate\n  o String assignorName\n  o String assigneeName\n  o String workTitle\n  o String copyrightRegistrationNumber\n  o MonetaryAmount considerationAmount\n  o Boolean moralRightsWaived\n  o String governingLaw\n  o Boolean assignorAgreesToExecuteFurtherDocuments\n}"
+    },
+    {
+      "id": "ip-assignment-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 9,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "String",
+        "Double",
+        "String",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "String",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.assignment\n\nconcept AssignmentClause {\n  o DateTime effectiveDate\n  o String assignorName\n  o String assigneeName\n  o String assignedProperty\n  o String ipRightsIncluded\n  o Double compensationAmount\n  o String compensationCurrency\n  o String assignorObligations\n  o String governingLaw\n}"
+    },
+    {
+      "id": "ip-assignment-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean",
+        "String"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Boolean",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.assignment\n\nconcept AssignmentClause {\n  o DateTime effectiveDate\n  o String assignorName\n  o String assigneeName\n  o String assignedWorks\n  o String applicationName\n  o MonetaryAmount consideration\n  o Boolean moralRightsWaived\n  o Boolean cooperationRequired\n  o String governingLaw\n}"
     },
     {
       "id": "ip-payment-modelgen-01",
@@ -820,6 +2082,252 @@
       "model_raw": "namespace org.accordproject.clause\n\nconcept InvoicePaymentObligation {\n  o String buyerName default=\"Betty Buyer\"\n  o String sellerName default=\"Steve Seller\"\n  o Integer daysThreshold default=180\n  o String invoiceStatus\n  o DateTime invoiceDueDate\n  o DateTime invoiceIssuedDate\n  o Boolean paymentRequired\n}"
     },
     {
+      "id": "limitation-of-liability-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 15,
+      "types_covered": 5,
+      "gold_types": [
+        "Double",
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "MonetaryAmount",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Integer"
+      ],
+      "model_raw": "namespace org.accordproject.clause.liability\n\nconcept LiabilityClause {\n  o DateTime effectiveDate\n  o MonetaryAmount aggregateLiabilityCap\n  o Double liabilityCapPercentage\n  o Integer lookbackMonths\n  o Boolean excludesIndirectDamages\n  o Boolean excludesIncidentalDamages\n  o Boolean excludesSpecialDamages\n  o Boolean excludesPunitiveDamages\n  o Boolean excludesConsequentialDamages\n  o Boolean excludesProfitLosses\n  o Boolean excludesBusinessOpportunityLoss\n  o Boolean carveOutGrossNegligence\n  o Boolean carveOutWillfulMisconduct\n  o Boolean carveOutFraud\n  o Integer claimDeadlineDays\n}"
+    },
+    {
+      "id": "limitation-of-liability-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 19,
+      "types_covered": 5,
+      "gold_types": [
+        "String",
+        "DateTime",
+        "Double",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "MonetaryAmount",
+        "Duration",
+        "TemporalUnit",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "DateTime",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.clause.liability\n\nconcept LiabilityLimitation {\n  o String partyName\n  o MonetaryAmount aggregateLiabilityLimit\n  o Duration referenceperiod\n  o TemporalUnit referenceperiodUnit\n  o String liabilityBasis\n  o Boolean excludesIndirectDamages\n  o Boolean excludesIncidentalDamages\n  o Boolean excludesSpecialDamages\n  o Boolean excludesPunitiveDamages\n  o Boolean excludesConsequentialDamages\n  o Boolean excludesLossOfProfits\n  o Boolean excludesLossOfRevenue\n  o Boolean excludesLossOfData\n  o Boolean exceptionForGrossNegligence\n  o Boolean exceptionForWillfulMisconduct\n  o Boolean exceptionForFraud\n  o DateTime effectiveDate\n  o Boolean survivesTermination\n  o Boolean survivesExpiration\n}"
+    },
+    {
+      "id": "limitation-of-liability-03-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 12,
+      "types_covered": 5,
+      "gold_types": [
+        "String",
+        "Double",
+        "String",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "MonetaryAmount",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.clause.liability\n\nconcept LiabilityLimitation {\n  o DateTime effectiveDate\n  o String partyName\n  o MonetaryAmount aggregateLiabilityCap\n  o Boolean excludesIndirectDamages\n  o Boolean excludesIncidentalDamages\n  o Boolean excludesSpecialDamages\n  o Boolean excludesConsequentialDamages\n  o Boolean excludesLossOfProfits\n  o Boolean excludesBusinessInterruption\n  o Integer claimPeriodDays\n  o Boolean carveOutGrossNegligence\n  o Boolean carveOutWillfulMisconduct\n}"
+    },
+    {
+      "id": "loan-agreement-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.loanclause\n\nconcept LoanAgreement {\n  o String lenderName\n  o String borrowerName\n  o Double principalAmount\n  o Double annualInterestRate\n  o DateTime maturityDate\n  o Integer gracePeriodDays\n  o Double latePaymentFee\n  o Boolean prepaymentPenaltyAllowed\n  o String governingLaw\n}"
+    },
+    {
+      "id": "loan-agreement-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "Double",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.loanclause\n\nconcept LoanAgreement {\n  o String lenderName\n  o String borrowerName\n  o MonetaryAmount principalSum\n  o Double annualInterestRate\n  o DateTime maturityDate\n  o Integer gracePeriodDays\n  o Double lateChargePercentage\n  o Boolean prepaymentAllowed\n  o Boolean prepaymentPenalty\n}"
+    },
+    {
+      "id": "loan-agreement-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.loan\n\nconcept LoanAgreement {\n  o String lenderName\n  o String borrowerName\n  o MonetaryAmount principalAmount\n  o DateTime disbursementDate\n  o DateTime maturityDate\n  o Double interestRate\n  o Integer daysInYear\n  o Integer lateDaysThreshold\n  o Double latePenaltyRate\n  o Boolean allowPrepayment\n  o Boolean prepaymentPenaltyApplies\n}"
+    },
+    {
+      "id": "maintenance-agreement-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "Integer",
+        "Integer",
+        "Integer",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.maintenance\n\nconcept MaintenanceAgreement {\n  o DateTime effectiveDate\n  o String providerName\n  o String providerLegalEntity\n  o String clientName\n  o String clientLegalEntity\n  o Double annualFee\n  o Integer responseTimeHours\n  o Integer maxServiceCallsPerYear\n  o Integer terminationNoticeRequiredDays\n  o Integer renewalTermMonths\n  o Boolean automaticRenewal\n}"
+    },
+    {
+      "id": "maintenance-agreement-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "Integer",
+        "Integer",
+        "Double",
+        "TemporalUnit",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.maintenance\n\nconcept MaintenanceAgreement {\n  o String serviceProvider\n  o String client\n  o DateTime commencementDate\n  o MonetaryAmount annualFee\n  o Integer responseTimeHours\n  o Integer maxServiceCallsPerYear\n  o Integer invoiceDueDays\n  o Double latePaymentPenaltyRate\n  o TemporalUnit latePaymentPenaltyPeriod\n  o Boolean autoRenewal\n  o String maintenanceType\n}"
+    },
+    {
       "id": "minilatedeliveryandpenalty-modelgen-01",
       "gold_field_count": 5,
       "pred_field_count": 6,
@@ -890,6 +2398,280 @@
       "model_raw": "namespace org.accordproject.latedeliverypnalty\n\nconcept LateDeliveryPenalty {\n  o String buyerName\n  o String sellerName\n  o Double penaltyPercentagePerPeriod\n  o Integer delayPeriodDays\n  o Double maximumPenaltyPercentage\n  o Integer terminationThresholdDays\n  o Double goodsValue\n}"
     },
     {
+      "id": "nda-mutual-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "String",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Double",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime effectiveDate\n  o String partyOne\n  o String partyTwo\n  o Integer agreementTermYears\n  o Integer confidentialityObligationSurvivalMonths\n  o String governingLaw\n  o Boolean irreparableHarmAcknowledged\n  o Boolean injunctiveReliefEntitled\n  o Double liquidatedDamagesAmount\n  o Boolean liquidatedDamagesWithoutPrejudice\n}"
+    },
+    {
+      "id": "nda-mutual-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 16,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "Integer",
+        "String",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "Integer",
+        "Duration",
+        "Integer",
+        "Boolean",
+        "String",
+        "Boolean",
+        "MonetaryAmount",
+        "String",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime effectiveDate\n  o String disclosingParty1\n  o String disclosingParty2\n  o String receivingParty1\n  o String receivingParty2\n  o String purpose\n  o Duration confidentialityDuration\n  o Integer confidentialityDurationYears\n  o Duration survivalPeriod\n  o Integer survivalPeriodYears\n  o Boolean injunctiveReliefAvailable\n  o String jurisdiction\n  o Boolean liquidatedDamagesApplicable\n  o MonetaryAmount liquidatedDamagesAmount\n  o String governingLaw\n  o String disputeResolution\n}"
+    },
+    {
+      "id": "nda-mutual-03-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 12,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "String",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime agreementDate\n  o String disclosingPartyName\n  o String receivingPartyName\n  o Integer confidentialityPeriodMonths\n  o String disclosureUnitOfTime\n  o String permittedUseOfInformation\n  o Integer returnOrDestroyDeadlineDays\n  o Boolean unauthorizedUseAcknowledged\n  o Boolean irreparableHarmAcknowledged\n  o Boolean monetaryDamagesInadequateAcknowledged\n  o Boolean injunctiveReliefAvailable\n  o String governingLawJurisdiction\n}"
+    },
+    {
+      "id": "nda-oneway-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 12,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "String",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Boolean",
+        "Double",
+        "String",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime effectiveDate\n  o String disclosingPartyName\n  o String disclosingPartyEntity\n  o String receivingPartyName\n  o String receivingPartyEntity\n  o String purposeOfDisclosure\n  o Integer confidentialityPeriodYears\n  o String permittedUse\n  o Boolean returnOrDestroyRequired\n  o Double liquidatedDamagesAmount\n  o String governingLaw\n  o String governingState\n}"
+    },
+    {
+      "id": "nda-oneway-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 9,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "String",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "String",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime agreementDate\n  o String disclosingPartyName\n  o String receivingPartyName\n  o String purpose\n  o Integer confidentialityPeriodYears\n  o Integer returnDestroyDeadlineDays\n  o String governingLaw\n  o Boolean irreparableHarmAcknowledged\n  o Boolean injunctiveReliefAvailable\n}"
+    },
+    {
+      "id": "nda-oneway-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 8,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "String",
+        "Boolean",
+        "Double",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "Integer",
+        "Double",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.confidentiality\n\nconcept ConfidentialityAgreement {\n  o DateTime effectiveDate\n  o String disclosingPartyName\n  o String receivingPartyName\n  o Integer confidentialityPeriodYears\n  o Integer certificationDeadlineDays\n  o Double liquidatedDamagesAmount\n  o String governingLaw\n  o Boolean requiresWrittenConsent\n}"
+    },
+    {
+      "id": "non-compete-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 9,
+      "types_covered": 5,
+      "gold_types": [
+        "String",
+        "Integer",
+        "String",
+        "DateTime",
+        "Double",
+        "String",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "Integer",
+        "String",
+        "String[]",
+        "MonetaryAmount",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.noncompete\n\nconcept NonCompeteClause {\n  o DateTime effectiveDate\n  o String employeeName\n  o Integer restrictionPeriodMonths\n  o String competitiveField\n  o String[] restrictedStates\n  o MonetaryAmount liquidatedDamages\n  o Boolean irreparableHarmAcknowledged\n  o Boolean injunctiveReliefEntitled\n  o Boolean consentExemptionAllowed\n}"
+    },
+    {
+      "id": "non-compete-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 20,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Integer",
+        "String",
+        "String",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "String",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.noncompete\n\nconcept NonCompeteAgreement {\n  o DateTime effectiveDate\n  o String employeeName\n  o String employeeTitle\n  o String employer\n  o Duration restrictionPeriod\n  o String competitiveField\n  o String geographicScope\n  o Double liquidatedDamagesAmount\n  o String currency\n  o String restrictionScope\n  o Boolean appliesToDirectEngagement\n  o Boolean appliesToIndirectEngagement\n  o Boolean appliesToOwnership\n  o Boolean appliesToManagement\n  o Boolean appliesToOperation\n  o Boolean appliesToControl\n  o Boolean appliesToEmployment\n  o String legitimateBusinessInterests\n  o Boolean restrictionsAreReasonable\n  o Boolean restrictionsAreNecessary\n}"
+    },
+    {
+      "id": "non-compete-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 13,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "DateTime",
+        "Double",
+        "Boolean",
+        "String"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Integer",
+        "String",
+        "Boolean",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.noncompete\n\nconcept NonCompeteAgreement {\n  o DateTime effectiveDate\n  o String employeeName\n  o String employerName\n  o Integer restrictionPeriodMonths\n  o String restrictedIndustry\n  o Integer radiusMiles\n  o String restrictedGeography\n  o Boolean appliesToAffiliates\n  o Double liquidatedDamagesAmount\n  o String currency\n  o Boolean reasonableInScope\n  o Boolean reasonableInDuration\n  o Boolean protectsLegitimateInterests\n}"
+    },
+    {
       "id": "one-time-payment-tr-modelgen-01",
       "gold_field_count": 3,
       "pred_field_count": 17,
@@ -958,6 +2740,70 @@
         "Integer"
       ],
       "model_raw": "```concerto\nnamespace com.dlkbilisim.sales\n\nconcept SoftwareSalesAgreement {\n  o String buyerName\n  o String sellerName\n  o String programName\n  o Integer userCount\n  o String warrantyConditions\n  o String supportContractTerms\n  o Double monthlyDelayInterestRate\n  o String trainingLocation\n  o String trainingScope\n  o String trainingDuration\n  o Boolean softwareReturnable\n  o Boolean buyerCanTransferRights\n  o Boolean buyerCanCopySoftware\n  o Boolean buyerCanDistributeSoftware\n  o Boolean sellerResponsibleForUsageErrors\n  o Boolean sellerGuaranteesStoredData\n  o Boolean sellerResponsibleForIllegalUsage\n  o Boolean sellerDecidesSoftwareModifications\n  o String modificationPricing\n  o String terminationReason\n  o String competentCourt\n  o DateTime agreementDate\n  o Integer agreementCopies\n}\n```"
+    },
+    {
+      "id": "patent-license-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 15,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Double",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Boolean",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.licenseagreement\n\nconcept LicenseAgreement {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licenseeName\n  o String patentNumber\n  o String grantedRights\n  o Boolean exclusivity\n  o Boolean complianceRequired\n  o Double royaltyPercentage\n  o String royaltyBasis\n  o String paymentFrequency\n  o Integer licenseTerm\n  o String licenseTermUnit\n  o Boolean sublicenseAllowed\n  o Boolean sublicenseConsentRequired\n  o String terminationConditions\n}"
+    },
+    {
+      "id": "patent-license-02-modelgen-01",
+      "gold_field_count": 9,
+      "pred_field_count": 11,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "String",
+        "Boolean",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "MonetaryAmount",
+        "Boolean",
+        "Boolean",
+        "String",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.licensingagreement\n\nconcept LicenseGrant {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licenseeName\n  o String patentNumber\n  o String territory\n  o Double royaltyPercentage\n  o MonetaryAmount minimumAnnualPayment\n  o Boolean sublicensePermitted\n  o Boolean licensorConsentRequired\n  o String licenseTermination\n  o String licenseScope\n}"
     },
     {
       "id": "payment-upon-delivery-modelgen-01",
@@ -1072,6 +2918,66 @@
         "Double"
       ],
       "model_raw": "namespace org.accordproject.avocado.shipment\n\nconcept Shipment {\n  o String shipmentId\n  o String importerId\n  o String growerId\n  o Double pricePerKg\n  o String currency\n  o Double minimumWeightKg\n  o Double maximumWeightKg\n  o String productDescription\n  o Boolean temperatureControlRequired\n  o Boolean humidityControlRequired\n  o Integer sensorReadingFrequencyPerHour\n  o DateTime spoilageDeadline\n  o Double minimumTemperatureCelsius\n  o Double maximumTemperatureCelsius\n  o Double minimumHumidityPercentage\n  o Double maximumHumidityPercentage\n  o Double breachPenaltyFactor\n}\n\nconcept SensorReading {\n  o String shipmentId\n  o DateTime readingTimestamp\n  o Double temperatureCelsius\n  o Double humidityPercentage\n}\n\nconcept BreachPenalty {\n  o String shipmentId\n  o Integer numberOfUnits\n  o Double sensorReadingDeviation\n  o Double breachPenaltyFactor\n  o Double calculatedPenalty\n}"
+    },
+    {
+      "id": "personal-guarantee-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 13,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Boolean",
+        "String"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "DateTime",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.guarantee\n\nconcept GuaranteeClause {\n  o String creditorName\n  o String principalDebtorName\n  o String guarantorName\n  o MonetaryAmount maximumAggregateLIABILITY\n  o DateTime effectiveDate\n  o DateTime expirationDate\n  o Boolean isIrrevocable\n  o Boolean isUnconditional\n  o Boolean jointAndSeveralObligation\n  o Boolean creditorMayPursueDirect\n  o Boolean survivesAmendment\n  o Boolean survivesRenewal\n  o Boolean survivesExtension\n}"
+    },
+    {
+      "id": "personal-guarantee-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "DateTime",
+        "Double",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "Double",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.guarantee\n\nconcept PersonalGuarantee {\n  o String creditorName\n  o String debtorName\n  o String debtorLegalEntity\n  o String guarantorName\n  o MonetaryAmount maximumLiability\n  o DateTime effectiveDate\n  o Double interestRatePerAnnum\n  o Boolean continuingObligation\n  o Boolean directEnforcementAllowed\n}"
     },
     {
       "id": "project-information-modelgen-01",
@@ -1206,6 +3112,70 @@
       "model_raw": "namespace org.accordproject.promissorynote\n\nconcept Maker {\n  o String name\n  o String address\n}\n\nconcept Lender {\n  o String name\n  o String entityType\n  o String address\n}\n\nconcept InterestTerms {\n  o Double noteRate\n  o Integer daysInYear\n  o Boolean simpleInterest\n}\n\nconcept MaturityTerms {\n  o DateTime standardMaturityDate\n  o Integer daysBeforeIPOFiling\n  o String iPODefinition\n}\n\nconcept DefaultTerms {\n  o Integer paymentDefaultGracePeriodDays\n  o Integer bankruptcyProposalGracePeriodDays\n  o Boolean involuntaryBankruptcyTrigger\n  o Boolean voluntaryBankruptcyTrigger\n  o Boolean generalAssignmentTrigger\n  o Boolean debtPaymentDefaultTrigger\n}\n\nconcept PrepaymentTerms {\n  o Boolean allowPrepayment\n  o Boolean prepaymentPenalty\n}\n\nconcept RemedialsTerms {\n  o Boolean accelerationRight\n  o Boolean enforcementRight\n}\n\nconcept UsuryCap {\n  o Boolean usuryCeiling\n}\n\nconcept AmendmentTerms {\n  o Boolean requiresMutualConsent\n  o Boolean mustSpecifyProvisions\n}\n\nconcept AssignmentTerms {\n  o Boolean makerCanAssign\n  o Boolean lenderCanAssign\n  o Boolean requiresLenderConsent\n}\n\nconcept PromissoryNote {\n  o DateTime executionDate\n  o Maker maker\n  o Lender lender\n  o MonetaryAmount principalAmount\n  o InterestTerms interestTerms\n  o MaturityTerms maturityTerms\n  o DefaultTerms defaultTerms\n  o PrepaymentTerms prepaymentTerms\n  o RemedialsTerms remedialsTerms\n  o UsuryCap usuryCap\n  o AmendmentTerms amendmentTerms\n  o AssignmentTerms assignmentTerms\n  o String governingLaw\n  o Boolean entireAgreement\n  o Boolean counterpartsExecution\n}"
     },
     {
+      "id": "property-purchase-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 14,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Integer",
+        "String",
+        "Integer",
+        "Boolean",
+        "DateTime",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.realestate\n\nconcept RealEstateAgreement {\n  o String sellerName\n  o String buyerName\n  o String propertyAddress\n  o String propertyCity\n  o String propertyState\n  o String propertyZipCode\n  o MonetaryAmount totalPurchasePrice\n  o MonetaryAmount earnestMoneyAmount\n  o Integer earnestMoneyDays\n  o String earnestMoneyTimeUnit\n  o Integer inspectionPeriodDays\n  o Boolean financingContingency\n  o DateTime closingDate\n  o String deedType\n}"
+    },
+    {
+      "id": "property-purchase-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 12,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "Boolean",
+        "Integer",
+        "DateTime",
+        "DateTime"
+      ],
+      "model_raw": "namespace org.accordproject.realestate\n\nconcept PropertySaleAgreement {\n  o String sellerName\n  o String buyerName\n  o String propertyAddress\n  o String propertyCity\n  o String propertyState\n  o String propertyZipCode\n  o Double purchasePrice\n  o Double earnestMoneyDeposit\n  o Boolean mortgageFinancingContingency\n  o Integer inspectionPeriodDays\n  o DateTime agreementDate\n  o DateTime closingDate\n}"
+    },
+    {
       "id": "rental-deposit-modelgen-01",
       "gold_field_count": 10,
       "pred_field_count": 20,
@@ -1300,6 +3270,91 @@
         "String"
       ],
       "model_raw": "namespace org.accordproject.securitydeposit\n\nconcept SecurityDeposit {\n  o MonetaryAmount depositAmount\n  o String paymentMethod\n  o Double baseRentMultiplier\n  o MonetaryAmount monthlyBaseRent\n  o Integer deductionRestoreDays\n  o String jurisdiction\n  o String bankName\n  o String bankAccountType\n  o Integer returnPeriodWeeks\n  o String returnMethod\n  o String scheduleReference\n}\n\nconcept DamageInspection {\n  o Boolean inspectionRequired\n  o String wearAndTearStandard\n  o String costScheduleReference\n  o Boolean tenantParticipationAllowed\n}\n\nconcept CleanlinessInspection {\n  o Boolean inspectionRequired\n  o String originalConditionStandard\n  o String costScheduleReference\n}\n\nconcept ItemsReturn {\n  o Boolean keysRequired\n  o Boolean accessDevicesRequired\n  o Boolean amenityCardsRequired\n  o String costScheduleReference\n}\n\nconcept OutstandingCharges {\n  o Boolean collectOutstandingItems\n}\n\nconcept DeductionStatement {\n  o DamageInspection damageInspection\n  o CleanlinessInspection cleanlinessInspection\n  o ItemsReturn itemsReturn\n  o OutstandingCharges outstandingCharges\n}\n\nconcept Party {\n  o String name\n  o String address\n}\n\nconcept SecurityDepositAgreement {\n  o Party tenant\n  o Party landlord\n  o SecurityDeposit securityDeposit\n  o DeductionStatement deductionStatement\n  o String leaseNoticeReference\n}"
+    },
+    {
+      "id": "residential-lease-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 11,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "Integer",
+        "Double",
+        "DateTime",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.leaseclause\n\nconcept LeaseClause {\n  o DateTime leaseStartDate\n  o String tenantName\n  o String landlordName\n  o Double monthlyRentAmount\n  o Integer rentDueDay\n  o Integer lateFeeGracePeriodDays\n  o Double lateFeeAmount\n  o Boolean petsAllowedWithoutConsent\n  o Boolean landlordConsentRequired\n  o Boolean timatelyPaymentIsMaterialCondition\n  o Boolean repeatedLatePaymentsGroundsForTermination\n}"
+    },
+    {
+      "id": "residential-lease-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 9,
+      "types_covered": 4,
+      "gold_types": [
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "Boolean",
+        "MonetaryAmount"
+      ],
+      "model_raw": "namespace org.accordproject.tenancyagreement\n\nconcept RentalObligation {\n  o String tenantName\n  o String landlordRole\n  o MonetaryAmount monthlyRent\n  o Integer rentDueDay\n  o DateTime rentCommencementDate\n  o Integer lateFeeThresholdDays\n  o MonetaryAmount lateFee\n  o Boolean animalsProhibited\n  o MonetaryAmount securityDepositAmount\n}"
+    },
+    {
+      "id": "residential-lease-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 5,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "Integer",
+        "MonetaryAmount",
+        "Boolean",
+        "MonetaryAmount"
+      ],
+      "model_raw": "namespace org.accordproject.rentalAgreement\n\nconcept RentalAgreement {\n  o String landlordName\n  o String tenantName\n  o DateTime commencementDate\n  o MonetaryAmount monthlyRent\n  o Integer rentDueDay\n  o Integer gracePeriodDays\n  o MonetaryAmount lateFee\n  o Boolean petsPermitted\n  o MonetaryAmount securityDeposit\n}"
     },
     {
       "id": "roommate-modelgen-01",
@@ -1596,6 +3651,65 @@
       "model_raw": "```\nnamespace org.accordproject.salescontract\n\nconcept Party {\n  o String name\n  o String legalAddress\n  o String bankAccount\n}\n\nconcept Product {\n  o String name\n  o String assortment\n  o Integer quantity\n  o Double totalCost\n  o String qualityStandard\n  o String certificateOfConformity\n  o String hygieneRegistration\n}\n\nconcept Packaging {\n  o String type\n  o Boolean manufacturerPackaging\n  o Boolean costIncludedInPrice\n  o String returnConditions\n}\n\nconcept Delivery {\n  o String transportType\n  o String deliveryLocation\n  o String deliveryMethod\n  o DateTime deliveryDate\n  o String invoiceReference\n}\n\nconcept Payment {\n  o Double price\n  o String currency\n  o String paymentForm\n  o String paymentMethod\n  o Integer paymentDelayDays\n  o Double penaltyPercentagePerDay\n  o Boolean sellerRetainsOwnership\n}\n\nconcept QualityControl {\n  o Integer hiddenDefectDiscoveryPeriodMonths\n  o String acceptanceProcedure\n  o Boolean buyerResponsibleAfterTransfer\n}\n\nconcept ForceMajeure {\n  o Boolean appliesToPartialNonPerformance\n  o Boolean appliesToCompleteNonPerformance\n  o String exampleEvents\n}\n\nconcept ContractTerm {\n  o DateTime effectiveDate\n  o DateTime expirationDate\n  o Boolean autoRenewal\n  o Integer terminationNoticeDays\n  o String applicableLaw\n}\n\nconcept DisputeResolution {\n  o String resolutionMethod\n  o String competentCourt\n  o Integer claimConsiderationPeriodDays\n  o Integer notificationPeriodDays\n}\n\nconcept SalesContract {\n  o String contractNumber\n  o Party seller\n  o Party buyer\n  o Product[] products\n  o Packaging packaging\n  o Delivery delivery\n  o Payment payment\n  o QualityControl qualityControl\n  o ForceMajeure forceMajeure\n  o ContractTerm contractTerm\n  o DisputeResolution disputeResolution\n  o Integer contractCopies\n  o Boolean facsimileRecognized\n}\n```"
     },
     {
+      "id": "service-retainer-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 12,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.retaineragreement\n\nconcept RetainerAgreement {\n  o DateTime effectiveDate\n  o String clientName\n  o String clientLegalEntity\n  o String advisorName\n  o String advisorLegalEntity\n  o Double monthlyRetainerFee\n  o Integer includedMonthlyHours\n  o Double excessHourlyRate\n  o Integer terminationNoticeRequiredDays\n  o Boolean retainerFeesNonRefundable\n  o Boolean automaticRenewal\n  o String invoicingMethod\n}"
+    },
+    {
+      "id": "service-retainer-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 9,
+      "types_covered": 5,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "MonetaryAmount",
+        "Integer",
+        "String",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.retaineragreement\n\nconcept RetainerAgreement {\n  o String clientName\n  o String firmName\n  o DateTime effectiveDate\n  o MonetaryAmount monthlyRetainerFee\n  o Integer includedHoursPerMonth\n  o MonetaryAmount excessHourlyRate\n  o Integer terminationNoticeRequiredDays\n  o String paymentSchedule\n  o String engagementBasis\n}"
+    },
+    {
       "id": "servicelevelagreement-modelgen-01",
       "gold_field_count": 9,
       "pred_field_count": 34,
@@ -1650,6 +3764,180 @@
       "model_raw": "namespace org.accordproject.servicelevel\n\nconcept BusinessDay {\n  o String definition\n}\n\nconcept ChangeControlProcedure {\n  o String procedure\n}\n\nconcept Month {\n  o String definition\n}\n\nconcept ServiceCredit {\n  o MonetaryAmount amount\n  o String serviceLevelDescription\n  o Double targetServiceLevel\n}\n\nconcept ServiceLevel {\n  o String description\n  o Double targetPercentage\n  o MonetaryAmount creditAmount\n  o String priority\n}\n\nconcept ServiceLevelAgreement {\n  o String supplier\n  o String serviceProvider\n  o String customer\n  o String serviceConsumer\n  o ServiceLevel[] serviceLevels\n  o Double monthlyMaxCreditPercentage\n  o Double annualMaxCreditPercentage\n  o Integer serviceCreditPaymentDays\n  o Integer reportingDaysAfterMonthEnd\n  o Boolean supplierChargesForRemediation\n  o String[] exclusionReasons\n  o Boolean serviceCreditsCoveredByLiabilityLimitation\n  o Boolean serviceCreditWithoutPrejudice\n}\n\nconcept ServiceLevelDefault {\n  o String serviceLevelDescription\n  o Double targetServiceLevel\n  o Double achievedServiceLevel\n  o MonetaryAmount creditDue\n  o DateTime occurrenceMonth\n}\n\nconcept MonthlyReport {\n  o DateTime reportingPeriod\n  o Integer businessDaysAfterMonthEnd\n  o ServiceLevelDefault[] defaults\n  o Boolean reportSubmitted\n}\n\nconcept ForceMajeure {\n  o String eventDescription\n  o Boolean relievesObligation\n}"
     },
     {
+      "id": "severance-agreement-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 11,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Integer",
+        "String"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Boolean",
+        "String",
+        "Boolean",
+        "Integer",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.severance\n\nconcept SeveranceAgreement {\n  o DateTime terminationDate\n  o String companyName\n  o String employeeName\n  o MonetaryAmount severanceAmount\n  o Integer severancePeriodWeeks\n  o Boolean companyPaysHealthPremiums\n  o String healthPlanType\n  o Boolean employeeElectionRequired\n  o Integer revocationPeriodDays\n  o String governingLaw\n  o Boolean conflictOfLawApplies\n}"
+    },
+    {
+      "id": "severance-agreement-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 12,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "Integer",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "String",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.severance\n\nconcept SeveranceAgreement {\n  o String companyName\n  o String employeeName\n  o Double severanceAmount\n  o Integer installmentCount\n  o Integer installmentPeriodWeeks\n  o DateTime separationDate\n  o Integer healthBenefitsContinuationMonths\n  o Boolean requiresGeneralRelease\n  o Boolean requiresNonRevocation\n  o String releaseScope\n  o String applicableLawReleaseDeadline\n  o Boolean obligationsVoidUponNonExecution\n}"
+    },
+    {
+      "id": "severance-agreement-03-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 12,
+      "types_covered": 5,
+      "gold_types": [
+        "String",
+        "Double",
+        "Integer",
+        "DateTime",
+        "Boolean",
+        "Integer",
+        "DateTime"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "DateTime",
+        "DateTime",
+        "Boolean",
+        "Duration",
+        "Duration",
+        "String[]",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.severance\n\nconcept SeveranceAgreement {\n  o String companyName\n  o String employeeName\n  o MonetaryAmount severancePayment\n  o Integer weeksOfCompensation\n  o DateTime paymentDueDate\n  o DateTime releaseExecutionDeadline\n  o Boolean cobrabenefitsProvided\n  o Duration cobraCoveragePeriod\n  o Duration nonCompetePeriod\n  o String[] restrictedTerritories\n  o Boolean releaseRequired\n  o String considerationDescription\n}"
+    },
+    {
+      "id": "shareholder-agreement-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Integer",
+        "Double",
+        "Integer",
+        "DateTime",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "Integer",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.shareclause\n\nconcept ShareTransferClause {\n  o String shareholderName\n  o Integer totalSharesOwned\n  o String shareClass\n  o DateTime noticeDate\n  o Double pricePerShare\n  o Integer sharesOffered\n  o Integer rightOfFirstRefusalDays\n  o Boolean requiresBoardApproval\n  o Boolean subjectToTransferRestrictions\n  o String companyName\n}"
+    },
+    {
+      "id": "shareholder-agreement-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 9,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "Integer",
+        "DateTime",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "Double",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.clausemodels\n\nconcept ShareTransferRightOfFirstRefusal {\n  o DateTime effectiveDate\n  o String shareholderName\n  o Double shareholdingPercentage\n  o String companyName\n  o MonetaryAmount offerPrice\n  o Integer noticeperiodDays\n  o Boolean requiresBoardApproval\n  o Boolean mustOfferToExistingShareholders\n  o Boolean termsCannotBeMoreFavorable\n}"
+    },
+    {
+      "id": "shareholder-agreement-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Integer",
+        "Double",
+        "Integer",
+        "DateTime",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "Integer",
+        "String",
+        "Integer",
+        "Integer",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.shareholder\n\nconcept ShareTransferClause {\n  o String shareholderName\n  o Integer sharesOwned\n  o String companyName\n  o Integer noticeRequiredDays\n  o Integer sharesBeingTransferred\n  o String proposedTransfeeName\n  o Double pricePerShare\n  o Double remainingShareholdersPercentage\n  o DateTime rightOfFirstRefusalEffectiveDate\n  o Boolean preemptiveRightExists\n}"
+    },
+    {
       "id": "signature-block-title-name-date-modelgen-01",
       "gold_field_count": 5,
       "pred_field_count": 8,
@@ -1696,6 +3984,271 @@
         "Double"
       ],
       "model_raw": "namespace org.accordproject.latedeliverypnalty\n\nconcept LateDeliveryPenalty {\n  o String buyerName\n  o String sellerName\n  o Double penaltyPercentagePerPeriod\n  o Integer delayPeriodDays\n  o Double maximumPenaltyPercentage\n  o Integer terminationThresholdDays\n  o Double goodsValue\n}"
+    },
+    {
+      "id": "software-license-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 15,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.softwarelicense\n\nconcept SoftwareLicenseAgreement {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licensorEntity\n  o String licenseeName\n  o String licenseeEntity\n  o String softwareName\n  o Boolean isExclusive\n  o Double licenseFeeAmount\n  o Integer maxConcurrentUsers\n  o Integer licenseTermYears\n  o Boolean isPersonalToLicensee\n  o Boolean isAssignable\n  o Boolean isSublicensable\n  o Boolean isTransferable\n  o Boolean requiresWrittenConsent\n}"
+    },
+    {
+      "id": "software-license-02-modelgen-01",
+      "gold_field_count": 9,
+      "pred_field_count": 19,
+      "types_covered": 9,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Integer",
+        "Integer"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Double",
+        "String",
+        "Boolean",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Boolean",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.softwarelicense\n\nconcept SoftwareLicense {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licensorEntity\n  o String licenseeName\n  o String licenseeEntity\n  o String softwareProduct\n  o Integer licenseTerm\n  o String licenseTermUnit\n  o Double licenseFeAmount\n  o String licenseCurrency\n  o Boolean isNonExclusive\n  o Integer maxAuthorizedUsers\n  o Boolean isAssignable\n  o Boolean isSublicensable\n  o Boolean isTransferable\n  o Boolean requiresLicensorConsent\n  o Integer renewalNoticeRequiredDays\n  o Boolean autoTerminateOnNonRenewal\n  o Boolean allRightsReserved\n}"
+    },
+    {
+      "id": "software-license-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 15,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "Double",
+        "String",
+        "Integer",
+        "Integer",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.softwarelicense\n\nconcept SoftwareLicense {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licensorEntity\n  o String licenseeName\n  o String licenseeEntity\n  o String softwareProductName\n  o String softwareProductVersion\n  o Boolean isExclusive\n  o Double licenseFeeAmount\n  o String licenseFeePaymentTerm\n  o Integer authorizedUserCount\n  o Integer licenseDurationYears\n  o Boolean isTransferable\n  o Boolean requiresLicensorConsent\n  o Boolean requiresCertificationUponExpiration\n}"
+    },
+    {
+      "id": "statement-of-work-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "Double",
+        "String",
+        "String",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.statementofwork\n\nconcept StatementOfWork {\n  o String contractor\n  o String client\n  o String projectDescription\n  o DateTime commencementDate\n  o DateTime completionDeadline\n  o Integer milestoneCount\n  o Double totalFee\n  o String paymentBasis\n  o String paymentTrigger\n  o String deliverableStandard\n}"
+    },
+    {
+      "id": "statement-of-work-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 10,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Double",
+        "Boolean",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.consulting\n\nconcept ConsultingServiceAgreement {\n  o String serviceProviderName\n  o String clientName\n  o DateTime commencementDate\n  o DateTime conclusionDate\n  o Integer numberOfDeliverables\n  o Double totalFee\n  o Double milestonePaymentPercentage\n  o Boolean timeIsOfEssence\n  o String exhibitAReference\n  o Boolean expensesReimbursable\n}"
+    },
+    {
+      "id": "statement-of-work-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 13,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "Double",
+        "Integer",
+        "Double",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.statementofwork\n\nconcept StatementOfWork {\n  o String contractorName\n  o String contractorEntity\n  o String clientName\n  o String clientEntity\n  o String exhibitReference\n  o DateTime commencementDate\n  o DateTime completionDate\n  o Integer milestoneCount\n  o Double totalProjectFee\n  o Integer invoiceDuedays\n  o Double lateFePercentagePerMonth\n  o Boolean autoRenewal\n  o String terminationCondition\n}"
+    },
+    {
+      "id": "sublease-agreement-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 17,
+      "types_covered": 6,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "String",
+        "MonetaryAmount",
+        "Boolean",
+        "String",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.sublease\n\nconcept SubleaseAgreement {\n  o String sublessorName\n  o String sublessorRole\n  o String subleeseeName\n  o String subleaseRole\n  o String premisesAddress\n  o String premisesCity\n  o String premisesState\n  o String premisesZipCode\n  o DateTime termCommencementDate\n  o DateTime termExpirationDate\n  o MonetaryAmount monthlyRentAmount\n  o String rentDueDay\n  o MonetaryAmount securityDepositAmount\n  o Boolean primelandlordConsentObtained\n  o String consentStatus\n  o Boolean subordinateToMasterLease\n  o Boolean subleaseSubjectToMasterLease\n}"
+    },
+    {
+      "id": "sublease-agreement-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 13,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Boolean",
+        "Double"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.sublease\n\nconcept SubleaseAgreement {\n  o String sublessor\n  o String sublessee\n  o String premisesAddress\n  o String premisesCity\n  o String premisesState\n  o String premisesZipCode\n  o String premisesSuite\n  o Double monthlyRent\n  o Integer rentDueDay\n  o DateTime commencementDate\n  o DateTime terminationDate\n  o Double securityDeposit\n  o Boolean masterLandlordConsentRequired\n}"
     },
     {
       "id": "supply-agreement-loc-modelgen-01",
@@ -1928,7 +4481,7 @@
     {
       "id": "supplyagreement-perishable-goods-modelgen-01",
       "gold_field_count": 16,
-      "pred_field_count": 96,
+      "pred_field_count": 97,
       "types_covered": 14,
       "gold_types": [
         "DateTime",
@@ -2018,13 +4571,15 @@
         "Boolean",
         "Boolean",
         "Boolean",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean",
         "Boolean",
         "String",
         "String",
+        "String",
         "Boolean",
-        "Boolean",
-        "Boolean",
-        "Double",
         "String",
         "DateTime",
         "Party",
@@ -2043,10 +4598,114 @@
         "ConfidentialityTerms",
         "TerminationTerms",
         "LiabilityLimitation",
-        "GeneralProvisions",
-        "DeliveryMethodSpecification"
+        "GeneralProvisions"
       ],
-      "model_raw": "```concerto\nnamespace org.accordproject.supplyagreement\n\nconcept Party {\n  o String name\n  o String jurisdiction\n  o String businessAddress\n  o String city\n  o String state\n  o String zipCode\n}\n\nconcept Product {\n  o String description\n  o String grade\n  o String size\n  o String variety\n  o String origin\n}\n\nconcept PurchaseOrder {\n  o String productIdentifier\n  o Double quantity\n  o Double unitPrice\n  o String deliveryLocation\n  o DateTime deliveryDate\n}\n\nconcept PurchaseOrderResponse {\n  o String status\n  o Integer responseTimeBusinessDays\n  o String modifiedPurchaseOrder optional\n}\n\nconcept CancellationTerms {\n  o Integer cancellationWindowBusinessDays\n  o Boolean noExpenseToCancel\n}\n\nconcept DeliveryTerms {\n  o String deliveryAddress\n  o String deliveryMethod\n  o DateTime deliveryDate\n}\n\nconcept AcceptanceCriteria {\n  o Double minimumQuantityKG\n  o Double maximumQuantityKG\n  o Double minimumTemperatureCelsius\n  o Double maximumTemperatureCelsius\n  o Double minimumHumidityPercent\n  o Double maximumHumidityPercent\n  o Double breachPenaltyFactor\n}\n\nconcept InspectionTerms {\n  o Integer inspectionWindowBusinessDays\n}\n\nconcept Pricing {\n  o Double pricePerKG\n  o String currency\n  o String incoterm\n  o Integer priceUpdateFrequencyDays\n  o Integer priceNoticeAdvanceDays\n}\n\nconcept PaymentTerms {\n  o String paymentTiming\n  o String fundType\n  o String accountNumber\n  o String routingNumber\n}\n\nconcept TermDefinition {\n  o DateTime initialTermStartDate\n  o Integer initialTermYears\n  o Integer renewalTermYears\n  o Integer renewalNoticeAdvanceBusinessDays\n}\n\nconcept WarrantyTerms {\n  o Boolean freeFromDefects\n  o Boolean workmanlikeQuality\n  o Boolean conformToSpecifications\n  o String remedyType\n  o Integer noticeRequirementDays\n  o Boolean coversAbuse\n  o Boolean coversNeglect\n  o Boolean coversMisuse\n  o Boolean coversUnauthorizedRepair\n}\n\nconcept ConfidentialityTerms {\n  o Boolean holdInConfidence\n  o Boolean useOnlyForAgreedPurpose\n  o Boolean restrictThirdPartyDisclosure\n  o Boolean requireNoticeOfLegalDisclosure\n  o Boolean requireNoticeOfUnauthorizedDisclosure\n}\n\nconcept TerminationTerms {\n  o Boolean immediateObligationCessation\n  o Boolean paymentObligationsContinue\n  o Boolean refundUnearned\n  o Boolean liabilityForPreTerminationIssues\n  o Boolean liabilityForPostTerminationIssues\n}\n\nconcept LiabilityLimitation {\n  o Boolean excludeRemoteDamages\n  o Boolean excludeSpeculativeDamages\n  o Boolean excludeUnforeseenDamages\n}\n\nconcept GeneralProvisions {\n  o Boolean entireAgreementClause\n  o Boolean amendmentRequiresWriting\n  o Boolean assignmentRequiresConsent\n  o String governingLawState\n  o String jurisdictionState\n  o Boolean consentToNonExclusiveJurisdiction\n}\n\nconcept DeliveryMethodSpecification {\n  o Boolean temperatureControlled\n  o Boolean humidityControlled\n  o Double sensorLoggingFrequencyPerHour\n}\n\nconcept SupplyAgreement {\n  o String agreementName\n  o DateTime executionDate\n  o Party supplier\n  o Party purchaser\n  o Product product\n  o PurchaseOrder purchaseOrder\n  o PurchaseOrderResponse purchaseOrderResponse\n  o CancellationTerms cancellationTerms\n  o DeliveryTerms deliveryTerms\n  o AcceptanceCriteria acceptanceCriteria\n  o InspectionTerms inspectionTerms\n  o Pricing pricing\n  o PaymentTerms paymentTerms\n  o TermDefinition termDefinition\n  o WarrantyTerms warrantyTerms\n  o ConfidentialityTerms confidentialityTerms\n  o TerminationTerms terminationTerms\n  o LiabilityLimitation liabilityLimitation\n  o GeneralProvisions generalProvisions\n  o DeliveryMethodSpecification deliveryMethodSpecification\n}\n```"
+      "model_raw": "```concerto\nnamespace org.accordproject.supplyagreement\n\nconcept Party {\n  o String name\n  o String jurisdiction\n  o String businessAddress\n  o String city\n  o String state\n  o String zipCode\n}\n\nconcept Product {\n  o String description\n  o String grade\n  o String size\n  o String variety\n  o String origin\n}\n\nconcept PurchaseOrder {\n  o String productIdentifier\n  o Double quantity\n  o Double unitPrice\n  o String deliveryLocation\n  o DateTime deliveryDate\n}\n\nconcept PurchaseOrderResponse {\n  o String status\n  o Integer responseTimeBusinessDays\n  o String modifiedPurchaseOrder optional\n}\n\nconcept CancellationTerms {\n  o Integer cancellationWindowBusinessDays\n  o Boolean noExpenseToCancel\n}\n\nconcept DeliveryTerms {\n  o String deliveryAddress\n  o String deliveryMethod\n  o DateTime deliveryDate\n}\n\nconcept AcceptanceCriteria {\n  o Double minimumQuantityKG\n  o Double maximumQuantityKG\n  o Double minimumTemperatureCelsius\n  o Double maximumTemperatureCelsius\n  o Double minimumHumidityPercent\n  o Double maximumHumidityPercent\n  o Double breachPenaltyFactor\n}\n\nconcept InspectionTerms {\n  o Integer inspectionWindowBusinessDays\n}\n\nconcept Pricing {\n  o Double pricePerKG\n  o String currency\n  o String incoterm\n  o Integer priceUpdateFrequencyDays\n  o Integer priceNoticeAdvanceDays\n}\n\nconcept PaymentTerms {\n  o String paymentTiming\n  o String fundType\n  o String accountNumber\n  o String routingNumber\n}\n\nconcept TermDefinition {\n  o DateTime initialTermStartDate\n  o Integer initialTermYears\n  o Integer renewalTermYears\n  o Integer renewalNoticeAdvanceBusinessDays\n}\n\nconcept WarrantyTerms {\n  o Boolean freeFromDefects\n  o Boolean workmanlikeQuality\n  o Boolean conformToSpecifications\n  o String remedyType\n  o Integer noticeRequirementDays\n  o Boolean coversAbuse\n  o Boolean coversNeglect\n  o Boolean coversMisuse\n  o Boolean coversUnauthorizedRepair\n}\n\nconcept ConfidentialityTerms {\n  o Boolean holdInConfidence\n  o Boolean useOnlyForAgreedPurpose\n  o Boolean restrictThirdPartyDisclosure\n  o Boolean requireNoticeOfLegalDisclosure\n  o Boolean requireNoticeOfUnauthorizedDisclosure\n}\n\nconcept TerminationTerms {\n  o Boolean immediateObligationCessation\n  o Boolean paymentObligationsContinue\n  o Boolean refundUnearned\n  o Boolean liabilityLimitedToPreTermination\n}\n\nconcept LiabilityLimitation {\n  o Boolean excludeRemoteDamages\n  o Boolean excludeSpeculativeDamages\n  o Boolean excludeUnforeseenDamages\n}\n\nconcept GeneralProvisions {\n  o Boolean entireAgreementClause\n  o Boolean amendmentRequiresWriting\n  o Boolean assignmentRequiresConsent\n  o String noticeMethod\n  o Integer noticeEffectiveBusinessDays\n  o Boolean severabilityClause\n  o Boolean noImpliedWaiver\n  o Boolean writtenWaiverRequired\n  o String governingLaw\n  o String jurisdiction\n  o String venue\n  o Boolean counterpartsAllowed\n}\n\nconcept SupplyAgreement {\n  o String agreementName\n  o DateTime executionDate\n  o Party supplier\n  o Party purchaser\n  o Product product\n  o PurchaseOrder purchaseOrder\n  o PurchaseOrderResponse purchaseOrderResponse\n  o CancellationTerms cancellationTerms\n  o DeliveryTerms deliveryTerms\n  o AcceptanceCriteria acceptanceCriteria\n  o InspectionTerms inspectionTerms\n  o Pricing pricing\n  o PaymentTerms paymentTerms\n  o TermDefinition termDefinition\n  o WarrantyTerms warrantyTerms\n  o ConfidentialityTerms confidentialityTerms\n  o TerminationTerms terminationTerms\n  o LiabilityLimitation liabilityLimitation\n  o GeneralProvisions generalProvisions\n}\n```"
+    },
+    {
+      "id": "trademark-license-01-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 19,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "String",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "String[]",
+        "Boolean",
+        "Double",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Boolean",
+        "Boolean",
+        "String[]"
+      ],
+      "model_raw": "namespace org.accordproject.trademark.license\n\nconcept TrademarkLicense {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licensorEntity\n  o String licenseeName\n  o String licenseeEntity\n  o String trademark\n  o String[] authorizedUses\n  o String[] territory\n  o Boolean exclusivity\n  o Double royaltyPercentage\n  o String royaltyBasis\n  o String paymentFrequency\n  o String paymentTiming\n  o Integer initialTermYears\n  o String terminationCondition1\n  o String terminationCondition2\n  o Boolean goodwillInurestoLicensor\n  o Boolean licenseeCanRegisterMark\n  o String[] restrictedActions\n}"
+    },
+    {
+      "id": "trademark-license-02-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 15,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "String",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Boolean",
+        "Boolean",
+        "String",
+        "String[]",
+        "String[]",
+        "Double",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.trademark.license\n\nconcept TrademarkLicense {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licenseeeName\n  o Boolean exclusive\n  o Boolean transferable\n  o String trademarkName\n  o String[] allowedUses\n  o String[] allowedTerritories\n  o Double royaltyPercentage\n  o String royaltyBasis\n  o String paymentFrequency\n  o String paymentTiming\n  o Integer licenseTerm\n  o String licenseTermUnit\n  o Boolean goodwillInurestoLicensor\n}"
+    },
+    {
+      "id": "trademark-license-03-modelgen-01",
+      "gold_field_count": 8,
+      "pred_field_count": 14,
+      "types_covered": 8,
+      "gold_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "String",
+        "Double",
+        "Integer",
+        "Boolean"
+      ],
+      "pred_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "String[]",
+        "Double",
+        "String",
+        "String",
+        "Integer",
+        "Boolean",
+        "Boolean"
+      ],
+      "model_raw": "namespace org.accordproject.trademark.license\n\nconcept TrademarkLicenseAgreement {\n  o DateTime effectiveDate\n  o String licensorName\n  o String licensorEntity\n  o String licenseeName\n  o String licenseeEntity\n  o String trademark\n  o String[] approvedProductLines\n  o String[] licensedTerritories\n  o Double royaltyPercentage\n  o String royaltyCalculationBasis\n  o String royaltyPaymentFrequency\n  o Integer initialTermYears\n  o Boolean exclusiveRight\n  o Boolean goodwillInurestoLicensor\n}"
     },
     {
       "id": "volumediscount-modelgen-01",
@@ -2095,7 +4754,7 @@
     {
       "id": "volumediscountolist-modelgen-01",
       "gold_field_count": 1,
-      "pred_field_count": 38,
+      "pred_field_count": 37,
       "types_covered": 0,
       "gold_types": [
         "RateRange[]"
@@ -2108,7 +4767,6 @@
         "Double",
         "MonetaryAmount",
         "MonetaryAmount",
-        "Boolean",
         "String",
         "String",
         "MonetaryAmount",
@@ -2118,29 +4776,29 @@
         "MonetaryAmount",
         "MonetaryAmount",
         "MonetaryAmount",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
+        "String",
         "Double",
         "Double",
         "Double",
         "Double",
         "Double",
         "String",
-        "Boolean"
+        "String",
+        "MonetaryAmount",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "String"
       ],
-      "model_raw": "```\nnamespace org.accordproject.volumebasedcardacceptance\n\nconcept VolumeBasedCardAcceptanceAgreement {\n  o String cardCompanyName\n  o String cardCompanyState\n  o String merchantName\n  o String discountType\n  o Double discountRate\n  o MonetaryAmount flatTransactionFee\n  o MonetaryAmount monthlyFlatFee\n  o Boolean monthlyFlatFeeApplies\n  o String paymentCurrency\n  o String paymentPlan\n  o MonetaryAmount chargesFaceAmount\n  o MonetaryAmount totalDeductions\n  o MonetaryAmount discount\n  o MonetaryAmount amountsOwedToCardCompany\n  o MonetaryAmount chargebackAmount\n  o MonetaryAmount creditsSubmitted\n  o MonetaryAmount settlementAmount\n  o Double transactionVolume\n  o Double volumeThresholdLow1\n  o Double volumeThresholdHigh1\n  o Double discountRateVolumeTier1\n  o Double volumeThresholdLow2\n  o Double volumeThresholdHigh2\n  o Double discountRateVolumeTier2\n  o Double volumeThresholdLow3\n  o Double volumeThresholdHigh3\n  o Double discountRateVolumeTier3\n  o Double volumeThresholdLow4\n  o Double volumeThresholdHigh4\n  o Double discountRateVolumeTier4\n  o Double volumeThresholdLow5\n  o Double volumeThresholdHigh5\n  o Double discountRateVolumeTier5\n  o Double volumeThresholdLow6\n  o Double volumeThresholdHigh6\n  o Double discountRateVolumeTier6\n  o String bankAccountNumber\n  o Boolean paymentDebitFromBankAccount\n}\n```"
+      "model_raw": "```\nnamespace org.accordproject.volumebasedcardacceptance\n\nconcept VolumeBasedCardAcceptanceAgreement {\n  o String cardCompanyName\n  o String cardCompanyState\n  o String merchantName\n  o String discountType\n  o Double discountRate\n  o MonetaryAmount flatTransactionFee optional\n  o MonetaryAmount monthlyFlatFee optional\n  o String paymentCurrency\n  o String paymentPlan\n  o MonetaryAmount chargesFaceAmount\n  o MonetaryAmount discount\n  o MonetaryAmount amountsOwedToCardCompany optional\n  o MonetaryAmount chargebackAmount optional\n  o MonetaryAmount creditsSubmitted optional\n  o MonetaryAmount settlementAmount\n  o MonetaryAmount deductionsRejectionsWithholdings\n  o String bankAccountNumber optional\n  o Double volumeThreshold\n  o Double discountRateForVolume\n}\n\nconcept VolumeDiscountTier {\n  o Double volumeMinimum\n  o Double volumeMaximum\n  o Double discountPercentage\n}\n\nconcept Establishment {\n  o String establishmentId\n  o String establishmentName\n  o MonetaryAmount chargesSubmitted\n}\n\nconcept Transaction {\n  o String transactionId\n  o MonetaryAmount transactionAmount\n  o Double applicableDiscountRate\n  o MonetaryAmount discountAmount\n  o MonetaryAmount transactionFee optional\n}\n\nconcept Settlement {\n  o String settlementId\n  o DateTime settlementDate\n  o MonetaryAmount grossChargesAmount\n  o MonetaryAmount totalDiscount\n  o MonetaryAmount totalDeductions\n  o MonetaryAmount netSettlementAmount\n  o String paymentStatus\n}\n```"
     },
     {
       "id": "volumediscountulist-modelgen-01",
@@ -2172,6 +4830,63 @@
         "Boolean"
       ],
       "model_raw": "namespace org.accordproject.cardmerchant\n\nconcept MerchantAgreement {\n  o String merchantName\n  o String merchantState\n  o String currency\n  o Double discountRatePercentage\n  o MonetaryAmount flatTransactionFee optional\n  o MonetaryAmount monthlyFlatFee optional\n  o Boolean monthlyFlatFeeApplies\n  o MonetaryAmount chargesFaceAmount\n  o MonetaryAmount totalDeductions\n  o MonetaryAmount discountAmount\n  o MonetaryAmount amountsOwedToCard\n  o MonetaryAmount chargebackAmount\n  o MonetaryAmount creditsSubmitted\n  o MonetaryAmount paymentAmount\n  o Double transactionVolume\n  o String paymentPlan\n  o Integer numberOfEstablishments\n  o Boolean paymentByAgent\n  o Boolean bankAccountDebit\n}"
+    },
+    {
+      "id": "warranty-clause-01-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 8,
+      "types_covered": 6,
+      "gold_types": [
+        "Integer",
+        "DateTime",
+        "String",
+        "Double",
+        "Double",
+        "Boolean",
+        "String"
+      ],
+      "pred_types": [
+        "String",
+        "DateTime",
+        "Integer",
+        "Double",
+        "MonetaryAmount",
+        "String",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.warranty\n\nconcept WarrantyClause {\n  o String supplier\n  o DateTime effectiveDate\n  o Integer warrantyPeriodMonths\n  o Double defectiveUnitThresholdPercent\n  o MonetaryAmount maximumLiability\n  o String governingLaw\n  o Boolean extendedCoverageAvailable\n  o String remedyOptions\n}"
+    },
+    {
+      "id": "warranty-clause-02-modelgen-01",
+      "gold_field_count": 7,
+      "pred_field_count": 13,
+      "types_covered": 7,
+      "gold_types": [
+        "String",
+        "String",
+        "Integer",
+        "DateTime",
+        "Double",
+        "Boolean",
+        "Boolean"
+      ],
+      "pred_types": [
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "DateTime",
+        "Boolean",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "Boolean",
+        "String"
+      ],
+      "model_raw": "namespace org.accordproject.warranty\n\nconcept WarrantyClause {\n  o String manufacturer\n  o String productModel\n  o String warrantyScope\n  o Integer warrantyPeriodMonths\n  o DateTime effectiveDate\n  o Boolean transferable\n  o String applicableParty\n  o String coveredDefectDescription\n  o String remedyType\n  o Double maxLiabilityAmount\n  o String currencyCode\n  o Boolean exclusiveRemedy\n  o String disclaimerScope\n}"
     }
   ]
 }

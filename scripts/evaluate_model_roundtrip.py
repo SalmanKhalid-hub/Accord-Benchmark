@@ -13,7 +13,7 @@ from openai import OpenAI
 MODEL = os.environ.get("BENCH_MODEL", "google/gemini-2.5-flash")
 MAX_TRIES = 5
 LIMIT = None                # run all 51
-RULES_IN_PROMPT = True     # False = round-trip experiment; True = rules-upfront ceiling
+RULES_IN_PROMPT = os.environ.get("RULES_IN_PROMPT", "false").lower() == "true"  # env-controlled: false=round-trip experiment, true=rules-upfront ceiling
 NODE_PATH = os.path.expanduser(
     "~/.npm-global/lib/node_modules/@accordproject/concerto-cli/node_modules")
 VALIDATOR = "scripts/validate_cto.js"

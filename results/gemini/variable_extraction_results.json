@@ -1,8 +1,8 @@
 {
   "model": "google/gemini-2.5-flash",
-  "total_fields": 463,
-  "correct_fields": 374,
-  "field_accuracy": 0.8077753779697624,
+  "total_fields": 1150,
+  "correct_fields": 1028,
+  "field_accuracy": 0.8939130434782608,
   "details": [
     {
       "id": "acceptance-of-delivery-extract-01",
@@ -11,10 +11,40 @@
       "model_raw": "```json\n{\n  \"shipper\": \"Party A\",\n  \"receiver\": \"Party B\",\n  \"deliverable\": \"Widgets\",\n  \"businessDays\": \"10\",\n  \"attachment\": \"Attachment X\"\n}\n```"
     },
     {
+      "id": "advertising-agreement-01-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"advertiserName\": \"Solstice Beverages Inc.\",\n  \"agencyName\": \"Meridian Creative Group LLC\",\n  \"campaignStartDate\": \"2024-06-01\",\n  \"campaignEndDate\": \"2024-12-31\",\n  \"monthlyMediaBudget\": 45000.00,\n  \"agencyCommissionRate\": 0.15,\n  \"minimumImpressions\": 2500000,\n  \"exclusiveEngagement\": false\n}\n```"
+    },
+    {
+      "id": "advertising-agreement-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"advertiserName\": \"Northbridge Retail Group\",\n  \"agencyName\": \"Vantage Media Partners LLC\",\n  \"campaignName\": \"Summer Bright Launch\",\n  \"mediaBudget\": 125000.00,\n  \"guaranteedImpressions\": 5000000,\n  \"campaignStartDate\": \"2024-06-01\",\n  \"campaignEndDate\": \"2024-08-31\",\n  \"exclusiveCategory\": \"retail-sector\"\n}\n```"
+    },
+    {
+      "id": "arbitration-clause-01-extract-01",
+      "correct_fields": 9,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"arbitrationInstitution\": \"Singapore International Arbitration Centre\",\n  \"seatOfArbitration\": \"Singapore\",\n  \"numberOfArbitrators\": 3,\n  \"governingLaw\": \"laws of Singapore\",\n  \"arbitrationRules\": \"SIAC Arbitration Rules\",\n  \"languageOfArbitration\": \"English\",\n  \"expeditedProcedure\": true,\n  \"costsCap\": 250000.00,\n  \"noticeDeadlineDate\": \"2024-03-01\"\n}\n```"
+    },
+    {
+      "id": "arbitration-clause-02-extract-01",
+      "correct_fields": 9,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"arbitrationInstitution\": \"Singapore International Arbitration Centre\",\n  \"arbitrationSeat\": \"Singapore\",\n  \"governingLaw\": \"laws of England and Wales\",\n  \"numberOfArbitrators\": 3,\n  \"arbitrationRules\": \"SIAC Arbitration Rules\",\n  \"expeditedProcedureAvailable\": true,\n  \"filingDeadlineDays\": 30,\n  \"languageOfArbitration\": \"English\",\n  \"effectiveDate\": \"2024-03-01\"\n}\n```"
+    },
+    {
+      "id": "arbitration-clause-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"arbitrationBody\": \"International Chamber of Commerce\",\n  \"arbitrationRules\": \"ICC Arbitration Rules\",\n  \"seatOfArbitration\": \"Geneva, Switzerland\",\n  \"numberOfArbitrators\": 3,\n  \"governingLaw\": \"laws of Switzerland\",\n  \"filingDeadlineDays\": 30,\n  \"expeditedProcedures\": true,\n  \"effectiveDate\": \"2024-03-01\"\n}\n```"
+    },
+    {
       "id": "bill-of-lading-extract-01",
-      "correct_fields": 10,
+      "correct_fields": 0,
       "total_fields": 17,
-      "model_raw": "```json\n{\n  \"accountName\": \"CLAUSE TECHNOLOGIES\",\n  \"scac\": \"MAEU\",\n  \"bolNumber\": \"MAEU-ABC12345678\",\n  \"bookingNumber\": \"2021030264747\",\n  \"exportReferences\": null,\n  \"onwardInstructions\": null,\n  \"shipper\": \"TO ORDER\",\n  \"consignee\": \"SAME AS CONSIGNEE\",\n  \"notifyParty\": null,\n  \"vessel\": \"Lagua\",\n  \"voyageNumber\": \"725\",\n  \"portOfLoading\": \"Shanghai, China\",\n  \"portOfDischarge\": \"Brisbane, Australia\",\n  \"placeOfReceipt\": \"Brisbane, Australia\",\n  \"placeOfDelivery\": \"Brisbane, Australia\",\n  \"commodities\": [\n    {\n      \"amount\": \"15 TONNE\",\n      \"package\": \"CONTAINER\",\n      \"description\": \"Corn\",\n      \"nmfc\": null,\n      \"freightClass\": \"CLASS_400\",\n      \"hazardous\": \"NO\"\n    },\n    {\n      \"amount\": \"35 TONNE\",\n      \"package\": \"CONTAINER\",\n      \"description\": \"Wheat\",\n      \"nmfc\": null,\n      \"freightClass\": \"CLASS_400\",\n      \"hazardous\": \"NO\"\n    }\n  ],\n  \"declaredValue\": null\n}\n```"
+      "model_raw": "```json\n{\n  \"accountName\": \"CLAUSE TECHNOLOGIES\",\n  \"scac\": \"MAEU\",\n  \"bolNumber\": \"MAEU-ABC12345678\",\n  \"bookingNumber\": \"2021030264747\",\n  \"exportReferences\": null,\n  \"onwardInstructions\": null,\n  \"shipper\": \"TO ORDER\",\n  \"consignee\": \"SAME AS CONSIGNEE\",\n  \"notifyParty\": null"
     },
     {
       "id": "car-rental-tr-extract-01",
@@ -29,10 +59,64 @@
       "model_raw": "```json\n{\n  \"companyName\": \"ACME\",\n  \"incorporationState\": \"NY\",\n  \"streetAddress\": \"555 main street\",\n  \"addressRegion\": \"NY\",\n  \"addressLocality\": \"New York\",\n  \"postalCode\": \"10001\",\n  \"registeredAgentName\": \"Andie Agent\",\n  \"incorporationDate\": \"04/01/2019\",\n  \"authorizedShareCapital\": \"400\",\n  \"parValue\": \"0.10\",\n  \"incorporatorName\": \"FooBarAtor\",\n  \"incorporatorAddress\": \"555 oak street\",\n  \"incorporatorCity\": \"Baltimore\",\n  \"incorporatorState\": \"MD\",\n  \"incorporatorZip\": \"21201\"\n}\n```"
     },
     {
+      "id": "commercial-lease-01-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"landlordName\": \"Harborview Properties LLC\",\n  \"tenantName\": \"Bluepoint Retail Group Inc.\",\n  \"premisesAddress\": \"482 Commerce Street, Suite 210, Newark, NJ\",\n  \"leaseCommencementDate\": \"2024-03-01\",\n  \"monthlyBaseRent\": 8500.00,\n  \"annualEscalationRate\": 0.035,\n  \"securityDeposit\": 17000.00,\n  \"renewalOptionExercised\": false\n}\n```"
+    },
+    {
+      "id": "commercial-lease-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"tenantName\": \"Bluepoint Retail Group LLC\",\n  \"landlordName\": \"Harborview Properties Inc.\",\n  \"leaseCommencementDate\": \"2024-03-01\",\n  \"baseRent\": \"$18500.00\",\n  \"escalationRate\": \"3.5%\",\n  \"leaseTermYears\": 5,\n  \"securityDeposit\": \"$37000.00\",\n  \"renewalOptionAvailable\": true\n}\n```"
+    },
+    {
+      "id": "commercial-lease-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"landlordName\": \"Meridian Commercial Holdings LLC\",\n  \"tenantName\": \"Brightside Retail Partners Inc.\",\n  \"leaseStartDate\": \"2024-03-01\",\n  \"monthlyRent\": 8500.00,\n  \"lateFeePercentage\": 5.0,\n  \"securityDeposit\": 17000.00,\n  \"renewalOptionYears\": 5,\n  \"autoRenewal\": false\n}\n```"
+    },
+    {
       "id": "company-information-extract-01",
       "correct_fields": 5,
       "total_fields": 5,
       "model_raw": "```json\n{\n  \"name\": \"Example Corp.\",\n  \"industry\": \"Healthcare\",\n  \"website\": \"https://example.org\",\n  \"address\": \"1 Main Street, Portland, ME, 12345, USA\",\n  \"numberOfEmployees\": 250\n}\n```"
+    },
+    {
+      "id": "confidentiality-clause-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"Meridian Biotech Inc.\",\n  \"receivingParty\": \"Northbridge Consulting LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"confidentialityPeriod\": \"5 years\",\n  \"governingLaw\": \"State of Delaware\",\n  \"liquidatedDamages\": \"250000.00\",\n  \"returnPeriodDays\": \"15\",\n  \"permitsInjunctiveRelief\": true\n}\n```"
+    },
+    {
+      "id": "confidentiality-clause-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"Northbridge Analytics Inc.\",\n  \"receivingParty\": \"Vantage Consulting Group LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"confidentialityPeriod\": \"5 years from the date of disclosure\",\n  \"governingLaw\": \"State of Delaware\",\n  \"injunctiveReliefAvailable\": true,\n  \"returnOfMaterialsDays\": 15,\n  \"liquidatedDamages\": 50000.00\n}\n```"
+    },
+    {
+      "id": "confidentiality-clause-03-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"Nimbus Analytics Inc.\",\n  \"receivingParty\": \"Fairview Consulting Group LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"confidentialityPeriod\": \"5 years following the date of disclosure\",\n  \"returnOfMaterials\": \"Upon written request by the Disclosing Party, or upon termination of the parties' relationship, the Receiving Party shall promptly return or destroy all documents, files, and materials containing confidential information, retaining no copies thereof.\",\n  \"governingLaw\": \"State of Delaware\",\n  \"liquidatedDamages\": \"75000.00\"\n}\n```"
+    },
+    {
+      "id": "consulting-agreement-01-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"consultantName\": \"Meridian Advisory Group LLC\",\n  \"clientName\": \"Nova Health Systems, Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"monthlyFee\": 12500.00,\n  \"noticePeriodDays\": 30,\n  \"autoRenews\": false,\n  \"expenseCapPercentage\": 10.0\n}\n```"
+    },
+    {
+      "id": "consulting-agreement-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"consultantName\": \"Meridian Advisory Partners LLC\",\n  \"clientName\": \"Northgate Retail Holdings, Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"hourlyRate\": 225.00,\n  \"maxHoursPerMonth\": 40,\n  \"invoiceFrequency\": \"monthly\",\n  \"terminationNoticeDays\": 30,\n  \"autoRenewal\": false\n}\n```"
+    },
+    {
+      "id": "consulting-agreement-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"consultantName\": \"Meridian Strategy Partners LLC\",\n  \"clientName\": \"Northbridge Retail Group, Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"hourlyRate\": 225.00,\n  \"maxHoursPerMonth\": 80,\n  \"invoiceFrequency\": \"monthly\",\n  \"autoRenew\": false,\n  \"terminationNoticeDays\": 30\n}\n```"
     },
     {
       "id": "contact-information-extract-01",
@@ -41,16 +125,70 @@
       "model_raw": "```json\n{\n  \"name\": \"Jane Doe\",\n  \"title\": \"CIO\",\n  \"email\": \"jane@example.com\",\n  \"phone\": \"123-456-789\",\n  \"timezone\": \"America_New_York\",\n  \"communicationChannel\": \"EMAIL\"\n}\n```"
     },
     {
+      "id": "content-licensing-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Northwind Media Group LLC\",\n  \"licenseeName\": \"BrightPath Studios Inc.\",\n  \"contentTitle\": \"Coastal Horizons Photo Collection\",\n  \"licenseFee\": \"7500.00\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"termMonths\": 24,\n  \"territory\": \"North America\",\n  \"isExclusive\": true\n}\n```"
+    },
+    {
+      "id": "content-licensing-02-extract-01",
+      "correct_fields": 9,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"licensor\": \"Meridian Media Group LLC\",\n  \"licensee\": \"Northstar Publishing Corp\",\n  \"workTitle\": \"Echoes of Tomorrow\",\n  \"licenseFee\": \"$15000.0\",\n  \"royaltyRate\": \"7.5%\",\n  \"territory\": \"North America and the European Union\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"expirationDate\": \"2027-03-01\",\n  \"exclusiveGrant\": false\n}\n```"
+    },
+    {
       "id": "copyright-license-extract-01",
       "correct_fields": 11,
       "total_fields": 13,
       "model_raw": "```json\n{\n  \"effectiveDate\": \"01/01/2018\",\n  \"licensee\": \"Me\",\n  \"licenseeState\": \"NY\",\n  \"licenseeEntityType\": \"Company\",\n  \"licenseeAddress\": \"1 Broadway\",\n  \"licensor\": \"Myself\",\n  \"licensorState\": \"NY\",\n  \"licensorEntityType\": \"Company\",\n  \"licensorAddress\": \"2 Broadway\",\n  \"territory\": \"United States\",\n  \"purposeDescription\": \"stuff\",\n  \"workDescription\": \"other stuff\",\n  \"paymentClause\": \"Payment. As consideration in full for the rights granted herein, Licensee shall pay Licensor a one-time fee in the amount of \\\"one hundred US Dollars\\\" (100.0 USD) upon execution of this Agreement, payable as follows: \\\"bank transfer\\\".\"\n}\n```"
     },
     {
+      "id": "data-breach-notification-01-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"dataProcessor\": \"Nimbus Cloud Solutions Inc.\",\n  \"dataController\": \"Harrow Retail Group Ltd.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"notificationPeriodHours\": 72,\n  \"affectedRecordsThreshold\": 500,\n  \"requiresRegulatorNotification\": true,\n  \"lateNotificationPenalty\": 10000.00\n}\n```"
+    },
+    {
+      "id": "data-breach-notification-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"processorName\": \"DataVault Processing Services LLC\",\n  \"controllerName\": \"Meridian Retail Group Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"notificationDeadlineHours\": 72,\n  \"affectedRecordsThreshold\": 500,\n  \"requiresRegulatorNotification\": true,\n  \"maximumLiabilityCap\": 250000.00,\n  \"noticeMethod\": \"email and certified mail\"\n}\n```"
+    },
+    {
+      "id": "data-processing-agreement-01-extract-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"processorName\": \"Northbridge Data Systems, Inc.\",\n  \"controllerName\": \"Larkspur Retail Group, LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"breachNotificationHours\": 48,\n  \"dataRetentionPeriodDays\": 90,\n  \"subprocessingFeePercentage\": 2.5,\n  \"crossBorderTransferPermitted\": true,\n  \"annualAuditRight\": true\n}\n```"
+    },
+    {
+      "id": "data-processing-agreement-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"processorName\": \"Nimbus Cloud Services Inc.\",\n  \"controllerName\": \"Meridian Health Group LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"dataBreachNotificationHours\": 48,\n  \"subProcessingAllowed\": true,\n  \"maxRecordsProcessed\": 5000000,\n  \"annualAuditFee\": 12500.00,\n  \"dataRetentionPeriodDays\": 365\n}\n```"
+    },
+    {
+      "id": "data-processing-agreement-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"processorName\": \"DataVault Solutions Inc.\",\n  \"controllerName\": \"Meridian Health Group LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"breachNotificationHours\": 72,\n  \"dataRetentionDays\": 90,\n  \"subprocessingAllowed\": false,\n  \"annualAuditFee\": 15000.00\n}\n```"
+    },
+    {
       "id": "demandforecast-extract-01",
       "correct_fields": 3,
       "total_fields": 4,
       "model_raw": "```json\n{\n  \"purchaser\": \"PETER\",\n  \"supplier\": \"DAN\",\n  \"effectiveDate\": \"04/02/2018\",\n  \"minimumPercentage\": \"85%\"\n}\n```"
+    },
+    {
+      "id": "distribution-agreement-01-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"distributorName\": \"Meridian Trading Co., Ltd.\",\n  \"territory\": \"Benelux region\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"minimumAnnualPurchase\": 250000.00,\n  \"royaltyRate\": 0.085,\n  \"isExclusive\": true,\n  \"renewalTermYears\": 2\n}\n```"
+    },
+    {
+      "id": "distribution-agreement-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"distributorName\": \"Blue Harbor Trading Co.\",\n  \"territory\": \"Republic of Ireland and Northern Ireland\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"minimumAnnualPurchase\": 250000.00,\n  \"termYears\": 3,\n  \"autoRenewal\": true,\n  \"terminationNoticeDays\": 60\n}\n```"
     },
     {
       "id": "docusign-connect-extract-01",
@@ -63,6 +201,42 @@
       "correct_fields": 1,
       "total_fields": 13,
       "model_raw": "```json\n{\n  \"buyerName\": \"Buyer Corp\",\n  \"lateOne\": \"1\",\n  \"lateTwo\": \"2\",\n  \"lateThree\": \"10\",\n  \"lateOnePercent\": \"5.0%\",\n  \"lateTwoPercent\": \"10%\",\n  \"lateThreePercent\": \"50%\",\n  \"article\": \"Article 5\",\n  \"thisSection\": \"Section 3.5(c)\",\n  \"maxFailures\": \"5\",\n  \"failureRange\": \"60 days\",\n  \"repeatedFailureCompensationAmount\": \"599.99\",\n  \"repeatedFailureCompensationCurrency\": \"USD\"\n}\n```"
+    },
+    {
+      "id": "employment-offer-01-extract-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Marcus Whitfield\",\n  \"jobTitle\": \"Senior Product Manager\",\n  \"startDate\": \"2024-06-03\",\n  \"annualSalary\": 128000.00,\n  \"signingBonus\": 10000.00,\n  \"probationPeriodMonths\": 3,\n  \"isAtWillEmployment\": true,\n  \"requiresBackgroundCheck\": true\n}\n```"
+    },
+    {
+      "id": "employment-offer-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employerName\": \"Northbridge Analytics Inc.\",\n  \"employeeName\": \"Maria Consuelo Ibarra\",\n  \"jobTitle\": \"Senior Data Scientist\",\n  \"startDate\": \"2024-03-01\",\n  \"annualSalary\": 118500.00,\n  \"probationPeriodMonths\": 3,\n  \"bonusEligible\": true\n}\n```"
+    },
+    {
+      "id": "employment-offer-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employerName\": \"Northbridge Analytics Inc.\",\n  \"employeeName\": \"Maria Chen\",\n  \"jobTitle\": \"Senior Data Scientist\",\n  \"startDate\": \"2024-03-01\",\n  \"annualSalary\": 128000.00,\n  \"signingBonus\": 5000.00,\n  \"probationPeriodMonths\": 3,\n  \"atWillEmployment\": true\n}\n```"
+    },
+    {
+      "id": "employment-termination-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Marcus T. Ellison\",\n  \"companyName\": \"Bridgeport Analytics LLC\",\n  \"terminationDate\": \"2024-09-15\",\n  \"noticePeriodDays\": 30,\n  \"severancePayAmount\": 12500.00,\n  \"finalPaycheckDate\": \"2024-09-29\",\n  \"benefitsContinued\": true,\n  \"nonCompeteMonths\": 6\n}\n```"
+    },
+    {
+      "id": "employment-termination-02-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Marcus T. Reilly\",\n  \"companyName\": \"Brightline Logistics, Inc.\",\n  \"terminationDate\": \"2024-09-30\",\n  \"noticePeriodDays\": 30,\n  \"severancePayAmount\": 18500.00,\n  \"finalPaycheckDate\": \"2024-10-07\",\n  \"benefitsContinued\": \"group health and welfare benefits for the period required under applicable law\"\n}\n```"
+    },
+    {
+      "id": "employment-termination-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Marcus T. Whitfield\",\n  \"employerName\": \"Bellhaven Logistics Group, Inc.\",\n  \"terminationDate\": \"2024-09-15\",\n  \"noticePeriodDays\": 30,\n  \"severancePayAmount\": 18500.00,\n  \"benefitsContinued\": true,\n  \"finalPaycheckDate\": \"2024-09-22\",\n  \"nonCompeteMonths\": 6\n}\n```"
     },
     {
       "id": "fixed-interests-extract-01",
@@ -83,6 +257,18 @@
       "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"deliveryPrice\": \"1000.00 USD per unit\",\n  \"accelerationMin\": \"-0.5g\",\n  \"accelerationMax\": \"0.5g\",\n  \"accelerationBreachPenalty\": \"5.00 USD\",\n  \"deliveryLimitDuration\": \"10 seconds\",\n  \"lateDeliveryPenalty\": \"200.00 USD\"\n}\n```"
     },
     {
+      "id": "franchise-fee-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"franchiseeName\": \"Meridian Coffee Ventures LLC\",\n  \"initialFranchiseFee\": \"45000.00\",\n  \"royaltyPercentage\": \"6.5%\",\n  \"marketingFeePercentage\": \"2.0%\",\n  \"paymentDueDay\": \"5th\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"latePaymentPenalty\": \"150.00\",\n  \"autoRenewal\": false\n}\n```"
+    },
+    {
+      "id": "franchise-fee-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"franchisorName\": \"Maple Leaf Coffee Systems Inc.\",\n  \"franchiseeName\": \"Riverside Brews LLC\",\n  \"initialFranchiseFee\": \"$45000.00\",\n  \"royaltyRate\": \"6.5%\",\n  \"paymentDueDay\": \"5th\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"lateFeePercentage\": \"1.5%\"\n}\n```"
+    },
+    {
       "id": "full-payment-upon-demand-extract-01",
       "correct_fields": 3,
       "total_fields": 3,
@@ -95,16 +281,82 @@
       "model_raw": "```json\n{\n  \"buyer\": \"Dan\",\n  \"seller\": \"Steve\",\n  \"amount\": \"0.01 USD\"\n}\n```"
     },
     {
+      "id": "gdpr-privacy-clause-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"dataControllerName\": \"Northbridge Analytics Ltd.\",\n  \"dataProcessorName\": \"Solera Cloud Services B.V.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"breachNotificationHours\": 72,\n  \"dataRetentionPeriodDays\": 365,\n  \"subProcessingAllowed\": false,\n  \"annualComplianceAuditFee\": 4500.00,\n  \"applicableSupervisoryAuthority\": \"Dutch Data Protection Authority\"\n}\n```"
+    },
+    {
+      "id": "gdpr-privacy-clause-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"dataController\": \"Meridian Health Analytics Ltd.\",\n  \"dataProcessor\": \"CloudVault Systems B.V.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"breachNotificationHours\": 72,\n  \"dataRetentionPeriodMonths\": 36,\n  \"transferOutsideEEA\": false,\n  \"processingFee\": 1250.00,\n  \"dataSubjectRequestResponseDays\": 14\n}\n```"
+    },
+    {
+      "id": "gdpr-privacy-clause-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"dataController\": \"Northbridge Analytics Ltd.\",\n  \"dataProcessor\": \"Vertex Cloud Services GmbH\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"breachNotificationHours\": 72,\n  \"dataRetentionPeriodDays\": 365,\n  \"transferOutsideEEA\": \"no\",\n  \"dataProtectionOfficerEmail\": \"dpo@northbridgeanalytics.eu\",\n  \"auditFeePercentage\": 2.5\n}\n```"
+    },
+    {
+      "id": "indemnification-clause-01-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"indemnifyingParty\": \"Nova Freight Systems, Inc.\",\n  \"indemnifiedParty\": \"Blackstone Retail Holdings LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"liabilityCap\": \"500000.00\",\n  \"noticePeriodDays\": 15,\n  \"survivalPeriodMonths\": 24,\n  \"coversThirdPartyClaims\": true\n}\n```"
+    },
+    {
+      "id": "indemnification-clause-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"indemnifyingParty\": \"Meridian Supply Corp.\",\n  \"indemnifiedParty\": \"Halcyon Retail Group LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"capAmount\": 500000.00,\n  \"noticePeriodDays\": 15,\n  \"coversThirdPartyClaims\": true,\n  \"survivalPeriodMonths\": 24\n}\n```"
+    },
+    {
+      "id": "indemnification-clause-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"indemnifyingParty\": \"Contractor Solutions LLC\",\n  \"indemnifiedParty\": \"Beacon Industries Inc.\",\n  \"liabilityCap\": 500000.00,\n  \"effectiveDate\": \"2024-03-01\",\n  \"noticePeriodDays\": 30,\n  \"coversThirdPartyClaims\": true,\n  \"excludesGrossNegligence\": false\n}\n```"
+    },
+    {
       "id": "installment-sale-extract-01",
       "correct_fields": 6,
       "total_fields": 8,
-      "model_raw": "```json\n{\n  \"BUYER\": \"Dan\",\n  \"SELLER\": \"Ned\",\n  \"INITIAL_DUE\": null,\n  \"INTEREST_RATE\": \"1.5%\",\n  \"TOTAL_DUE_BEFORE_CLOSING\": \"9,500.00 EUR\",\n  \"MIN_PAYMENT\": \"500.00 EUR\",\n  \"DUE_AT_CLOSING\": \"500.00 EUR\",\n  \"FIRST_MONTH\": \"3\"\n}\n```"
+      "model_raw": "```json\n{\n  \"BUYER\": \"Dan\",\n  \"SELLER\": \"Ned\",\n  \"INITIAL_DUE\": null,\n  \"INTEREST_RATE\": \"1.5%\",\n  \"TOTAL_DUE_BEFORE_CLOSING\": \"9,500.00 EUR\",\n  \"MIN_PAYMENT\": \"500.00 EUR\",\n  \"DUE_AT_CLOSING\": \"500.00 EUR\",\n  \"FIRST_MONTH\": \"month 3\"\n}\n```"
+    },
+    {
+      "id": "insurance-clause-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"insurerName\": \"Meridian Assurance Group Inc.\",\n  \"policyNumber\": \"MAG-2024-778145\",\n  \"coverageAmount\": 2500000.00,\n  \"deductibleAmount\": 10000.00,\n  \"effectiveDate\": \"2024-03-01\",\n  \"expirationDate\": \"2025-03-01\",\n  \"premiumAmount\": 48750.00,\n  \"autoRenewal\": true\n}\n```"
+    },
+    {
+      "id": "insurance-clause-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"insurerName\": \"Meridian Assurance Group\",\n  \"policyholderName\": \"Bramwell Logistics Inc.\",\n  \"policyNumber\": \"MAG-CGL-88214\",\n  \"coverageAmount\": 2500000.00,\n  \"deductibleAmount\": 10000.00,\n  \"effectiveDate\": \"2024-03-01\",\n  \"expirationDate\": \"2025-03-01\",\n  \"autoRenews\": true\n}\n```"
     },
     {
       "id": "interest-rate-swap-extract-01",
       "correct_fields": 23,
       "total_fields": 27,
       "model_raw": "```json\n{\n  \"bank\": \"Deutsche Bank\",\n  \"letterDate\": \"06/30/2005\",\n  \"counterparty\": \"MagnaChip Semiconductor S.A.\",\n  \"bankReference\": \"Global No. N397355N\",\n  \"notionalAmount\": \"300000000.00 USD\",\n  \"tradeDate\": \"06/23/2005\",\n  \"effectiveDate\": \"06/27/2005\",\n  \"terminationDate\": \"06/18/2008\",\n  \"fixedRatePayer\": \"Counterparty\",\n  \"fixedRatePayerPeriodEndDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date with No Adjustment\",\n  \"fixedRatePayerPaymentDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date\",\n  \"fixedRate\": \"4.09%\",\n  \"fixedRateDayCountFraction\": \"30 360\",\n  \"fixedRatePayerBusinessDays\": \"New York\",\n  \"fixedRatePayerBusinessDayConvention\": \"Modified Following\",\n  \"floatingRatePayer\": \"DBAG\",\n  \"floatingRatePayerPeriodEndDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date with No Adjustment\",\n  \"floatingRatePayerPaymentDates\": \"The 15th day of March, June, September and December of each year, commencing September 15, 2005, through and including the Termination Date\",\n  \"floatingRateForInitialCalculationPeriod\": \"3.41%\",\n  \"floatingRateOption\": \"USD-LIBOR-BBA\",\n  \"designatedMaturity\": \"Three months\",\n  \"spread\": \"None\",\n  \"floatingRateDayCountFraction\": \"30 360\",\n  \"resetDates\": \"The first Floating Rate Payer Business Day of each Calculation Period or Compounding Period, if Compounding is applicable.\",\n  \"compounding\": \"Inapplicable\",\n  \"floatingRatePayerBusinessDays\": \"New York\",\n  \"floatingRatePayerBusinessDayConvention\": \"Modified Following\"\n}\n```"
+    },
+    {
+      "id": "ip-assignment-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"assignor\": \"Marcus Devlin\",\n  \"assignee\": \"Northbridge Studios LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"considerationAmount\": \"$15000.00\",\n  \"workDescription\": \"original musical composition and accompanying sound recording entitled 'Silver Horizon'\",\n  \"waivesMoralRights\": true,\n  \"registrationNumber\": \"PA-2-345-678\",\n  \"jurisdiction\": \"State of New York\"\n}\n```"
+    },
+    {
+      "id": "ip-assignment-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"assignorName\": \"Marcus T. Ellison\",\n  \"assigneeName\": \"Vantage Robotics Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"inventionDescription\": \"an autonomous drone stabilization algorithm and associated firmware, including all patents, copyrights, trade secrets, and other intellectual property rights therein throughout the world\",\n  \"considerationAmount\": \"45000.00\",\n  \"governingLaw\": \"State of Delaware\",\n  \"assistWithRegistration\": true\n}\n```"
+    },
+    {
+      "id": "ip-assignment-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"assignor\": \"Marcus Ellery Whitfield\",\n  \"assignee\": \"Northbridge Digital Studios, Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"considerationAmount\": \"$18500.00\",\n  \"workDescription\": \"character designs, storyboards, and source code for the mobile application known as 'Lumen Trails'\",\n  \"moralRightsWaived\": true,\n  \"cooperationRequired\": true,\n  \"governingLaw\": \"State of Delaware\"\n}\n```"
     },
     {
       "id": "ip-payment-extract-01",
@@ -114,9 +366,9 @@
     },
     {
       "id": "latedeliveryandpenalty-extract-01",
-      "correct_fields": 8,
+      "correct_fields": 7,
       "total_fields": 8,
-      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": true,\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": \"full days\"\n}\n```"
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": true,\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": true\n}\n```"
     },
     {
       "id": "latedeliveryandpenalty-currency-conversion-extract-01",
@@ -126,9 +378,9 @@
     },
     {
       "id": "latedeliveryandpenalty-else-extract-01",
-      "correct_fields": 7,
+      "correct_fields": 8,
       "total_fields": 8,
-      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": true,\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": true\n}\n```"
+      "model_raw": "```json\n{\n  \"buyer\": \"Steve\",\n  \"seller\": \"Dan\",\n  \"forceMajeure\": true,\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"termination\": \"15 days\",\n  \"fractionalPart\": \"full days\"\n}\n```"
     },
     {
       "id": "latedeliveryandpenalty-optional-extract-01",
@@ -149,6 +401,54 @@
       "model_raw": "```json\n{\n  \"maximumDelay\": \"180 days\",\n  \"purchaser\": \"Betty Buyer\",\n  \"supplier\": \"Steve Seller\"\n}\n```"
     },
     {
+      "id": "limitation-of-liability-01-extract-01",
+      "correct_fields": 5,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"liabilityCapAmount\": 250000.00,\n  \"currencyCode\": \"USD\",\n  \"capPercentageOfFees\": 100.0,\n  \"effectiveDate\": \"2024-03-01\",\n  \"claimPeriodDays\": 90,\n  \"excludeConsequentialDamages\": true,\n  \"carveOutGrossNegligence\": true\n}\n```"
+    },
+    {
+      "id": "limitation-of-liability-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"supplierName\": \"Meridian Data Systems, Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"liabilityCap\": 250000.00,\n  \"currency\": \"USD\",\n  \"lookbackPeriodMonths\": 12,\n  \"excludesConsequentialDamages\": true,\n  \"carveOutForGrossNegligence\": true\n}\n```"
+    },
+    {
+      "id": "limitation-of-liability-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"supplierName\": \"Meridian Logistics Inc.\",\n  \"capAmount\": 250000.00,\n  \"currency\": \"USD\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"claimPeriodDays\": 90,\n  \"excludesConsequentialDamages\": true,\n  \"carveOutForGrossNegligence\": true\n}\n```"
+    },
+    {
+      "id": "loan-agreement-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"lenderName\": \"Meridian Capital Partners LLC\",\n  \"borrowerName\": \"Vantage Robotics Inc.\",\n  \"principalAmount\": 250000.00,\n  \"interestRate\": 6.75,\n  \"maturityDate\": \"2027-09-01\",\n  \"latePaymentFee\": 150.00,\n  \"gracePeriodDays\": 10,\n  \"prepaymentAllowed\": true\n}\n```"
+    },
+    {
+      "id": "loan-agreement-02-extract-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"lenderName\": \"Meridian Capital Partners LLC\",\n  \"borrowerName\": \"Halcyon Trading Corp.\",\n  \"principalAmount\": 750000.00,\n  \"annualInterestRate\": 0.0675,\n  \"maturityDate\": \"2027-09-30\",\n  \"lateFeePercentage\": 0.025,\n  \"prepaymentPermitted\": true,\n  \"gracePeriodDays\": 10\n}\n```"
+    },
+    {
+      "id": "loan-agreement-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"lenderName\": \"Meridian Capital Partners LLC\",\n  \"borrowerName\": \"Hawthorne Retail Group Inc.\",\n  \"principalAmount\": \"250000.00\",\n  \"interestRate\": \"6.75%\",\n  \"loanStartDate\": \"2024-03-01\",\n  \"maturityDate\": \"2027-03-01\",\n  \"latePaymentPenalty\": \"2.5% of the overdue amount\",\n  \"prepaymentAllowed\": true\n}\n```"
+    },
+    {
+      "id": "maintenance-agreement-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"serviceProviderName\": \"Meridian Technical Services LLC\",\n  \"clientName\": \"Harbor Point Manufacturing Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"annualFee\": 18500.00,\n  \"responseTimeHours\": 4,\n  \"renewalTermMonths\": 12,\n  \"autoRenewal\": true,\n  \"maxServiceCallsPerYear\": 24\n}\n```"
+    },
+    {
+      "id": "maintenance-agreement-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"serviceProvider\": \"Meridian Technical Services LLC\",\n  \"client\": \"Harborview Medical Center\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"annualFee\": 48500.00,\n  \"responseTimeHours\": 4,\n  \"maxServiceCallsPerYear\": 24,\n  \"autoRenews\": false,\n  \"latePaymentPenaltyRate\": \"1.5% per month\"\n}\n```"
+    },
+    {
       "id": "minilatedeliveryandpenalty-extract-01",
       "correct_fields": 5,
       "total_fields": 5,
@@ -167,6 +467,60 @@
       "model_raw": "```json\n{\n  \"buyer\": \"Betty Buyer\",\n  \"seller\": \"Steve Seller\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"52%\",\n  \"maximumDelay\": \"15 days\"\n}\n```"
     },
     {
+      "id": "nda-mutual-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"partyA\": \"Meridian Analytics Inc.\",\n  \"partyB\": \"Corvus Dynamics LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"termYears\": 3,\n  \"confidentialityPeriodMonths\": 60,\n  \"governingLaw\": \"State of Delaware\",\n  \"injunctiveReliefAvailable\": true,\n  \"liquidatedDamagesAmount\": 50000.00\n}\n```"
+    },
+    {
+      "id": "nda-mutual-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"partyA\": \"Nova Dynamics LLC\",\n  \"partyB\": \"Halcyon Systems Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"termYears\": 3,\n  \"confidentialityPeriodYears\": 5,\n  \"governingLaw\": \"State of Delaware\",\n  \"liquidatedDamages\": \"50000.00 USD\"\n}\n```"
+    },
+    {
+      "id": "nda-mutual-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"partyA\": \"Alderbrook Systems Inc.\",\n  \"partyB\": \"Northgate Analytics LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"confidentialityPeriodMonths\": 36,\n  \"governingLaw\": \"State of Delaware\",\n  \"returnOfMaterialsDays\": 15,\n  \"injunctiveReliefAllowed\": true\n}\n```"
+    },
+    {
+      "id": "nda-oneway-01-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"Meridian Biotech Inc.\",\n  \"receivingParty\": \"Alden Consulting Group LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"confidentialityPeriod\": \"5 years\",\n  \"governingLaw\": \"State of Delaware\",\n  \"returnObligation\": \"promptly return or destroy all copies, notes, and materials containing the confidential information\",\n  \"liquidatedDamages\": \"50000.00\"\n}\n```"
+    },
+    {
+      "id": "nda-oneway-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"Meridian Biotech Inc.\",\n  \"receivingParty\": \"Calder Analytics LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"confidentialityPeriodYears\": 5,\n  \"governingLaw\": \"State of Delaware\",\n  \"returnOfMaterialsDays\": 10,\n  \"injunctiveReliefAvailable\": true\n}\n```"
+    },
+    {
+      "id": "nda-oneway-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"Meridian Biotech Inc.\",\n  \"receivingParty\": \"Calloway Consulting Group LLC\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"confidentialityPeriodYears\": 5,\n  \"governingLaw\": \"State of Delaware\",\n  \"returnObligation\": \"return or destroy all Confidential Information and certify such return or destruction in writing\",\n  \"liquidatedDamages\": 250000.00,\n  \"noticeDays\": 30\n}\n```"
+    },
+    {
+      "id": "non-compete-01-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"restrictedPartyName\": \"Jordan T. Whitfield\",\n  \"restrictionPeriodMonths\": 18,\n  \"geographicScope\": \"States of Delaware, Maryland, and Virginia\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"liquidatedDamagesAmount\": 75000.00,\n  \"industrySector\": \"cloud-based logistics software\",\n  \"injunctiveReliefAvailable\": true\n}\n```"
+    },
+    {
+      "id": "non-compete-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Marcus J. Devlin\",\n  \"companyName\": \"Veridian Analytics, Inc.\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"restrictionPeriodMonths\": 18,\n  \"geographicScope\": \"North America\",\n  \"industrySector\": \"cloud-based data analytics\",\n  \"penaltyAmount\": 250000.00\n}\n```"
+    },
+    {
+      "id": "non-compete-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Jonathan R. Mercer\",\n  \"companyName\": \"Vantage Analytics Inc.\",\n  \"restrictedPeriodMonths\": 18,\n  \"geographicScope\": \"50-mile radius of Chicago, Illinois\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"liquidatedDamages\": 75000.00,\n  \"includesAffiliates\": true,\n  \"industrySector\": \"data analytics and business intelligence services\"\n}\n```"
+    },
+    {
       "id": "one-time-payment-tr-extract-01",
       "correct_fields": 3,
       "total_fields": 3,
@@ -177,6 +531,18 @@
       "correct_fields": 5,
       "total_fields": 5,
       "model_raw": "```json\n{\n  \"buyer\": \"Umut\",\n  \"seller\": \"Serkan\",\n  \"softwareID\": \"AcmeSoftware-1.0\",\n  \"userCount\": \"2\",\n  \"authorizedCourt\": \"ANKARA 1.B\u00f6lge \u0130dare Mahkemesi\"\n}\n```"
+    },
+    {
+      "id": "patent-license-01-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Meridian Photonics Inc.\",\n  \"licenseeName\": \"Voxtel Dynamics LLC\",\n  \"patentNumber\": \"US 10,987,654\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"royaltyRate\": \"4.5%\",\n  \"exclusiveLicense\": true,\n  \"licenseTermYears\": 10\n}\n```"
+    },
+    {
+      "id": "patent-license-02-extract-01",
+      "correct_fields": 9,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Halcyon Semiconductor Corp.\",\n  \"licenseeName\": \"Vertex Robotics Inc.\",\n  \"patentNumber\": \"US 10,987,654\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"royaltyRate\": \"3.5 percent\",\n  \"territory\": \"United States and Canada\",\n  \"isExclusive\": false,\n  \"isSublicensable\": false,\n  \"minimumAnnualPayment\": 50000.00\n}\n```"
     },
     {
       "id": "payment-upon-delivery-extract-01",
@@ -203,6 +569,18 @@
       "model_raw": "```json\n{\n  \"grower\": \"PETER\",\n  \"importer\": \"DAN\",\n  \"shipmentId\": \"SHIP_001\",\n  \"dueDate\": \"07/02/2018\",\n  \"unitPrice\": 1.5,\n  \"unit\": \"USD per KG\",\n  \"minUnits\": 3000,\n  \"maxUnits\": 3500,\n  \"product\": \"Grade I, Size 4, Zutano Mexican Avocados\",\n  \"sensorReadingFrequency\": \"1 per hours\",\n  \"duration\": null,\n  \"minTemperature\": 2,\n  \"maxTemperature\": 13,\n  \"minHumidity\": 70,\n  \"maxHumidity\": 90,\n  \"penaltyFactor\": 0.2\n}\n```"
     },
     {
+      "id": "personal-guarantee-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"guarantorName\": \"Michael J. Harrington\",\n  \"principalDebtor\": \"Harrington Logistics LLC\",\n  \"creditorName\": \"Meridian Commercial Bank\",\n  \"maximumLiabilityAmount\": 250000.00,\n  \"effectiveDate\": \"2024-03-01\",\n  \"expiryDate\": \"2027-03-01\",\n  \"isJointAndSeveral\": true,\n  \"currency\": \"USD\"\n}\n```"
+    },
+    {
+      "id": "personal-guarantee-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"guarantorName\": \"Martin J. Cavanaugh\",\n  \"debtorName\": \"Cavanaugh Freight Solutions LLC\",\n  \"lenderName\": \"Northbridge Commercial Bank\",\n  \"maximumLiabilityAmount\": 250000.00,\n  \"currencyCode\": \"USD\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"interestRate\": 6.5,\n  \"isContinuingGuarantee\": true\n}\n```"
+    },
+    {
       "id": "project-information-extract-01",
       "correct_fields": 4,
       "total_fields": 5,
@@ -221,6 +599,18 @@
       "model_raw": "```json\n{\n  \"amount\": \"1,000.00 USD\",\n  \"date\": \"01/30/2018\",\n  \"maker\": \"Daniel\",\n  \"interestRate\": \"3.8% per annum\",\n  \"individual\": \"Daniel\",\n  \"makerAddress\": \"1 Main Street\",\n  \"lender\": \"Clause Inc.\",\n  \"legalEntity\": \"Clause Inc.\",\n  \"lenderAddress\": \"246 5th Ave, 3rd Fl, New York, NY 10001\",\n  \"maturityDate\": \"01/20/2019\",\n  \"defaultDays\": \"90 days\",\n  \"insolvencyDays\": \"90 days\",\n  \"jurisdiction\": \"New York, NY\"\n}\n```"
     },
     {
+      "id": "property-purchase-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyerName\": \"Marcus T. Reilly\",\n  \"sellerName\": \"Greenfield Holdings LLC\",\n  \"propertyAddress\": \"482 Willow Creek Lane, Asheville, NC 28801\",\n  \"purchasePrice\": \"$425000.00\",\n  \"depositAmount\": \"$21250.00\",\n  \"closingDate\": \"2024-09-15\",\n  \"inspectionPeriodDays\": 10,\n  \"financingContingent\": false\n}\n```"
+    },
+    {
+      "id": "property-purchase-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyerName\": \"Marcus Whitfield\",\n  \"sellerName\": \"Danielle Ortega\",\n  \"propertyAddress\": \"482 Riverbend Lane, Asheville, NC 28801\",\n  \"purchasePrice\": \"415000.00\",\n  \"earnestMoney\": \"10000.00\",\n  \"closingDate\": \"2024-09-15\",\n  \"financingContingent\": true,\n  \"inspectionPeriodDays\": 14\n}\n```"
+    },
+    {
       "id": "rental-deposit-extract-01",
       "correct_fields": 10,
       "total_fields": 10,
@@ -231,6 +621,24 @@
       "correct_fields": 8,
       "total_fields": 10,
       "model_raw": "```json\n{\n  \"tenant\": \"Michael\",\n  \"landlord\": \"Parsa\",\n  \"depositAmount\": \"3000 USD\",\n  \"tenantDepositRestorationPeriod\": \"30 days\",\n  \"monthlyBaseRentMultiple\": \"0.98\",\n  \"applicableLaw\": \"New Jersey\",\n  \"statute\": \"NJSD\",\n  \"bankName\": \"Bank of America\",\n  \"landlordDepositReturnPeriod\": \"3 weeks\",\n  \"exhibit\": \"Schedule A\"\n}\n```"
+    },
+    {
+      "id": "residential-lease-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"landlordName\": \"Marcus Whitfield\",\n  \"tenantName\": \"Elena Sorrento\",\n  \"monthlyRentAmount\": 1750.00,\n  \"dueDay\": 1,\n  \"gracePeriodDays\": 5,\n  \"lateFeeAmount\": 75.00,\n  \"leaseStartDate\": \"2024-03-01\",\n  \"petsAllowed\": false\n}\n```"
+    },
+    {
+      "id": "residential-lease-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"tenantName\": \"Marcus Feldman\",\n  \"monthlyRent\": 1850.00,\n  \"leaseStartDate\": \"2024-06-01\",\n  \"lateFeeGracePeriod\": 5,\n  \"lateFeeAmount\": 75.00,\n  \"petsAllowed\": false,\n  \"securityDeposit\": 1850.00\n}\n```"
+    },
+    {
+      "id": "residential-lease-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"tenantName\": \"Marcus Whitfield\",\n  \"landlordName\": \"Cedar Grove Properties LLC\",\n  \"monthlyRent\": 1450.00,\n  \"leaseStartDate\": \"2024-03-01\",\n  \"gracePeriodDays\": 5,\n  \"lateFeeAmount\": 75.00,\n  \"petsAllowed\": false,\n  \"securityDeposit\": 1450.00\n}\n```"
     },
     {
       "id": "roommate-extract-01",
@@ -257,10 +665,58 @@
       "model_raw": "```json\n{\n  \"buyer\": \"\u043f\u043e\u043a\u0443\u043f\u0430\u0442\u0435\u043b\u044c\",\n  \"seller\": \"\u043f\u0440\u043e\u0434\u0430\u0432\u0435\u0446\",\n  \"refundPeriod\": \"6 (\u0448\u0435\u0441\u0442\u0438) \u043c\u0435\u0441\u044f\u0446\u0435\u0432\",\n  \"counterparty\": \"\u041f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a\u0443\",\n  \"currencyType\": \"\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u0440\u0443\u0431\u043b\u0438\",\n  \"appealPeriod\": \"7\",\n  \"countryLegislation\": \"\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f\"\n}\n```"
     },
     {
+      "id": "service-retainer-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"clientName\": \"Harborview Realty Group LLC\",\n  \"serviceProviderName\": \"Calloway & Finch Advisory Partners\",\n  \"retainerAmount\": 7500.00,\n  \"effectiveDate\": \"2024-04-01\",\n  \"monthlyHoursIncluded\": 20,\n  \"overageHourlyRate\": 225.00,\n  \"autoRenewal\": true,\n  \"terminationNoticeDays\": 30\n}\n```"
+    },
+    {
+      "id": "service-retainer-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"clientName\": \"Blackstone Ventures LLC\",\n  \"serviceProvider\": \"Harrow & Associates LLP\",\n  \"monthlyRetainerFee\": 7500.00,\n  \"retainerStartDate\": \"2024-03-01\",\n  \"minimumHoursIncluded\": 20,\n  \"overageRate\": 350.00,\n  \"autoRenewal\": true,\n  \"noticePeriodDays\": 30\n}\n```"
+    },
+    {
       "id": "servicelevelagreement-extract-01",
       "correct_fields": 6,
       "total_fields": 9,
       "model_raw": "```json\n{\n  \"paymentPeriod\": \"monthly\",\n  \"monthlyCapPercentage\": \"10%\",\n  \"yearlyCapPercentage\": \"10%\",\n  \"availability1\": \"99.8%\",\n  \"serviceCredit1\": \"2.0 GBP\",\n  \"availability2\": \"98.0%\",\n  \"serviceCredit2\": \"3.0 GBP\",\n  \"serviceProvider\": \"Supplier\",\n  \"serviceConsumer\": \"Customer\"\n}\n```"
+    },
+    {
+      "id": "severance-agreement-01-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Margaret A. Collins\",\n  \"terminationDate\": \"2024-03-01\",\n  \"severanceAmount\": 42500.00,\n  \"severancePeriodWeeks\": 16,\n  \"continueBenefits\": true,\n  \"revocationPeriodDays\": 7,\n  \"governingLawState\": \"Illinois\"\n}\n```"
+    },
+    {
+      "id": "severance-agreement-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"companyName\": \"Meridian Fabrication Corp.\",\n  \"employeeName\": \"Rachel T. Osei\",\n  \"separationDate\": \"2024-03-01\",\n  \"severancePayAmount\": 42500.00,\n  \"severancePaymentWeeks\": 16,\n  \"benefitsContinuationMonths\": 6,\n  \"releaseOfClaimsRequired\": true\n}\n```"
+    },
+    {
+      "id": "severance-agreement-03-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"Marcus T. Whitfield\",\n  \"severanceAmount\": \"$48500.00\",\n  \"severanceWeeks\": 16,\n  \"paymentDate\": \"2024-03-01\",\n  \"cobraContinuationProvided\": true,\n  \"nonCompeteMonths\": 6,\n  \"finalReleaseDeadline\": \"2024-02-15\"\n}\n```"
+    },
+    {
+      "id": "shareholder-agreement-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"sellingShareholder\": \"Marcus T. Whitfield\",\n  \"shareClass\": \"Class B Common Shares\",\n  \"shareCount\": 15000,\n  \"offerPricePerShare\": 42.75,\n  \"responsePeriodDays\": 30,\n  \"noticeDate\": \"2024-03-01\",\n  \"isTransferRestricted\": true,\n  \"requiresBoardApproval\": true\n}\n```"
+    },
+    {
+      "id": "shareholder-agreement-02-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"sellingShareholderName\": \"Marguerite Voss\",\n  \"companyName\": \"Halcyon Robotics Ltd.\",\n  \"sharePercentage\": \"18.5%\",\n  \"transferPrice\": \"$425000.00\",\n  \"noticePeriodDays\": 30,\n  \"effectiveDate\": \"2024-03-01\",\n  \"boardApprovalRequired\": true\n}\n```"
+    },
+    {
+      "id": "shareholder-agreement-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"shareholderName\": \"Marcus Feldman\",\n  \"companyName\": \"Brightline Analytics, Inc.\",\n  \"transferShares\": 5000,\n  \"sharePrice\": 12.75,\n  \"noticeDays\": 30,\n  \"effectiveDate\": \"2024-03-01\",\n  \"preemptiveRightsApply\": true,\n  \"remainingShareholdersPercentage\": 62.5\n}\n```"
     },
     {
       "id": "signature-block-title-name-date-extract-01",
@@ -273,6 +729,54 @@
       "correct_fields": 6,
       "total_fields": 6,
       "model_raw": "```json\n{\n  \"buyer\": \"Betty Buyer\",\n  \"seller\": \"Steve Seller\",\n  \"penaltyDuration\": \"2 days\",\n  \"penaltyPercentage\": \"10.5%\",\n  \"capPercentage\": \"55%\",\n  \"maximumDelay\": \"15 days\"\n}\n```"
+    },
+    {
+      "id": "software-license-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Nimbus Data Systems, Inc.\",\n  \"licenseeName\": \"Brightline Logistics LLC\",\n  \"softwareName\": \"CargoTrack Pro\",\n  \"licenseFee\": 24500.00,\n  \"effectiveDate\": \"2024-03-01\",\n  \"maxUsers\": 150,\n  \"isTransferable\": false,\n  \"termYears\": 3\n}\n```"
+    },
+    {
+      "id": "software-license-02-extract-01",
+      "correct_fields": 9,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Northbridge Software Solutions, Inc.\",\n  \"licenseeName\": \"Cascade Analytics LLC\",\n  \"softwareName\": \"DataForge Enterprise Suite\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"licenseFeeAmount\": 48500.00,\n  \"maxUserCount\": 150,\n  \"isTransferable\": false,\n  \"termYears\": 3,\n  \"renewalNoticeDays\": 60\n}\n```"
+    },
+    {
+      "id": "software-license-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Nimbus Software Solutions, Inc.\",\n  \"licenseeName\": \"Brightline Analytics LLC\",\n  \"softwareName\": \"DataForge Suite v4\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"licenseFee\": 48500.00,\n  \"maxUsers\": 250,\n  \"licenseTermYears\": 3,\n  \"isTransferable\": false\n}\n```"
+    },
+    {
+      "id": "statement-of-work-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"contractorName\": \"Blackfin Consulting LLC\",\n  \"clientName\": \"Northgate Retail Group Inc.\",\n  \"projectDescription\": \"design and implementation of a cloud-based inventory management platform\",\n  \"startDate\": \"2024-04-01\",\n  \"completionDate\": \"2024-09-30\",\n  \"totalFee\": 185000.00,\n  \"milestoneCount\": 5,\n  \"isFixedPrice\": true\n}\n```"
+    },
+    {
+      "id": "statement-of-work-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"serviceProviderName\": \"Meridian Consulting Group LLC\",\n  \"clientName\": \"Northbridge Retail Holdings Inc.\",\n  \"projectStartDate\": \"2024-03-01\",\n  \"projectEndDate\": \"2024-08-31\",\n  \"totalFee\": 185000.00,\n  \"numberOfDeliverables\": 6,\n  \"expensesReimbursable\": true,\n  \"milestonePaymentPercentage\": 25.0\n}\n```"
+    },
+    {
+      "id": "statement-of-work-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"contractorName\": \"Meridian Consulting Group LLC\",\n  \"clientName\": \"Northbridge Retail Holdings Inc.\",\n  \"projectFee\": 184500.00,\n  \"startDate\": \"2024-03-01\",\n  \"completionDate\": \"2024-08-15\",\n  \"milestoneCount\": 4,\n  \"renewalOptional\": false,\n  \"lateFeePercentage\": 1.5\n}\n```"
+    },
+    {
+      "id": "sublease-agreement-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"sublessorName\": \"Marcus Feldstein\",\n  \"sublesseeName\": \"Bright Horizon Consulting LLC\",\n  \"premisesAddress\": \"745 Kingsley Avenue, Suite 210, Chicago, Illinois 60614\",\n  \"monthlyRent\": \"2350.00\",\n  \"securityDeposit\": \"2350.00\",\n  \"commencementDate\": \"2024-06-01\",\n  \"expirationDate\": \"2025-05-31\",\n  \"landlordConsentObtained\": true\n}\n```"
+    },
+    {
+      "id": "sublease-agreement-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"sublessor\": \"Marcus T. Whitfield\",\n  \"sublessee\": \"Bright Horizon Studios LLC\",\n  \"premisesAddress\": \"482 Kensington Avenue, Suite 3B, Chicago, Illinois 60614\",\n  \"monthlyRent\": 2450.00,\n  \"sublemStartDate\": \"2024-06-01\",\n  \"sublemEndDate\": \"2025-05-31\",\n  \"requiresLandlordConsent\": true,\n  \"securityDeposit\": 2450.00\n}\n```"
     },
     {
       "id": "supply-agreement-loc-extract-01",
@@ -293,6 +797,24 @@
       "model_raw": "```json\n{\n  \"grower\": \"SUPPLIER CORPORATION\",\n  \"importer\": \"BUYER CORPORATION\",\n  \"shipment\": \"2995 and 3005 KG\",\n  \"dueDate\": null,\n  \"unitPrice\": \"1.50\",\n  \"unit\": \"KG\",\n  \"minUnits\": 2995,\n  \"maxUnits\": 3005,\n  \"product\": \"Grade I, Size 4, Zutano Mexican Avocados\",\n  \"sensorReadingFrequency\": \"1 per hours\",\n  \"duration\": \"2 years\",\n  \"minTemperature\": 2,\n  \"maxTemperature\": 13,\n  \"minHumidity\": 70,\n  \"maxHumidity\": 90,\n  \"penaltyFactor\": 0.2\n}\n```"
     },
     {
+      "id": "trademark-license-01-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Northbridge Apparel Group, Inc.\",\n  \"licenseeName\": \"Coastal Trends Retail LLC\",\n  \"trademarkName\": \"SUNVOYAGE\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"territory\": \"United States and Canada\",\n  \"royaltyRate\": \"6.5%\",\n  \"termYears\": \"5\",\n  \"exclusiveGrant\": true\n}\n```"
+    },
+    {
+      "id": "trademark-license-02-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Northgate Apparel Inc.\",\n  \"licenseeName\": \"Bright Horizon Retail LLC\",\n  \"trademarkName\": \"SUMMIT PEAK\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"territory\": \"United States and Canada\",\n  \"royaltyRate\": \"6.5 percent\",\n  \"termYears\": \"5\",\n  \"exclusiveLicense\": true\n}\n```"
+    },
+    {
+      "id": "trademark-license-03-extract-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"Meridian Apparel Group, Inc.\",\n  \"licenseeName\": \"Coastal Retail Partners LLC\",\n  \"trademarkName\": \"WAVERIDER\",\n  \"effectiveDate\": \"2024-03-01\",\n  \"territory\": \"United States and Canada\",\n  \"royaltyRate\": \"6.5%\",\n  \"termYears\": \"5\",\n  \"exclusiveGrant\": true\n}\n```"
+    },
+    {
       "id": "volumediscount-extract-01",
       "correct_fields": 5,
       "total_fields": 5,
@@ -309,6 +831,18 @@
       "correct_fields": 0,
       "total_fields": 1,
       "model_raw": "```json\n{\n  \"rates\": [\n    {\n      \"volume_min\": \"0.0$ million\",\n      \"volume_max\": \"1.0$ million\",\n      \"rate\": \"3.1%\"\n    },\n    {\n      \"volume_min\": \"1.0$ million\",\n      \"volume_max\": \"10.0$ million\",\n      \"rate\": \"3.1%\"\n    },\n    {\n      \"volume_min\": \"10.0$ million\",\n      \"volume_max\": \"50.0$ million\",\n      \"rate\": \"2.9%\"\n    },\n    {\n      \"volume_min\": \"50.0$ million\",\n      \"volume_max\": \"500.0$ million\",\n      \"rate\": \"2.5%\"\n    },\n    {\n      \"volume_min\": \"500.0$ million\",\n      \"volume_max\": \"1000.0$ million\",\n      \"rate\": \"1.2%\"\n    },\n    {\n      \"volume_min\": \"1000.0$ million\",\n      \"volume_max\": \"1000000.0$ million\",\n      \"rate\": \"0.1%\"\n    }\n  ]\n}\n```"
+    },
+    {
+      "id": "warranty-clause-01-extract-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"warrantyPeriodMonths\": 24,\n  \"effectiveDate\": \"2024-03-01\",\n  \"supplierName\": \"Meridian Industrial Components Ltd.\",\n  \"defectThresholdPercent\": 2.5,\n  \"replacementCostCap\": 50000.00,\n  \"extendedCoverageAvailable\": true,\n  \"governingLaw\": \"State of Delaware\"\n}\n```"
+    },
+    {
+      "id": "warranty-clause-02-extract-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"vendorName\": \"Meridian Industrial Supply, LLC\",\n  \"productName\": \"Model X200 Hydraulic Press\",\n  \"warrantyPeriodMonths\": 24,\n  \"effectiveDate\": \"2024-03-01\",\n  \"liabilityCap\": 50000.00,\n  \"transferable\": false,\n  \"exclusiveRemedy\": true\n}\n```"
     }
   ]
 }

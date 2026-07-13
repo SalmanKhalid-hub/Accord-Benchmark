@@ -1,14 +1,44 @@
 {
   "model": "anthropic/claude-haiku-4.5",
-  "total": 51,
-  "correct": 32,
-  "accuracy": 0.6274509803921569,
+  "total": 140,
+  "correct": 68,
+  "accuracy": 0.4857142857142857,
   "details": [
     {
       "id": "acceptance-of-delivery-classify-01",
       "expected": "acceptance-of-delivery",
       "model_answer": "acceptance-of-delivery",
       "correct": true
+    },
+    {
+      "id": "advertising-agreement-01-classify-01",
+      "expected": "advertising-agreement-01",
+      "model_answer": "advertising-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "advertising-agreement-02-classify-01",
+      "expected": "advertising-agreement-02",
+      "model_answer": "advertising-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "arbitration-clause-01-classify-01",
+      "expected": "arbitration-clause-01",
+      "model_answer": "arbitration-clause-01",
+      "correct": true
+    },
+    {
+      "id": "arbitration-clause-02-classify-01",
+      "expected": "arbitration-clause-02",
+      "model_answer": "arbitration-clause-01",
+      "correct": false
+    },
+    {
+      "id": "arbitration-clause-03-classify-01",
+      "expected": "arbitration-clause-03",
+      "model_answer": "arbitration-clause-01",
+      "correct": false
     },
     {
       "id": "bill-of-lading-classify-01",
@@ -29,10 +59,64 @@
       "correct": true
     },
     {
+      "id": "commercial-lease-01-classify-01",
+      "expected": "commercial-lease-01",
+      "model_answer": "commercial-lease-01",
+      "correct": true
+    },
+    {
+      "id": "commercial-lease-02-classify-01",
+      "expected": "commercial-lease-02",
+      "model_answer": "commercial-lease-01",
+      "correct": false
+    },
+    {
+      "id": "commercial-lease-03-classify-01",
+      "expected": "commercial-lease-03",
+      "model_answer": "commercial-lease-01",
+      "correct": false
+    },
+    {
       "id": "company-information-classify-01",
       "expected": "company-information",
       "model_answer": "company-information",
       "correct": true
+    },
+    {
+      "id": "confidentiality-clause-01-classify-01",
+      "expected": "confidentiality-clause-01",
+      "model_answer": "confidentiality-clause-01",
+      "correct": true
+    },
+    {
+      "id": "confidentiality-clause-02-classify-01",
+      "expected": "confidentiality-clause-02",
+      "model_answer": "nda-oneway-01",
+      "correct": false
+    },
+    {
+      "id": "confidentiality-clause-03-classify-01",
+      "expected": "confidentiality-clause-03",
+      "model_answer": "confidentiality-clause-01",
+      "correct": false
+    },
+    {
+      "id": "consulting-agreement-01-classify-01",
+      "expected": "consulting-agreement-01",
+      "model_answer": "consulting-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "consulting-agreement-02-classify-01",
+      "expected": "consulting-agreement-02",
+      "model_answer": "consulting-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "consulting-agreement-03-classify-01",
+      "expected": "consulting-agreement-03",
+      "model_answer": "consulting-agreement-01",
+      "correct": false
     },
     {
       "id": "contact-information-classify-01",
@@ -41,16 +125,70 @@
       "correct": true
     },
     {
+      "id": "content-licensing-01-classify-01",
+      "expected": "content-licensing-01",
+      "model_answer": "content-licensing-01",
+      "correct": true
+    },
+    {
+      "id": "content-licensing-02-classify-01",
+      "expected": "content-licensing-02",
+      "model_answer": "content-licensing-01",
+      "correct": false
+    },
+    {
       "id": "copyright-license-classify-01",
       "expected": "copyright-license",
       "model_answer": "copyright-license",
       "correct": true
     },
     {
+      "id": "data-breach-notification-01-classify-01",
+      "expected": "data-breach-notification-01",
+      "model_answer": "data-breach-notification-01",
+      "correct": true
+    },
+    {
+      "id": "data-breach-notification-02-classify-01",
+      "expected": "data-breach-notification-02",
+      "model_answer": "data-breach-notification-01",
+      "correct": false
+    },
+    {
+      "id": "data-processing-agreement-01-classify-01",
+      "expected": "data-processing-agreement-01",
+      "model_answer": "data-processing-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "data-processing-agreement-02-classify-01",
+      "expected": "data-processing-agreement-02",
+      "model_answer": "data-processing-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "data-processing-agreement-03-classify-01",
+      "expected": "data-processing-agreement-03",
+      "model_answer": "data-processing-agreement-01",
+      "correct": false
+    },
+    {
       "id": "demandforecast-classify-01",
       "expected": "demandforecast",
       "model_answer": "demandforecast",
       "correct": true
+    },
+    {
+      "id": "distribution-agreement-01-classify-01",
+      "expected": "distribution-agreement-01",
+      "model_answer": "distribution-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "distribution-agreement-03-classify-01",
+      "expected": "distribution-agreement-03",
+      "model_answer": "distribution-agreement-01",
+      "correct": false
     },
     {
       "id": "docusign-connect-classify-01",
@@ -61,7 +199,43 @@
     {
       "id": "docusign-po-failure-classify-01",
       "expected": "docusign-po-failure",
-      "model_answer": "minilatedeliveryandpenalty-capped",
+      "model_answer": "latedeliveryandpenalty-optional",
+      "correct": false
+    },
+    {
+      "id": "employment-offer-01-classify-01",
+      "expected": "employment-offer-01",
+      "model_answer": "employment-offer-01",
+      "correct": true
+    },
+    {
+      "id": "employment-offer-02-classify-01",
+      "expected": "employment-offer-02",
+      "model_answer": "employment-offer-01",
+      "correct": false
+    },
+    {
+      "id": "employment-offer-03-classify-01",
+      "expected": "employment-offer-03",
+      "model_answer": "employment-offer-01",
+      "correct": false
+    },
+    {
+      "id": "employment-termination-01-classify-01",
+      "expected": "employment-termination-01",
+      "model_answer": "severance-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "employment-termination-02-classify-01",
+      "expected": "employment-termination-02",
+      "model_answer": "employment-termination-01",
+      "correct": false
+    },
+    {
+      "id": "employment-termination-03-classify-01",
+      "expected": "employment-termination-03",
+      "model_answer": "employment-termination-01",
       "correct": false
     },
     {
@@ -83,6 +257,18 @@
       "correct": false
     },
     {
+      "id": "franchise-fee-01-classify-01",
+      "expected": "franchise-fee-01",
+      "model_answer": "franchise-fee-01",
+      "correct": true
+    },
+    {
+      "id": "franchise-fee-02-classify-01",
+      "expected": "franchise-fee-02",
+      "model_answer": "franchise-fee-01",
+      "correct": false
+    },
+    {
       "id": "full-payment-upon-demand-classify-01",
       "expected": "full-payment-upon-demand",
       "model_answer": "full-payment-upon-demand",
@@ -95,16 +281,82 @@
       "correct": true
     },
     {
+      "id": "gdpr-privacy-clause-01-classify-01",
+      "expected": "gdpr-privacy-clause-01",
+      "model_answer": "data-processing-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "gdpr-privacy-clause-02-classify-01",
+      "expected": "gdpr-privacy-clause-02",
+      "model_answer": "data-processing-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "gdpr-privacy-clause-03-classify-01",
+      "expected": "gdpr-privacy-clause-03",
+      "model_answer": "data-processing-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "indemnification-clause-01-classify-01",
+      "expected": "indemnification-clause-01",
+      "model_answer": "indemnification-clause-01",
+      "correct": true
+    },
+    {
+      "id": "indemnification-clause-02-classify-01",
+      "expected": "indemnification-clause-02",
+      "model_answer": "indemnification-clause-01",
+      "correct": false
+    },
+    {
+      "id": "indemnification-clause-03-classify-01",
+      "expected": "indemnification-clause-03",
+      "model_answer": "indemnification-clause-01",
+      "correct": false
+    },
+    {
       "id": "installment-sale-classify-01",
       "expected": "installment-sale",
       "model_answer": "installment-sale",
       "correct": true
     },
     {
+      "id": "insurance-clause-01-classify-01",
+      "expected": "insurance-clause-01",
+      "model_answer": "insurance-clause-01",
+      "correct": true
+    },
+    {
+      "id": "insurance-clause-02-classify-01",
+      "expected": "insurance-clause-02",
+      "model_answer": "insurance-clause-01",
+      "correct": false
+    },
+    {
       "id": "interest-rate-swap-classify-01",
       "expected": "interest-rate-swap",
       "model_answer": "interest-rate-swap",
       "correct": true
+    },
+    {
+      "id": "ip-assignment-01-classify-01",
+      "expected": "ip-assignment-01",
+      "model_answer": "ip-assignment-01",
+      "correct": true
+    },
+    {
+      "id": "ip-assignment-02-classify-01",
+      "expected": "ip-assignment-02",
+      "model_answer": "ip-assignment-01",
+      "correct": false
+    },
+    {
+      "id": "ip-assignment-03-classify-01",
+      "expected": "ip-assignment-03",
+      "model_answer": "ip-assignment-01",
+      "correct": false
     },
     {
       "id": "ip-payment-classify-01",
@@ -115,31 +367,31 @@
     {
       "id": "latedeliveryandpenalty-classify-01",
       "expected": "latedeliveryandpenalty",
-      "model_answer": "minilatedeliveryandpenalty-capped",
+      "model_answer": "latedeliveryandpenalty-capped",
       "correct": false
     },
     {
       "id": "latedeliveryandpenalty-currency-conversion-classify-01",
       "expected": "latedeliveryandpenalty-currency-conversion",
-      "model_answer": "latedeliveryandpenalty-capped",
-      "correct": false
+      "model_answer": "latedeliveryandpenalty-currency-conversion",
+      "correct": true
     },
     {
       "id": "latedeliveryandpenalty-else-classify-01",
       "expected": "latedeliveryandpenalty-else",
-      "model_answer": "minilatedeliveryandpenalty-capped",
+      "model_answer": "latedeliveryandpenalty-capped",
       "correct": false
     },
     {
       "id": "latedeliveryandpenalty-optional-classify-01",
       "expected": "latedeliveryandpenalty-optional",
-      "model_answer": "minilatedeliveryandpenalty-capped",
-      "correct": false
+      "model_answer": "latedeliveryandpenalty-optional",
+      "correct": true
     },
     {
       "id": "latedeliveryandpenalty-optional-this-classify-01",
       "expected": "latedeliveryandpenalty-optional-this",
-      "model_answer": "minilatedeliveryandpenalty-capped",
+      "model_answer": "latedeliveryandpenalty-optional",
       "correct": false
     },
     {
@@ -147,6 +399,54 @@
       "expected": "lateinvoicewithpayment",
       "model_answer": "lateinvoicewithpayment",
       "correct": true
+    },
+    {
+      "id": "limitation-of-liability-01-classify-01",
+      "expected": "limitation-of-liability-01",
+      "model_answer": "limitation-of-liability-01",
+      "correct": true
+    },
+    {
+      "id": "limitation-of-liability-02-classify-01",
+      "expected": "limitation-of-liability-02",
+      "model_answer": "limitation-of-liability-01",
+      "correct": false
+    },
+    {
+      "id": "limitation-of-liability-03-classify-01",
+      "expected": "limitation-of-liability-03",
+      "model_answer": "limitation-of-liability-01",
+      "correct": false
+    },
+    {
+      "id": "loan-agreement-01-classify-01",
+      "expected": "loan-agreement-01",
+      "model_answer": "loan-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "loan-agreement-02-classify-01",
+      "expected": "loan-agreement-02",
+      "model_answer": "loan-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "loan-agreement-03-classify-01",
+      "expected": "loan-agreement-03",
+      "model_answer": "loan-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "maintenance-agreement-01-classify-01",
+      "expected": "maintenance-agreement-01",
+      "model_answer": "maintenance-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "maintenance-agreement-02-classify-01",
+      "expected": "maintenance-agreement-02",
+      "model_answer": "maintenance-agreement-01",
+      "correct": false
     },
     {
       "id": "minilatedeliveryandpenalty-classify-01",
@@ -167,15 +467,81 @@
       "correct": false
     },
     {
+      "id": "nda-mutual-01-classify-01",
+      "expected": "nda-mutual-01",
+      "model_answer": "nda-mutual-01",
+      "correct": true
+    },
+    {
+      "id": "nda-mutual-02-classify-01",
+      "expected": "nda-mutual-02",
+      "model_answer": "nda-mutual-01",
+      "correct": false
+    },
+    {
+      "id": "nda-mutual-03-classify-01",
+      "expected": "nda-mutual-03",
+      "model_answer": "nda-mutual-01",
+      "correct": false
+    },
+    {
+      "id": "nda-oneway-01-classify-01",
+      "expected": "nda-oneway-01",
+      "model_answer": "nda-oneway-01",
+      "correct": true
+    },
+    {
+      "id": "nda-oneway-02-classify-01",
+      "expected": "nda-oneway-02",
+      "model_answer": "confidentiality-clause-01",
+      "correct": false
+    },
+    {
+      "id": "nda-oneway-03-classify-01",
+      "expected": "nda-oneway-03",
+      "model_answer": "confidentiality-clause-01",
+      "correct": false
+    },
+    {
+      "id": "non-compete-01-classify-01",
+      "expected": "non-compete-01",
+      "model_answer": "non-compete-01",
+      "correct": true
+    },
+    {
+      "id": "non-compete-02-classify-01",
+      "expected": "non-compete-02",
+      "model_answer": "non-compete-01",
+      "correct": false
+    },
+    {
+      "id": "non-compete-03-classify-01",
+      "expected": "non-compete-03",
+      "model_answer": "non-compete-01",
+      "correct": false
+    },
+    {
       "id": "one-time-payment-tr-classify-01",
       "expected": "one-time-payment-tr",
-      "model_answer": "full-payment-upon-signature",
-      "correct": false
+      "model_answer": "one-time-payment-tr",
+      "correct": true
     },
     {
       "id": "online-payment-contract-tr-classify-01",
       "expected": "online-payment-contract-tr",
-      "model_answer": "sales-contract-ru",
+      "model_answer": "software-license-01",
+      "correct": false
+    },
+    {
+      "id": "patent-license-01-classify-01",
+      "expected": "patent-license-01",
+      "model_answer": "patent-license-01",
+      "correct": true
+    },
+    {
+      "id": "patent-license-02-classify-01",
+      "expected": "patent-license-02",
+      "model_answer": "patent-license-01",
       "correct": false
     },
     {
@@ -193,13 +559,25 @@
     {
       "id": "payment-upon-signature-classify-01",
       "expected": "payment-upon-signature",
-      "model_answer": "full-payment-upon-signature",
-      "correct": false
+      "model_answer": "payment-upon-signature",
+      "correct": true
     },
     {
       "id": "perishable-goods-classify-01",
       "expected": "perishable-goods",
-      "model_answer": "supplyagreement-perishable-goods",
+      "model_answer": "perishable-goods",
+      "correct": true
+    },
+    {
+      "id": "personal-guarantee-01-classify-01",
+      "expected": "personal-guarantee-01",
+      "model_answer": "personal-guarantee-01",
+      "correct": true
+    },
+    {
+      "id": "personal-guarantee-02-classify-01",
+      "expected": "personal-guarantee-02",
+      "model_answer": "personal-guarantee-01",
       "correct": false
     },
     {
@@ -221,6 +599,18 @@
       "correct": false
     },
     {
+      "id": "property-purchase-01-classify-01",
+      "expected": "property-purchase-01",
+      "model_answer": "property-purchase-01",
+      "correct": true
+    },
+    {
+      "id": "property-purchase-02-classify-01",
+      "expected": "property-purchase-02",
+      "model_answer": "property-purchase-01",
+      "correct": false
+    },
+    {
       "id": "rental-deposit-classify-01",
       "expected": "rental-deposit",
       "model_answer": "rental-deposit",
@@ -233,6 +623,24 @@
       "correct": false
     },
     {
+      "id": "residential-lease-01-classify-01",
+      "expected": "residential-lease-01",
+      "model_answer": "residential-lease-01",
+      "correct": true
+    },
+    {
+      "id": "residential-lease-02-classify-01",
+      "expected": "residential-lease-02",
+      "model_answer": "residential-lease-01",
+      "correct": false
+    },
+    {
+      "id": "residential-lease-03-classify-01",
+      "expected": "residential-lease-03",
+      "model_answer": "residential-lease-01",
+      "correct": false
+    },
+    {
       "id": "roommate-classify-01",
       "expected": "roommate",
       "model_answer": "roommate",
@@ -241,8 +649,8 @@
     {
       "id": "saft-classify-01",
       "expected": "saft",
-      "model_answer": "safte",
-      "correct": false
+      "model_answer": "saft",
+      "correct": true
     },
     {
       "id": "safte-classify-01",
@@ -257,10 +665,58 @@
       "correct": true
     },
     {
+      "id": "service-retainer-01-classify-01",
+      "expected": "service-retainer-01",
+      "model_answer": "service-retainer-01",
+      "correct": true
+    },
+    {
+      "id": "service-retainer-02-classify-01",
+      "expected": "service-retainer-02",
+      "model_answer": "service-retainer-01",
+      "correct": false
+    },
+    {
       "id": "servicelevelagreement-classify-01",
       "expected": "servicelevelagreement",
       "model_answer": "servicelevelagreement",
       "correct": true
+    },
+    {
+      "id": "severance-agreement-01-classify-01",
+      "expected": "severance-agreement-01",
+      "model_answer": "severance-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "severance-agreement-02-classify-01",
+      "expected": "severance-agreement-02",
+      "model_answer": "severance-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "severance-agreement-03-classify-01",
+      "expected": "severance-agreement-03",
+      "model_answer": "severance-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "shareholder-agreement-01-classify-01",
+      "expected": "shareholder-agreement-01",
+      "model_answer": "shareholder-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "shareholder-agreement-02-classify-01",
+      "expected": "shareholder-agreement-02",
+      "model_answer": "shareholder-agreement-01",
+      "correct": false
+    },
+    {
+      "id": "shareholder-agreement-03-classify-01",
+      "expected": "shareholder-agreement-03",
+      "model_answer": "shareholder-agreement-01",
+      "correct": false
     },
     {
       "id": "signature-block-title-name-date-classify-01",
@@ -275,10 +731,58 @@
       "correct": false
     },
     {
+      "id": "software-license-01-classify-01",
+      "expected": "software-license-01",
+      "model_answer": "software-license-01",
+      "correct": true
+    },
+    {
+      "id": "software-license-02-classify-01",
+      "expected": "software-license-02",
+      "model_answer": "software-license-01",
+      "correct": false
+    },
+    {
+      "id": "software-license-03-classify-01",
+      "expected": "software-license-03",
+      "model_answer": "software-license-01",
+      "correct": false
+    },
+    {
+      "id": "statement-of-work-01-classify-01",
+      "expected": "statement-of-work-01",
+      "model_answer": "statement-of-work-01",
+      "correct": true
+    },
+    {
+      "id": "statement-of-work-02-classify-01",
+      "expected": "statement-of-work-02",
+      "model_answer": "statement-of-work-01",
+      "correct": false
+    },
+    {
+      "id": "statement-of-work-03-classify-01",
+      "expected": "statement-of-work-03",
+      "model_answer": "statement-of-work-01",
+      "correct": false
+    },
+    {
+      "id": "sublease-agreement-01-classify-01",
+      "expected": "sublease-agreement-01",
+      "model_answer": "sublease-agreement-01",
+      "correct": true
+    },
+    {
+      "id": "sublease-agreement-02-classify-01",
+      "expected": "sublease-agreement-02",
+      "model_answer": "sublease-agreement-01",
+      "correct": false
+    },
+    {
       "id": "supply-agreement-loc-classify-01",
       "expected": "supply-agreement-loc",
-      "model_answer": "supply-agreement-loc",
-      "correct": true
+      "model_answer": "supplyagreement",
+      "correct": false
     },
     {
       "id": "supplyagreement-classify-01",
@@ -293,6 +797,24 @@
       "correct": true
     },
     {
+      "id": "trademark-license-01-classify-01",
+      "expected": "trademark-license-01",
+      "model_answer": "trademark-license-01",
+      "correct": true
+    },
+    {
+      "id": "trademark-license-02-classify-01",
+      "expected": "trademark-license-02",
+      "model_answer": "trademark-license-01",
+      "correct": false
+    },
+    {
+      "id": "trademark-license-03-classify-01",
+      "expected": "trademark-license-03",
+      "model_answer": "trademark-license-01",
+      "correct": false
+    },
+    {
       "id": "volumediscount-classify-01",
       "expected": "volumediscount",
       "model_answer": "volumediscount",
@@ -301,13 +823,25 @@
     {
       "id": "volumediscountolist-classify-01",
       "expected": "volumediscountolist",
-      "model_answer": "volumediscountolist",
-      "correct": true
+      "model_answer": "volumediscount",
+      "correct": false
     },
     {
       "id": "volumediscountulist-classify-01",
       "expected": "volumediscountulist",
       "model_answer": "volumediscountolist",
+      "correct": false
+    },
+    {
+      "id": "warranty-clause-01-classify-01",
+      "expected": "warranty-clause-01",
+      "model_answer": "warranty-clause-01",
+      "correct": true
+    },
+    {
+      "id": "warranty-clause-02-classify-01",
+      "expected": "warranty-clause-02",
+      "model_answer": "warranty-clause-01",
       "correct": false
     }
   ]

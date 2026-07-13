@@ -1,14 +1,44 @@
 {
   "model": "anthropic/claude-haiku-4.5",
-  "total_fields": 468,
-  "correct_fields": 322,
-  "type_accuracy": 0.688034188034188,
+  "total_fields": 1155,
+  "correct_fields": 883,
+  "type_accuracy": 0.7645021645021645,
   "details": [
     {
       "id": "acceptance-of-delivery-typemap-01",
       "correct_fields": 2,
       "total_fields": 5,
       "model_raw": "```json\n{\n  \"shipper\": \"RentalParty\",\n  \"receiver\": \"RentalParty\",\n  \"deliverable\": \"String\",\n  \"businessDays\": \"Integer\",\n  \"attachment\": \"String\"\n}\n```"
+    },
+    {
+      "id": "advertising-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"advertiserName\": \"String\",\n  \"agencyName\": \"String\",\n  \"campaignStartDate\": \"DateTime\",\n  \"campaignEndDate\": \"DateTime\",\n  \"monthlyMediaBudget\": \"MonetaryAmount\",\n  \"agencyCommissionRate\": \"Double\",\n  \"minimumImpressions\": \"Long\",\n  \"exclusiveEngagement\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "advertising-agreement-02-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"advertiserName\": \"String\",\n  \"agencyName\": \"String\",\n  \"campaignName\": \"String\",\n  \"mediaBudget\": \"MonetaryAmount\",\n  \"guaranteedImpressions\": \"Long\",\n  \"campaignStartDate\": \"DateTime\",\n  \"campaignEndDate\": \"DateTime\",\n  \"exclusiveCategory\": \"String\"\n}\n```"
+    },
+    {
+      "id": "arbitration-clause-01-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"arbitrationInstitution\": \"String\",\n  \"seatOfArbitration\": \"String\",\n  \"numberOfArbitrators\": \"Integer\",\n  \"governingLaw\": \"String\",\n  \"arbitrationRules\": \"String\",\n  \"languageOfArbitration\": \"String\",\n  \"expeditedProcedure\": \"Boolean\",\n  \"costsCap\": \"MonetaryAmount\",\n  \"noticeDeadlineDate\": \"DateTime\"\n}\n```"
+    },
+    {
+      "id": "arbitration-clause-02-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"arbitrationInstitution\": \"String\",\n  \"arbitrationSeat\": \"PostalAddress\",\n  \"governingLaw\": \"String\",\n  \"numberOfArbitrators\": \"Integer\",\n  \"arbitrationRules\": \"String\",\n  \"expeditedProcedureAvailable\": \"Boolean\",\n  \"filingDeadlineDays\": \"Integer\",\n  \"languageOfArbitration\": \"String\",\n  \"effectiveDate\": \"DateTime\"\n}\n```"
+    },
+    {
+      "id": "arbitration-clause-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"arbitrationBody\": \"String\",\n  \"arbitrationRules\": \"String\",\n  \"seatOfArbitration\": \"PostalAddress\",\n  \"numberOfArbitrators\": \"Integer\",\n  \"governingLaw\": \"String\",\n  \"filingDeadlineDays\": \"Integer\",\n  \"expeditedProcedures\": \"Boolean\",\n  \"effectiveDate\": \"DateTime\"\n}\n```"
     },
     {
       "id": "bill-of-lading-typemap-01",
@@ -29,10 +59,64 @@
       "model_raw": "```json\n{\n  \"companyName\": \"String\",\n  \"incorporationState\": \"String\",\n  \"streetAddress\": \"String\",\n  \"addressRegion\": \"String\",\n  \"addressLocality\": \"String\",\n  \"postalCode\": \"String\",\n  \"registeredAgentName\": \"String\",\n  \"incorporationDate\": \"DateTime\",\n  \"authorizedShareCapital\": \"Integer\",\n  \"parValue\": \"Double\",\n  \"incorporatorName\": \"String\",\n  \"incorporatorAddress\": \"String\",\n  \"incorporatorCity\": \"String\",\n  \"incorporatorState\": \"String\",\n  \"incorporatorZip\": \"String\"\n}\n```"
     },
     {
+      "id": "commercial-lease-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"landlordName\": \"String\",\n  \"tenantName\": \"String\",\n  \"premisesAddress\": \"PostalAddress\",\n  \"leaseCommencementDate\": \"DateTime\",\n  \"monthlyBaseRent\": \"MonetaryAmount\",\n  \"annualEscalationRate\": \"Double\",\n  \"securityDeposit\": \"MonetaryAmount\",\n  \"renewalOptionExercised\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "commercial-lease-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"tenantName\": \"String\",\n  \"landlordName\": \"String\",\n  \"leaseCommencementDate\": \"DateTime\",\n  \"baseRent\": \"MonetaryAmount\",\n  \"escalationRate\": \"Double\",\n  \"leaseTermYears\": \"Integer\",\n  \"securityDeposit\": \"MonetaryAmount\",\n  \"renewalOptionAvailable\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "commercial-lease-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"landlordName\": \"String\",\n  \"tenantName\": \"String\",\n  \"leaseStartDate\": \"DateTime\",\n  \"monthlyRent\": \"MonetaryAmount\",\n  \"lateFeePercentage\": \"Double\",\n  \"securityDeposit\": \"MonetaryAmount\",\n  \"renewalOptionYears\": \"Integer\",\n  \"autoRenewal\": \"Boolean\"\n}\n```"
+    },
+    {
       "id": "company-information-typemap-01",
       "correct_fields": 5,
       "total_fields": 5,
       "model_raw": "```json\n{\n  \"name\": \"String\",\n  \"industry\": \"String\",\n  \"website\": \"String\",\n  \"address\": \"PostalAddress\",\n  \"numberOfEmployees\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "confidentiality-clause-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"String\",\n  \"receivingParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"confidentialityPeriod\": \"Duration\",\n  \"governingLaw\": \"String\",\n  \"liquidatedDamages\": \"MonetaryAmount\",\n  \"returnPeriodDays\": \"Integer\",\n  \"permitsInjunctiveRelief\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "confidentiality-clause-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"String\",\n  \"receivingParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"confidentialityPeriod\": \"Duration\",\n  \"governingLaw\": \"String\",\n  \"injunctiveReliefAvailable\": \"Boolean\",\n  \"returnOfMaterialsDays\": \"Integer\",\n  \"liquidatedDamages\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "confidentiality-clause-03-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"String\",\n  \"receivingParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"confidentialityPeriod\": \"Duration\",\n  \"returnOfMaterials\": \"Boolean\",\n  \"governingLaw\": \"String\",\n  \"liquidatedDamages\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "consulting-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"consultantName\": \"String\",\n  \"clientName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"monthlyFee\": \"MonetaryAmount\",\n  \"noticePeriodDays\": \"Integer\",\n  \"autoRenews\": \"Boolean\",\n  \"expenseCapPercentage\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "consulting-agreement-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"consultantName\": \"String\",\n  \"clientName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"hourlyRate\": \"MonetaryAmount\",\n  \"maxHoursPerMonth\": \"Integer\",\n  \"invoiceFrequency\": \"Period\",\n  \"terminationNoticeDays\": \"Integer\",\n  \"autoRenewal\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "consulting-agreement-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"consultantName\": \"String\",\n  \"clientName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"hourlyRate\": \"MonetaryAmount\",\n  \"maxHoursPerMonth\": \"Integer\",\n  \"invoiceFrequency\": \"Period\",\n  \"autoRenew\": \"Boolean\",\n  \"terminationNoticeDays\": \"Integer\"\n}\n```"
     },
     {
       "id": "contact-information-typemap-01",
@@ -41,16 +125,70 @@
       "model_raw": "```json\n{\n  \"name\": \"String\",\n  \"title\": \"String\",\n  \"email\": \"String\",\n  \"phone\": \"String\",\n  \"timezone\": \"TimeZone\",\n  \"communicationChannel\": \"CommunicationChannel\"\n}\n```"
     },
     {
+      "id": "content-licensing-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"contentTitle\": \"String\",\n  \"licenseFee\": \"MonetaryAmount\",\n  \"effectiveDate\": \"DateTime\",\n  \"termMonths\": \"Integer\",\n  \"territory\": \"String\",\n  \"isExclusive\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "content-licensing-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"licensor\": \"RentalParty\",\n  \"licensee\": \"RentalParty\",\n  \"workTitle\": \"String\",\n  \"licenseFee\": \"MonetaryAmount\",\n  \"royaltyRate\": \"Double\",\n  \"territory\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"expirationDate\": \"DateTime\",\n  \"exclusiveGrant\": \"Boolean\"\n}\n```"
+    },
+    {
       "id": "copyright-license-typemap-01",
       "correct_fields": 11,
       "total_fields": 13,
       "model_raw": "```json\n{\n  \"effectiveDate\": \"DateTime\",\n  \"licensee\": \"String\",\n  \"licenseeState\": \"String\",\n  \"licenseeEntityType\": \"String\",\n  \"licenseeAddress\": \"PostalAddress\",\n  \"licensor\": \"String\",\n  \"licensorState\": \"String\",\n  \"licensorEntityType\": \"String\",\n  \"licensorAddress\": \"PostalAddress\",\n  \"territory\": \"String\",\n  \"purposeDescription\": \"String\",\n  \"workDescription\": \"String\",\n  \"paymentClause\": \"PaymentClause\"\n}\n```"
     },
     {
+      "id": "data-breach-notification-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"dataProcessor\": \"String\",\n  \"dataController\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"notificationPeriodHours\": \"Integer\",\n  \"affectedRecordsThreshold\": \"Integer\",\n  \"requiresRegulatorNotification\": \"Boolean\",\n  \"lateNotificationPenalty\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "data-breach-notification-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"processorName\": \"String\",\n  \"controllerName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"notificationDeadlineHours\": \"Integer\",\n  \"affectedRecordsThreshold\": \"Integer\",\n  \"requiresRegulatorNotification\": \"Boolean\",\n  \"maximumLiabilityCap\": \"MonetaryAmount\",\n  \"noticeMethod\": \"CommunicationChannel\"\n}\n```"
+    },
+    {
+      "id": "data-processing-agreement-01-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"processorName\": \"String\",\n  \"controllerName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"breachNotificationHours\": \"Integer\",\n  \"dataRetentionPeriodDays\": \"Integer\",\n  \"subprocessingFeePercentage\": \"Double\",\n  \"crossBorderTransferPermitted\": \"Boolean\",\n  \"annualAuditRight\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "data-processing-agreement-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"processorName\": \"String\",\n  \"controllerName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"dataBreachNotificationHours\": \"Integer\",\n  \"subProcessingAllowed\": \"Boolean\",\n  \"maxRecordsProcessed\": \"Long\",\n  \"annualAuditFee\": \"MonetaryAmount\",\n  \"dataRetentionPeriodDays\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "data-processing-agreement-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"processorName\": \"String\",\n  \"controllerName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"breachNotificationHours\": \"Integer\",\n  \"dataRetentionDays\": \"Integer\",\n  \"subprocessingAllowed\": \"Boolean\",\n  \"annualAuditFee\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
       "id": "demandforecast-typemap-01",
       "correct_fields": 2,
       "total_fields": 4,
       "model_raw": "```json\n{\n  \"purchaser\": \"RentalParty\",\n  \"supplier\": \"RentalParty\",\n  \"effectiveDate\": \"DateTime\",\n  \"minimumPercentage\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "distribution-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"distributorName\": \"String\",\n  \"territory\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"minimumAnnualPurchase\": \"MonetaryAmount\",\n  \"royaltyRate\": \"Double\",\n  \"isExclusive\": \"Boolean\",\n  \"renewalTermYears\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "distribution-agreement-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"distributorName\": \"String\",\n  \"territory\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"minimumAnnualPurchase\": \"MonetaryAmount\",\n  \"termYears\": \"Integer\",\n  \"autoRenewal\": \"Boolean\",\n  \"terminationNoticeDays\": \"Integer\"\n}\n```"
     },
     {
       "id": "docusign-connect-typemap-01",
@@ -63,6 +201,42 @@
       "correct_fields": 11,
       "total_fields": 13,
       "model_raw": "```json\n{\n  \"buyerName\": \"String\",\n  \"lateOne\": \"Duration\",\n  \"lateTwo\": \"Duration\",\n  \"lateThree\": \"Duration\",\n  \"lateOnePercent\": \"Double\",\n  \"lateTwoPercent\": \"Double\",\n  \"lateThreePercent\": \"Double\",\n  \"article\": \"String\",\n  \"thisSection\": \"String\",\n  \"maxFailures\": \"Integer\",\n  \"failureRange\": \"Period\",\n  \"repeatedFailureCompensationAmount\": \"Double\",\n  \"repeatedFailureCompensationCurrency\": \"String\"\n}\n```"
+    },
+    {
+      "id": "employment-offer-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"jobTitle\": \"String\",\n  \"startDate\": \"DateTime\",\n  \"annualSalary\": \"MonetaryAmount\",\n  \"signingBonus\": \"MonetaryAmount\",\n  \"probationPeriodMonths\": \"Integer\",\n  \"isAtWillEmployment\": \"Boolean\",\n  \"requiresBackgroundCheck\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "employment-offer-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employerName\": \"String\",\n  \"employeeName\": \"String\",\n  \"jobTitle\": \"String\",\n  \"startDate\": \"DateTime\",\n  \"annualSalary\": \"MonetaryAmount\",\n  \"probationPeriodMonths\": \"Integer\",\n  \"bonusEligible\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "employment-offer-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employerName\": \"String\",\n  \"employeeName\": \"String\",\n  \"jobTitle\": \"String\",\n  \"startDate\": \"DateTime\",\n  \"annualSalary\": \"MonetaryAmount\",\n  \"signingBonus\": \"MonetaryAmount\",\n  \"probationPeriodMonths\": \"Integer\",\n  \"atWillEmployment\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "employment-termination-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"companyName\": \"String\",\n  \"terminationDate\": \"DateTime\",\n  \"noticePeriodDays\": \"Integer\",\n  \"severancePayAmount\": \"MonetaryAmount\",\n  \"finalPaycheckDate\": \"DateTime\",\n  \"benefitsContinued\": \"Boolean\",\n  \"nonCompeteMonths\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "employment-termination-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"companyName\": \"String\",\n  \"terminationDate\": \"DateTime\",\n  \"noticePeriodDays\": \"Integer\",\n  \"severancePayAmount\": \"MonetaryAmount\",\n  \"finalPaycheckDate\": \"DateTime\",\n  \"benefitsContinued\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "employment-termination-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"employerName\": \"String\",\n  \"terminationDate\": \"DateTime\",\n  \"noticePeriodDays\": \"Integer\",\n  \"severancePayAmount\": \"MonetaryAmount\",\n  \"benefitsContinued\": \"Boolean\",\n  \"finalPaycheckDate\": \"DateTime\",\n  \"nonCompeteMonths\": \"Integer\"\n}\n```"
     },
     {
       "id": "fixed-interests-typemap-01",
@@ -83,6 +257,18 @@
       "model_raw": "```json\n{\n  \"seller\": \"RentalParty\",\n  \"buyer\": \"RentalParty\",\n  \"deliveryPrice\": \"MonetaryAmount\",\n  \"accelerationMin\": \"Double\",\n  \"accelerationMax\": \"Double\",\n  \"accelerationBreachPenalty\": \"MonetaryAmount\",\n  \"deliveryLimitDuration\": \"Duration\",\n  \"lateDeliveryPenalty\": \"MonetaryAmount\"\n}\n```"
     },
     {
+      "id": "franchise-fee-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"franchiseeName\": \"String\",\n  \"initialFranchiseFee\": \"MonetaryAmount\",\n  \"royaltyPercentage\": \"Double\",\n  \"marketingFeePercentage\": \"Double\",\n  \"paymentDueDay\": \"Integer\",\n  \"effectiveDate\": \"DateTime\",\n  \"latePaymentPenalty\": \"MonetaryAmount\",\n  \"autoRenewal\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "franchise-fee-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"franchisorName\": \"String\",\n  \"franchiseeName\": \"String\",\n  \"initialFranchiseFee\": \"MonetaryAmount\",\n  \"royaltyRate\": \"Double\",\n  \"paymentDueDay\": \"Integer\",\n  \"effectiveDate\": \"DateTime\",\n  \"lateFeePercentage\": \"Double\"\n}\n```"
+    },
+    {
       "id": "full-payment-upon-demand-typemap-01",
       "correct_fields": 1,
       "total_fields": 3,
@@ -95,16 +281,82 @@
       "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"amount\": \"MonetaryAmount\"\n}\n```"
     },
     {
+      "id": "gdpr-privacy-clause-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"dataControllerName\": \"String\",\n  \"dataProcessorName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"breachNotificationHours\": \"Integer\",\n  \"dataRetentionPeriodDays\": \"Integer\",\n  \"subProcessingAllowed\": \"Boolean\",\n  \"annualComplianceAuditFee\": \"MonetaryAmount\",\n  \"applicableSupervisoryAuthority\": \"String\"\n}\n```"
+    },
+    {
+      "id": "gdpr-privacy-clause-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"dataController\": \"String\",\n  \"dataProcessor\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"breachNotificationHours\": \"Integer\",\n  \"dataRetentionPeriodMonths\": \"Integer\",\n  \"transferOutsideEEA\": \"Boolean\",\n  \"processingFee\": \"MonetaryAmount\",\n  \"dataSubjectRequestResponseDays\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "gdpr-privacy-clause-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"dataController\": \"String\",\n  \"dataProcessor\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"breachNotificationHours\": \"Integer\",\n  \"dataRetentionPeriodDays\": \"Integer\",\n  \"transferOutsideEEA\": \"Boolean\",\n  \"dataProtectionOfficerEmail\": \"CommunicationChannel\",\n  \"auditFeePercentage\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "indemnification-clause-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"indemnifyingParty\": \"String\",\n  \"indemnifiedParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"liabilityCap\": \"MonetaryAmount\",\n  \"noticePeriodDays\": \"Integer\",\n  \"survivalPeriodMonths\": \"Integer\",\n  \"coversThirdPartyClaims\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "indemnification-clause-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"indemnifyingParty\": \"String\",\n  \"indemnifiedParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"capAmount\": \"MonetaryAmount\",\n  \"noticePeriodDays\": \"Integer\",\n  \"coversThirdPartyClaims\": \"Boolean\",\n  \"survivalPeriodMonths\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "indemnification-clause-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"indemnifyingParty\": \"String\",\n  \"indemnifiedParty\": \"String\",\n  \"liabilityCap\": \"MonetaryAmount\",\n  \"effectiveDate\": \"DateTime\",\n  \"noticePeriodDays\": \"Integer\",\n  \"coversThirdPartyClaims\": \"Boolean\",\n  \"excludesGrossNegligence\": \"Boolean\"\n}\n```"
+    },
+    {
       "id": "installment-sale-typemap-01",
       "correct_fields": 6,
       "total_fields": 8,
       "model_raw": "```json\n{\n  \"BUYER\": \"RentalParty\",\n  \"SELLER\": \"RentalParty\",\n  \"INITIAL_DUE\": \"MonetaryAmount\",\n  \"INTEREST_RATE\": \"Double\",\n  \"TOTAL_DUE_BEFORE_CLOSING\": \"MonetaryAmount\",\n  \"MIN_PAYMENT\": \"MonetaryAmount\",\n  \"DUE_AT_CLOSING\": \"MonetaryAmount\",\n  \"FIRST_MONTH\": \"Integer\"\n}\n```"
     },
     {
+      "id": "insurance-clause-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"insurerName\": \"String\",\n  \"policyNumber\": \"String\",\n  \"coverageAmount\": \"MonetaryAmount\",\n  \"deductibleAmount\": \"MonetaryAmount\",\n  \"effectiveDate\": \"DateTime\",\n  \"expirationDate\": \"DateTime\",\n  \"premiumAmount\": \"MonetaryAmount\",\n  \"autoRenewal\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "insurance-clause-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"insurerName\": \"String\",\n  \"policyholderName\": \"String\",\n  \"policyNumber\": \"String\",\n  \"coverageAmount\": \"MonetaryAmount\",\n  \"deductibleAmount\": \"MonetaryAmount\",\n  \"effectiveDate\": \"DateTime\",\n  \"expirationDate\": \"DateTime\",\n  \"autoRenews\": \"Boolean\"\n}\n```"
+    },
+    {
       "id": "interest-rate-swap-typemap-01",
       "correct_fields": 18,
       "total_fields": 27,
       "model_raw": "```json\n{\n  \"bank\": \"String\",\n  \"letterDate\": \"DateTime\",\n  \"counterparty\": \"String\",\n  \"bankReference\": \"String\",\n  \"notionalAmount\": \"MonetaryAmount\",\n  \"tradeDate\": \"DateTime\",\n  \"effectiveDate\": \"DateTime\",\n  \"terminationDate\": \"DateTime\",\n  \"fixedRatePayer\": \"RentalParty\",\n  \"fixedRatePayerPeriodEndDates\": \"Period\",\n  \"fixedRatePayerPaymentDates\": \"Period\",\n  \"fixedRate\": \"Double\",\n  \"fixedRateDayCountFraction\": \"DayCountFraction\",\n  \"fixedRatePayerBusinessDays\": \"String\",\n  \"fixedRatePayerBusinessDayConvention\": \"String\",\n  \"floatingRatePayer\": \"RentalParty\",\n  \"floatingRatePayerPeriodEndDates\": \"Period\",\n  \"floatingRatePayerPaymentDates\": \"Period\",\n  \"floatingRateForInitialCalculationPeriod\": \"Double\",\n  \"floatingRateOption\": \"String\",\n  \"designatedMaturity\": \"Duration\",\n  \"spread\": \"Double\",\n  \"floatingRateDayCountFraction\": \"DayCountFraction\",\n  \"resetDates\": \"String\",\n  \"compounding\": \"Boolean\",\n  \"floatingRatePayerBusinessDays\": \"String\",\n  \"floatingRatePayerBusinessDayConvention\": \"String\"\n}\n```"
+    },
+    {
+      "id": "ip-assignment-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"assignor\": \"String\",\n  \"assignee\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"considerationAmount\": \"MonetaryAmount\",\n  \"workDescription\": \"String\",\n  \"waivesMoralRights\": \"Boolean\",\n  \"registrationNumber\": \"String\",\n  \"jurisdiction\": \"String\"\n}\n```"
+    },
+    {
+      "id": "ip-assignment-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"assignorName\": \"String\",\n  \"assigneeName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"inventionDescription\": \"String\",\n  \"considerationAmount\": \"MonetaryAmount\",\n  \"governingLaw\": \"String\",\n  \"assistWithRegistration\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "ip-assignment-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"assignor\": \"String\",\n  \"assignee\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"considerationAmount\": \"MonetaryAmount\",\n  \"workDescription\": \"String\",\n  \"moralRightsWaived\": \"Boolean\",\n  \"cooperationRequired\": \"Boolean\",\n  \"governingLaw\": \"String\"\n}\n```"
     },
     {
       "id": "ip-payment-typemap-01",
@@ -149,6 +401,54 @@
       "model_raw": "```json\n{\n  \"maximumDelay\": \"Duration\",\n  \"purchaser\": \"String\",\n  \"supplier\": \"String\"\n}\n```"
     },
     {
+      "id": "limitation-of-liability-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"liabilityCapAmount\": \"MonetaryAmount\",\n  \"currencyCode\": \"String\",\n  \"capPercentageOfFees\": \"Double\",\n  \"effectiveDate\": \"DateTime\",\n  \"claimPeriodDays\": \"Integer\",\n  \"excludeConsequentialDamages\": \"Boolean\",\n  \"carveOutGrossNegligence\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "limitation-of-liability-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"supplierName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"liabilityCap\": \"MonetaryAmount\",\n  \"currency\": \"String\",\n  \"lookbackPeriodMonths\": \"Integer\",\n  \"excludesConsequentialDamages\": \"Boolean\",\n  \"carveOutForGrossNegligence\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "limitation-of-liability-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"supplierName\": \"String\",\n  \"capAmount\": \"Double\",\n  \"currency\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"claimPeriodDays\": \"Integer\",\n  \"excludesConsequentialDamages\": \"Boolean\",\n  \"carveOutForGrossNegligence\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "loan-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"lenderName\": \"String\",\n  \"borrowerName\": \"String\",\n  \"principalAmount\": \"MonetaryAmount\",\n  \"interestRate\": \"Double\",\n  \"maturityDate\": \"DateTime\",\n  \"latePaymentFee\": \"MonetaryAmount\",\n  \"gracePeriodDays\": \"Integer\",\n  \"prepaymentAllowed\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "loan-agreement-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"lenderName\": \"String\",\n  \"borrowerName\": \"String\",\n  \"principalAmount\": \"MonetaryAmount\",\n  \"annualInterestRate\": \"Double\",\n  \"maturityDate\": \"DateTime\",\n  \"lateFeePercentage\": \"Double\",\n  \"prepaymentPermitted\": \"Boolean\",\n  \"gracePeriodDays\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "loan-agreement-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"lenderName\": \"String\",\n  \"borrowerName\": \"String\",\n  \"principalAmount\": \"MonetaryAmount\",\n  \"interestRate\": \"Double\",\n  \"loanStartDate\": \"DateTime\",\n  \"maturityDate\": \"DateTime\",\n  \"latePaymentPenalty\": \"Double\",\n  \"prepaymentAllowed\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "maintenance-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"serviceProviderName\": \"String\",\n  \"clientName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"annualFee\": \"MonetaryAmount\",\n  \"responseTimeHours\": \"Duration\",\n  \"renewalTermMonths\": \"Integer\",\n  \"autoRenewal\": \"Boolean\",\n  \"maxServiceCallsPerYear\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "maintenance-agreement-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"serviceProvider\": \"String\",\n  \"client\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"annualFee\": \"MonetaryAmount\",\n  \"responseTimeHours\": \"Duration\",\n  \"maxServiceCallsPerYear\": \"Integer\",\n  \"autoRenews\": \"Boolean\",\n  \"latePaymentPenaltyRate\": \"Double\"\n}\n```"
+    },
+    {
       "id": "minilatedeliveryandpenalty-typemap-01",
       "correct_fields": 3,
       "total_fields": 5,
@@ -167,6 +467,60 @@
       "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"maximumDelay\": \"Duration\"\n}\n```"
     },
     {
+      "id": "nda-mutual-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"partyA\": \"String\",\n  \"partyB\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"termYears\": \"Integer\",\n  \"confidentialityPeriodMonths\": \"Integer\",\n  \"governingLaw\": \"String\",\n  \"injunctiveReliefAvailable\": \"Boolean\",\n  \"liquidatedDamagesAmount\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "nda-mutual-02-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"partyA\": \"RentalParty\",\n  \"partyB\": \"RentalParty\",\n  \"effectiveDate\": \"DateTime\",\n  \"termYears\": \"Integer\",\n  \"confidentialityPeriodYears\": \"Integer\",\n  \"governingLaw\": \"String\",\n  \"liquidatedDamages\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "nda-mutual-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"partyA\": \"String\",\n  \"partyB\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"confidentialityPeriodMonths\": \"Integer\",\n  \"governingLaw\": \"String\",\n  \"returnOfMaterialsDays\": \"Integer\",\n  \"injunctiveReliefAllowed\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "nda-oneway-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"String\",\n  \"receivingParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"confidentialityPeriod\": \"Duration\",\n  \"governingLaw\": \"String\",\n  \"returnObligation\": \"Boolean\",\n  \"liquidatedDamages\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "nda-oneway-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"String\",\n  \"receivingParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"confidentialityPeriodYears\": \"Integer\",\n  \"governingLaw\": \"String\",\n  \"returnOfMaterialsDays\": \"Integer\",\n  \"injunctiveReliefAvailable\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "nda-oneway-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"disclosingParty\": \"String\",\n  \"receivingParty\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"confidentialityPeriodYears\": \"Integer\",\n  \"governingLaw\": \"String\",\n  \"returnObligation\": \"Boolean\",\n  \"liquidatedDamages\": \"MonetaryAmount\",\n  \"noticeDays\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "non-compete-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"restrictedPartyName\": \"String\",\n  \"restrictionPeriodMonths\": \"Integer\",\n  \"geographicScope\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"liquidatedDamagesAmount\": \"MonetaryAmount\",\n  \"industrySector\": \"String\",\n  \"injunctiveReliefAvailable\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "non-compete-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"companyName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"restrictionPeriodMonths\": \"Integer\",\n  \"geographicScope\": \"String\",\n  \"industrySector\": \"String\",\n  \"penaltyAmount\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "non-compete-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"companyName\": \"String\",\n  \"restrictedPeriodMonths\": \"Integer\",\n  \"geographicScope\": \"Distance\",\n  \"effectiveDate\": \"DateTime\",\n  \"liquidatedDamages\": \"MonetaryAmount\",\n  \"includesAffiliates\": \"Boolean\",\n  \"industrySector\": \"String\"\n}\n```"
+    },
+    {
       "id": "one-time-payment-tr-typemap-01",
       "correct_fields": 1,
       "total_fields": 3,
@@ -177,6 +531,18 @@
       "correct_fields": 1,
       "total_fields": 5,
       "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"softwareID\": \"String\",\n  \"userCount\": \"Integer\",\n  \"authorizedCourt\": \"PostalAddress\"\n}\n```"
+    },
+    {
+      "id": "patent-license-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"patentNumber\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"royaltyRate\": \"Double\",\n  \"exclusiveLicense\": \"Boolean\",\n  \"licenseTermYears\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "patent-license-02-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"patentNumber\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"royaltyRate\": \"Double\",\n  \"territory\": \"String\",\n  \"isExclusive\": \"Boolean\",\n  \"isSublicensable\": \"Boolean\",\n  \"minimumAnnualPayment\": \"MonetaryAmount\"\n}\n```"
     },
     {
       "id": "payment-upon-delivery-typemap-01",
@@ -203,6 +569,18 @@
       "model_raw": "```json\n{\n  \"grower\": \"String\",\n  \"importer\": \"String\",\n  \"shipmentId\": \"String\",\n  \"dueDate\": \"DateTime\",\n  \"unit\": \"Unit\",\n  \"minUnits\": \"Integer\",\n  \"maxUnits\": \"Integer\",\n  \"product\": \"String\",\n  \"sensorReadingFrequency\": \"Duration\",\n  \"duration\": \"Duration\",\n  \"unitPrice\": \"MonetaryAmount\",\n  \"minTemperature\": \"Double\",\n  \"maxTemperature\": \"Double\",\n  \"minHumidity\": \"Double\",\n  \"maxHumidity\": \"Double\",\n  \"penaltyFactor\": \"Double\"\n}\n```"
     },
     {
+      "id": "personal-guarantee-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"guarantorName\": \"String\",\n  \"principalDebtor\": \"String\",\n  \"creditorName\": \"String\",\n  \"maximumLiabilityAmount\": \"MonetaryAmount\",\n  \"effectiveDate\": \"DateTime\",\n  \"expiryDate\": \"DateTime\",\n  \"isJointAndSeveral\": \"Boolean\",\n  \"currency\": \"String\"\n}\n```"
+    },
+    {
+      "id": "personal-guarantee-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"guarantorName\": \"String\",\n  \"debtorName\": \"String\",\n  \"lenderName\": \"String\",\n  \"maximumLiabilityAmount\": \"MonetaryAmount\",\n  \"currencyCode\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"interestRate\": \"Double\",\n  \"isContinuingGuarantee\": \"Boolean\"\n}\n```"
+    },
+    {
       "id": "project-information-typemap-01",
       "correct_fields": 5,
       "total_fields": 5,
@@ -221,6 +599,18 @@
       "model_raw": "```json\n{\n  \"amount\": \"MonetaryAmount\",\n  \"date\": \"DateTime\",\n  \"maker\": \"String\",\n  \"interestRate\": \"Double\",\n  \"individual\": \"String\",\n  \"makerAddress\": \"PostalAddress\",\n  \"lender\": \"String\",\n  \"legalEntity\": \"String\",\n  \"lenderAddress\": \"PostalAddress\",\n  \"maturityDate\": \"DateTime\",\n  \"defaultDays\": \"Integer\",\n  \"insolvencyDays\": \"Integer\",\n  \"jurisdiction\": \"String\"\n}\n```"
     },
     {
+      "id": "property-purchase-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyerName\": \"String\",\n  \"sellerName\": \"String\",\n  \"propertyAddress\": \"PostalAddress\",\n  \"purchasePrice\": \"MonetaryAmount\",\n  \"depositAmount\": \"MonetaryAmount\",\n  \"closingDate\": \"DateTime\",\n  \"inspectionPeriodDays\": \"Integer\",\n  \"financingContingent\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "property-purchase-02-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"buyerName\": \"String\",\n  \"sellerName\": \"String\",\n  \"propertyAddress\": \"PostalAddress\",\n  \"purchasePrice\": \"MonetaryAmount\",\n  \"earnestMoney\": \"MonetaryAmount\",\n  \"closingDate\": \"DateTime\",\n  \"financingContingent\": \"Boolean\",\n  \"inspectionPeriodDays\": \"Integer\"\n}\n```"
+    },
+    {
       "id": "rental-deposit-typemap-01",
       "correct_fields": 6,
       "total_fields": 10,
@@ -231,6 +621,24 @@
       "correct_fields": 8,
       "total_fields": 10,
       "model_raw": "```json\n{\n  \"tenant\": \"RentalParty\",\n  \"landlord\": \"RentalParty\",\n  \"depositAmount\": \"MonetaryAmount\",\n  \"tenantDepositRestorationPeriod\": \"Duration\",\n  \"monthlyBaseRentMultiple\": \"Double\",\n  \"applicableLaw\": \"String\",\n  \"statute\": \"String\",\n  \"bankName\": \"String\",\n  \"landlordDepositReturnPeriod\": \"Duration\",\n  \"exhibit\": \"String\"\n}\n```"
+    },
+    {
+      "id": "residential-lease-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"landlordName\": \"String\",\n  \"tenantName\": \"String\",\n  \"monthlyRentAmount\": \"MonetaryAmount\",\n  \"dueDay\": \"Integer\",\n  \"gracePeriodDays\": \"Integer\",\n  \"lateFeeAmount\": \"MonetaryAmount\",\n  \"leaseStartDate\": \"DateTime\",\n  \"petsAllowed\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "residential-lease-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"tenantName\": \"String\",\n  \"monthlyRent\": \"MonetaryAmount\",\n  \"leaseStartDate\": \"DateTime\",\n  \"lateFeeGracePeriod\": \"Duration\",\n  \"lateFeeAmount\": \"MonetaryAmount\",\n  \"petsAllowed\": \"Boolean\",\n  \"securityDeposit\": \"MonetaryAmount\"\n}\n```"
+    },
+    {
+      "id": "residential-lease-03-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"tenantName\": \"String\",\n  \"landlordName\": \"String\",\n  \"monthlyRent\": \"MonetaryAmount\",\n  \"leaseStartDate\": \"DateTime\",\n  \"gracePeriodDays\": \"Integer\",\n  \"lateFeeAmount\": \"MonetaryAmount\",\n  \"petsAllowed\": \"Boolean\",\n  \"securityDeposit\": \"MonetaryAmount\"\n}\n```"
     },
     {
       "id": "roommate-typemap-01",
@@ -257,10 +665,58 @@
       "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"refundPeriod\": \"Period\",\n  \"counterparty\": \"RentalParty\",\n  \"currencyType\": \"String\",\n  \"appealPeriod\": \"Period\",\n  \"countryLegislation\": \"String\"\n}\n```"
     },
     {
+      "id": "service-retainer-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"clientName\": \"String\",\n  \"serviceProviderName\": \"String\",\n  \"retainerAmount\": \"MonetaryAmount\",\n  \"effectiveDate\": \"DateTime\",\n  \"monthlyHoursIncluded\": \"Integer\",\n  \"overageHourlyRate\": \"MonetaryAmount\",\n  \"autoRenewal\": \"Boolean\",\n  \"terminationNoticeDays\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "service-retainer-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"clientName\": \"String\",\n  \"serviceProvider\": \"String\",\n  \"monthlyRetainerFee\": \"MonetaryAmount\",\n  \"retainerStartDate\": \"DateTime\",\n  \"minimumHoursIncluded\": \"Integer\",\n  \"overageRate\": \"MonetaryAmount\",\n  \"autoRenewal\": \"Boolean\",\n  \"noticePeriodDays\": \"Integer\"\n}\n```"
+    },
+    {
       "id": "servicelevelagreement-typemap-01",
       "correct_fields": 6,
       "total_fields": 9,
       "model_raw": "```json\n{\n  \"paymentPeriod\": \"Period\",\n  \"monthlyCapPercentage\": \"Double\",\n  \"yearlyCapPercentage\": \"Double\",\n  \"availability1\": \"Double\",\n  \"serviceCredit1\": \"MonetaryAmount\",\n  \"availability2\": \"Double\",\n  \"serviceCredit2\": \"MonetaryAmount\",\n  \"serviceProvider\": \"RentalParty\",\n  \"serviceConsumer\": \"RentalParty\"\n}\n```"
+    },
+    {
+      "id": "severance-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"terminationDate\": \"DateTime\",\n  \"severanceAmount\": \"MonetaryAmount\",\n  \"severancePeriodWeeks\": \"Integer\",\n  \"continueBenefits\": \"Boolean\",\n  \"revocationPeriodDays\": \"Integer\",\n  \"governingLawState\": \"String\"\n}\n```"
+    },
+    {
+      "id": "severance-agreement-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"companyName\": \"String\",\n  \"employeeName\": \"String\",\n  \"separationDate\": \"DateTime\",\n  \"severancePayAmount\": \"MonetaryAmount\",\n  \"severancePaymentWeeks\": \"Integer\",\n  \"benefitsContinuationMonths\": \"Integer\",\n  \"releaseOfClaimsRequired\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "severance-agreement-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"employeeName\": \"String\",\n  \"severanceAmount\": \"MonetaryAmount\",\n  \"severanceWeeks\": \"Integer\",\n  \"paymentDate\": \"DateTime\",\n  \"cobraContinuationProvided\": \"Boolean\",\n  \"nonCompeteMonths\": \"Integer\",\n  \"finalReleaseDeadline\": \"DateTime\"\n}\n```"
+    },
+    {
+      "id": "shareholder-agreement-01-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"sellingShareholder\": \"String\",\n  \"shareClass\": \"String\",\n  \"shareCount\": \"Integer\",\n  \"offerPricePerShare\": \"Double\",\n  \"responsePeriodDays\": \"Integer\",\n  \"noticeDate\": \"DateTime\",\n  \"isTransferRestricted\": \"Boolean\",\n  \"requiresBoardApproval\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "shareholder-agreement-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"sellingShareholderName\": \"String\",\n  \"companyName\": \"String\",\n  \"sharePercentage\": \"Double\",\n  \"transferPrice\": \"MonetaryAmount\",\n  \"noticePeriodDays\": \"Integer\",\n  \"effectiveDate\": \"DateTime\",\n  \"boardApprovalRequired\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "shareholder-agreement-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"shareholderName\": \"String\",\n  \"companyName\": \"String\",\n  \"transferShares\": \"Integer\",\n  \"sharePrice\": \"MonetaryAmount\",\n  \"noticeDays\": \"Integer\",\n  \"effectiveDate\": \"DateTime\",\n  \"preemptiveRightsApply\": \"Boolean\",\n  \"remainingShareholdersPercentage\": \"Double\"\n}\n```"
     },
     {
       "id": "signature-block-title-name-date-typemap-01",
@@ -273,6 +729,54 @@
       "correct_fields": 4,
       "total_fields": 6,
       "model_raw": "```json\n{\n  \"buyer\": \"RentalParty\",\n  \"seller\": \"RentalParty\",\n  \"penaltyDuration\": \"Duration\",\n  \"penaltyPercentage\": \"Double\",\n  \"capPercentage\": \"Double\",\n  \"maximumDelay\": \"Duration\"\n}\n```"
+    },
+    {
+      "id": "software-license-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"softwareName\": \"String\",\n  \"licenseFee\": \"MonetaryAmount\",\n  \"effectiveDate\": \"DateTime\",\n  \"maxUsers\": \"Integer\",\n  \"isTransferable\": \"Boolean\",\n  \"termYears\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "software-license-02-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 9,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"softwareName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"licenseFeeAmount\": \"MonetaryAmount\",\n  \"maxUserCount\": \"Integer\",\n  \"isTransferable\": \"Boolean\",\n  \"termYears\": \"Integer\",\n  \"renewalNoticeDays\": \"Integer\"\n}\n```"
+    },
+    {
+      "id": "software-license-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"softwareName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"licenseFee\": \"MonetaryAmount\",\n  \"maxUsers\": \"Integer\",\n  \"licenseTermYears\": \"Integer\",\n  \"isTransferable\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "statement-of-work-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"contractorName\": \"String\",\n  \"clientName\": \"String\",\n  \"projectDescription\": \"String\",\n  \"startDate\": \"DateTime\",\n  \"completionDate\": \"DateTime\",\n  \"totalFee\": \"MonetaryAmount\",\n  \"milestoneCount\": \"Integer\",\n  \"isFixedPrice\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "statement-of-work-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"serviceProviderName\": \"String\",\n  \"clientName\": \"String\",\n  \"projectStartDate\": \"DateTime\",\n  \"projectEndDate\": \"DateTime\",\n  \"totalFee\": \"MonetaryAmount\",\n  \"numberOfDeliverables\": \"Integer\",\n  \"expensesReimbursable\": \"Boolean\",\n  \"milestonePaymentPercentage\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "statement-of-work-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"contractorName\": \"String\",\n  \"clientName\": \"String\",\n  \"projectFee\": \"MonetaryAmount\",\n  \"startDate\": \"DateTime\",\n  \"completionDate\": \"DateTime\",\n  \"milestoneCount\": \"Integer\",\n  \"renewalOptional\": \"Boolean\",\n  \"lateFeePercentage\": \"Double\"\n}\n```"
+    },
+    {
+      "id": "sublease-agreement-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"sublessorName\": \"String\",\n  \"sublesseeName\": \"String\",\n  \"premisesAddress\": \"PostalAddress\",\n  \"monthlyRent\": \"MonetaryAmount\",\n  \"securityDeposit\": \"MonetaryAmount\",\n  \"commencementDate\": \"DateTime\",\n  \"expirationDate\": \"DateTime\",\n  \"landlordConsentObtained\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "sublease-agreement-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"sublessor\": \"RentalParty\",\n  \"sublessee\": \"RentalParty\",\n  \"premisesAddress\": \"PostalAddress\",\n  \"monthlyRent\": \"MonetaryAmount\",\n  \"sublemStartDate\": \"DateTime\",\n  \"sublemEndDate\": \"DateTime\",\n  \"requiresLandlordConsent\": \"Boolean\",\n  \"securityDeposit\": \"MonetaryAmount\"\n}\n```"
     },
     {
       "id": "supply-agreement-loc-typemap-01",
@@ -293,6 +797,24 @@
       "model_raw": "```json\n{\n  \"dueDate\": \"DateTime\",\n  \"grower\": \"String\",\n  \"importer\": \"String\",\n  \"shipment\": \"String\",\n  \"unitPrice\": \"MonetaryAmount\",\n  \"unit\": \"Unit\",\n  \"minUnits\": \"Double\",\n  \"maxUnits\": \"Double\",\n  \"product\": \"Commodity[]\",\n  \"sensorReadingFrequency\": \"Duration\",\n  \"duration\": \"Duration\",\n  \"minTemperature\": \"Double\",\n  \"maxTemperature\": \"Double\",\n  \"minHumidity\": \"Double\",\n  \"maxHumidity\": \"Double\",\n  \"penaltyFactor\": \"Double\"\n}\n```"
     },
     {
+      "id": "trademark-license-01-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"trademarkName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"territory\": \"String\",\n  \"royaltyRate\": \"Double\",\n  \"termYears\": \"Integer\",\n  \"exclusiveGrant\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "trademark-license-02-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"trademarkName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"territory\": \"String\",\n  \"royaltyRate\": \"Double\",\n  \"termYears\": \"Integer\",\n  \"exclusiveLicense\": \"Boolean\"\n}\n```"
+    },
+    {
+      "id": "trademark-license-03-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "```json\n{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"trademarkName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"territory\": \"String\",\n  \"royaltyRate\": \"Double\",\n  \"termYears\": \"Integer\",\n  \"exclusiveGrant\": \"Boolean\"\n}\n```"
+    },
+    {
       "id": "volumediscount-typemap-01",
       "correct_fields": 3,
       "total_fields": 5,
@@ -309,6 +831,18 @@
       "correct_fields": 1,
       "total_fields": 1,
       "model_raw": "```json\n{\n  \"rates\": \"RateRange[]\"\n}\n```"
+    },
+    {
+      "id": "warranty-clause-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"warrantyPeriodMonths\": \"Integer\",\n  \"effectiveDate\": \"DateTime\",\n  \"supplierName\": \"String\",\n  \"defectThresholdPercent\": \"Double\",\n  \"replacementCostCap\": \"MonetaryAmount\",\n  \"extendedCoverageAvailable\": \"Boolean\",\n  \"governingLaw\": \"String\"\n}\n```"
+    },
+    {
+      "id": "warranty-clause-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "```json\n{\n  \"vendorName\": \"String\",\n  \"productName\": \"String\",\n  \"warrantyPeriodMonths\": \"Integer\",\n  \"effectiveDate\": \"DateTime\",\n  \"liabilityCap\": \"MonetaryAmount\",\n  \"transferable\": \"Boolean\",\n  \"exclusiveRemedy\": \"Boolean\"\n}\n```"
     }
   ]
 }

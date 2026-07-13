@@ -68,15 +68,16 @@ def wilcoxon_pair(pa, pb):
     except ValueError:
         return None
 
+N = load(KEYS[0], "classification")["total"]  # number of templates in the benchmark
 print("=" * 68)
 print("ACCORD BENCHMARK — STATISTICAL ANALYSIS")
-print("Models:", ", ".join(MODELS.values()), "| n = 51 templates")
+print("Models:", ", ".join(MODELS.values()), f"| n = {N} templates")
 print("=" * 68)
 
 # ---------- 1. HEADLINE METRICS + Wilson 95% CIs ----------
 print("\n--- 1. HEADLINE METRICS (95% Wilson confidence intervals) ---")
 
-print("\nClassification accuracy (per-item, n=51):")
+print(f"\nClassification accuracy (per-item, n={N}):")
 for m in KEYS:
     d = load(m, "classification"); ci_line(MODELS[m], d["correct"], d["total"])
 
@@ -146,5 +147,5 @@ for cond, fname in [("NAIVE feedback", "model_roundtrip"), ("RULES upfront", "mo
         print(f"  {MODELS[m]:<18}: mean {mean:.2f} tries  [{lo:.2f}, {hi:.2f}]   (n={len(tries)} valid)")
 
 print("\n" + "=" * 68)
-print("Done. p<0.05 = the difference is unlikely to be chance on these 51 items.")
+print(f"Done. p<0.05 = the difference is unlikely to be chance on these {N} items.")
 print("=" * 68)

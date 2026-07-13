@@ -1,13 +1,38 @@
 {
   "model": "anthropic/claude-haiku-4.5",
   "valid": 0,
-  "total": 51,
+  "total": 140,
   "validity_rate": 0.0,
   "details": [
     {
       "id": "acceptance-of-delivery-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.widgets.acceptance. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "advertising-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.advertising. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "advertising-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.advertising. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "arbitration-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.arbitration. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "arbitration-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.arbitration. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "arbitration-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.arbitration. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "bill-of-lading-modelgen-01",
@@ -25,9 +50,54 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.incorporation. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "commercial-lease-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.lease. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "commercial-lease-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.lease. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "commercial-lease-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.lease. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "company-information-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "confidentiality-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "confidentiality-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "confidentiality-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "consulting-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.engagement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "consulting-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.consultingagreement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "consulting-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.consulting. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "contact-information-modelgen-01",
@@ -35,14 +105,59 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "content-licensing-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.contentlicense. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "content-licensing-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.mediaLicense. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "copyright-license-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.copyrightlicense. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "data-breach-notification-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.databreachnotification. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "data-breach-notification-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.datavault. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "data-processing-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "data-processing-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "data-processing-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "demandforecast-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.supplyclause. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "distribution-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.distributorship. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "distribution-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.distributionagreement. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "docusign-connect-modelgen-01",
@@ -53,6 +168,36 @@
       "id": "docusign-po-failure-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.purchaseorder. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "employment-offer-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.employment. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "employment-offer-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.employment. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "employment-offer-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.employment. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "employment-termination-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.termination. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "employment-termination-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.employment.termination. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "employment-termination-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.employment. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "fixed-interests-modelgen-01",
@@ -70,6 +215,16 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.liquidateddamages. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "franchise-fee-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.franchiseagreement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "franchise-fee-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.franchiseagreement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "full-payment-upon-demand-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
@@ -80,14 +235,69 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "gdpr-privacy-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "gdpr-privacy-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "gdpr-privacy-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "indemnification-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.indemnity. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "indemnification-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.indemnification. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "indemnification-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.indemnification. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "installment-sale-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.payment. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "insurance-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.insurance. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "insurance-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.commercialliability. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "interest-rate-swap-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.interestswap. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "ip-assignment-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.musicassignment. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "ip-assignment-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.assignment. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "ip-assignment-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.assignment. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "ip-payment-modelgen-01",
@@ -125,6 +335,46 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "limitation-of-liability-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause.liability. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "limitation-of-liability-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause.liability. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "limitation-of-liability-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clause.liability. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "loan-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.loanclause. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "loan-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.loanclause. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "loan-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.loan. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "maintenance-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.maintenance. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "maintenance-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.maintenance. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "minilatedeliveryandpenalty-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypnalty. All models must specify a version (e.g., @1.0.0)."
@@ -140,6 +390,51 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypnalty. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "nda-mutual-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "nda-mutual-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "nda-mutual-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "nda-oneway-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "nda-oneway-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "nda-oneway-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "non-compete-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.noncompete. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "non-compete-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.noncompete. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "non-compete-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.noncompete. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "one-time-payment-tr-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.payment. All models must specify a version (e.g., @1.0.0)."
@@ -148,6 +443,16 @@
       "id": "online-payment-contract-tr-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: com.dlkbilisim.sales. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "patent-license-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.licenseagreement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "patent-license-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.licensingagreement. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "payment-upon-delivery-modelgen-01",
@@ -170,6 +475,16 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.avocado.shipment. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "personal-guarantee-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.guarantee. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "personal-guarantee-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.guarantee. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "project-information-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.katahdin. All models must specify a version (e.g., @1.0.0)."
@@ -185,6 +500,16 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.promissorynote. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "property-purchase-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.realestate. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "property-purchase-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.realestate. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "rental-deposit-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.security. All models must specify a version (e.g., @1.0.0)."
@@ -193,6 +518,21 @@
       "id": "rental-deposit-with-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.securitydeposit. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "residential-lease-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.leaseclause. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "residential-lease-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.tenancyagreement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "residential-lease-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.rentalAgreement. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "roommate-modelgen-01",
@@ -215,9 +555,49 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.salescontract. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "service-retainer-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.retaineragreement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "service-retainer-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.retaineragreement. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "servicelevelagreement-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.servicelevel. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "severance-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.severance. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "severance-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.severance. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "severance-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.severance. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "shareholder-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.shareclause. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "shareholder-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.clausemodels. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "shareholder-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.shareholder. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "signature-block-title-name-date-modelgen-01",
@@ -228,6 +608,46 @@
       "id": "simplelatedeliveryandpenalty-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypnalty. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "software-license-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.softwarelicense. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "software-license-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.softwarelicense. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "software-license-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.softwarelicense. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "statement-of-work-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.statementofwork. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "statement-of-work-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.consulting. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "statement-of-work-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.statementofwork. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "sublease-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.sublease. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "sublease-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.sublease. All models must specify a version (e.g., @1.0.0)."
     },
     {
       "id": "supply-agreement-loc-modelgen-01",
@@ -245,6 +665,21 @@
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.supplyagreement. All models must specify a version (e.g., @1.0.0)."
     },
     {
+      "id": "trademark-license-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.trademark.license. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "trademark-license-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.trademark.license. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "trademark-license-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.trademark.license. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
       "id": "volumediscount-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.cardacceptance. All models must specify a version (e.g., @1.0.0)."
@@ -258,6 +693,16 @@
       "id": "volumediscountulist-modelgen-01",
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.cardmerchant. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "warranty-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.warranty. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "warranty-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.warranty. All models must specify a version (e.g., @1.0.0)."
     }
   ]
 }

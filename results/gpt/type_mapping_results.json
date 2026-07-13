@@ -1,20 +1,50 @@
 {
   "model": "openai/gpt-5.4-mini",
-  "total_fields": 468,
-  "correct_fields": 313,
-  "type_accuracy": 0.6688034188034188,
+  "total_fields": 1155,
+  "correct_fields": 784,
+  "type_accuracy": 0.6787878787878788,
   "details": [
     {
       "id": "acceptance-of-delivery-typemap-01",
       "correct_fields": 2,
       "total_fields": 5,
-      "model_raw": "{\"shipper\":\"RentalParty\",\"receiver\":\"RentalParty\",\"deliverable\":\"String\",\"businessDays\":\"Duration\",\"attachment\":\"String\"}"
+      "model_raw": "{\"shipper\":\"RentalParty\",\"receiver\":\"RentalParty\",\"deliverable\":\"String\",\"businessDays\":\"Period\",\"attachment\":\"String\"}"
+    },
+    {
+      "id": "advertising-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"advertiserName\":\"String\",\"agencyName\":\"String\",\"campaignStartDate\":\"DateTime\",\"campaignEndDate\":\"DateTime\",\"monthlyMediaBudget\":\"MonetaryAmount\",\"agencyCommissionRate\":\"Double\",\"minimumImpressions\":\"Long\",\"exclusiveEngagement\":\"Boolean\"}"
+    },
+    {
+      "id": "advertising-agreement-02-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"advertiserName\":\"String\",\"agencyName\":\"String\",\"campaignName\":\"String\",\"mediaBudget\":\"MonetaryAmount\",\"guaranteedImpressions\":\"Long\",\"campaignStartDate\":\"DateTime\",\"campaignEndDate\":\"DateTime\",\"exclusiveCategory\":\"String\"}"
+    },
+    {
+      "id": "arbitration-clause-01-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 9,
+      "model_raw": "{\"arbitrationInstitution\":\"String\",\"seatOfArbitration\":\"String\",\"numberOfArbitrators\":\"Integer\",\"governingLaw\":\"String\",\"arbitrationRules\":\"String\",\"languageOfArbitration\":\"String\",\"expeditedProcedure\":\"Boolean\",\"costsCap\":\"MonetaryAmount\",\"noticeDeadlineDate\":\"DateTime\"}"
+    },
+    {
+      "id": "arbitration-clause-02-typemap-01",
+      "correct_fields": 9,
+      "total_fields": 9,
+      "model_raw": "{\"arbitrationInstitution\":\"String\",\"arbitrationSeat\":\"String\",\"governingLaw\":\"String\",\"numberOfArbitrators\":\"Integer\",\"arbitrationRules\":\"String\",\"expeditedProcedureAvailable\":\"Boolean\",\"filingDeadlineDays\":\"Integer\",\"languageOfArbitration\":\"String\",\"effectiveDate\":\"DateTime\"}"
+    },
+    {
+      "id": "arbitration-clause-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"arbitrationBody\":\"String\",\"arbitrationRules\":\"String\",\"seatOfArbitration\":\"PostalAddress\",\"numberOfArbitrators\":\"Integer\",\"governingLaw\":\"String\",\"filingDeadlineDays\":\"Integer\",\"expeditedProcedures\":\"Boolean\",\"effectiveDate\":\"DateTime\"}"
     },
     {
       "id": "bill-of-lading-typemap-01",
-      "correct_fields": 17,
+      "correct_fields": 10,
       "total_fields": 18,
-      "model_raw": "{\"accountName\":\"String\",\"scac\":\"String\",\"bolNumber\":\"String\",\"bookingNumber\":\"String\",\"exportReferences\":\"String\",\"onwardInstructions\":\"String\",\"shipper\":\"String\",\"consignee\":\"String\",\"notifyParty\":\"String\",\"vessel\":\"String\",\"voyageNumber\":\"String\",\"portOfLoading\":\"String\",\"portOfDischarge\":\"String\",\"placeOfReceipt\":\"String\",\"placeOfDelivery\":\"String\",\"commodities\":\"Commodity[]\",\"declaredValue\":\"MonetaryAmount\",\"declaredValueCurrency\":\"String\"}"
+      "model_raw": "{\"accountName\":\"String\",\"scac\":\"String\",\"bolNumber\":\"String\",\"bookingNumber\":\"String\",\"exportReferences\":\"String\",\"onwardInstructions\":\"String\",\"shipper\":\"RentalParty\",\"consignee\":\"RentalParty\",\"notifyParty\":\"RentalParty\",\"vessel\":\"String\",\"voyageNumber\":\"String\",\"portOfLoading\":\"PostalAddress\",\"portOfDischarge\":\"PostalAddress\",\"placeOfReceipt\":\"PostalAddress\",\"placeOfDelivery\":\"PostalAddress\",\"commodities\":\"Commodity[]\",\"declaredValue\":\"MonetaryAmount\",\"declaredValueCurrency\":\"String\"}"
     },
     {
       "id": "car-rental-tr-typemap-01",
@@ -29,10 +59,64 @@
       "model_raw": "{\"companyName\":\"String\",\"incorporationState\":\"String\",\"streetAddress\":\"PostalAddress\",\"addressRegion\":\"String\",\"addressLocality\":\"String\",\"postalCode\":\"String\",\"registeredAgentName\":\"String\",\"incorporationDate\":\"DateTime\",\"authorizedShareCapital\":\"Integer\",\"parValue\":\"MonetaryAmount\",\"incorporatorName\":\"String\",\"incorporatorAddress\":\"PostalAddress\",\"incorporatorCity\":\"String\",\"incorporatorState\":\"String\",\"incorporatorZip\":\"String\"}"
     },
     {
+      "id": "commercial-lease-01-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "{\"landlordName\":\"RentalParty\",\"tenantName\":\"RentalParty\",\"premisesAddress\":\"PostalAddress\",\"leaseCommencementDate\":\"DateTime\",\"monthlyBaseRent\":\"MonetaryAmount\",\"annualEscalationRate\":\"Double\",\"securityDeposit\":\"MonetaryAmount\",\"renewalOptionExercised\":\"Boolean\"}"
+    },
+    {
+      "id": "commercial-lease-02-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 8,
+      "model_raw": "{\"tenantName\":\"RentalParty\",\"landlordName\":\"RentalParty\",\"leaseCommencementDate\":\"DateTime\",\"baseRent\":\"MonetaryAmount\",\"escalationRate\":\"Double\",\"leaseTermYears\":\"Integer\",\"securityDeposit\":\"MonetaryAmount\",\"renewalOptionAvailable\":\"Boolean\"}"
+    },
+    {
+      "id": "commercial-lease-03-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 8,
+      "model_raw": "{\"landlordName\":\"RentalParty\",\"tenantName\":\"RentalParty\",\"leaseStartDate\":\"DateTime\",\"monthlyRent\":\"MonetaryAmount\",\"lateFeePercentage\":\"Double\",\"securityDeposit\":\"MonetaryAmount\",\"renewalOptionYears\":\"Integer\",\"autoRenewal\":\"Boolean\"}"
+    },
+    {
       "id": "company-information-typemap-01",
       "correct_fields": 4,
       "total_fields": 5,
       "model_raw": "{\"name\":\"String\",\"industry\":\"String\",\"website\":\"CommunicationChannel\",\"address\":\"PostalAddress\",\"numberOfEmployees\":\"Integer\"}"
+    },
+    {
+      "id": "confidentiality-clause-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"disclosingParty\":\"String\",\"receivingParty\":\"String\",\"effectiveDate\":\"DateTime\",\"confidentialityPeriod\":\"Duration\",\"governingLaw\":\"String\",\"liquidatedDamages\":\"MonetaryAmount\",\"returnPeriodDays\":\"Integer\",\"permitsInjunctiveRelief\":\"Boolean\"}"
+    },
+    {
+      "id": "confidentiality-clause-02-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 8,
+      "model_raw": "{\"disclosingParty\":\"RentalParty\",\"receivingParty\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"confidentialityPeriod\":\"Duration\",\"governingLaw\":\"String\",\"injunctiveReliefAvailable\":\"Boolean\",\"returnOfMaterialsDays\":\"Integer\",\"liquidatedDamages\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "confidentiality-clause-03-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 7,
+      "model_raw": "{\"disclosingParty\":\"RentalParty\",\"receivingParty\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"confidentialityPeriod\":\"Duration\",\"returnOfMaterials\":\"Boolean\",\"governingLaw\":\"String\",\"liquidatedDamages\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "consulting-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"consultantName\":\"String\",\"clientName\":\"String\",\"effectiveDate\":\"DateTime\",\"monthlyFee\":\"MonetaryAmount\",\"noticePeriodDays\":\"Integer\",\"autoRenews\":\"Boolean\",\"expenseCapPercentage\":\"Double\"}"
+    },
+    {
+      "id": "consulting-agreement-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"consultantName\":\"String\",\"clientName\":\"String\",\"effectiveDate\":\"DateTime\",\"hourlyRate\":\"MonetaryAmount\",\"maxHoursPerMonth\":\"Integer\",\"invoiceFrequency\":\"Period\",\"terminationNoticeDays\":\"Integer\",\"autoRenewal\":\"Boolean\"}"
+    },
+    {
+      "id": "consulting-agreement-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"consultantName\":\"String\",\"clientName\":\"String\",\"effectiveDate\":\"DateTime\",\"hourlyRate\":\"MonetaryAmount\",\"maxHoursPerMonth\":\"Integer\",\"invoiceFrequency\":\"String\",\"autoRenew\":\"Boolean\",\"terminationNoticeDays\":\"Integer\"}"
     },
     {
       "id": "contact-information-typemap-01",
@@ -41,10 +125,52 @@
       "model_raw": "{\"name\":\"String\",\"title\":\"String\",\"email\":\"String\",\"phone\":\"String\",\"timezone\":\"TimeZone\",\"communicationChannel\":\"CommunicationChannel\"}"
     },
     {
+      "id": "content-licensing-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"contentTitle\":\"String\",\"licenseFee\":\"MonetaryAmount\",\"effectiveDate\":\"DateTime\",\"termMonths\":\"Integer\",\"territory\":\"String\",\"isExclusive\":\"Boolean\"}"
+    },
+    {
+      "id": "content-licensing-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 9,
+      "model_raw": "{\"licensor\":\"RentalParty\",\"licensee\":\"RentalParty\",\"workTitle\":\"String\",\"licenseFee\":\"MonetaryAmount\",\"royaltyRate\":\"Double\",\"territory\":\"String\",\"effectiveDate\":\"DateTime\",\"expirationDate\":\"DateTime\",\"exclusiveGrant\":\"Boolean\"}"
+    },
+    {
       "id": "copyright-license-typemap-01",
       "correct_fields": 9,
       "total_fields": 13,
       "model_raw": "{\"effectiveDate\":\"DateTime\",\"licensee\":\"RentalParty\",\"licenseeState\":\"String\",\"licenseeEntityType\":\"String\",\"licenseeAddress\":\"PostalAddress\",\"licensor\":\"RentalParty\",\"licensorState\":\"String\",\"licensorEntityType\":\"String\",\"licensorAddress\":\"PostalAddress\",\"territory\":\"String\",\"purposeDescription\":\"String\",\"workDescription\":\"String\",\"paymentClause\":\"PaymentClause\"}"
+    },
+    {
+      "id": "data-breach-notification-01-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 7,
+      "model_raw": "{\"dataProcessor\":\"RentalParty\",\"dataController\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"notificationPeriodHours\":\"Duration\",\"affectedRecordsThreshold\":\"Integer\",\"requiresRegulatorNotification\":\"Boolean\",\"lateNotificationPenalty\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "data-breach-notification-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "{\"processorName\":\"RentalParty\",\"controllerName\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"notificationDeadlineHours\":\"Duration\",\"affectedRecordsThreshold\":\"Integer\",\"requiresRegulatorNotification\":\"Boolean\",\"maximumLiabilityCap\":\"MonetaryAmount\",\"noticeMethod\":\"CommunicationChannel\"}"
+    },
+    {
+      "id": "data-processing-agreement-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"processorName\":\"String\",\"controllerName\":\"String\",\"effectiveDate\":\"DateTime\",\"breachNotificationHours\":\"Duration\",\"dataRetentionPeriodDays\":\"Integer\",\"subprocessingFeePercentage\":\"Double\",\"crossBorderTransferPermitted\":\"Boolean\",\"annualAuditRight\":\"Boolean\"}"
+    },
+    {
+      "id": "data-processing-agreement-02-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"processorName\":\"String\",\"controllerName\":\"String\",\"effectiveDate\":\"DateTime\",\"dataBreachNotificationHours\":\"Duration\",\"subProcessingAllowed\":\"Boolean\",\"maxRecordsProcessed\":\"Integer\",\"annualAuditFee\":\"MonetaryAmount\",\"dataRetentionPeriodDays\":\"Integer\"}"
+    },
+    {
+      "id": "data-processing-agreement-03-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 7,
+      "model_raw": "{\"processorName\":\"String\",\"controllerName\":\"String\",\"effectiveDate\":\"DateTime\",\"breachNotificationHours\":\"Duration\",\"dataRetentionDays\":\"Duration\",\"subprocessingAllowed\":\"Boolean\",\"annualAuditFee\":\"MonetaryAmount\"}"
     },
     {
       "id": "demandforecast-typemap-01",
@@ -53,34 +179,94 @@
       "model_raw": "{\"purchaser\":\"RentalParty\",\"supplier\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"minimumPercentage\":\"Double\"}"
     },
     {
+      "id": "distribution-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"distributorName\":\"String\",\"territory\":\"String\",\"effectiveDate\":\"DateTime\",\"minimumAnnualPurchase\":\"MonetaryAmount\",\"royaltyRate\":\"Double\",\"isExclusive\":\"Boolean\",\"renewalTermYears\":\"Integer\"}"
+    },
+    {
+      "id": "distribution-agreement-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"distributorName\":\"String\",\"territory\":\"String\",\"effectiveDate\":\"DateTime\",\"minimumAnnualPurchase\":\"MonetaryAmount\",\"termYears\":\"Integer\",\"autoRenewal\":\"Boolean\",\"terminationNoticeDays\":\"Integer\"}"
+    },
+    {
       "id": "docusign-connect-typemap-01",
-      "correct_fields": 1,
+      "correct_fields": 0,
       "total_fields": 1,
-      "model_raw": "{\"status\":\"EnvelopeStatusCode\"}"
+      "model_raw": "{\"status\":\"String\"}"
     },
     {
       "id": "docusign-po-failure-typemap-01",
-      "correct_fields": 8,
+      "correct_fields": 13,
       "total_fields": 13,
-      "model_raw": "{\"buyerName\":\"RentalParty\",\"lateOne\":\"Period\",\"lateTwo\":\"Period\",\"lateThree\":\"Period\",\"lateOnePercent\":\"Double\",\"lateTwoPercent\":\"Double\",\"lateThreePercent\":\"Double\",\"article\":\"String\",\"thisSection\":\"String\",\"maxFailures\":\"Integer\",\"failureRange\":\"Period\",\"repeatedFailureCompensationAmount\":\"MonetaryAmount\",\"repeatedFailureCompensationCurrency\":\"String\"}"
+      "model_raw": "{\"buyerName\":\"String\",\"lateOne\":\"Duration\",\"lateTwo\":\"Duration\",\"lateThree\":\"Duration\",\"lateOnePercent\":\"Double\",\"lateTwoPercent\":\"Double\",\"lateThreePercent\":\"Double\",\"article\":\"String\",\"thisSection\":\"String\",\"maxFailures\":\"Integer\",\"failureRange\":\"Duration\",\"repeatedFailureCompensationAmount\":\"MonetaryAmount\",\"repeatedFailureCompensationCurrency\":\"String\"}"
+    },
+    {
+      "id": "employment-offer-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"employeeName\":\"String\",\"jobTitle\":\"String\",\"startDate\":\"DateTime\",\"annualSalary\":\"MonetaryAmount\",\"signingBonus\":\"MonetaryAmount\",\"probationPeriodMonths\":\"Integer\",\"isAtWillEmployment\":\"Boolean\",\"requiresBackgroundCheck\":\"Boolean\"}"
+    },
+    {
+      "id": "employment-offer-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"employerName\":\"String\",\"employeeName\":\"String\",\"jobTitle\":\"String\",\"startDate\":\"DateTime\",\"annualSalary\":\"MonetaryAmount\",\"probationPeriodMonths\":\"Integer\",\"bonusEligible\":\"Boolean\"}"
+    },
+    {
+      "id": "employment-offer-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"employerName\":\"String\",\"employeeName\":\"String\",\"jobTitle\":\"String\",\"startDate\":\"DateTime\",\"annualSalary\":\"MonetaryAmount\",\"signingBonus\":\"MonetaryAmount\",\"probationPeriodMonths\":\"Integer\",\"atWillEmployment\":\"Boolean\"}"
+    },
+    {
+      "id": "employment-termination-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"employeeName\":\"String\",\"companyName\":\"String\",\"terminationDate\":\"DateTime\",\"noticePeriodDays\":\"Integer\",\"severancePayAmount\":\"MonetaryAmount\",\"finalPaycheckDate\":\"DateTime\",\"benefitsContinued\":\"Boolean\",\"nonCompeteMonths\":\"Duration\"}"
+    },
+    {
+      "id": "employment-termination-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"employeeName\":\"String\",\"companyName\":\"String\",\"terminationDate\":\"DateTime\",\"noticePeriodDays\":\"Integer\",\"severancePayAmount\":\"MonetaryAmount\",\"finalPaycheckDate\":\"DateTime\",\"benefitsContinued\":\"Boolean\"}"
+    },
+    {
+      "id": "employment-termination-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"employeeName\":\"String\",\"employerName\":\"String\",\"terminationDate\":\"DateTime\",\"noticePeriodDays\":\"Integer\",\"severancePayAmount\":\"MonetaryAmount\",\"benefitsContinued\":\"Boolean\",\"finalPaycheckDate\":\"DateTime\",\"nonCompeteMonths\":\"Integer\"}"
     },
     {
       "id": "fixed-interests-typemap-01",
-      "correct_fields": 3,
+      "correct_fields": 2,
       "total_fields": 3,
-      "model_raw": "{\"loanAmount\":\"MonetaryAmount\",\"rate\":\"Double\",\"loanDuration\":\"Integer\"}"
+      "model_raw": "{\"loanAmount\":\"MonetaryAmount\",\"rate\":\"Double\",\"loanDuration\":\"Period\"}"
     },
     {
       "id": "fixed-interests-static-typemap-01",
-      "correct_fields": 3,
+      "correct_fields": 4,
       "total_fields": 4,
-      "model_raw": "{\"loanAmount\":\"MonetaryAmount\",\"rate\":\"Double\",\"loanDuration\":\"Period\",\"monthlyPayment\":\"MonetaryAmount\"}"
+      "model_raw": "{\"loanAmount\":\"MonetaryAmount\",\"rate\":\"Double\",\"loanDuration\":\"Integer\",\"monthlyPayment\":\"MonetaryAmount\"}"
     },
     {
       "id": "fragile-goods-typemap-01",
       "correct_fields": 6,
       "total_fields": 8,
       "model_raw": "{\"seller\":\"RentalParty\",\"buyer\":\"RentalParty\",\"deliveryPrice\":\"MonetaryAmount\",\"accelerationMin\":\"Double\",\"accelerationMax\":\"Double\",\"accelerationBreachPenalty\":\"MonetaryAmount\",\"deliveryLimitDuration\":\"Duration\",\"lateDeliveryPenalty\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "franchise-fee-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"franchiseeName\":\"String\",\"initialFranchiseFee\":\"MonetaryAmount\",\"royaltyPercentage\":\"Double\",\"marketingFeePercentage\":\"Double\",\"paymentDueDay\":\"Integer\",\"effectiveDate\":\"DateTime\",\"latePaymentPenalty\":\"MonetaryAmount\",\"autoRenewal\":\"Boolean\"}"
+    },
+    {
+      "id": "franchise-fee-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"franchisorName\":\"String\",\"franchiseeName\":\"String\",\"initialFranchiseFee\":\"MonetaryAmount\",\"royaltyRate\":\"Double\",\"paymentDueDay\":\"Integer\",\"effectiveDate\":\"DateTime\",\"lateFeePercentage\":\"Double\"}"
     },
     {
       "id": "full-payment-upon-demand-typemap-01",
@@ -95,22 +281,88 @@
       "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"amount\":\"MonetaryAmount\"}"
     },
     {
+      "id": "gdpr-privacy-clause-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"dataControllerName\":\"String\",\"dataProcessorName\":\"String\",\"effectiveDate\":\"DateTime\",\"breachNotificationHours\":\"Integer\",\"dataRetentionPeriodDays\":\"Integer\",\"subProcessingAllowed\":\"Boolean\",\"annualComplianceAuditFee\":\"MonetaryAmount\",\"applicableSupervisoryAuthority\":\"String\"}"
+    },
+    {
+      "id": "gdpr-privacy-clause-02-typemap-01",
+      "correct_fields": 2,
+      "total_fields": 8,
+      "model_raw": "{\"dataController\":\"RentalParty\",\"dataProcessor\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"breachNotificationHours\":\"Duration\",\"dataRetentionPeriodMonths\":\"Duration\",\"transferOutsideEEA\":\"Boolean\",\"processingFee\":\"MonetaryAmount\",\"dataSubjectRequestResponseDays\":\"Duration\"}"
+    },
+    {
+      "id": "gdpr-privacy-clause-03-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "{\"dataController\":\"RentalParty\",\"dataProcessor\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"breachNotificationHours\":\"Duration\",\"dataRetentionPeriodDays\":\"Duration\",\"transferOutsideEEA\":\"Boolean\",\"dataProtectionOfficerEmail\":\"CommunicationChannel\",\"auditFeePercentage\":\"Double\"}"
+    },
+    {
+      "id": "indemnification-clause-01-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 7,
+      "model_raw": "{\"indemnifyingParty\":\"RentalParty\",\"indemnifiedParty\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"liabilityCap\":\"MonetaryAmount\",\"noticePeriodDays\":\"Integer\",\"survivalPeriodMonths\":\"Integer\",\"coversThirdPartyClaims\":\"Boolean\"}"
+    },
+    {
+      "id": "indemnification-clause-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 7,
+      "model_raw": "{\"indemnifyingParty\":\"RentalParty\",\"indemnifiedParty\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"capAmount\":\"MonetaryAmount\",\"noticePeriodDays\":\"Integer\",\"coversThirdPartyClaims\":\"Boolean\",\"survivalPeriodMonths\":\"Period\"}"
+    },
+    {
+      "id": "indemnification-clause-03-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 7,
+      "model_raw": "{\"indemnifyingParty\":\"RentalParty\",\"indemnifiedParty\":\"RentalParty\",\"liabilityCap\":\"MonetaryAmount\",\"effectiveDate\":\"DateTime\",\"noticePeriodDays\":\"Integer\",\"coversThirdPartyClaims\":\"Boolean\",\"excludesGrossNegligence\":\"Boolean\"}"
+    },
+    {
       "id": "installment-sale-typemap-01",
       "correct_fields": 6,
       "total_fields": 8,
       "model_raw": "{\"BUYER\":\"RentalParty\",\"SELLER\":\"RentalParty\",\"INITIAL_DUE\":\"MonetaryAmount\",\"INTEREST_RATE\":\"Double\",\"TOTAL_DUE_BEFORE_CLOSING\":\"MonetaryAmount\",\"MIN_PAYMENT\":\"MonetaryAmount\",\"DUE_AT_CLOSING\":\"MonetaryAmount\",\"FIRST_MONTH\":\"Integer\"}"
     },
     {
+      "id": "insurance-clause-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"insurerName\":\"String\",\"policyNumber\":\"String\",\"coverageAmount\":\"MonetaryAmount\",\"deductibleAmount\":\"MonetaryAmount\",\"effectiveDate\":\"DateTime\",\"expirationDate\":\"DateTime\",\"premiumAmount\":\"MonetaryAmount\",\"autoRenewal\":\"Boolean\"}"
+    },
+    {
+      "id": "insurance-clause-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"insurerName\":\"String\",\"policyholderName\":\"String\",\"policyNumber\":\"String\",\"coverageAmount\":\"MonetaryAmount\",\"deductibleAmount\":\"MonetaryAmount\",\"effectiveDate\":\"DateTime\",\"expirationDate\":\"DateTime\",\"autoRenews\":\"Boolean\"}"
+    },
+    {
       "id": "interest-rate-swap-typemap-01",
-      "correct_fields": 22,
+      "correct_fields": 14,
       "total_fields": 27,
-      "model_raw": "{\"bank\":\"RentalParty\",\"letterDate\":\"DateTime\",\"counterparty\":\"RentalParty\",\"bankReference\":\"String\",\"notionalAmount\":\"MonetaryAmount\",\"tradeDate\":\"DateTime\",\"effectiveDate\":\"DateTime\",\"terminationDate\":\"DateTime\",\"fixedRatePayer\":\"RentalParty\",\"fixedRatePayerPeriodEndDates\":\"String\",\"fixedRatePayerPaymentDates\":\"String\",\"fixedRate\":\"Double\",\"fixedRateDayCountFraction\":\"DayCountFraction\",\"fixedRatePayerBusinessDays\":\"String\",\"fixedRatePayerBusinessDayConvention\":\"String\",\"floatingRatePayer\":\"RentalParty\",\"floatingRatePayerPeriodEndDates\":\"String\",\"floatingRatePayerPaymentDates\":\"String\",\"floatingRateForInitialCalculationPeriod\":\"Double\",\"floatingRateOption\":\"String\",\"designatedMaturity\":\"Period\",\"spread\":\"String\",\"floatingRateDayCountFraction\":\"DayCountFraction\",\"resetDates\":\"String\",\"compounding\":\"String\",\"floatingRatePayerBusinessDays\":\"String\",\"floatingRatePayerBusinessDayConvention\":\"String\"}"
+      "model_raw": "{\"bank\":\"RentalParty\",\"letterDate\":\"DateTime\",\"counterparty\":\"RentalParty\",\"bankReference\":\"String\",\"notionalAmount\":\"MonetaryAmount\",\"tradeDate\":\"DateTime\",\"effectiveDate\":\"DateTime\",\"terminationDate\":\"DateTime\",\"fixedRatePayer\":\"RentalParty\",\"fixedRatePayerPeriodEndDates\":\"Period\",\"fixedRatePayerPaymentDates\":\"Period\",\"fixedRate\":\"Double\",\"fixedRateDayCountFraction\":\"DayCountFraction\",\"fixedRatePayerBusinessDays\":\"CommunicationChannel\",\"fixedRatePayerBusinessDayConvention\":\"String\",\"floatingRatePayer\":\"RentalParty\",\"floatingRatePayerPeriodEndDates\":\"Period\",\"floatingRatePayerPaymentDates\":\"Period\",\"floatingRateForInitialCalculationPeriod\":\"Double\",\"floatingRateOption\":\"String\",\"designatedMaturity\":\"Period\",\"spread\":\"Double\",\"floatingRateDayCountFraction\":\"DayCountFraction\",\"resetDates\":\"Period\",\"compounding\":\"String\",\"floatingRatePayerBusinessDays\":\"CommunicationChannel\",\"floatingRatePayerBusinessDayConvention\":\"String\"}"
+    },
+    {
+      "id": "ip-assignment-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"assignor\":\"RentalParty\",\"assignee\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"considerationAmount\":\"MonetaryAmount\",\"workDescription\":\"String\",\"waivesMoralRights\":\"Boolean\",\"registrationNumber\":\"String\",\"jurisdiction\":\"String\"}"
+    },
+    {
+      "id": "ip-assignment-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"assignorName\":\"String\",\"assigneeName\":\"String\",\"effectiveDate\":\"DateTime\",\"inventionDescription\":\"String\",\"considerationAmount\":\"MonetaryAmount\",\"governingLaw\":\"String\",\"assistWithRegistration\":\"Boolean\"}"
+    },
+    {
+      "id": "ip-assignment-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"assignor\":\"String\",\"assignee\":\"String\",\"effectiveDate\":\"DateTime\",\"considerationAmount\":\"MonetaryAmount\",\"workDescription\":\"String\",\"moralRightsWaived\":\"Boolean\",\"cooperationRequired\":\"Boolean\",\"governingLaw\":\"String\"}"
     },
     {
       "id": "ip-payment-typemap-01",
-      "correct_fields": 5,
+      "correct_fields": 4,
       "total_fields": 6,
-      "model_raw": "{\"royaltyText\":\"String\",\"royaltyRate\":\"Double\",\"sublicensingRoyaltyText\":\"String\",\"sublicensingRoyaltyRate\":\"Double\",\"paymentPeriod\":\"Period\",\"paymentPeriodWithPermission\":\"Duration\"}"
+      "model_raw": "{\"royaltyText\":\"String\",\"royaltyRate\":\"Double\",\"sublicensingRoyaltyText\":\"String\",\"sublicensingRoyaltyRate\":\"Double\",\"paymentPeriod\":\"Period\",\"paymentPeriodWithPermission\":\"Period\"}"
     },
     {
       "id": "latedeliveryandpenalty-typemap-01",
@@ -122,13 +374,13 @@
       "id": "latedeliveryandpenalty-currency-conversion-typemap-01",
       "correct_fields": 7,
       "total_fields": 11,
-      "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"forceMajeure\":\"Boolean\",\"penaltyDuration\":\"Duration\",\"penaltyPercentage\":\"Double\",\"capPercentage\":\"Double\",\"termination\":\"Boolean\",\"fractionalPart\":\"Boolean\",\"conversionSource\":\"String\",\"fromCurrency\":\"String\",\"toCurrency\":\"String\"}"
+      "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"forceMajeure\":\"Boolean\",\"penaltyDuration\":\"Duration\",\"penaltyPercentage\":\"Double\",\"capPercentage\":\"Double\",\"termination\":\"PaymentClause\",\"fractionalPart\":\"Boolean\",\"conversionSource\":\"String\",\"fromCurrency\":\"String\",\"toCurrency\":\"String\"}"
     },
     {
       "id": "latedeliveryandpenalty-else-typemap-01",
       "correct_fields": 4,
       "total_fields": 8,
-      "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"forceMajeure\":\"Boolean\",\"penaltyDuration\":\"Duration\",\"penaltyPercentage\":\"Double\",\"capPercentage\":\"Double\",\"termination\":\"Boolean\",\"fractionalPart\":\"Integer\"}"
+      "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"forceMajeure\":\"Boolean\",\"penaltyDuration\":\"Duration\",\"penaltyPercentage\":\"Double\",\"capPercentage\":\"Double\",\"termination\":\"Boolean\",\"fractionalPart\":\"Boolean\"}"
     },
     {
       "id": "latedeliveryandpenalty-optional-typemap-01",
@@ -149,6 +401,54 @@
       "model_raw": "{\"maximumDelay\":\"Duration\",\"purchaser\":\"RentalParty\",\"supplier\":\"RentalParty\"}"
     },
     {
+      "id": "limitation-of-liability-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"liabilityCapAmount\":\"MonetaryAmount\",\"currencyCode\":\"String\",\"capPercentageOfFees\":\"Double\",\"effectiveDate\":\"DateTime\",\"claimPeriodDays\":\"Integer\",\"excludeConsequentialDamages\":\"Boolean\",\"carveOutGrossNegligence\":\"Boolean\"}"
+    },
+    {
+      "id": "limitation-of-liability-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"supplierName\":\"String\",\"effectiveDate\":\"DateTime\",\"liabilityCap\":\"MonetaryAmount\",\"currency\":\"String\",\"lookbackPeriodMonths\":\"Integer\",\"excludesConsequentialDamages\":\"Boolean\",\"carveOutForGrossNegligence\":\"Boolean\"}"
+    },
+    {
+      "id": "limitation-of-liability-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"supplierName\":\"String\",\"capAmount\":\"MonetaryAmount\",\"currency\":\"String\",\"effectiveDate\":\"DateTime\",\"claimPeriodDays\":\"Integer\",\"excludesConsequentialDamages\":\"Boolean\",\"carveOutForGrossNegligence\":\"Boolean\"}"
+    },
+    {
+      "id": "loan-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"lenderName\":\"String\",\"borrowerName\":\"String\",\"principalAmount\":\"MonetaryAmount\",\"interestRate\":\"Double\",\"maturityDate\":\"DateTime\",\"latePaymentFee\":\"MonetaryAmount\",\"gracePeriodDays\":\"Integer\",\"prepaymentAllowed\":\"Boolean\"}"
+    },
+    {
+      "id": "loan-agreement-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"lenderName\":\"String\",\"borrowerName\":\"String\",\"principalAmount\":\"MonetaryAmount\",\"annualInterestRate\":\"Double\",\"maturityDate\":\"DateTime\",\"lateFeePercentage\":\"Double\",\"prepaymentPermitted\":\"Boolean\",\"gracePeriodDays\":\"Integer\"}"
+    },
+    {
+      "id": "loan-agreement-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"lenderName\":\"String\",\"borrowerName\":\"String\",\"principalAmount\":\"MonetaryAmount\",\"interestRate\":\"Double\",\"loanStartDate\":\"DateTime\",\"maturityDate\":\"DateTime\",\"latePaymentPenalty\":\"Double\",\"prepaymentAllowed\":\"Boolean\"}"
+    },
+    {
+      "id": "maintenance-agreement-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"serviceProviderName\":\"String\",\"clientName\":\"String\",\"effectiveDate\":\"DateTime\",\"annualFee\":\"MonetaryAmount\",\"responseTimeHours\":\"Duration\",\"renewalTermMonths\":\"Period\",\"autoRenewal\":\"Boolean\",\"maxServiceCallsPerYear\":\"Integer\"}"
+    },
+    {
+      "id": "maintenance-agreement-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "{\"serviceProvider\":\"RentalParty\",\"client\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"annualFee\":\"MonetaryAmount\",\"responseTimeHours\":\"Duration\",\"maxServiceCallsPerYear\":\"Integer\",\"autoRenews\":\"Boolean\",\"latePaymentPenaltyRate\":\"RateRange[]\"}"
+    },
+    {
       "id": "minilatedeliveryandpenalty-typemap-01",
       "correct_fields": 3,
       "total_fields": 5,
@@ -167,6 +467,60 @@
       "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"penaltyDuration\":\"Duration\",\"penaltyPercentage\":\"Double\",\"capPercentage\":\"Double\",\"maximumDelay\":\"Duration\"}"
     },
     {
+      "id": "nda-mutual-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"partyA\":\"RentalParty\",\"partyB\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"termYears\":\"Integer\",\"confidentialityPeriodMonths\":\"Integer\",\"governingLaw\":\"String\",\"injunctiveReliefAvailable\":\"Boolean\",\"liquidatedDamagesAmount\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "nda-mutual-02-typemap-01",
+      "correct_fields": 2,
+      "total_fields": 7,
+      "model_raw": "{\"partyA\":\"RentalParty\",\"partyB\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"termYears\":\"Duration\",\"confidentialityPeriodYears\":\"Duration\",\"governingLaw\":\"String\",\"liquidatedDamages\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "nda-mutual-03-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 7,
+      "model_raw": "{\"partyA\":\"RentalParty\",\"partyB\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"confidentialityPeriodMonths\":\"Integer\",\"governingLaw\":\"String\",\"returnOfMaterialsDays\":\"Integer\",\"injunctiveReliefAllowed\":\"Boolean\"}"
+    },
+    {
+      "id": "nda-oneway-01-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 7,
+      "model_raw": "{\"disclosingParty\":\"RentalParty\",\"receivingParty\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"confidentialityPeriod\":\"Duration\",\"governingLaw\":\"String\",\"returnObligation\":\"Boolean\",\"liquidatedDamages\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "nda-oneway-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 7,
+      "model_raw": "{\"disclosingParty\":\"RentalParty\",\"receivingParty\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"confidentialityPeriodYears\":\"Duration\",\"governingLaw\":\"String\",\"returnOfMaterialsDays\":\"Duration\",\"injunctiveReliefAvailable\":\"Boolean\"}"
+    },
+    {
+      "id": "nda-oneway-03-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"disclosingParty\":\"RentalParty\",\"receivingParty\":\"RentalParty\",\"effectiveDate\":\"DateTime\",\"confidentialityPeriodYears\":\"Integer\",\"governingLaw\":\"String\",\"returnObligation\":\"Boolean\",\"liquidatedDamages\":\"MonetaryAmount\",\"noticeDays\":\"Integer\"}"
+    },
+    {
+      "id": "non-compete-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"restrictedPartyName\":\"String\",\"restrictionPeriodMonths\":\"Integer\",\"geographicScope\":\"String\",\"effectiveDate\":\"DateTime\",\"liquidatedDamagesAmount\":\"MonetaryAmount\",\"industrySector\":\"String\",\"injunctiveReliefAvailable\":\"Boolean\"}"
+    },
+    {
+      "id": "non-compete-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"employeeName\":\"String\",\"companyName\":\"String\",\"effectiveDate\":\"DateTime\",\"restrictionPeriodMonths\":\"Integer\",\"geographicScope\":\"String\",\"industrySector\":\"String\",\"penaltyAmount\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "non-compete-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"employeeName\":\"String\",\"companyName\":\"String\",\"restrictedPeriodMonths\":\"Integer\",\"geographicScope\":\"Distance\",\"effectiveDate\":\"DateTime\",\"liquidatedDamages\":\"MonetaryAmount\",\"includesAffiliates\":\"Boolean\",\"industrySector\":\"String\"}"
+    },
+    {
       "id": "one-time-payment-tr-typemap-01",
       "correct_fields": 1,
       "total_fields": 3,
@@ -174,9 +528,21 @@
     },
     {
       "id": "online-payment-contract-tr-typemap-01",
-      "correct_fields": 4,
+      "correct_fields": 2,
       "total_fields": 5,
-      "model_raw": "{\"buyer\":\"String\",\"seller\":\"String\",\"softwareID\":\"String\",\"userCount\":\"Integer\",\"authorizedCourt\":\"String\"}"
+      "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"softwareID\":\"String\",\"userCount\":\"Integer\",\"authorizedCourt\":\"String\"}"
+    },
+    {
+      "id": "patent-license-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 7,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"patentNumber\":\"String\",\"effectiveDate\":\"DateTime\",\"royaltyRate\":\"Double\",\"exclusiveLicense\":\"Boolean\",\"licenseTermYears\":\"Integer\"}"
+    },
+    {
+      "id": "patent-license-02-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 9,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"patentNumber\":\"String\",\"effectiveDate\":\"DateTime\",\"royaltyRate\":\"Double\",\"territory\":\"String\",\"isExclusive\":\"Boolean\",\"isSublicensable\":\"Boolean\",\"minimumAnnualPayment\":\"MonetaryAmount\"}"
     },
     {
       "id": "payment-upon-delivery-typemap-01",
@@ -192,15 +558,27 @@
     },
     {
       "id": "payment-upon-signature-typemap-01",
-      "correct_fields": 3,
+      "correct_fields": 1,
       "total_fields": 3,
-      "model_raw": "{\"buyer\":\"String\",\"seller\":\"String\",\"amount\":\"MonetaryAmount\"}"
+      "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"amount\":\"MonetaryAmount\"}"
     },
     {
       "id": "perishable-goods-typemap-01",
       "correct_fields": 10,
       "total_fields": 16,
       "model_raw": "{\"grower\":\"RentalParty\",\"importer\":\"RentalParty\",\"shipmentId\":\"String\",\"dueDate\":\"DateTime\",\"unit\":\"Unit\",\"minUnits\":\"Integer\",\"maxUnits\":\"Integer\",\"product\":\"Commodity[]\",\"sensorReadingFrequency\":\"Duration\",\"duration\":\"Duration\",\"unitPrice\":\"MonetaryAmount\",\"minTemperature\":\"Double\",\"maxTemperature\":\"Double\",\"minHumidity\":\"Double\",\"maxHumidity\":\"Double\",\"penaltyFactor\":\"Double\"}"
+    },
+    {
+      "id": "personal-guarantee-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"guarantorName\":\"String\",\"principalDebtor\":\"String\",\"creditorName\":\"String\",\"maximumLiabilityAmount\":\"MonetaryAmount\",\"effectiveDate\":\"DateTime\",\"expiryDate\":\"DateTime\",\"isJointAndSeveral\":\"Boolean\",\"currency\":\"String\"}"
+    },
+    {
+      "id": "personal-guarantee-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"guarantorName\":\"String\",\"debtorName\":\"String\",\"lenderName\":\"String\",\"maximumLiabilityAmount\":\"MonetaryAmount\",\"currencyCode\":\"String\",\"effectiveDate\":\"DateTime\",\"interestRate\":\"Double\",\"isContinuingGuarantee\":\"Boolean\"}"
     },
     {
       "id": "project-information-typemap-01",
@@ -210,27 +588,57 @@
     },
     {
       "id": "promissory-note-typemap-01",
-      "correct_fields": 9,
+      "correct_fields": 8,
       "total_fields": 14,
-      "model_raw": "{\"amount\":\"MonetaryAmount\",\"date\":\"DateTime\",\"maker\":\"RentalParty\",\"interestRate\":\"Double\",\"individual\":\"String\",\"makerAddress\":\"PostalAddress\",\"lender\":\"RentalParty\",\"legalEntity\":\"String\",\"lenderAddress\":\"PostalAddress\",\"principal\":\"MonetaryAmount\",\"maturityDate\":\"DateTime\",\"defaultDays\":\"Integer\",\"insolvencyDays\":\"Integer\",\"jurisdiction\":\"String\"}"
+      "model_raw": "{\"amount\":\"MonetaryAmount\",\"date\":\"DateTime\",\"maker\":\"RentalParty\",\"interestRate\":\"Double\",\"individual\":\"RentalParty\",\"makerAddress\":\"PostalAddress\",\"lender\":\"RentalParty\",\"legalEntity\":\"RentalParty\",\"lenderAddress\":\"PostalAddress\",\"principal\":\"MonetaryAmount\",\"maturityDate\":\"DateTime\",\"defaultDays\":\"Integer\",\"insolvencyDays\":\"Integer\",\"jurisdiction\":\"String\"}"
     },
     {
       "id": "promissory-note-md-typemap-01",
-      "correct_fields": 8,
+      "correct_fields": 10,
       "total_fields": 13,
-      "model_raw": "{\"amount\":\"MonetaryAmount\",\"date\":\"DateTime\",\"maker\":\"RentalParty\",\"interestRate\":\"Double\",\"individual\":\"String\",\"makerAddress\":\"PostalAddress\",\"lender\":\"RentalParty\",\"legalEntity\":\"String\",\"lenderAddress\":\"PostalAddress\",\"maturityDate\":\"DateTime\",\"defaultDays\":\"Integer\",\"insolvencyDays\":\"Integer\",\"jurisdiction\":\"String\"}"
+      "model_raw": "{\"amount\":\"MonetaryAmount\",\"date\":\"DateTime\",\"maker\":\"String\",\"interestRate\":\"Double\",\"individual\":\"String\",\"makerAddress\":\"PostalAddress\",\"lender\":\"String\",\"legalEntity\":\"String\",\"lenderAddress\":\"PostalAddress\",\"maturityDate\":\"DateTime\",\"defaultDays\":\"Integer\",\"insolvencyDays\":\"Integer\",\"jurisdiction\":\"String\"}"
+    },
+    {
+      "id": "property-purchase-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"buyerName\":\"String\",\"sellerName\":\"String\",\"propertyAddress\":\"PostalAddress\",\"purchasePrice\":\"MonetaryAmount\",\"depositAmount\":\"MonetaryAmount\",\"closingDate\":\"DateTime\",\"inspectionPeriodDays\":\"Integer\",\"financingContingent\":\"Boolean\"}"
+    },
+    {
+      "id": "property-purchase-02-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"buyerName\":\"String\",\"sellerName\":\"String\",\"propertyAddress\":\"PostalAddress\",\"purchasePrice\":\"MonetaryAmount\",\"earnestMoney\":\"MonetaryAmount\",\"closingDate\":\"DateTime\",\"financingContingent\":\"Boolean\",\"inspectionPeriodDays\":\"Integer\"}"
     },
     {
       "id": "rental-deposit-typemap-01",
-      "correct_fields": 8,
+      "correct_fields": 6,
       "total_fields": 10,
-      "model_raw": "{\"tenant\":\"RentalParty\",\"landlord\":\"RentalParty\",\"depositAmount\":\"MonetaryAmount\",\"tenantDepositRestorationPeriod\":\"Period\",\"monthlyBaseRentMultiple\":\"Double\",\"applicableLaw\":\"String\",\"statute\":\"String\",\"bankName\":\"String\",\"landlordDepositReturnPeriod\":\"Period\",\"exhibit\":\"String\"}"
+      "model_raw": "{\"tenant\":\"RentalParty\",\"landlord\":\"RentalParty\",\"depositAmount\":\"MonetaryAmount\",\"tenantDepositRestorationPeriod\":\"Duration\",\"monthlyBaseRentMultiple\":\"Double\",\"applicableLaw\":\"String\",\"statute\":\"String\",\"bankName\":\"String\",\"landlordDepositReturnPeriod\":\"Duration\",\"exhibit\":\"String\"}"
     },
     {
       "id": "rental-deposit-with-typemap-01",
       "correct_fields": 8,
       "total_fields": 10,
       "model_raw": "{\"tenant\":\"RentalParty\",\"landlord\":\"RentalParty\",\"depositAmount\":\"MonetaryAmount\",\"tenantDepositRestorationPeriod\":\"Duration\",\"monthlyBaseRentMultiple\":\"Double\",\"applicableLaw\":\"String\",\"statute\":\"String\",\"bankName\":\"String\",\"landlordDepositReturnPeriod\":\"Duration\",\"exhibit\":\"String\"}"
+    },
+    {
+      "id": "residential-lease-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"landlordName\":\"String\",\"tenantName\":\"String\",\"monthlyRentAmount\":\"MonetaryAmount\",\"dueDay\":\"Integer\",\"gracePeriodDays\":\"Integer\",\"lateFeeAmount\":\"MonetaryAmount\",\"leaseStartDate\":\"DateTime\",\"petsAllowed\":\"Boolean\"}"
+    },
+    {
+      "id": "residential-lease-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 7,
+      "model_raw": "{\"tenantName\":\"String\",\"monthlyRent\":\"MonetaryAmount\",\"leaseStartDate\":\"DateTime\",\"lateFeeGracePeriod\":\"Duration\",\"lateFeeAmount\":\"MonetaryAmount\",\"petsAllowed\":\"Boolean\",\"securityDeposit\":\"MonetaryAmount\"}"
+    },
+    {
+      "id": "residential-lease-03-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"tenantName\":\"String\",\"landlordName\":\"String\",\"monthlyRent\":\"MonetaryAmount\",\"leaseStartDate\":\"DateTime\",\"gracePeriodDays\":\"Integer\",\"lateFeeAmount\":\"MonetaryAmount\",\"petsAllowed\":\"Boolean\",\"securityDeposit\":\"MonetaryAmount\"}"
     },
     {
       "id": "roommate-typemap-01",
@@ -240,9 +648,9 @@
     },
     {
       "id": "saft-typemap-01",
-      "correct_fields": 15,
+      "correct_fields": 14,
       "total_fields": 16,
-      "model_raw": "{\"token\":\"String\",\"company\":\"String\",\"companyType\":\"String\",\"state\":\"String\",\"amendmentProvision\":\"String\",\"purchaseAmount\":\"MonetaryAmount\",\"netProceedLimit\":\"MonetaryAmount\",\"date\":\"DateTime\",\"deadlineDate\":\"DateTime\",\"discountRatePercentage\":\"Double\",\"network\":\"String\",\"coin\":\"String\",\"exchanges\":\"String\",\"companyRepresentative\":\"String\",\"purchaser\":\"String\",\"description\":\"String\"}"
+      "model_raw": "{\"token\":\"String\",\"company\":\"String\",\"companyType\":\"String\",\"state\":\"String\",\"amendmentProvision\":\"String\",\"purchaseAmount\":\"MonetaryAmount\",\"netProceedLimit\":\"MonetaryAmount\",\"date\":\"DateTime\",\"deadlineDate\":\"DateTime\",\"discountRatePercentage\":\"Double\",\"network\":\"String\",\"coin\":\"String\",\"exchanges\":\"String\",\"companyRepresentative\":\"String\",\"purchaser\":\"RentalParty\",\"description\":\"String\"}"
     },
     {
       "id": "safte-typemap-01",
@@ -257,16 +665,64 @@
       "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"refundPeriod\":\"Period\",\"counterparty\":\"RentalParty\",\"currencyType\":\"String\",\"appealPeriod\":\"Period\",\"countryLegislation\":\"String\"}"
     },
     {
+      "id": "service-retainer-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"clientName\":\"String\",\"serviceProviderName\":\"String\",\"retainerAmount\":\"MonetaryAmount\",\"effectiveDate\":\"DateTime\",\"monthlyHoursIncluded\":\"Double\",\"overageHourlyRate\":\"MonetaryAmount\",\"autoRenewal\":\"Boolean\",\"terminationNoticeDays\":\"Integer\"}"
+    },
+    {
+      "id": "service-retainer-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"clientName\":\"String\",\"serviceProvider\":\"String\",\"monthlyRetainerFee\":\"MonetaryAmount\",\"retainerStartDate\":\"DateTime\",\"minimumHoursIncluded\":\"Integer\",\"overageRate\":\"MonetaryAmount\",\"autoRenewal\":\"Boolean\",\"noticePeriodDays\":\"Integer\"}"
+    },
+    {
       "id": "servicelevelagreement-typemap-01",
       "correct_fields": 6,
       "total_fields": 9,
       "model_raw": "{\"paymentPeriod\":\"Period\",\"monthlyCapPercentage\":\"Double\",\"yearlyCapPercentage\":\"Double\",\"availability1\":\"Double\",\"serviceCredit1\":\"MonetaryAmount\",\"availability2\":\"Double\",\"serviceCredit2\":\"MonetaryAmount\",\"serviceProvider\":\"RentalParty\",\"serviceConsumer\":\"RentalParty\"}"
     },
     {
-      "id": "signature-block-title-name-date-typemap-01",
+      "id": "severance-agreement-01-typemap-01",
       "correct_fields": 4,
+      "total_fields": 7,
+      "model_raw": "{\"employeeName\":\"String\",\"terminationDate\":\"DateTime\",\"severanceAmount\":\"MonetaryAmount\",\"severancePeriodWeeks\":\"Duration\",\"continueBenefits\":\"Boolean\",\"revocationPeriodDays\":\"Duration\",\"governingLawState\":\"String\"}"
+    },
+    {
+      "id": "severance-agreement-02-typemap-01",
+      "correct_fields": 4,
+      "total_fields": 7,
+      "model_raw": "{\"companyName\":\"String\",\"employeeName\":\"String\",\"separationDate\":\"DateTime\",\"severancePayAmount\":\"MonetaryAmount\",\"severancePaymentWeeks\":\"Duration\",\"benefitsContinuationMonths\":\"Duration\",\"releaseOfClaimsRequired\":\"Boolean\"}"
+    },
+    {
+      "id": "severance-agreement-03-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 7,
+      "model_raw": "{\"employeeName\":\"String\",\"severanceAmount\":\"MonetaryAmount\",\"severanceWeeks\":\"Integer\",\"paymentDate\":\"DateTime\",\"cobraContinuationProvided\":\"Boolean\",\"nonCompeteMonths\":\"Duration\",\"finalReleaseDeadline\":\"DateTime\"}"
+    },
+    {
+      "id": "shareholder-agreement-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"sellingShareholder\":\"RentalParty\",\"shareClass\":\"String\",\"shareCount\":\"Integer\",\"offerPricePerShare\":\"MonetaryAmount\",\"responsePeriodDays\":\"Integer\",\"noticeDate\":\"DateTime\",\"isTransferRestricted\":\"Boolean\",\"requiresBoardApproval\":\"Boolean\"}"
+    },
+    {
+      "id": "shareholder-agreement-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"sellingShareholderName\":\"String\",\"companyName\":\"String\",\"sharePercentage\":\"Double\",\"transferPrice\":\"MonetaryAmount\",\"noticePeriodDays\":\"Integer\",\"effectiveDate\":\"DateTime\",\"boardApprovalRequired\":\"Boolean\"}"
+    },
+    {
+      "id": "shareholder-agreement-03-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 8,
+      "model_raw": "{\"shareholderName\":\"String\",\"companyName\":\"String\",\"transferShares\":\"Long\",\"sharePrice\":\"MonetaryAmount\",\"noticeDays\":\"Integer\",\"effectiveDate\":\"DateTime\",\"preemptiveRightsApply\":\"Boolean\",\"remainingShareholdersPercentage\":\"Double\"}"
+    },
+    {
+      "id": "signature-block-title-name-date-typemap-01",
+      "correct_fields": 3,
       "total_fields": 5,
-      "model_raw": "{\"title\":\"String\",\"signature\":\"String\",\"fullName\":\"String\",\"dateSigned\":\"DateTime\",\"signatory\":\"String\"}"
+      "model_raw": "{\"title\":\"String\",\"signature\":\"CommunicationChannel\",\"fullName\":\"String\",\"dateSigned\":\"DateTime\",\"signatory\":\"String\"}"
     },
     {
       "id": "simplelatedeliveryandpenalty-typemap-01",
@@ -275,16 +731,64 @@
       "model_raw": "{\"buyer\":\"RentalParty\",\"seller\":\"RentalParty\",\"penaltyDuration\":\"Duration\",\"penaltyPercentage\":\"Double\",\"capPercentage\":\"Double\",\"maximumDelay\":\"Integer\"}"
     },
     {
+      "id": "software-license-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"softwareName\":\"String\",\"licenseFee\":\"MonetaryAmount\",\"effectiveDate\":\"DateTime\",\"maxUsers\":\"Integer\",\"isTransferable\":\"Boolean\",\"termYears\":\"Integer\"}"
+    },
+    {
+      "id": "software-license-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 9,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"softwareName\":\"String\",\"effectiveDate\":\"DateTime\",\"licenseFeeAmount\":\"MonetaryAmount\",\"maxUserCount\":\"Integer\",\"isTransferable\":\"Boolean\",\"termYears\":\"Duration\",\"renewalNoticeDays\":\"Integer\"}"
+    },
+    {
+      "id": "software-license-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"softwareName\":\"String\",\"effectiveDate\":\"DateTime\",\"licenseFee\":\"MonetaryAmount\",\"maxUsers\":\"Integer\",\"licenseTermYears\":\"Integer\",\"isTransferable\":\"Boolean\"}"
+    },
+    {
+      "id": "statement-of-work-01-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"contractorName\":\"String\",\"clientName\":\"String\",\"projectDescription\":\"String\",\"startDate\":\"DateTime\",\"completionDate\":\"DateTime\",\"totalFee\":\"MonetaryAmount\",\"milestoneCount\":\"Integer\",\"isFixedPrice\":\"Boolean\"}"
+    },
+    {
+      "id": "statement-of-work-02-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"serviceProviderName\":\"String\",\"clientName\":\"String\",\"projectStartDate\":\"DateTime\",\"projectEndDate\":\"DateTime\",\"totalFee\":\"MonetaryAmount\",\"numberOfDeliverables\":\"Integer\",\"expensesReimbursable\":\"Boolean\",\"milestonePaymentPercentage\":\"Double\"}"
+    },
+    {
+      "id": "statement-of-work-03-typemap-01",
+      "correct_fields": 7,
+      "total_fields": 8,
+      "model_raw": "{\"contractorName\":\"String\",\"clientName\":\"String\",\"projectFee\":\"MonetaryAmount\",\"startDate\":\"DateTime\",\"completionDate\":\"DateTime\",\"milestoneCount\":\"Integer\",\"renewalOptional\":\"Boolean\",\"lateFeePercentage\":\"Double\"}"
+    },
+    {
+      "id": "sublease-agreement-01-typemap-01",
+      "correct_fields": 5,
+      "total_fields": 8,
+      "model_raw": "{\"sublessorName\":\"String\",\"sublesseeName\":\"String\",\"premisesAddress\":\"PostalAddress\",\"monthlyRent\":\"MonetaryAmount\",\"securityDeposit\":\"MonetaryAmount\",\"commencementDate\":\"DateTime\",\"expirationDate\":\"DateTime\",\"landlordConsentObtained\":\"Boolean\"}"
+    },
+    {
+      "id": "sublease-agreement-02-typemap-01",
+      "correct_fields": 3,
+      "total_fields": 8,
+      "model_raw": "{\"sublessor\":\"RentalParty\",\"sublessee\":\"RentalParty\",\"premisesAddress\":\"PostalAddress\",\"monthlyRent\":\"MonetaryAmount\",\"sublemStartDate\":\"DateTime\",\"sublemEndDate\":\"DateTime\",\"requiresLandlordConsent\":\"Boolean\",\"securityDeposit\":\"MonetaryAmount\"}"
+    },
+    {
       "id": "supply-agreement-loc-typemap-01",
-      "correct_fields": 28,
+      "correct_fields": 29,
       "total_fields": 48,
-      "model_raw": "{\"executionDate\":\"DateTime\",\"exporter\":\"RentalParty\",\"importer\":\"RentalParty\",\"product\":\"Commodity[]\",\"importerCreditworthiness\":\"String\",\"issueDate\":\"DateTime\",\"importerLOCBank\":\"RentalParty\",\"importerLOCNumber\":\"String\",\"importerLOCAmount\":\"MonetaryAmount\",\"importerLOCCurrency\":\"String\",\"orderBillOfLading\":\"String\",\"packingList\":\"String\",\"renewalTerms\":\"Period\",\"termRenewal\":\"Boolean\",\"termTerminationNotice\":\"Duration\",\"invoice\":\"String\",\"bookingId\":\"String\",\"purchaseOrder\":\"String\",\"exporterAddress\":\"PostalAddress\",\"turnaroundTime\":\"Duration\",\"amountOfEachProduct\":\"Integer\",\"unitPriceOfEachProduct\":\"MonetaryAmount\",\"unitPriceCurrency\":\"String\",\"locationForDelivery\":\"String\",\"deliveryDate\":\"DateTime\",\"exporterBankAccount\":\"String\",\"modifiedPurchaseOrder\":\"String\",\"cancellationDeadline\":\"DateTime\",\"shipper\":\"RentalParty\",\"importPort\":\"String\",\"exportPort\":\"String\",\"productDescription\":\"String\",\"productWeight\":\"UnitOfMass\",\"productMeasurement\":\"String\",\"freightCharges\":\"MonetaryAmount\",\"freightCurrency\":\"String\",\"evaluationTime\":\"Duration\",\"acceptanceCriteria\":\"String\",\"termBeginDate\":\"DateTime\",\"termPeriod\":\"Duration\",\"currentTerm\":\"Period\",\"shipment\":\"String\",\"unitPrice\":\"MonetaryAmount\",\"unitCurrency\":\"String\",\"unit\":\"Unit\",\"sensorReadingFrequency\":\"RateRange[]\",\"duration\":\"Duration\",\"countPeriod\":\"TemporalUnit\"}"
+      "model_raw": "{\"executionDate\":\"DateTime\",\"exporter\":\"RentalParty\",\"importer\":\"RentalParty\",\"product\":\"Commodity[]\",\"importerCreditworthiness\":\"String\",\"issueDate\":\"DateTime\",\"importerLOCBank\":\"String\",\"importerLOCNumber\":\"String\",\"importerLOCAmount\":\"MonetaryAmount\",\"importerLOCCurrency\":\"String\",\"orderBillOfLading\":\"String\",\"packingList\":\"String\",\"renewalTerms\":\"String\",\"termRenewal\":\"Period\",\"termTerminationNotice\":\"Duration\",\"invoice\":\"String\",\"bookingId\":\"String\",\"purchaseOrder\":\"String\",\"exporterAddress\":\"PostalAddress\",\"turnaroundTime\":\"Duration\",\"amountOfEachProduct\":\"Integer\",\"unitPriceOfEachProduct\":\"MonetaryAmount\",\"unitPriceCurrency\":\"String\",\"locationForDelivery\":\"PostalAddress\",\"deliveryDate\":\"DateTime\",\"exporterBankAccount\":\"String\",\"modifiedPurchaseOrder\":\"String\",\"cancellationDeadline\":\"DateTime\",\"shipper\":\"RentalParty\",\"importPort\":\"String\",\"exportPort\":\"String\",\"productDescription\":\"String\",\"productWeight\":\"UnitOfMass\",\"productMeasurement\":\"String\",\"freightCharges\":\"MonetaryAmount\",\"freightCurrency\":\"String\",\"evaluationTime\":\"Duration\",\"acceptanceCriteria\":\"String\",\"termBeginDate\":\"DateTime\",\"termPeriod\":\"Period\",\"currentTerm\":\"String\",\"shipment\":\"String\",\"unitPrice\":\"MonetaryAmount\",\"unitCurrency\":\"String\",\"unit\":\"Unit\",\"sensorReadingFrequency\":\"RateRange[]\",\"duration\":\"Duration\",\"countPeriod\":\"TemporalUnit\"}"
     },
     {
       "id": "supplyagreement-typemap-01",
-      "correct_fields": 11,
+      "correct_fields": 9,
       "total_fields": 20,
-      "model_raw": "{\"effectiveDate\":\"DateTime\",\"supplier\":\"RentalParty\",\"buyer\":\"RentalParty\",\"shortDescriptionOfTheProducts\":\"String\",\"noticeWindow\":\"Period\",\"cancellationWindow\":\"Period\",\"minimumPercentage\":\"Double\",\"deliverables\":\"Commodity[]\",\"deliveryWindow\":\"Period\",\"deliveryAttachment\":\"String\",\"inspectionWindow\":\"Period\",\"acceptanceAttachment\":\"String\",\"priceUpdateWindow\":\"Period\",\"accountNumber\":\"String\",\"routingNumnber\":\"String\",\"termYears\":\"Integer\",\"renewalYears\":\"Integer\",\"renewalWindow\":\"Period\",\"governingState\":\"String\",\"venueState\":\"String\"}"
+      "model_raw": "{\"effectiveDate\":\"DateTime\",\"supplier\":\"RentalParty\",\"buyer\":\"RentalParty\",\"shortDescriptionOfTheProducts\":\"String\",\"noticeWindow\":\"Duration\",\"cancellationWindow\":\"Duration\",\"minimumPercentage\":\"Double\",\"deliverables\":\"Commodity[]\",\"deliveryWindow\":\"Duration\",\"deliveryAttachment\":\"PaymentClause\",\"inspectionWindow\":\"Duration\",\"acceptanceAttachment\":\"PaymentClause\",\"priceUpdateWindow\":\"Duration\",\"accountNumber\":\"String\",\"routingNumnber\":\"String\",\"termYears\":\"Integer\",\"renewalYears\":\"Integer\",\"renewalWindow\":\"Duration\",\"governingState\":\"String\",\"venueState\":\"String\"}"
     },
     {
       "id": "supplyagreement-perishable-goods-typemap-01",
@@ -293,10 +797,28 @@
       "model_raw": "{\"dueDate\":\"DateTime\",\"grower\":\"RentalParty\",\"importer\":\"RentalParty\",\"shipment\":\"Commodity[]\",\"unitPrice\":\"MonetaryAmount\",\"unit\":\"Unit\",\"minUnits\":\"Integer\",\"maxUnits\":\"Integer\",\"product\":\"Commodity[]\",\"sensorReadingFrequency\":\"Duration\",\"duration\":\"Duration\",\"minTemperature\":\"Double\",\"maxTemperature\":\"Double\",\"minHumidity\":\"Double\",\"maxHumidity\":\"Double\",\"penaltyFactor\":\"Double\"}"
     },
     {
+      "id": "trademark-license-01-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"trademarkName\":\"String\",\"effectiveDate\":\"DateTime\",\"territory\":\"String\",\"royaltyRate\":\"Double\",\"termYears\":\"Integer\",\"exclusiveGrant\":\"Boolean\"}"
+    },
+    {
+      "id": "trademark-license-02-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "{\"licensorName\":\"String\",\"licenseeName\":\"String\",\"trademarkName\":\"String\",\"effectiveDate\":\"DateTime\",\"territory\":\"String\",\"royaltyRate\":\"Double\",\"termYears\":\"Integer\",\"exclusiveLicense\":\"Boolean\"}"
+    },
+    {
+      "id": "trademark-license-03-typemap-01",
+      "correct_fields": 8,
+      "total_fields": 8,
+      "model_raw": "{\n  \"licensorName\": \"String\",\n  \"licenseeName\": \"String\",\n  \"trademarkName\": \"String\",\n  \"effectiveDate\": \"DateTime\",\n  \"territory\": \"String\",\n  \"royaltyRate\": \"Double\",\n  \"termYears\": \"Integer\",\n  \"exclusiveGrant\": \"Boolean\"\n}"
+    },
+    {
       "id": "volumediscount-typemap-01",
-      "correct_fields": 3,
+      "correct_fields": 0,
       "total_fields": 5,
-      "model_raw": "{\"firstVolume\":\"MonetaryAmount\",\"secondVolume\":\"MonetaryAmount\",\"firstRate\":\"Double\",\"secondRate\":\"Double\",\"thirdRate\":\"Double\"}"
+      "model_raw": "{\"firstVolume\":\"MonetaryAmount\",\"secondVolume\":\"MonetaryAmount\",\"firstRate\":\"RateRange[]\",\"secondRate\":\"RateRange[]\",\"thirdRate\":\"RateRange[]\"}"
     },
     {
       "id": "volumediscountolist-typemap-01",
@@ -309,6 +831,18 @@
       "correct_fields": 1,
       "total_fields": 1,
       "model_raw": "{\"rates\":\"RateRange[]\"}"
+    },
+    {
+      "id": "warranty-clause-01-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"warrantyPeriodMonths\":\"Integer\",\"effectiveDate\":\"DateTime\",\"supplierName\":\"String\",\"defectThresholdPercent\":\"Double\",\"replacementCostCap\":\"MonetaryAmount\",\"extendedCoverageAvailable\":\"Boolean\",\"governingLaw\":\"String\"}"
+    },
+    {
+      "id": "warranty-clause-02-typemap-01",
+      "correct_fields": 6,
+      "total_fields": 7,
+      "model_raw": "{\"vendorName\":\"String\",\"productName\":\"String\",\"warrantyPeriodMonths\":\"Integer\",\"effectiveDate\":\"DateTime\",\"liabilityCap\":\"MonetaryAmount\",\"transferable\":\"Boolean\",\"exclusiveRemedy\":\"Boolean\"}"
     }
   ]
 }

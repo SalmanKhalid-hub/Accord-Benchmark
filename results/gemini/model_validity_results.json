@@ -1,13 +1,38 @@
 {
   "model": "google/gemini-2.5-flash",
   "valid": 0,
-  "total": 51,
+  "total": 140,
   "validity_rate": 0.0,
   "details": [
     {
       "id": "acceptance-of-delivery-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 18"
+    },
+    {
+      "id": "advertising-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 26"
+    },
+    {
+      "id": "advertising-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 26"
+    },
+    {
+      "id": "arbitration-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 46"
+    },
+    {
+      "id": "arbitration-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 29"
+    },
+    {
+      "id": "arbitration-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 32"
     },
     {
       "id": "bill-of-lading-modelgen-01",
@@ -22,7 +47,22 @@
     {
       "id": "certificate-of-incorporation-modelgen-01",
       "valid": false,
-      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 42"
+      "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org. All models must specify a version (e.g., @1.0.0)."
+    },
+    {
+      "id": "commercial-lease-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 24"
+    },
+    {
+      "id": "commercial-lease-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 34"
+    },
+    {
+      "id": "commercial-lease-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 30"
     },
     {
       "id": "company-information-modelgen-01",
@@ -30,9 +70,49 @@
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
     },
     {
+      "id": "confidentiality-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "confidentiality-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "confidentiality-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "consulting-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 26"
+    },
+    {
+      "id": "consulting-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "consulting-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
+    },
+    {
       "id": "contact-information-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 35"
+    },
+    {
+      "id": "content-licensing-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "content-licensing-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
     },
     {
       "id": "copyright-license-modelgen-01",
@@ -40,9 +120,44 @@
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
     },
     {
+      "id": "data-breach-notification-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 47"
+    },
+    {
+      "id": "data-breach-notification-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
+      "id": "data-processing-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 51"
+    },
+    {
+      "id": "data-processing-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 42"
+    },
+    {
+      "id": "data-processing-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
       "id": "demandforecast-modelgen-01",
       "valid": false,
-      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 43"
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 31"
+    },
+    {
+      "id": "distribution-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 49"
+    },
+    {
+      "id": "distribution-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 37"
     },
     {
       "id": "docusign-connect-modelgen-01",
@@ -53,6 +168,36 @@
       "id": "docusign-po-failure-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 31"
+    },
+    {
+      "id": "employment-offer-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 24"
+    },
+    {
+      "id": "employment-offer-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 40"
+    },
+    {
+      "id": "employment-offer-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 24"
+    },
+    {
+      "id": "employment-termination-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+    },
+    {
+      "id": "employment-termination-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 24"
+    },
+    {
+      "id": "employment-termination-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 40"
     },
     {
       "id": "fixed-interests-modelgen-01",
@@ -70,6 +215,16 @@
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 46"
     },
     {
+      "id": "franchise-fee-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "franchise-fee-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
       "id": "full-payment-upon-demand-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 17"
@@ -80,14 +235,69 @@
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 17"
     },
     {
+      "id": "gdpr-privacy-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 51"
+    },
+    {
+      "id": "gdpr-privacy-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
+    },
+    {
+      "id": "gdpr-privacy-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "indemnification-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "indemnification-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "indemnification-clause-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
       "id": "installment-sale-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 17"
     },
     {
+      "id": "insurance-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+    },
+    {
+      "id": "insurance-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
       "id": "interest-rate-swap-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 45"
+    },
+    {
+      "id": "ip-assignment-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
+    },
+    {
+      "id": "ip-assignment-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "ip-assignment-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
     },
     {
       "id": "ip-payment-modelgen-01",
@@ -107,7 +317,7 @@
     {
       "id": "latedeliveryandpenalty-else-modelgen-01",
       "valid": false,
-      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 18"
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 48"
     },
     {
       "id": "latedeliveryandpenalty-optional-modelgen-01",
@@ -125,6 +335,46 @@
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
     },
     {
+      "id": "limitation-of-liability-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "limitation-of-liability-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 41"
+    },
+    {
+      "id": "limitation-of-liability-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 46"
+    },
+    {
+      "id": "loan-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+    },
+    {
+      "id": "loan-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+    },
+    {
+      "id": "loan-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+    },
+    {
+      "id": "maintenance-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "maintenance-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 44"
+    },
+    {
       "id": "minilatedeliveryandpenalty-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 18"
@@ -132,12 +382,57 @@
     {
       "id": "minilatedeliveryandpenalty-capped-modelgen-01",
       "valid": false,
-      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 29"
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 21"
     },
     {
       "id": "minilatedeliveryandpenalty-payment-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 29"
+    },
+    {
+      "id": "nda-mutual-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 35"
+    },
+    {
+      "id": "nda-mutual-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "nda-mutual-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "nda-oneway-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "nda-oneway-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "nda-oneway-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "non-compete-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
+    },
+    {
+      "id": "non-compete-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
+    },
+    {
+      "id": "non-compete-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
     },
     {
       "id": "one-time-payment-tr-modelgen-01",
@@ -148,6 +443,16 @@
       "id": "online-payment-contract-tr-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 40"
+    },
+    {
+      "id": "patent-license-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
+      "id": "patent-license-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
     },
     {
       "id": "payment-upon-delivery-modelgen-01",
@@ -170,6 +475,16 @@
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
     },
     {
+      "id": "personal-guarantee-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
+      "id": "personal-guarantee-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
       "id": "project-information-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
@@ -185,6 +500,16 @@
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 43"
     },
     {
+      "id": "property-purchase-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+    },
+    {
+      "id": "property-purchase-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 46"
+    },
+    {
       "id": "rental-deposit-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 44"
@@ -193,6 +518,21 @@
       "id": "rental-deposit-with-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 37"
+    },
+    {
+      "id": "residential-lease-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 28"
+    },
+    {
+      "id": "residential-lease-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+    },
+    {
+      "id": "residential-lease-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 44"
     },
     {
       "id": "roommate-modelgen-01",
@@ -215,19 +555,99 @@
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 44"
     },
     {
+      "id": "service-retainer-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "service-retainer-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+    },
+    {
       "id": "servicelevelagreement-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
     },
     {
+      "id": "severance-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 29"
+    },
+    {
+      "id": "severance-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+    },
+    {
+      "id": "severance-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+    },
+    {
+      "id": "shareholder-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 42"
+    },
+    {
+      "id": "shareholder-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 41"
+    },
+    {
+      "id": "shareholder-agreement-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+    },
+    {
       "id": "signature-block-title-name-date-modelgen-01",
       "valid": false,
-      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 21"
     },
     {
       "id": "simplelatedeliveryandpenalty-modelgen-01",
       "valid": false,
-      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 29"
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 41"
+    },
+    {
+      "id": "software-license-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 42"
+    },
+    {
+      "id": "software-license-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "software-license-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+    },
+    {
+      "id": "statement-of-work-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "statement-of-work-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 47"
+    },
+    {
+      "id": "statement-of-work-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+    },
+    {
+      "id": "sublease-agreement-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 25"
+    },
+    {
+      "id": "sublease-agreement-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 37"
     },
     {
       "id": "supply-agreement-loc-modelgen-01",
@@ -245,6 +665,21 @@
       "message": "INVALID: Expected identifier but \"*\" found. File UNKNOWN line 3 column 31"
     },
     {
+      "id": "trademark-license-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
+      "id": "trademark-license-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
+      "id": "trademark-license-03-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+    },
+    {
       "id": "volumediscount-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 7 column 23"
@@ -258,6 +693,16 @@
       "id": "volumediscountulist-modelgen-01",
       "valid": false,
       "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+    },
+    {
+      "id": "warranty-clause-01-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 21"
+    },
+    {
+      "id": "warranty-clause-02-modelgen-01",
+      "valid": false,
+      "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 37"
     }
   ]
 }

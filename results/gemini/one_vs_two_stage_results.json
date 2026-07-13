@@ -1,16 +1,16 @@
 {
   "model": "google/gemini-2.5-flash",
-  "one_stage_recall": 0.8034188034188035,
-  "two_stage_recall": 0.7905982905982906,
-  "one_wins": 15,
-  "two_wins": 15,
-  "ties": 21,
+  "one_stage_recall": 0.6805194805194805,
+  "two_stage_recall": 0.645021645021645,
+  "one_wins": 38,
+  "two_wins": 32,
+  "ties": 70,
   "details": [
     {
       "id": "acceptance-of-delivery-modelgen-01",
       "gold_n": 5,
       "one_stage_covered": 4,
-      "two_stage_covered": 4,
+      "two_stage_covered": 5,
       "one_types": [
         "String",
         "String",
@@ -24,8 +24,147 @@
         "String",
         "String",
         "String",
-        "Duration",
+        "Long",
         "String"
+      ]
+    },
+    {
+      "id": "advertising-agreement-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "Advertiser",
+        "Agency",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "Double",
+        "Long"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "Double",
+        "Long"
+      ]
+    },
+    {
+      "id": "advertising-agreement-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "Long"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "Long",
+        "String",
+        "String"
+      ]
+    },
+    {
+      "id": "arbitration-clause-01-modelgen-01",
+      "gold_n": 9,
+      "one_stage_covered": 8,
+      "two_stage_covered": 7,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Boolean",
+        "MonetaryAmount",
+        "DateTime"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "String",
+        "DateTime"
+      ]
+    },
+    {
+      "id": "arbitration-clause-02-modelgen-01",
+      "gold_n": 9,
+      "one_stage_covered": 8,
+      "two_stage_covered": 8,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Boolean",
+        "Duration",
+        "Boolean",
+        "DateTime",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "Duration",
+        "Boolean",
+        "DateTime"
+      ]
+    },
+    {
+      "id": "arbitration-clause-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 7,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Duration",
+        "Boolean",
+        "DateTime",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Duration",
+        "DateTime"
       ]
     },
     {
@@ -83,8 +222,8 @@
     {
       "id": "car-rental-tr-modelgen-01",
       "gold_n": 17,
-      "one_stage_covered": 14,
-      "two_stage_covered": 11,
+      "one_stage_covered": 15,
+      "two_stage_covered": 10,
       "one_types": [
         "String",
         "String",
@@ -95,7 +234,7 @@
         "String",
         "String",
         "String",
-        "Integer",
+        "String",
         "String",
         "String",
         "MonetaryAmount",
@@ -119,7 +258,6 @@
         "MonetaryAmount",
         "DateTime",
         "DateTime",
-        "String",
         "String"
       ]
     },
@@ -127,7 +265,7 @@
       "id": "certificate-of-incorporation-modelgen-01",
       "gold_n": 15,
       "one_stage_covered": 14,
-      "two_stage_covered": 15,
+      "two_stage_covered": 13,
       "one_types": [
         "String",
         "String",
@@ -154,15 +292,102 @@
         "String",
         "String",
         "String",
-        "Long",
+        "Integer",
         "String",
-        "Double",
+        "MonetaryAmount",
         "String",
         "String",
         "String",
         "String",
         "String",
         "DateTime"
+      ]
+    },
+    {
+      "id": "commercial-lease-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Double",
+        "MonetaryAmount",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Double",
+        "MonetaryAmount",
+        "Boolean"
+      ]
+    },
+    {
+      "id": "commercial-lease-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "Double",
+        "MonetaryAmount",
+        "Boolean",
+        "Duration"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "Double",
+        "MonetaryAmount",
+        "Boolean",
+        "Duration"
+      ]
+    },
+    {
+      "id": "commercial-lease-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 7,
+      "two_stage_covered": 5,
+      "one_types": [
+        "Double",
+        "String",
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Integer",
+        "Double",
+        "MonetaryAmount",
+        "Boolean",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Duration",
+        "Double",
+        "MonetaryAmount",
+        "Duration",
+        "Duration"
       ]
     },
     {
@@ -194,6 +419,156 @@
       ]
     },
     {
+      "id": "confidentiality-clause-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "confidentiality-clause-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "confidentiality-clause-03-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "consulting-agreement-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Boolean",
+        "MonetaryAmount",
+        "Duration",
+        "Double",
+        "Duration"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Duration",
+        "Double",
+        "Duration"
+      ]
+    },
+    {
+      "id": "consulting-agreement-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "TemporalUnit",
+        "Duration",
+        "Duration"
+      ]
+    },
+    {
+      "id": "consulting-agreement-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Consultant",
+        "Client",
+        "MonetaryAmount",
+        "Double",
+        "Duration",
+        "Duration",
+        "Boolean"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "TemporalUnit",
+        "Duration",
+        "Duration"
+      ]
+    },
+    {
       "id": "contact-information-modelgen-01",
       "gold_n": 6,
       "one_stage_covered": 4,
@@ -213,6 +588,60 @@
         "String",
         "String",
         "String"
+      ]
+    },
+    {
+      "id": "content-licensing-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Boolean",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Boolean",
+        "Duration"
+      ]
+    },
+    {
+      "id": "content-licensing-02-modelgen-01",
+      "gold_n": 9,
+      "one_stage_covered": 6,
+      "two_stage_covered": 7,
+      "one_types": [
+        "String",
+        "String",
+        "MeridianMediaGroup",
+        "NorthstarPublishingCorp",
+        "String",
+        "String[]",
+        "MonetaryAmount",
+        "Double",
+        "DateTime",
+        "DateTime"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "DateTime",
+        "DateTime"
       ]
     },
     {
@@ -256,12 +685,150 @@
       ]
     },
     {
+      "id": "data-breach-notification-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Integer",
+        "Long",
+        "MonetaryAmount",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "Integer",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
+      "id": "data-breach-notification-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 6,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Boolean",
+        "Boolean",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "Boolean",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "data-processing-agreement-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "Double",
+        "Long"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount",
+        "TemporalUnit"
+      ]
+    },
+    {
+      "id": "data-processing-agreement-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "Long",
+        "Duration",
+        "Duration",
+        "Boolean",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Long",
+        "Duration",
+        "Duration",
+        "TemporalUnit",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "data-processing-agreement-03-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "TemporalUnit",
+        "MonetaryAmount"
+      ]
+    },
+    {
       "id": "demandforecast-modelgen-01",
       "gold_n": 4,
       "one_stage_covered": 4,
       "two_stage_covered": 4,
       "one_types": [
         "DateTime",
+        "Duration",
         "String",
         "String",
         "Double",
@@ -273,6 +840,65 @@
         "String",
         "Double",
         "String"
+      ]
+    },
+    {
+      "id": "distribution-agreement-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "MonetaryAmount",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "MonetaryAmount",
+        "Duration",
+        "Duration"
+      ]
+    },
+    {
+      "id": "distribution-agreement-03-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "Party",
+        "Party",
+        "Product[]",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "Duration",
+        "Duration"
       ]
     },
     {
@@ -292,7 +918,7 @@
       "id": "docusign-po-failure-modelgen-01",
       "gold_n": 13,
       "one_stage_covered": 13,
-      "two_stage_covered": 7,
+      "two_stage_covered": 9,
       "one_types": [
         "String",
         "String",
@@ -329,18 +955,179 @@
         "MonetaryAmount",
         "String",
         "String",
-        "MonetaryAmount"
+        "String",
+        "Integer",
+        "Duration",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "employment-offer-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 3,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Double",
+        "Double",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
+      "id": "employment-offer-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Duration",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Duration",
+        "Boolean"
+      ]
+    },
+    {
+      "id": "employment-offer-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration",
+        "Duration",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
+      "id": "employment-termination-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "DateTime",
+        "Boolean",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "DateTime",
+        "Boolean",
+        "Duration",
+        "String"
+      ]
+    },
+    {
+      "id": "employment-termination-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "DateTime",
+        "Boolean",
+        "String",
+        "String"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "DateTime",
+        "Boolean"
+      ]
+    },
+    {
+      "id": "employment-termination-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "DateTime",
+        "Boolean",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "DateTime",
+        "String",
+        "Duration",
+        "String"
       ]
     },
     {
       "id": "fixed-interests-modelgen-01",
       "gold_n": 3,
-      "one_stage_covered": 3,
+      "one_stage_covered": 2,
       "two_stage_covered": 2,
       "one_types": [
+        "String",
         "MonetaryAmount",
         "Double",
-        "Integer"
+        "Duration",
+        "MonetaryAmount"
       ],
       "two_types": [
         "String",
@@ -366,9 +1153,8 @@
         "MonetaryAmount",
         "String",
         "Double",
-        "Duration",
-        "MonetaryAmount",
-        "String"
+        "TemporalUnit",
+        "MonetaryAmount"
       ]
     },
     {
@@ -410,10 +1196,69 @@
         "MonetaryAmount",
         "String",
         "String",
-        "MonetaryAmount",
-        "Duration",
         "String",
-        "MonetaryAmount"
+        "Boolean",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Boolean",
+        "String",
+        "Duration"
+      ]
+    },
+    {
+      "id": "franchise-fee-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "Double",
+        "Integer",
+        "MonetaryAmount",
+        "Boolean"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "Double",
+        "Integer",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "franchise-fee-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
+      "one_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Double"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "String",
+        "Integer",
+        "Double",
+        "TemporalUnit",
+        "String"
       ]
     },
     {
@@ -451,6 +1296,150 @@
       ]
     },
     {
+      "id": "gdpr-privacy-clause-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Boolean",
+        "Duration",
+        "String",
+        "Duration",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Boolean",
+        "Duration",
+        "Integer",
+        "TemporalUnit",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "gdpr-privacy-clause-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
+      "id": "gdpr-privacy-clause-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "Double",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "String"
+      ]
+    },
+    {
+      "id": "indemnification-clause-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
+      "id": "indemnification-clause-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "String",
+        "Duration"
+      ]
+    },
+    {
+      "id": "indemnification-clause-03-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount"
+      ]
+    },
+    {
       "id": "installment-sale-modelgen-01",
       "gold_n": 8,
       "one_stage_covered": 7,
@@ -473,12 +1462,73 @@
         "MonetaryAmount",
         "MonetaryAmount",
         "MonetaryAmount",
+        "Integer",
         "TemporalUnit",
         "Integer",
-        "Duration",
-        "Integer",
         "Double",
-        "TemporalUnit"
+        "TemporalUnit",
+        "Duration"
+      ]
+    },
+    {
+      "id": "insurance-clause-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 7,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "Duration",
+        "String"
+      ]
+    },
+    {
+      "id": "insurance-clause-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "DateTime",
+        "DateTime",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Duration",
+        "Duration",
+        "Duration"
       ]
     },
     {
@@ -545,6 +1595,76 @@
         "String",
         "String",
         "String",
+        "String"
+      ]
+    },
+    {
+      "id": "ip-assignment-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "ip-assignment-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "ip-assignment-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
         "String"
       ]
     },
@@ -633,7 +1753,7 @@
         "String",
         "Duration",
         "Double",
-        "String",
+        "MonetaryAmount",
         "Double",
         "Duration",
         "String",
@@ -645,7 +1765,7 @@
       "id": "latedeliveryandpenalty-else-modelgen-01",
       "gold_n": 8,
       "one_stage_covered": 4,
-      "two_stage_covered": 6,
+      "two_stage_covered": 4,
       "one_types": [
         "String",
         "String",
@@ -658,11 +1778,11 @@
       "two_types": [
         "String",
         "String",
-        "Duration",
+        "Long",
         "Double",
         "MonetaryAmount",
         "Double",
-        "Duration"
+        "Long"
       ]
     },
     {
@@ -733,10 +1853,17 @@
       "one_stage_covered": 3,
       "two_stage_covered": 3,
       "one_types": [
+        "String",
         "DateTime",
         "DateTime",
+        "MonetaryAmount",
         "String",
         "String",
+        "Invoice",
+        "Party",
+        "Party",
+        "Party",
+        "Party",
         "Duration"
       ],
       "two_types": [
@@ -747,26 +1874,217 @@
       ]
     },
     {
-      "id": "minilatedeliveryandpenalty-modelgen-01",
-      "gold_n": 5,
+      "id": "limitation-of-liability-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 2,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "MonetaryAmount",
+        "Double",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "MonetaryAmount",
+        "String",
+        "Double",
+        "Duration",
+        "Duration"
+      ]
+    },
+    {
+      "id": "limitation-of-liability-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 1,
+      "two_stage_covered": 3,
+      "one_types": [
+        "MonetaryAmount",
+        "Duration",
+        "DateTime"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Duration",
+        "DateTime"
+      ]
+    },
+    {
+      "id": "limitation-of-liability-03-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "MonetaryAmount",
+        "Duration",
+        "Boolean",
+        "Boolean"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "MonetaryAmount",
+        "String",
+        "Duration",
+        "String"
+      ]
+    },
+    {
+      "id": "loan-agreement-01-modelgen-01",
+      "gold_n": 8,
       "one_stage_covered": 4,
-      "two_stage_covered": 5,
+      "two_stage_covered": 4,
       "one_types": [
         "String",
         "String",
-        "Seller",
-        "Buyer",
+        "MonetaryAmount",
         "Double",
-        "Integer",
+        "DateTime",
         "Duration",
         "MonetaryAmount"
       ],
       "two_types": [
         "String",
         "String",
+        "MonetaryAmount",
         "Double",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "loan-agreement-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "Lender",
+        "Borrower",
+        "MonetaryAmount",
+        "Double",
+        "DateTime",
+        "Duration",
+        "Double"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "DateTime",
+        "Duration",
+        "Double"
+      ]
+    },
+    {
+      "id": "loan-agreement-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 7,
+      "two_stage_covered": 7,
+      "one_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Integer",
+        "Duration",
+        "Double",
+        "Boolean",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "String",
+        "Duration",
+        "Double",
+        "Boolean"
+      ]
+    },
+    {
+      "id": "maintenance-agreement-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Duration",
+        "Integer",
         "Duration",
         "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Duration",
+        "Integer",
+        "Duration",
+        "Duration"
+      ]
+    },
+    {
+      "id": "maintenance-agreement-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Duration",
+        "Integer",
+        "Duration",
+        "Double",
+        "TemporalUnit"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Duration",
+        "Integer",
+        "Duration",
+        "Double"
+      ]
+    },
+    {
+      "id": "minilatedeliveryandpenalty-modelgen-01",
+      "gold_n": 5,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "String",
+        "String",
+        "Double",
+        "Long",
+        "Long"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "Integer"
       ]
     },
     {
@@ -804,10 +2122,9 @@
         "String",
         "String",
         "Double",
-        "Long",
+        "Integer",
         "Double",
-        "Long",
-        "Double"
+        "Integer"
       ],
       "two_types": [
         "String",
@@ -819,6 +2136,238 @@
         "MonetaryAmount",
         "Duration",
         "String"
+      ]
+    },
+    {
+      "id": "nda-mutual-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 0,
+      "two_stage_covered": 4,
+      "one_types": [],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "DateTime",
+        "Duration",
+        "String",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "nda-mutual-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "PartyRole",
+        "DateTime",
+        "NovaDynamicsLLC",
+        "HalcyonSystemsInc",
+        "Party[]",
+        "BusinessRelationshipPurpose",
+        "Duration",
+        "Duration",
+        "String",
+        "Boolean",
+        "MonetaryAmount",
+        "String",
+        "DateTime",
+        "ConfidentialityObligations",
+        "InjunctiveRelief",
+        "MaterialBreach",
+        "LiquidatedDamages",
+        "GoverningLaw"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Long",
+        "TemporalUnit",
+        "Long",
+        "TemporalUnit",
+        "Double",
+        "String",
+        "String"
+      ]
+    },
+    {
+      "id": "nda-mutual-03-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "String"
+      ]
+    },
+    {
+      "id": "nda-oneway-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "nda-oneway-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "Duration",
+        "String"
+      ]
+    },
+    {
+      "id": "nda-oneway-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 6,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Integer",
+        "TemporalUnit",
+        "Integer",
+        "TemporalUnit",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "non-compete-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "Duration",
+        "String",
+        "String[]",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "Long",
+        "String",
+        "String",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "non-compete-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "String",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "Duration",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "non-compete-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 7,
+      "one_types": [
+        "DateTime",
+        "String",
+        "Duration",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "String",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "Duration",
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Boolean",
+        "MonetaryAmount"
       ]
     },
     {
@@ -874,6 +2423,59 @@
       ]
     },
     {
+      "id": "patent-license-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 5,
+      "two_stage_covered": 6,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "TemporalUnit",
+        "Duration",
+        "Boolean"
+      ]
+    },
+    {
+      "id": "patent-license-02-modelgen-01",
+      "gold_n": 9,
+      "one_stage_covered": 6,
+      "two_stage_covered": 7,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "Double",
+        "MonetaryAmount",
+        "Boolean",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "MonetaryAmount",
+        "Boolean",
+        "String"
+      ]
+    },
+    {
       "id": "payment-upon-delivery-modelgen-01",
       "gold_n": 4,
       "one_stage_covered": 4,
@@ -894,22 +2496,23 @@
     {
       "id": "payment-upon-iot-modelgen-01",
       "gold_n": 4,
-      "one_stage_covered": 4,
+      "one_stage_covered": 3,
       "two_stage_covered": 4,
       "one_types": [
         "String",
         "String",
-        "MonetaryAmount",
+        "Double",
         "Integer",
-        "String"
+        "Integer",
+        "ContractState"
       ],
       "two_types": [
         "String",
         "String",
-        "String",
         "MonetaryAmount",
-        "Integer",
+        "MonetaryAmount",
         "String",
+        "Integer",
         "String"
       ]
     },
@@ -944,6 +2547,10 @@
         "Double",
         "Double",
         "String",
+        "String",
+        "String",
+        "String",
+        "String",
         "Boolean",
         "Boolean",
         "Duration",
@@ -972,17 +2579,64 @@
       ]
     },
     {
-      "id": "project-information-modelgen-01",
-      "gold_n": 5,
-      "one_stage_covered": 5,
-      "two_stage_covered": 5,
+      "id": "personal-guarantee-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
       "one_types": [
         "String",
+        "String",
+        "String",
+        "MonetaryAmount",
         "DateTime",
+        "DateTime",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
         "MonetaryAmount",
         "String",
-        "String"
+        "DateTime",
+        "DateTime"
+      ]
+    },
+    {
+      "id": "personal-guarantee-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 7,
+      "two_stage_covered": 6,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "DateTime",
+        "Double",
+        "String",
+        "Boolean"
       ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "String",
+        "DateTime",
+        "Double",
+        "String"
+      ]
+    },
+    {
+      "id": "project-information-modelgen-01",
+      "gold_n": 5,
+      "one_stage_covered": 0,
+      "two_stage_covered": 5,
+      "one_types": [],
       "two_types": [
         "String",
         "DateTime",
@@ -1073,6 +2727,68 @@
       ]
     },
     {
+      "id": "property-purchase-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Seller",
+        "Buyer",
+        "Property",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration",
+        "Duration",
+        "Boolean",
+        "DateTime"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration",
+        "Duration",
+        "DateTime"
+      ]
+    },
+    {
+      "id": "property-purchase-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Property",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration",
+        "DateTime"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration",
+        "DateTime"
+      ]
+    },
+    {
       "id": "rental-deposit-modelgen-01",
       "gold_n": 10,
       "one_stage_covered": 8,
@@ -1144,6 +2860,89 @@
       ]
     },
     {
+      "id": "residential-lease-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 8,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "Integer",
+        "Double",
+        "Boolean"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Duration",
+        "MonetaryAmount",
+        "String",
+        "String"
+      ]
+    },
+    {
+      "id": "residential-lease-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 3,
+      "two_stage_covered": 3,
+      "one_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "DateTime",
+        "Duration",
+        "MonetaryAmount",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "residential-lease-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "Duration",
+        "MonetaryAmount",
+        "Boolean",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "Duration",
+        "MonetaryAmount",
+        "String",
+        "MonetaryAmount"
+      ]
+    },
+    {
       "id": "roommate-modelgen-01",
       "gold_n": 13,
       "one_stage_covered": 13,
@@ -1201,7 +3000,7 @@
       "id": "saft-modelgen-01",
       "gold_n": 16,
       "one_stage_covered": 15,
-      "two_stage_covered": 14,
+      "two_stage_covered": 13,
       "one_types": [
         "String",
         "String",
@@ -1228,7 +3027,6 @@
         "Duration",
         "MonetaryAmount",
         "Double",
-        "String",
         "String",
         "String",
         "String",
@@ -1273,23 +3071,12 @@
     {
       "id": "sales-contract-ru-modelgen-01",
       "gold_n": 7,
-      "one_stage_covered": 7,
+      "one_stage_covered": 3,
       "two_stage_covered": 6,
       "one_types": [
         "String",
         "String",
-        "String",
-        "Duration",
-        "String",
-        "String",
-        "String",
-        "Duration",
-        "Double",
-        "DateTime",
-        "Duration",
-        "Duration",
-        "String",
-        "Duration"
+        "String"
       ],
       "two_types": [
         "String",
@@ -1308,10 +3095,58 @@
       ]
     },
     {
+      "id": "service-retainer-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "MonetaryAmount",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
+      "id": "service-retainer-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "MonetaryAmount",
+        "Duration"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
       "id": "servicelevelagreement-modelgen-01",
       "gold_n": 9,
       "one_stage_covered": 6,
-      "two_stage_covered": 6,
+      "two_stage_covered": 7,
       "one_types": [
         "String",
         "Double",
@@ -1345,7 +3180,7 @@
         "String"
       ],
       "two_types": [
-        "String",
+        "TemporalUnit",
         "String",
         "TemporalUnit",
         "MonetaryAmount",
@@ -1353,16 +3188,174 @@
         "String",
         "String",
         "String",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "Duration",
+        "Double",
+        "Duration",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "severance-agreement-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 3,
+      "one_types": [
+        "DateTime",
+        "String",
+        "MonetaryAmount",
+        "Duration",
+        "TemporalUnit",
+        "Integer",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
         "String",
         "MonetaryAmount",
         "Duration",
         "Duration",
+        "String"
+      ]
+    },
+    {
+      "id": "severance-agreement-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 3,
+      "one_types": [
         "String",
         "String",
+        "MonetaryAmount",
+        "Integer",
+        "Duration",
+        "DateTime",
+        "Duration",
+        "Duration"
+      ],
+      "two_types": [
         "String",
+        "String",
+        "MonetaryAmount",
+        "Duration",
+        "DateTime",
+        "String",
+        "Duration",
+        "String"
+      ]
+    },
+    {
+      "id": "severance-agreement-03-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 5,
+      "two_stage_covered": 3,
+      "one_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "DateTime",
+        "DateTime",
+        "Boolean",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "MonetaryAmount",
+        "String",
+        "DateTime",
+        "DateTime",
+        "String",
+        "String",
+        "Duration",
+        "String",
+        "String"
+      ]
+    },
+    {
+      "id": "shareholder-agreement-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 3,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "Long",
+        "DateTime",
+        "Long",
+        "Double",
+        "Duration"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "Long",
+        "Boolean",
+        "Boolean",
+        "DateTime",
+        "Long",
+        "MonetaryAmount",
+        "Duration",
+        "Boolean"
+      ]
+    },
+    {
+      "id": "shareholder-agreement-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
         "String",
         "Double",
-        "Integer"
+        "String",
+        "MonetaryAmount",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "Double",
+        "String",
+        "MonetaryAmount",
+        "Duration"
+      ]
+    },
+    {
+      "id": "shareholder-agreement-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 4,
+      "one_types": [
+        "String",
+        "String",
+        "Long",
+        "Duration",
+        "Double",
+        "Double",
+        "DateTime"
+      ],
+      "two_types": [
+        "String",
+        "Long",
+        "String",
+        "Duration",
+        "DateTime",
+        "String",
+        "MonetaryAmount",
+        "Double",
+        "DateTime"
       ]
     },
     {
@@ -1407,10 +3400,231 @@
       ]
     },
     {
+      "id": "software-license-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Duration",
+        "Boolean",
+        "Boolean",
+        "Boolean"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Duration"
+      ]
+    },
+    {
+      "id": "software-license-02-modelgen-01",
+      "gold_n": 9,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "Integer",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "MonetaryAmount",
+        "Integer",
+        "Duration"
+      ]
+    },
+    {
+      "id": "software-license-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 5,
+      "two_stage_covered": 5,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "Duration"
+      ]
+    },
+    {
+      "id": "statement-of-work-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "String"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "String",
+        "MonetaryAmount",
+        "String",
+        "String",
+        "String"
+      ]
+    },
+    {
+      "id": "statement-of-work-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 7,
+      "two_stage_covered": 6,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "Double",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "Double",
+        "String"
+      ]
+    },
+    {
+      "id": "statement-of-work-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
+      "one_types": [
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "Duration",
+        "Double",
+        "TemporalUnit"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "Integer",
+        "MonetaryAmount",
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "Double"
+      ]
+    },
+    {
+      "id": "sublease-agreement-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "Integer",
+        "MonetaryAmount",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "sublease-agreement-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 8,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "Double",
+        "Integer",
+        "DateTime",
+        "DateTime",
+        "Double",
+        "Boolean"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "MonetaryAmount",
+        "Integer",
+        "DateTime",
+        "DateTime",
+        "MonetaryAmount"
+      ]
+    },
+    {
       "id": "supply-agreement-loc-modelgen-01",
       "gold_n": 48,
-      "one_stage_covered": 41,
-      "two_stage_covered": 38,
+      "one_stage_covered": 42,
+      "two_stage_covered": 0,
       "one_types": [
         "DateTime",
         "String",
@@ -1454,6 +3668,9 @@
         "Duration",
         "Integer",
         "Duration",
+        "Duration",
+        "Duration",
+        "String",
         "MonetaryAmount",
         "Integer",
         "String",
@@ -1461,53 +3678,7 @@
         "Duration",
         "Integer"
       ],
-      "two_types": [
-        "String",
-        "DateTime",
-        "String",
-        "String",
-        "String",
-        "String",
-        "String",
-        "String",
-        "DateTime",
-        "String",
-        "MonetaryAmount",
-        "String",
-        "String",
-        "String",
-        "MonetaryAmount",
-        "String",
-        "String",
-        "Integer",
-        "MonetaryAmount",
-        "String",
-        "DateTime",
-        "MonetaryAmount",
-        "Duration",
-        "String",
-        "Duration",
-        "String",
-        "String",
-        "String",
-        "String",
-        "String",
-        "String",
-        "Integer",
-        "String",
-        "MonetaryAmount",
-        "Duration",
-        "String",
-        "Duration",
-        "Duration",
-        "Duration",
-        "Duration",
-        "String",
-        "String",
-        "Integer",
-        "Duration",
-        "Integer"
-      ]
+      "two_types": []
     },
     {
       "id": "supplyagreement-modelgen-01",
@@ -1576,40 +3747,9 @@
     {
       "id": "supplyagreement-perishable-goods-modelgen-01",
       "gold_n": 16,
-      "one_stage_covered": 12,
+      "one_stage_covered": 0,
       "two_stage_covered": 9,
-      "one_types": [
-        "DateTime",
-        "String",
-        "String",
-        "String",
-        "String",
-        "String",
-        "String",
-        "String",
-        "Duration",
-        "Duration",
-        "String",
-        "Duration",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "Double",
-        "MonetaryAmount",
-        "Duration",
-        "Duration",
-        "String",
-        "String",
-        "DateTime",
-        "Duration",
-        "Duration",
-        "Duration",
-        "Duration",
-        "String"
-      ],
+      "one_types": [],
       "two_types": [
         "DateTime",
         "String",
@@ -1640,6 +3780,102 @@
         "Duration",
         "Double",
         "String",
+        "String"
+      ]
+    },
+    {
+      "id": "trademark-license-01-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 8,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "Double",
+        "String",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "String",
+        "Integer",
+        "String",
+        "String",
+        "Boolean"
+      ]
+    },
+    {
+      "id": "trademark-license-02-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
+      "one_types": [
+        "Double",
+        "String",
+        "Long",
+        "String",
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "Double",
+        "String",
+        "Duration"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "String",
+        "String",
+        "Long",
+        "TemporalUnit"
+      ]
+    },
+    {
+      "id": "trademark-license-03-modelgen-01",
+      "gold_n": 8,
+      "one_stage_covered": 6,
+      "two_stage_covered": 6,
+      "one_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "String[]",
+        "Double",
+        "String",
+        "String",
+        "Duration",
+        "String"
+      ],
+      "two_types": [
+        "DateTime",
+        "String",
+        "String",
+        "String",
+        "Double",
+        "TemporalUnit",
+        "Duration",
         "String"
       ]
     },
@@ -1793,6 +4029,54 @@
         "MonetaryAmount",
         "String",
         "MonetaryAmount"
+      ]
+    },
+    {
+      "id": "warranty-clause-01-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 4,
+      "one_types": [
+        "DateTime",
+        "Duration",
+        "Double",
+        "MonetaryAmount",
+        "Boolean",
+        "String"
+      ],
+      "two_types": [
+        "String",
+        "DateTime",
+        "Duration",
+        "Double",
+        "MonetaryAmount",
+        "String"
+      ]
+    },
+    {
+      "id": "warranty-clause-02-modelgen-01",
+      "gold_n": 7,
+      "one_stage_covered": 4,
+      "two_stage_covered": 5,
+      "one_types": [
+        "String",
+        "String",
+        "String",
+        "Duration",
+        "DateTime",
+        "Boolean",
+        "MonetaryAmount"
+      ],
+      "two_types": [
+        "String",
+        "String",
+        "String",
+        "Integer",
+        "DateTime",
+        "Boolean",
+        "String",
+        "MonetaryAmount",
+        "String"
       ]
     }
   ]

@@ -3,11 +3,33 @@
   "max_tries": 5,
   "rules_in_prompt": false,
   "first_pass": 0,
-  "reached_valid": 39,
-  "total": 51,
+  "reached_valid": 114,
+  "total": 140,
   "details": [
     {
       "id": "acceptance-of-delivery-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.acceptance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "advertising-agreement-01-modelgen-01",
       "valid": true,
       "tries": 4,
       "history": [
@@ -24,7 +46,115 @@
         {
           "attempt": 3,
           "valid": false,
-          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.delivery. All models must specify a version (e.g., @1.0.0)."
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.mediacampaign. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "advertising-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 42"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.mediacampaign. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "arbitration-clause-01-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 34"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.arbitration. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "arbitration-clause-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 25"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.arbitration. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.arbitration@1.0.0.ArbitrationClause.noticeOfArbitrationPeriod\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "arbitration-clause-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.arbitration. All models must specify a version (e.g., @1.0.0)."
         },
         {
           "attempt": 4,
@@ -125,6 +255,102 @@
       ]
     },
     {
+      "id": "commercial-lease-01-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.lease. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type Party"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "commercial-lease-02-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 18"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.lease. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.lease@1.0.0.Lease.initialTerm\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "commercial-lease-03-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 12 column 33"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 12 column 33"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 12 column 33"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 12 column 33"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 12 column 33"
+        }
+      ]
+    },
+    {
       "id": "company-information-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -143,6 +369,183 @@
           "attempt": 3,
           "valid": false,
           "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.example. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "confidentiality-clause-01-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        }
+      ]
+    },
+    {
+      "id": "confidentiality-clause-02-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 40"
+        }
+      ]
+    },
+    {
+      "id": "confidentiality-clause-03-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.confidentiality@1.0.0.ConfidentialityClause.nonDisclosurePeriod\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "consulting-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 30"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.engagement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "consulting-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.consulting. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "consulting-agreement-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.consultantagreement. All models must specify a version (e.g., @1.0.0)."
         },
         {
           "attempt": 4,
@@ -179,6 +582,65 @@
       ]
     },
     {
+      "id": "content-licensing-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.licensing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "content-licensing-02-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        }
+      ]
+    },
+    {
       "id": "copyright-license-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -206,6 +668,151 @@
       ]
     },
     {
+      "id": "data-breach-notification-01-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.breachnotification. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.breachnotification@1.0.0.BreachNotificationClause.notificationDelayLimit\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "data-breach-notification-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.datavault. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "data-processing-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.example. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.example@1.0.0.PersonalDataBreachNotification.undueDelay\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "data-processing-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "data-processing-agreement-03-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 42"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 42"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 42"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 42"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 42"
+        }
+      ]
+    },
+    {
       "id": "demandforecast-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -227,6 +834,65 @@
         },
         {
           "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "distribution-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.distributor. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.distributor@1.0.0.DistributorAgreement.renewalPeriod\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "distribution-agreement-03-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.legal. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.legal@1.0.0.Clause.initialTerm\"."
+        },
+        {
+          "attempt": 5,
           "valid": true,
           "error": "VALID"
         }
@@ -276,6 +942,168 @@
         },
         {
           "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "employment-offer-01-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 24"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.employment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "employment-offer-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 36"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.employs. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "employment-offer-03-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 21"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.northbridge. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "employment-termination-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.termination. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "employment-termination-02-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.termination. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.termination@1.0.0.TerminationAgreement.noticePeriod\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "employment-termination-03-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 21"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.employment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.employment@1.0.0.EmploymentTermination.noticePeriod\"."
+        },
+        {
+          "attempt": 5,
           "valid": true,
           "error": "VALID"
         }
@@ -363,6 +1191,70 @@
       ]
     },
     {
+      "id": "franchise-fee-01-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 49"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 49"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 49"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 49"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 49"
+        }
+      ]
+    },
+    {
+      "id": "franchise-fee-02-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 39"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 39"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 39"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 39"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 39"
+        }
+      ]
+    },
+    {
       "id": "full-payment-upon-demand-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -417,6 +1309,173 @@
       ]
     },
     {
+      "id": "gdpr-privacy-clause-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.dataprocessing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.dataprocessing@1.0.0.DataProcessingAgreement.breachNotificationPeriod\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "gdpr-privacy-clause-02-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"o\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 40 column 42"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 40 column 42"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 40 column 42"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 40 column 42"
+        }
+      ]
+    },
+    {
+      "id": "gdpr-privacy-clause-03-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.data.processing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.data.processing@1.0.0.DataProcessingAgreement.breachNotificationPeriod\"."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "indemnification-clause-01-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        }
+      ]
+    },
+    {
+      "id": "indemnification-clause-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.indemnity. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "indemnification-clause-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.indemnity. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.indemnity@1.0.0.IndemnityClause.noticePeriod\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
       "id": "installment-sale-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -435,6 +1494,60 @@
           "attempt": 3,
           "valid": false,
           "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.payment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "insurance-clause-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 24"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.insurance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "insurance-clause-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 24"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.insurance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type Party"
         },
         {
           "attempt": 4,
@@ -465,6 +1578,97 @@
         },
         {
           "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "ip-assignment-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.assignment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type Party"
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "ip-assignment-02-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.assignment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type Party"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "ip-assignment-03-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.assignment. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type Party"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 5,
           "valid": true,
           "error": "VALID"
         }
@@ -665,6 +1869,232 @@
       ]
     },
     {
+      "id": "limitation-of-liability-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 18"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.liability. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "limitation-of-liability-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"range\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 35"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.meridian. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "limitation-of-liability-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 46"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.meridianlogistics. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "loan-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 33"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.loan. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "loan-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 18"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.loan. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "loan-agreement-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.loan. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.maintenance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.meridian. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"MonetaryAmount\" in \"property org.accordproject.meridian@1.0.0.ServiceAgreement.annualFee\"."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.meridian@1.0.0.ServiceAgreement.serviceRequestResponseTime\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
       "id": "minilatedeliveryandpenalty-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -736,10 +2166,253 @@
         {
           "attempt": 3,
           "valid": false,
-          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedelivery. All models must specify a version (e.g., @1.0.0)."
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.latedeliverypenalty. All models must specify a version (e.g., @1.0.0)."
         },
         {
           "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "nda-mutual-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"[]\", comment, end of line, identifier, or whitespace but \"?\" found. File UNKNOWN line 43 column 11"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.confidentiality@1.0.0.ConfidentialityAgreement.term\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "nda-mutual-02-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 43"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 43"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 43"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 43"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 43"
+        }
+      ]
+    },
+    {
+      "id": "nda-mutual-03-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.confidentiality. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "nda-oneway-01-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.nda. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.nda@1.0.0.NDA.confidentialityPeriod\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "nda-oneway-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.nda. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.nda@1.0.0.NDA.confidentialityPeriod\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "nda-oneway-03-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 17"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 28"
+        }
+      ]
+    },
+    {
+      "id": "non-compete-01-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.noncompete. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "non-compete-02-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.noncompete. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type AccordClause"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.noncompete@1.0.0.NonCompeteClause.restrictedPeriod\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "non-compete-03-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.noncompete. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
           "valid": true,
           "error": "VALID"
         }
@@ -805,9 +2478,58 @@
       ]
     },
     {
-      "id": "payment-upon-delivery-modelgen-01",
+      "id": "patent-license-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 19"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.licensing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "patent-license-02-modelgen-01",
       "valid": true,
       "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.licensing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "payment-upon-delivery-modelgen-01",
+      "valid": true,
+      "tries": 4,
       "history": [
         {
           "attempt": 1,
@@ -817,10 +2539,15 @@
         {
           "attempt": 2,
           "valid": false,
-          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.michaeldiana. All models must specify a version (e.g., @1.0.0)."
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 41"
         },
         {
           "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.michaeldiana. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
           "valid": true,
           "error": "VALID"
         }
@@ -918,6 +2645,60 @@
       ]
     },
     {
+      "id": "personal-guarantee-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.guarantee. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "personal-guarantee-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 38"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.guarantee. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
       "id": "project-information-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -1004,6 +2785,60 @@
       ]
     },
     {
+      "id": "property-purchase-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 25"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.purchaseagreement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "property-purchase-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 25"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.example. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
       "id": "rental-deposit-modelgen-01",
       "valid": true,
       "tries": 5,
@@ -1057,6 +2892,92 @@
         },
         {
           "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "residential-lease-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 28"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.lease. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "residential-lease-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 22"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.rental. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "residential-lease-03-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 23"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.rentallaw. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type Party"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 5,
           "valid": true,
           "error": "VALID"
         }
@@ -1171,6 +3092,60 @@
       ]
     },
     {
+      "id": "service-retainer-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 39"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.engagement. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "service-retainer-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.legal.retainer. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
       "id": "servicelevelagreement-modelgen-01",
       "valid": false,
       "tries": null,
@@ -1203,6 +3178,153 @@
       ]
     },
     {
+      "id": "severance-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 29"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.severance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "severance-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.severance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "severance-agreement-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.severance. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "shareholder-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.sharetransfer. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "shareholder-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 2,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.rofr. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "shareholder-agreement-03-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.example.rightoffirstrefusal. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
       "id": "signature-block-title-name-date-modelgen-01",
       "valid": true,
       "tries": 4,
@@ -1210,7 +3332,7 @@
         {
           "attempt": 1,
           "valid": false,
-          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"C\" found. File UNKNOWN line 1 column 1"
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
         },
         {
           "attempt": 2,
@@ -1258,6 +3380,222 @@
           "attempt": 5,
           "valid": false,
           "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 3 column 29"
+        }
+      ]
+    },
+    {
+      "id": "software-license-01-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        }
+      ]
+    },
+    {
+      "id": "software-license-02-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        }
+      ]
+    },
+    {
+      "id": "software-license-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.softwarelicense. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.softwarelicense@1.0.0.SoftwareLicense.licenseTerm\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "statement-of-work-01-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 26"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.sow. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "statement-of-work-02-modelgen-01",
+      "valid": false,
+      "tries": null,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        },
+        {
+          "attempt": 5,
+          "valid": false,
+          "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 7 column 35"
+        }
+      ]
+    },
+    {
+      "id": "statement-of-work-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 32"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.sow. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "sublease-agreement-01-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.sublease. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "sublease-agreement-02-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 25"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.sublease. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
         }
       ]
     },
@@ -1358,6 +3696,82 @@
       ]
     },
     {
+      "id": "trademark-license-01-modelgen-01",
+      "valid": true,
+      "tries": 3,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 16"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.sunvoyage. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "trademark-license-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.licensing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "trademark-license-03-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.licensing. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Could not find super type AccordContract"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.licensing@1.0.0.License.initialTerm\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
       "id": "volumediscount-modelgen-01",
       "valid": false,
       "tries": null,
@@ -1450,6 +3864,65 @@
           "attempt": 5,
           "valid": false,
           "error": "Expected \"{\", comment, end of line, or whitespace but \".\" found. File UNKNOWN line 10 column 28"
+        }
+      ]
+    },
+    {
+      "id": "warranty-clause-01-modelgen-01",
+      "valid": true,
+      "tries": 5,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"@\", \"concerto\", \"namespace\", comment, end of line, or whitespace but \"c\" found. File UNKNOWN line 1 column 1"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"o\", \"optional\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 27"
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.warranty. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 4,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.warranty@1.0.0.Warranty.warrantyPeriod\"."
+        },
+        {
+          "attempt": 5,
+          "valid": true,
+          "error": "VALID"
+        }
+      ]
+    },
+    {
+      "id": "warranty-clause-02-modelgen-01",
+      "valid": true,
+      "tries": 4,
+      "history": [
+        {
+          "attempt": 1,
+          "valid": false,
+          "error": "Expected \"-->\", \"@\", \"default\", \"length\", \"o\", \"optional\", \"regex\", \"}\", comment, end of line, or whitespace but \";\" found. File UNKNOWN line 4 column 21"
+        },
+        {
+          "attempt": 2,
+          "valid": false,
+          "error": "Cannot create a ModelFile with an unversioned namespace: org.accordproject.meridian. All models must specify a version (e.g., @1.0.0)."
+        },
+        {
+          "attempt": 3,
+          "valid": false,
+          "error": "Undeclared type \"Duration\" in \"property org.accordproject.meridian@1.0.0.Warranty.warrantyPeriod\"."
+        },
+        {
+          "attempt": 4,
+          "valid": true,
+          "error": "VALID"
         }
       ]
     }
