@@ -15,6 +15,7 @@
 import json, math, os
 import numpy as np
 from scipy.stats import binomtest, wilcoxon
+from categories import build_categories
 
 MODELS = {"gemini": "Gemini 2.5 Flash", "claude": "Claude Haiku 4.5", "gpt": "GPT-5.4-mini"}
 KEYS = list(MODELS)
@@ -134,6 +135,21 @@ for label, fname, num, den, kind in FIELD_METRICS:
             kr, nr = agg_prop(m, fname, num, den, "real"); ks, ns = agg_prop(m, fname, num, den, "synthetic")
         lor, hir = wilson(kr, nr); los, his = wilson(ks, ns)
         print(f"  {MODELS[m]:<18} {pct(kr/nr)} [{pct(lor)},{pct(hir)}]   {pct(ks/ns)} [{pct(los)},{pct(his)}]")
+
+# Classification also scored by CATEGORY: near-duplicate sibling templates (identical/near
+# field sets, e.g. the 5 latedeliveryandpenalty variants) are collapsed, so the model is not
+# marked wrong for picking an indistinguishable sibling. This is the fairer headline number.
+cat_of = build_categories()
+def cat_correct(d): return int(cat_of.get(d["model_answer"]) == cat_of.get(d["expected"]))
+print("\nClassification by CATEGORY (near-duplicate siblings collapsed — fairer):")
+for m in KEYS:
+    det = load(m, "classification")["details"]
+    rr = [d for d in det if subset_of(d["id"]) == "real"]
+    ss = [d for d in det if subset_of(d["id"]) == "synthetic"]
+    print(f"  {MODELS[m]:<18} REAL exact {pct(sum(d['correct'] for d in rr)/len(rr))} -> "
+          f"cat {pct(sum(cat_correct(d) for d in rr)/len(rr))}   "
+          f"synth exact {pct(sum(d['correct'] for d in ss)/len(ss))} -> "
+          f"cat {pct(sum(cat_correct(d) for d in ss)/len(ss))}")
 
 for label, fname, key in [("Raw validity (first pass)", "model_validity", "valid"),
                           ("Round-trip NAIVE reached valid", "model_roundtrip", "valid")]:

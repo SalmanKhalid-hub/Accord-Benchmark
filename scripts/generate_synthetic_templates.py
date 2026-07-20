@@ -7,6 +7,7 @@
 import os, re, json, subprocess, tempfile, time
 from openai import OpenAI
 from dotenv import load_dotenv
+from categories import is_near_duplicate  # real cross-template dedup (Jaccard on field-name sets)
 
 GEN_MODEL = os.environ.get("GEN_MODEL", "anthropic/claude-sonnet-5")  # strong; NOT a model under test
 OUT_DIR = "synthetic-templates/src"
@@ -134,8 +135,31 @@ def write_template(name, fields, text):
         json.dump({fl["name"]: fl["value"] for fl in fields}, f, indent=2)
 
 
+def load_existing_field_sets():
+    """Field-name sets of every template already in the benchmark (synthetic on disk + real gold),
+    so a new candidate can be rejected if it duplicates any of them."""
+    sets = []
+    if os.path.isdir(OUT_DIR):
+        for d in os.listdir(OUT_DIR):
+            sj = os.path.join(OUT_DIR, d, "sample.json")
+            if os.path.exists(sj):
+                try:
+                    sets.append(set(json.load(open(sj)).keys()))
+                except Exception:
+                    pass
+    mg = "data/model_generation.json"  # real templates' gold field sets, if the benchmark is built
+    if os.path.exists(mg):
+        syn_names = set(os.listdir(OUT_DIR)) if os.path.isdir(OUT_DIR) else set()
+        for q in json.load(open(mg)):
+            nm = q["id"].rsplit("-", 2)[0]
+            if nm not in syn_names:
+                sets.append(set(q["expected_output"].keys()))
+    return sets
+
+
 os.makedirs(OUT_DIR, exist_ok=True)
 existing = set(os.listdir(OUT_DIR)) if os.path.isdir(OUT_DIR) else set()
+existing_sets = load_existing_field_sets()   # for cross-template dedup
 made, rejected = [], []
 for category, n in CATEGORIES.items():
     for i in range(1, n + 1):
@@ -150,9 +174,12 @@ for category, n in CATEGORIES.items():
             cto_ok, msg = validate_cto(build_cto(name, item["fields"]))
             if not cto_ok:
                 ok, reason = False, f"cto invalid: {msg}"
+        if ok and is_near_duplicate([f["name"] for f in item["fields"]], existing_sets):
+            ok, reason = False, "near-duplicate field set of an existing template"
         if not ok:
             rejected.append((name, reason)); print(f"  REJECT {name}: {reason}"); continue
         write_template(name, item["fields"], item["clause_text"])
+        existing_sets.append(set(f["name"] for f in item["fields"]))
         made.append(name); print(f"  OK     {name}  ({len(item['fields'])} fields)")
 
 print(f"\nGenerated {len(made)} synthetic templates -> {OUT_DIR}")
