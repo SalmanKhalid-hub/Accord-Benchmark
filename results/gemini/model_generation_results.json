@@ -4025,5 +4025,6 @@
       ],
       "model_raw": "namespace org.accordproject.warranty;\n\nconcept HydraulicPressWarranty {\n  o String warrantorName;\n  o String warrantedProductModel;\n  o Duration warrantyPeriod;\n  o DateTime effectiveDate;\n  o Boolean extendsToOriginalPurchaserOnly;\n  o Boolean assignableOrTransferable;\n  o String liabilityLimitationType;\n  o MonetaryAmount aggregateLiabilityLimit;\n}"
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }

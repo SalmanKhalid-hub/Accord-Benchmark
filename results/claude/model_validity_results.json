@@ -704,5 +704,6 @@
       "valid": false,
       "message": "INVALID: Cannot create a ModelFile with an unversioned namespace: org.accordproject.warranty. All models must specify a version (e.g., @1.0.0)."
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }

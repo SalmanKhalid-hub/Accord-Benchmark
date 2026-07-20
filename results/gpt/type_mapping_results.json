@@ -844,5 +844,6 @@
       "total_fields": 7,
       "model_raw": "{\"vendorName\":\"String\",\"productName\":\"String\",\"warrantyPeriodMonths\":\"Integer\",\"effectiveDate\":\"DateTime\",\"liabilityCap\":\"MonetaryAmount\",\"transferable\":\"Boolean\",\"exclusiveRemedy\":\"Boolean\"}"
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }

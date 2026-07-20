@@ -704,5 +704,6 @@
       "valid": false,
       "message": "INVALID: Expected \".\", \"@\", \"abstract\", \"asset\", \"concept\", \"enum\", \"event\", \"import\", \"map\", \"participant\", \"scalar\", \"transaction\", comment, end of input, end of line, or whitespace but \";\" found. File UNKNOWN line 1 column 37"
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }

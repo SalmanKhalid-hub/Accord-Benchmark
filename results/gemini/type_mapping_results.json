@@ -844,5 +844,6 @@
       "total_fields": 7,
       "model_raw": "```json\n{\n  \"vendorName\": \"String\",\n  \"productName\": \"String\",\n  \"warrantyPeriodMonths\": \"Duration\",\n  \"effectiveDate\": \"DateTime\",\n  \"liabilityCap\": \"MonetaryAmount\",\n  \"transferable\": \"Boolean\",\n  \"exclusiveRemedy\": \"Boolean\"\n}\n```"
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }

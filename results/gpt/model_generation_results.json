@@ -4784,5 +4784,6 @@
       ],
       "model_raw": "namespace org.accordproject.model\n\nconcept WarrantyClause {\n  o String warrantor\n  o String product\n  o Duration warrantyPeriod\n  o DateTime effectiveDate\n  o String originalPurchaser\n  o Boolean assignmentPermitted\n  o Boolean transferPermitted\n  o String coveredDefect\n  o String liabilityLimitation\n  o Double aggregateLiabilityCap\n  o String soleAndExclusiveRemedy\n  o String disclaimedWarranties\n}"
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }

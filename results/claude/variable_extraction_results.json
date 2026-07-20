@@ -844,5 +844,6 @@
       "total_fields": 7,
       "model_raw": "```json\n{\n  \"vendorName\": \"Meridian Industrial Supply, LLC\",\n  \"productName\": \"Model X200 Hydraulic Press\",\n  \"warrantyPeriodMonths\": 24,\n  \"effectiveDate\": \"2024-03-01\",\n  \"liabilityCap\": \"50000.00\",\n  \"transferable\": false,\n  \"exclusiveRemedy\": true\n}\n```"
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }

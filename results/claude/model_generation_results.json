@@ -4888,5 +4888,6 @@
       ],
       "model_raw": "namespace org.accordproject.warranty\n\nconcept WarrantyClause {\n  o String manufacturer\n  o String productModel\n  o String warrantyScope\n  o Integer warrantyPeriodMonths\n  o DateTime effectiveDate\n  o Boolean transferable\n  o String applicableParty\n  o String coveredDefectDescription\n  o String remedyType\n  o Double maxLiabilityAmount\n  o String currencyCode\n  o Boolean exclusiveRemedy\n  o String disclaimerScope\n}"
     }
-  ]
+  ],
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c"
 }
