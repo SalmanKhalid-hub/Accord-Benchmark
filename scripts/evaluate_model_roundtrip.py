@@ -9,6 +9,7 @@ import json, os, subprocess, tempfile, time
 from collections import Counter
 from dotenv import load_dotenv
 from openai import OpenAI
+from provenance import template_library_commit
 
 MODEL = os.environ.get("BENCH_MODEL", "google/gemini-2.5-flash")
 MAX_TRIES = 5
@@ -33,7 +34,19 @@ RULES = """Concerto syntax rules you MUST follow exactly:
 - Use ONLY these primitive types (no imports needed): String, Double, Integer, Long, Boolean, DateTime.
 - If a value is a money amount, duration, etc., still model it with these primitives
   (e.g. o Double penaltyPercentage, o Long penaltyDays) so the model is self-contained.
-- Do NOT import external models."""
+- Do NOT import external models.
+
+A COMPLETE, VALID model looks EXACTLY like this — note the concept declaration and the { } braces wrapping every property:
+
+namespace org.example@1.0.0
+
+concept TemplateModel {
+  o String buyer
+  o Double penaltyPercentage
+  o Long penaltyDays
+}
+
+Return the whole thing in this exact shape: a versioned namespace, then a concept block with all properties inside the braces."""
 
 BASE_PROMPT = """You are an expert in the Accord Project Concerto modelling language.
 Given the legal clause below, generate a Concerto data model capturing every variable as a typed property.
@@ -140,6 +153,7 @@ os.makedirs("results", exist_ok=True)
 suffix = "rules" if RULES_IN_PROMPT else "roundtrip"
 with open(f"results/model_{suffix}_results.json", "w") as f:
     json.dump({"model": MODEL, "max_tries": MAX_TRIES, "rules_in_prompt": RULES_IN_PROMPT,
+               "template_library_commit": template_library_commit(),
                "first_pass": first_pass, "reached_valid": valid_total, "total": n,
                "details": results}, f, indent=2)
 print(f"Saved -> results/model_{suffix}_results.json")

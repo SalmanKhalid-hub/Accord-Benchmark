@@ -2,7 +2,8 @@
   "model": "openai/gpt-5.4-mini",
   "max_tries": 5,
   "rules_in_prompt": true,
-  "first_pass": 137,
+  "template_library_commit": "3afcccc683e13ced6a22a9740c2fd2d63a6a697c",
+  "first_pass": 140,
   "reached_valid": 140,
   "total": 140,
   "details": [
@@ -801,15 +802,10 @@
     {
       "id": "limitation-of-liability-01-modelgen-01",
       "valid": true,
-      "tries": 2,
+      "tries": 1,
       "history": [
         {
           "attempt": 1,
-          "valid": false,
-          "error": "Expected \"extends\", \"identified by\", \"identified\", \"{\", comment, end of line, or whitespace but \"o\" found. File UNKNOWN line 4 column 3"
-        },
-        {
-          "attempt": 2,
           "valid": true,
           "error": "VALID"
         }
@@ -866,15 +862,10 @@
     {
       "id": "loan-agreement-03-modelgen-01",
       "valid": true,
-      "tries": 2,
+      "tries": 1,
       "history": [
         {
           "attempt": 1,
-          "valid": false,
-          "error": "Expected \"extends\", \"identified by\", \"identified\", \"{\", comment, end of line, or whitespace but \"o\" found. File UNKNOWN line 4 column 3"
-        },
-        {
-          "attempt": 2,
           "valid": true,
           "error": "VALID"
         }
@@ -1207,15 +1198,10 @@
     {
       "id": "property-purchase-01-modelgen-01",
       "valid": true,
-      "tries": 2,
+      "tries": 1,
       "history": [
         {
           "attempt": 1,
-          "valid": false,
-          "error": "Expected \"extends\", \"identified by\", \"identified\", \"{\", comment, end of line, or whitespace but \"o\" found. File UNKNOWN line 4 column 3"
-        },
-        {
-          "attempt": 2,
           "valid": true,
           "error": "VALID"
         }
