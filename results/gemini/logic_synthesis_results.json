@@ -1,0 +1,388 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "template_library_commit": "a124064eced203b53e1f2f49c6373b764fb29797",
+  "n_templates": 42,
+  "loaded": 34,
+  "total_passed": 50,
+  "total_tests": 199,
+  "details": [
+    {
+      "id": "acceptance-of-delivery",
+      "stateful": false,
+      "expected_total": 5,
+      "loaded": true,
+      "passed": 4,
+      "total": 5,
+      "note": "ran"
+    },
+    {
+      "id": "car-rental-tr",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": false,
+      "passed": 0,
+      "total": 2,
+      "note": "did not load"
+    },
+    {
+      "id": "copyright-license",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 1,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "demandforecast",
+      "stateful": false,
+      "expected_total": 4,
+      "loaded": true,
+      "passed": 4,
+      "total": 4,
+      "note": "ran"
+    },
+    {
+      "id": "fixed-interests",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": true,
+      "passed": 2,
+      "total": 2,
+      "note": "ran"
+    },
+    {
+      "id": "fixed-interests-static",
+      "stateful": false,
+      "expected_total": 1,
+      "loaded": true,
+      "passed": 0,
+      "total": 1,
+      "note": "ran"
+    },
+    {
+      "id": "fragile-goods",
+      "stateful": false,
+      "expected_total": 10,
+      "loaded": true,
+      "passed": 2,
+      "total": 10,
+      "note": "ran"
+    },
+    {
+      "id": "full-payment-upon-demand",
+      "stateful": true,
+      "expected_total": 5,
+      "loaded": true,
+      "passed": 2,
+      "total": 5,
+      "note": "ran"
+    },
+    {
+      "id": "full-payment-upon-signature",
+      "stateful": true,
+      "expected_total": 5,
+      "loaded": true,
+      "passed": 2,
+      "total": 5,
+      "note": "ran"
+    },
+    {
+      "id": "installment-sale",
+      "stateful": true,
+      "expected_total": 7,
+      "loaded": true,
+      "passed": 0,
+      "total": 7,
+      "note": "ran"
+    },
+    {
+      "id": "interest-rate-swap",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 0,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "ip-payment",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 2,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "latedeliveryandpenalty",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": false,
+      "passed": 0,
+      "total": 3,
+      "note": "did not load"
+    },
+    {
+      "id": "latedeliveryandpenalty-currency-conversion",
+      "stateful": false,
+      "expected_total": 8,
+      "loaded": true,
+      "passed": 2,
+      "total": 8,
+      "note": "ran"
+    },
+    {
+      "id": "latedeliveryandpenalty-else",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 0,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "latedeliveryandpenalty-optional",
+      "stateful": false,
+      "expected_total": 8,
+      "loaded": true,
+      "passed": 2,
+      "total": 8,
+      "note": "ran"
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-this",
+      "stateful": false,
+      "expected_total": 8,
+      "loaded": true,
+      "passed": 1,
+      "total": 8,
+      "note": "ran"
+    },
+    {
+      "id": "lateinvoicewithpayment",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": false,
+      "passed": 0,
+      "total": 3,
+      "note": "did not load"
+    },
+    {
+      "id": "minilatedeliveryandpenalty",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": true,
+      "passed": 0,
+      "total": 2,
+      "note": "ran"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-capped",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": true,
+      "passed": 2,
+      "total": 2,
+      "note": "ran"
+    },
+    {
+      "id": "minilatedeliveryandpenalty-payment",
+      "stateful": false,
+      "expected_total": 1,
+      "loaded": true,
+      "passed": 0,
+      "total": 1,
+      "note": "ran"
+    },
+    {
+      "id": "one-time-payment-tr",
+      "stateful": true,
+      "expected_total": 4,
+      "loaded": false,
+      "passed": 0,
+      "total": 4,
+      "note": "did not load"
+    },
+    {
+      "id": "online-payment-contract-tr",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": true,
+      "passed": 1,
+      "total": 2,
+      "note": "ran"
+    },
+    {
+      "id": "payment-upon-delivery",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 1,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "payment-upon-iot",
+      "stateful": true,
+      "expected_total": 22,
+      "loaded": true,
+      "passed": 10,
+      "total": 22,
+      "note": "ran"
+    },
+    {
+      "id": "payment-upon-signature",
+      "stateful": true,
+      "expected_total": 5,
+      "loaded": true,
+      "passed": 2,
+      "total": 5,
+      "note": "ran"
+    },
+    {
+      "id": "perishable-goods",
+      "stateful": true,
+      "expected_total": 16,
+      "loaded": true,
+      "passed": 1,
+      "total": 16,
+      "note": "ran"
+    },
+    {
+      "id": "promissory-note",
+      "stateful": false,
+      "expected_total": 6,
+      "loaded": false,
+      "passed": 0,
+      "total": 6,
+      "note": "did not load"
+    },
+    {
+      "id": "promissory-note-md",
+      "stateful": false,
+      "expected_total": 5,
+      "loaded": false,
+      "passed": 0,
+      "total": 5,
+      "note": "did not load"
+    },
+    {
+      "id": "rental-deposit",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 1,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "rental-deposit-with",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 2,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "saft",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 1,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "safte",
+      "stateful": false,
+      "expected_total": 4,
+      "loaded": true,
+      "passed": 1,
+      "total": 4,
+      "note": "ran"
+    },
+    {
+      "id": "sales-contract-ru",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": true,
+      "passed": 0,
+      "total": 2,
+      "note": "ran"
+    },
+    {
+      "id": "servicelevelagreement",
+      "stateful": false,
+      "expected_total": 6,
+      "loaded": true,
+      "passed": 0,
+      "total": 6,
+      "note": "ran"
+    },
+    {
+      "id": "simplelatedeliveryandpenalty",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": true,
+      "passed": 0,
+      "total": 2,
+      "note": "ran"
+    },
+    {
+      "id": "supply-agreement-loc",
+      "stateful": true,
+      "expected_total": 5,
+      "loaded": true,
+      "passed": 0,
+      "total": 5,
+      "note": "ran"
+    },
+    {
+      "id": "supplyagreement",
+      "stateful": true,
+      "expected_total": 7,
+      "loaded": false,
+      "passed": 0,
+      "total": 7,
+      "note": "did not load"
+    },
+    {
+      "id": "supplyagreement-perishable-goods",
+      "stateful": false,
+      "expected_total": 7,
+      "loaded": false,
+      "passed": 0,
+      "total": 7,
+      "note": "did not load"
+    },
+    {
+      "id": "volumediscount",
+      "stateful": false,
+      "expected_total": 3,
+      "loaded": true,
+      "passed": 3,
+      "total": 3,
+      "note": "ran"
+    },
+    {
+      "id": "volumediscountolist",
+      "stateful": false,
+      "expected_total": 2,
+      "loaded": true,
+      "passed": 0,
+      "total": 2,
+      "note": "ran"
+    },
+    {
+      "id": "volumediscountulist",
+      "stateful": false,
+      "expected_total": 1,
+      "loaded": true,
+      "passed": 1,
+      "total": 1,
+      "note": "ran"
+    }
+  ]
+}

@@ -1,0 +1,1941 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "template_library_commit": "a124064eced203b53e1f2f49c6373b764fb29797",
+  "n_templates": 45,
+  "gen_scenarios": 33,
+  "gen_match": 5,
+  "force_scenarios": 43,
+  "force_match": 4,
+  "details": [
+    {
+      "id": "acceptance-of-delivery",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.acceptanceofdelivery@0.1.0.InspectionResponse",
+              "status": "OUTSIDE_INSPECTION_PERIOD",
+              "shipper": "resource:org.accordproject.organization.Organization#Party%20A",
+              "receiver": "resource:org.accordproject.organization.Organization#Party%20B"
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.acceptanceofdelivery@0.1.0.InspectionResponse",
+              "status": "PASSED_TESTING",
+              "shipper": "resource:org.accordproject.organization.Organization#Party A",
+              "receiver": "resource:org.accordproject.organization.Organization#Party B"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "car-rental-tr",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 1,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": true,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.carrentaltr@0.2.0.PayOut",
+              "amount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 217.99,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.carrentaltr@0.2.0.PayOut",
+              "amount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 217.99,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "certificate-of-incorporation",
+      "stateful": false,
+      "n_scen": 0,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "skipped": "invalid_request"
+        }
+      ]
+    },
+    {
+      "id": "copyright-license",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.copyrightlicense@0.2.0.PayOut",
+              "amount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 100,
+                "currencyCode": "USD"
+              }
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.copyrightlicense@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 100,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Me should pay contract amount to resource:org.accordproject.party@0.2.0.Party#Myself"
+              }
+            ]
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.copyrightlicense@0.2.0.PayOut",
+              "amount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 100,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.copyrightlicense@0.2.0.PayOut",
+              "amount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 100,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "demandforecast",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 1,
+      "force_match": 1,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": true,
+          "force": true,
+          "o": {
+            "result": {
+              "requiredPurchase": 1020,
+              "year": 2024,
+              "quarter": 2,
+              "$class": "org.accordproject.demandforecast@0.1.0.BindingResponse"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.demandforecast@0.1.0.BindingResponse",
+              "requiredPurchase": 1020,
+              "year": 2024,
+              "quarter": 2
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.demandforecast@0.1.0.BindingResponse",
+              "requiredPurchase": 1020,
+              "year": 2024,
+              "quarter": 2
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "docusign-connect",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.docusignconnect@0.1.0.MyResponse",
+              "output": "Have received 1 contracts with status Completed",
+              "counter": 1
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.docusignconnect@0.1.0.DocuSignNotificationEvent",
+                "title": "Contracts with status Completed",
+                "message": "Have received 1 contracts with status Completed"
+              }
+            ]
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.docusignconnect@0.1.0.MyResponse",
+              "output": "Number of received 'Completed' events: 1",
+              "counter": 1
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "docusign-po-failure",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-init.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.docusignpofailure@0.2.0.PurchaseOrderFailureResponse",
+              "penaltyAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 37.588,
+                "currencyCode": "USD"
+              }
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.docusignpofailure@0.2.0.PurchaseOrderPaymentEvent",
+                "penaltyAmount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 37.588,
+                  "currencyCode": "USD"
+                },
+                "description": "ACME Corp should be paid a penalty"
+              }
+            ]
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.runtime@0.2.0.Response"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "fixed-interests",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "output": "loan for the amount of 100000",
+              "$class": "org.accordproject.fixedinterests@0.2.0.FixedInterestsResponse"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.fixedinterests@0.2.0.FixedInterestsResponse",
+              "output": "The monthly payment for a loan of GBP 100000.00 at an annual rate of 2.5% over 15 years is GBP 666.79."
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.fixedinterests@0.2.0.FixedInterestsResponse",
+              "output": "test"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "fixed-interests-static",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "output": "loan for the amount of [object Object]",
+              "$class": "org.accordproject.fixedinterestsstatic@0.2.0.FixedInterestsStaticResponse"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.fixedinterestsstatic@0.2.0.FixedInterestsStaticResponse",
+              "output": "Loan details: Amount 100000 USD, Rate 2.5%, Duration 15 months, Monthly Payment 667 USD. Request input: test"
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.fixedinterestsstatic@0.2.0.FixedInterestsStaticResponse",
+              "output": "dummy response to a FixedInterestsStaticRequest"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "fragile-goods",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-empty.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request-longer.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.fragilegoods@0.2.0.PayOut",
+              "paymentAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 790,
+                "currencyCode": "USD"
+              }
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.fragilegoods@0.2.0.FragileGoodsEvent",
+                "paymentAmount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 790,
+                  "currencyCode": "USD"
+                }
+              }
+            ]
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.fragilegoods@0.2.0.PayOut",
+              "paymentAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 790,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.fragilegoods@0.2.0.PayOut",
+              "paymentAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 10,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "full-payment-upon-demand",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.fullpaymentupondemand@0.2.0.PaymentDemandResponse"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.fullpaymentupondemand@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 3.14,
+                  "currencyCode": "EUR"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dan should pay contract amount to resource:org.accordproject.party@0.2.0.Party#Jerome"
+              }
+            ]
+          },
+          "g": null,
+          "f": null,
+          "force_err": "Namespace is not defined for type \"org.accordproject.party@0.2.0.Party\"."
+        }
+      ]
+    },
+    {
+      "id": "full-payment-upon-signature",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.fullpaymentupondsignature@0.2.0.ContractSignedResponse"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.fullpaymentupondsignature@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 0.01,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dan should pay contract amount to resource:org.accordproject.party@0.2.0.Party#Steve"
+              }
+            ]
+          },
+          "g": null,
+          "f": null,
+          "force_err": "Namespace is not defined for type \"org.accordproject.party@0.2.0.Party\"."
+        }
+      ]
+    },
+    {
+      "id": "installment-sale",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request-last.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "balance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": null,
+                "currencyCode": "EUR"
+              },
+              "total_paid": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 2500,
+                "currencyCode": "EUR"
+              },
+              "$class": "org.accordproject.installmentsale@0.2.0.Balance"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.installmentsale@0.2.0.InstallmentSalePaymentEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 2500,
+                  "currencyCode": "EUR"
+                },
+                "description": "Dan should pay installment to Ned"
+              }
+            ]
+          },
+          "g": null,
+          "f": null,
+          "force_err": "Expected value at path `$.balance_remaining.doubleValue` to be of type `Double`"
+        }
+      ]
+    },
+    {
+      "id": "interest-rate-swap",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "outstandingBalance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 10,
+                "currencyCode": "USD"
+              },
+              "$class": "org.accordproject.isda.irs@0.2.0.Result"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.isda.irs@0.2.0.Result",
+              "outstandingBalance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 300000000,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.isda.irs@0.2.0.Result",
+              "outstandingBalance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 300000000,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "ip-payment",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.ippayment@0.2.0.PayOut",
+              "totalAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": null
+              },
+              "dueBy": {}
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.ippayment@0.2.0.PayOut",
+              "totalAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 105.3,
+                "currencyCode": "USD"
+              },
+              "dueBy": "2024-06-11T00:00:00.000Z"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-forcemajeure.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenalty@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 110.00000000000001,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.latedeliveryandpenalty@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 110.00000000000001,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dan should pay penalty amount to resource:org.accordproject.party@0.2.0.Party#Steve"
+              }
+            ]
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenalty@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-currency-conversion",
+      "stateful": false,
+      "n_scen": 0,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "skipped": "invalid_request"
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-else",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-forcemajeure.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyelse@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 110.00000000000001,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.latedeliveryandpenaltyelse@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 110.00000000000001,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dan should pay penalty amount to resource:org.accordproject.party@0.2.0.Party#Steve"
+              }
+            ]
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyelse@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyelse@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-optional",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-forcemajeure.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyoptional@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 110.00000000000001,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.latedeliveryandpenaltyoptional@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 110.00000000000001,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dan should pay penalty amount to resource:org.accordproject.party@0.2.0.Party#Steve"
+              }
+            ]
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyoptional@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "latedeliveryandpenalty-optional-this",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-forcemajeure.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyoptionalthis@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 110.00000000000001,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.latedeliveryandpenaltyoptionalthis@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 110.00000000000001,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dan should pay penalty amount to resource:org.accordproject.party@0.2.0.Party#Steve"
+              }
+            ]
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyoptionalthis@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.latedeliveryandpenaltyoptionalthis@0.2.0.LateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "lateinvoicewithpayment",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-late.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.lateinvoicewithpayment@0.2.0.LateInvoiceResponse",
+              "paymentRequired": false,
+              "cause": "Invoice delivered after the maximum delay of 180 days"
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.lateinvoicewithpayment@0.2.0.LateInvoiceResponse",
+              "paymentRequired": true
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "minilatedeliveryandpenalty",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.minilatedeliveryandpenalty@0.2.0.LateResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 195.73749999999998,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.minilatedeliveryandpenalty@0.2.0.LateResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 31.5,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "minilatedeliveryandpenalty-capped",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.minilatedeliveryandpenaltycapped@0.2.0.LateResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 104,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.minilatedeliveryandpenaltycapped@0.2.0.LateResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 104,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "minilatedeliveryandpenalty-payment",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.minilatedeliveryandpenaltypayment@0.2.0.LateResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 104,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.minilatedeliveryandpenaltypayment@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 104,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Betty%20Buyer should pay penalty amount to resource:org.accordproject.party@0.2.0.Party#Steve%20Seller"
+              }
+            ]
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.minilatedeliveryandpenaltypayment@0.2.0.LateResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 104,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "one-time-payment-tr",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.onetimepaymenttr@0.2.0.PaymentReceivedResponse"
+            },
+            "events": []
+          },
+          "g": null,
+          "f": null,
+          "force_err": "Namespace is not defined for type \"org.accordproject.party@0.2.0.Party\"."
+        }
+      ]
+    },
+    {
+      "id": "online-payment-contract-tr",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 1,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": true,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.onlinepaymentcontracttr@0.1.0.MyResponse",
+              "output": "Payment Valid"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.onlinepaymentcontracttr@0.1.0.MyResponse",
+              "output": "Hello Umut and Serkan! You are using AcmeSoftware-1.0 for 2 users. The authorized court is ANKARA 1.Bölge İdare Mahkemesi. Your request input was: Payment Valid"
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.onlinepaymentcontracttr@0.1.0.MyResponse",
+              "output": "Payment Valid"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "payment-upon-delivery",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.paymentupondelivery@0.2.0.DeliveryAcceptedResponse",
+              "totalAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 11.98,
+                "currencyCode": "USD"
+              }
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.paymentupondelivery@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 11.98,
+                  "currencyCode": "USD"
+                },
+                "description": "Michael should pay cost of goods and delivery fee to Diana"
+              }
+            ]
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.paymentupondelivery@0.2.0.DeliveryAcceptedResponse",
+              "totalAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 11.98,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.paymentupondelivery@0.2.0.DeliveryAcceptedResponse",
+              "totalAmount": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 11.98,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "payment-upon-iot",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 1,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-sign.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": true,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.paymentuponiot@0.2.0.CounterResponse",
+              "counter": 0,
+              "paymentCount": 0
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.paymentuponiot@0.2.0.CounterResponse",
+              "counter": 0,
+              "paymentCount": 0
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.runtime@0.2.0.Response"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "payment-upon-signature",
+      "stateful": true,
+      "n_scen": 2,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 2,
+      "scen": [
+        {
+          "scen": "request-sign.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.paymentuponssignature@0.2.0.ContractSignedResponse"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.paymentuponssignature@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 50,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dave should pay contract amount to resource:org.accordproject.party@0.2.0.Party#Dan"
+              }
+            ]
+          },
+          "g": null,
+          "f": null,
+          "force_err": "Namespace is not defined for type \"org.accordproject.party@0.2.0.Party\"."
+        },
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.paymentuponssignature@0.2.0.ContractSignedResponse"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.paymentuponssignature@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 50,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Dave should pay contract amount to resource:org.accordproject.party@0.2.0.Party#Dan"
+              }
+            ]
+          },
+          "g": null,
+          "f": null,
+          "force_err": "Namespace is not defined for type \"org.accordproject.party@0.2.0.Party\"."
+        }
+      ]
+    },
+    {
+      "id": "perishable-goods",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.perishablegoods@0.2.0.PriceCalculation",
+              "totalPrice": 0,
+              "penalty": 0,
+              "late": true
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.perishablegoods@0.2.0.PriceCalculation",
+              "totalPrice": 3000,
+              "penalty": 0,
+              "currencyCode": "USD",
+              "late": false
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.perishablegoods@0.2.0.PerishableGoodsPaymentEvent",
+                "totalPrice": 3000,
+                "currencyCode": "USD",
+                "description": "Payment of 3000.0 USD for 3000 KG of Grade I, Size 4, Zutano Mexican Avocados from PETER to DAN",
+                "contract": "46467b65-22e0-40cc-900a-0f75dcc366f4"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "promissory-note",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "outstandingBalance": 1425.4396822450633,
+              "$class": "org.accordproject.promissorynote@0.2.0.Result"
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.promissorynote@0.2.0.Result",
+              "outstandingBalance": 400
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "promissory-note-md",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "outstandingBalance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 1425.4396822450633,
+                "currencyCode": "USD"
+              },
+              "$class": "org.accordproject.promissorynotemd@0.2.0.Result"
+            },
+            "events": []
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.promissorynotemd@0.2.0.Result",
+              "outstandingBalance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 900,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "rental-deposit",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "balance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 1550,
+                "currencyCode": "USD"
+              },
+              "$class": "org.accordproject.rentaldeposit@0.2.0.PropertyInspectionResponse"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.rentaldeposit@0.2.0.RentalDepositPaymentEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 1550,
+                  "currencyCode": "USD"
+                },
+                "description": ""
+              }
+            ]
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.rentaldeposit@0.2.0.PropertyInspectionResponse",
+              "balance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 1550,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.rentaldeposit@0.2.0.PropertyInspectionResponse",
+              "balance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 1550,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "rental-deposit-with",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "balance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 1550,
+                "currencyCode": "USD"
+              },
+              "$class": "org.accordproject.rentaldepositwith@0.2.0.PropertyInspectionResponse"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.rentaldepositwith@0.2.0.RentalDepositPaymentEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 1550,
+                  "currencyCode": "USD"
+                },
+                "description": ""
+              }
+            ]
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.rentaldepositwith@0.2.0.PropertyInspectionResponse",
+              "balance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 1550,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.rentaldepositwith@0.2.0.PropertyInspectionResponse",
+              "balance": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 1550,
+                "currencyCode": "USD"
+              }
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "saft",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "tokenAmount": 100,
+              "tokenAddress": "Daniel Charles Selman",
+              "$class": "org.accordproject.saft@0.2.0.Payout"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.saft@0.2.0.Payout",
+              "tokenAmount": 0.5348737697903294,
+              "tokenAddress": "PurchaserWalletAddress"
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.saft@0.2.0.Payout",
+              "tokenAmount": 25,
+              "tokenAddress": "LOADING"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "safte",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 1,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request-dissolution.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request-equity.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": true,
+          "force": false,
+          "o": {
+            "result": {
+              "tokenAmount": 21.855057260250017,
+              "$class": "org.accordproject.safte@0.2.0.TokenShare"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.safte@0.2.0.TokenShare",
+              "tokenAmount": 21.855057260250025
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.safte@0.2.0.TokenShare",
+              "tokenAmount": 20.32520325203252
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "sales-contract-ru",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "output": "Contract Valid",
+              "$class": "org.accordproject.salescontractru@0.1.0.MyResponse"
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.salescontractru@0.1.0.MyResponse",
+              "output": "Hello покупатель and продавец! You sent: Contract Valid"
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.salescontractru@0.1.0.MyResponse",
+              "output": "Contract is Validated, and ready to be signed"
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "servicelevelagreement",
+      "stateful": false,
+      "n_scen": 0,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "skipped": "invalid_request"
+        }
+      ]
+    },
+    {
+      "id": "simplelatedeliveryandpenalty",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.simplelatedeliveryandpenalty@0.2.0.SimpleLateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 110.00000000000001,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": true
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.simplelatedeliveryandpenalty@0.2.0.PaymentObligationEvent",
+                "amount": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 110.00000000000001,
+                  "currencyCode": "USD"
+                },
+                "description": "resource:org.accordproject.party@0.2.0.Party#Steve%20Seller should pay penalty amount to resource:org.accordproject.party@0.2.0.Party#Betty%20Buyer"
+              }
+            ]
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.simplelatedeliveryandpenalty@0.2.0.SimpleLateDeliveryAndPenaltyResponse",
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "buyerMayTerminate": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "supply-agreement-loc",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.supplyagreementloc@0.2.0.DeliveryResponse",
+              "message": "Sensor reading received",
+              "inGoodOrder": true
+            },
+            "events": []
+          },
+          "g": null,
+          "f": null,
+          "force_err": "Expected value at path `$.termRenewal` to be of type `String`"
+        }
+      ]
+    },
+    {
+      "id": "supplyagreement",
+      "stateful": true,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request-delivery.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request-forecast.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request-purchase.json",
+          "skipped": "invalid_request"
+        },
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.supplyagreement@0.2.0.ForecastResponse"
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.supplyagreement@0.2.0.PurchaseObligationEvent",
+                "party": "PETER",
+                "requiredPurchase": 1020,
+                "year": 2024,
+                "quarter": 2
+              }
+            ]
+          },
+          "g": null,
+          "f": null,
+          "force_err": "The instance \"org.accordproject.money@0.3.0.MonetaryAmount\" is missing the required field \"currencyCode\"."
+        }
+      ]
+    },
+    {
+      "id": "supplyagreement-perishable-goods",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": false,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": null,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.supplyagreementperishablegoods@0.2.0.PriceCalculation",
+              "totalPrice": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 4503,
+                "currencyCode": "USD"
+              },
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "late": false
+            },
+            "events": [
+              {
+                "$class": "org.accordproject.supplyagreementperishablegoods@0.2.0.PaymentObligationEvent",
+                "grower": "resource:org.accordproject.perishablegoods.Grower#SUPPLIER%20CORPORATION",
+                "importer": "resource:org.accordproject.perishablegoods.Importer#BUYER%20CORPORATION",
+                "totalPrice": {
+                  "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                  "doubleValue": 4503,
+                  "currencyCode": "USD"
+                },
+                "late": false
+              }
+            ]
+          },
+          "g": null,
+          "f": {
+            "result": {
+              "$class": "org.accordproject.supplyagreementperishablegoods@0.2.0.PriceCalculation",
+              "totalPrice": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 4503,
+                "currencyCode": "USD"
+              },
+              "penalty": {
+                "$class": "org.accordproject.money@0.3.0.MonetaryAmount",
+                "doubleValue": 0,
+                "currencyCode": "USD"
+              },
+              "late": false
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "volumediscount",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 1,
+      "force_match": 1,
+      "force_error": 0,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": true,
+          "force": true,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.volumediscount@0.2.0.VolumeDiscountResponse",
+              "discountRate": 3
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.volumediscount@0.2.0.VolumeDiscountResponse",
+              "discountRate": 3
+            },
+            "events": []
+          },
+          "f": {
+            "result": {
+              "$class": "org.accordproject.volumediscount@0.2.0.VolumeDiscountResponse",
+              "discountRate": 3
+            },
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "volumediscountolist",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 0,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": false,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.volumediscountolist@0.2.0.VolumeDiscountResponse",
+              "discountRate": 2.9
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.volumediscountolist@0.2.0.VolumeDiscountResponse",
+              "discountRate": 0
+            },
+            "events": []
+          },
+          "f": null,
+          "force_err": "Namespace is not defined for type \"org.accordproject.volumediscountlist.RateRange\"."
+        }
+      ]
+    },
+    {
+      "id": "volumediscountulist",
+      "stateful": false,
+      "n_scen": 1,
+      "gen_loaded": true,
+      "gen_match": 1,
+      "force_match": 0,
+      "force_error": 1,
+      "scen": [
+        {
+          "scen": "request.json",
+          "gen": true,
+          "force": false,
+          "o": {
+            "result": {
+              "$class": "org.accordproject.volumediscountulist@0.2.0.VolumeDiscountResponse",
+              "discountRate": 2.9
+            },
+            "events": []
+          },
+          "g": {
+            "result": {
+              "$class": "org.accordproject.volumediscountulist@0.2.0.VolumeDiscountResponse",
+              "discountRate": 2.9
+            },
+            "events": []
+          },
+          "f": null,
+          "force_err": "Namespace is not defined for type \"org.accordproject.volumediscountlist.RateRange\"."
+        }
+      ]
+    }
+  ]
+}

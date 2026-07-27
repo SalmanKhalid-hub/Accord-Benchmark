@@ -41,3 +41,22 @@ git checkout 3afcccc683e13ced6a22a9740c2fd2d63a6a697c
 Every file written under `results/` also stamps this commit in a
 `template_library_commit` field, so each result records the exact library version
 it was scored against.
+
+## Task 4 (logic synthesis) — a different pin
+
+Task 4 needs the **trigger/init tests**, which are **not** in upstream `main` — they are
+in an open PR by an Accord GSoC contributor (Devanshi Chhatbar). So Task 4 is scored
+against a **different snapshot** than Tasks 1–3, cloned separately at
+`../cicero-template-library-task4`.
+
+| Field | Value |
+|---|---|
+| Source | `accordproject/cicero-template-library` **PR #520** (open at time of use) |
+| Pinned commit | `a124064eced203b53e1f2f49c6373b764fb29797` |
+| Local branch | `pr-520` |
+| Pinned on | 2026-07-22 |
+| Why a separate pin | trigger execution / `init` tests are added by this PR, not present in `main` (`3afcccc`) |
+
+Because the PR is still under review, Task 4 results are a **point-in-time evaluation**
+of that specific commit, and the contributor's executor and tests are cited as such.
+To reproduce: `git fetch origin pull/520/head:pr-520 && git checkout a124064eced203b53e1f2f49c6373b764fb29797`.
