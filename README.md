@@ -21,12 +21,22 @@ GPT-5.4-mini** (a matched fast tier).
 | 2 | Variable extraction | pull structured variable *values* from prose |  implemented |
 | 2b | Type mapping | assign each variable its Concerto *type* (bridge to task 3) |  implemented |
 | 3 | Model generation | generate the full Concerto data model from a clause |  implemented |
-| 4 | Logic synthesis | generate the executable contract logic | ⏳ planned |
+| 4 | Logic synthesis | generate the executable contract logic, scored **behaviourally** (run against each template's unit tests) |  implemented |
 | 5 | FSM generation | generate the contract's state machine (lifecycle) | ⏳ planned |
 
 Task 3 additionally covers compiler **validation** (via the real Concerto `ModelManager`),
 **round-tripping** (self-correction from compiler feedback, with an iterations-to-valid
 metric), and a **one-stage vs two-stage** generation comparison.
+
+**Task 4** has no textual gold, so it is scored behaviourally at two levels — **loadability**
+(does the generated logic run at all) and **unit-test pass rate** (of the template's own tests,
+how many pass) — across 42 templates (stateless + stateful). It also includes an
+**execution-strategy comparison**: *generate-and-run* (the LLM writes `logic.ts`, run
+deterministically) versus *execute-directly* (the Accord LLM logic executor computes each result
+directly, `mode: 'force'`), scored by oracle-agreement on each template's shipped scenarios. See
+`scripts/force-compare/README.md`. Headline: generating deterministic code beats direct LLM
+execution on full execution outcomes, significantly so on stateful contracts (pooled 22% vs 3%,
+paired McNemar p = 0.039).
 
 ## Data
 
@@ -42,6 +52,7 @@ metric), and a **one-stage vs two-stage** generation comparison.
 
 ```
 scripts/                 generate / validate / evaluate per task, plus stats + figures
+scripts/force-compare/   Task 4 execution-strategy comparison harness (+ how to reproduce)
 data/                    the benchmark questions (JSON, one file per task)
 synthetic-templates/     the 89 generated templates (Accord folder structure)
 results/                 model outputs + scores, split per model (gemini/ claude/ gpt/)
@@ -66,6 +77,23 @@ BENCH_MODEL=anthropic/claude-haiku-4.5 python3 scripts/evaluate_variable_extract
 # statistics (real vs synthetic split, significance tests) and charts
 python3 scripts/compute_stats.py
 python3 scripts/make_comparison_figures.py
+```
+
+**Task 4 (logic synthesis)** runs against a local `cicero-template-library` checkout pinned to
+the commit in `TEMPLATE_LIBRARY_PIN.md`, and needs Node 22+ (Vitest):
+
+```
+BENCH_MODEL=anthropic/claude-haiku-4.5 python3 scripts/run_logic_synthesis.py
+python3.13 scripts/compute_logic_stats.py     # loadability + pass rate, stateless vs stateful
+python3.13 scripts/make_logic_figure.py        # -> figures/comp6_logic_synthesis.png
+```
+
+The **execution-strategy comparison** runs from inside a `template-engine` checkout (it uses the
+LLM executor); see `scripts/force-compare/README.md`. Scoring + figure are in this repo:
+
+```
+python3.13 scripts/compute_force_stats.py      # Wilson CIs + paired McNemar, per model + pooled
+python3.13 scripts/make_force_figure.py         # -> figures/comp7_force_mode.png
 ```
 
 Requires an `OPENROUTER_API_KEY` in a local `.env`, Python (numpy/scipy/matplotlib), and
