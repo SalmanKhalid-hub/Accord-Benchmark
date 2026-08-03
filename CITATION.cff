@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "Accord-Benchmark: A Benchmark Suite for Smart Legal Contract Tasks using Accord Project Templates"
+abstract: >-
+  A reproducible benchmark suite measuring how well large language models
+  perform smart legal contract tasks defined over the Accord Project Cicero
+  template library: clause classification, variable extraction, type mapping,
+  Concerto data-model generation with compiler validation and a
+  self-correction loop, and executable logic synthesis scored behaviourally
+  against the templates' own unit tests.
+authors:
+  - family-names: Khalid
+    given-names: Salman
+    affiliation: "UCL School of Management, University College London"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/SalmanKhalid-hub/Accord-Benchmark"
+year: 2026
+keywords:
+  - benchmark
+  - large language models
+  - smart legal contracts
+  - Accord Project
+  - Concerto
+  - legal NLP

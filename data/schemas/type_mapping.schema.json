@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SalmanKhalid-hub/Accord-Benchmark/data/schemas/type_mapping.schema.json",
+  "title": "Task 2b - Type mapping item",
+  "description": "Given the extracted variable names and a global vocabulary of Concerto types, the model assigns one type to each variable. Scored by exact match against the template's declared types. This task bridges extraction and generation, isolating type inference from syntax production.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "task", "input", "variables", "expected_output"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique item id, of the form <template-name>-typemap-01.",
+        "pattern": "-typemap-[0-9]+$"
+      },
+      "task": {
+        "const": "type_mapping"
+      },
+      "input": {
+        "type": "string",
+        "description": "The clause text, provided as context for type inference.",
+        "minLength": 1
+      },
+      "variables": {
+        "type": "array",
+        "description": "The variable names to be typed. Keys of expected_output correspond to these.",
+        "items": { "type": "string" },
+        "minItems": 1,
+        "uniqueItems": true
+      },
+      "expected_output": {
+        "type": "object",
+        "description": "Gold map from variable name to Concerto type as declared in the template's @template block. Note that 53% of gold properties across the real corpus are a generic String, so exact match against this key systematically under-counts models that infer a richer and arguably more correct type.",
+        "minProperties": 1,
+        "additionalProperties": { "type": "string" }
+      }
+    }
+  }
+}

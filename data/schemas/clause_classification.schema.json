@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SalmanKhalid-hub/Accord-Benchmark/data/schemas/clause_classification.schema.json",
+  "title": "Task 1 - Clause classification item",
+  "description": "Given a clause and the full list of template labels, the model selects one label. Scored by exact match, and additionally at category level with near-duplicate templates collapsed (Jaccard >= 0.60).",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "task", "input", "labels", "expected_output"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique item id, of the form <template-name>-classify-01.",
+        "pattern": "-classify-[0-9]+$"
+      },
+      "task": {
+        "const": "clause_classification"
+      },
+      "input": {
+        "type": "string",
+        "description": "The clause text, with titles and headings stripped to prevent answer leakage.",
+        "minLength": 1
+      },
+      "labels": {
+        "type": "array",
+        "description": "The complete candidate label set (one per template in the corpus), identical for every item.",
+        "items": { "type": "string" },
+        "minItems": 2,
+        "uniqueItems": true
+      },
+      "expected_output": {
+        "type": "string",
+        "description": "The gold template name. Must be a member of labels.",
+        "minLength": 1
+      }
+    }
+  }
+}

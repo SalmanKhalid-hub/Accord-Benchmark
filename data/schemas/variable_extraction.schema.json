@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SalmanKhalid-hub/Accord-Benchmark/data/schemas/variable_extraction.schema.json",
+  "title": "Task 2 - Variable extraction item",
+  "description": "Given a clause and the expected field names, the model returns a JSON map from field name to the value found in the clause. Scored field-level and leniently: numbers compared numerically, nested objects by component presence, text by case-insensitive containment.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "task", "input", "expected_output"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique item id, of the form <template-name>-extract-01.",
+        "pattern": "-extract-[0-9]+$"
+      },
+      "task": {
+        "const": "variable_extraction"
+      },
+      "input": {
+        "type": "string",
+        "description": "The clause text, with titles and headings stripped.",
+        "minLength": 1
+      },
+      "expected_output": {
+        "type": "object",
+        "description": "Gold map from field name to value. Concerto framework metadata ($class, $identifier, clauseId) is removed and resource references are decoded to readable names, so extraction measures reading comprehension rather than knowledge of internal identifier formats.",
+        "minProperties": 1,
+        "additionalProperties": {
+          "type": ["string", "number", "boolean", "object", "array", "null"]
+        }
+      }
+    }
+  }
+}

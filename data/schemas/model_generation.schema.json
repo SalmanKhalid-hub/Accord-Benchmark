@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SalmanKhalid-hub/Accord-Benchmark/data/schemas/model_generation.schema.json",
+  "title": "Task 3 - Concerto model generation item",
+  "description": "Given only the clause text, the model generates a complete Concerto data model. The primary metric is type-multiset coverage: treating each model as a bag of types and measuring the share of gold types recovered, independent of field names. Generated models are additionally validated with the official Accord ModelManager from concerto-core.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "task", "input", "expected_output"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique item id, of the form <template-name>-modelgen-01.",
+        "pattern": "-modelgen-[0-9]+$"
+      },
+      "task": {
+        "const": "model_generation"
+      },
+      "input": {
+        "type": "string",
+        "description": "The clause text, with titles and headings stripped. This is the model's only input.",
+        "minLength": 1
+      },
+      "expected_output": {
+        "type": "object",
+        "description": "Gold map from property name to Concerto type, parsed from the template's @template block. Where a template stores data in nested lists or sub-concepts the parser recovers only the top-level field, producing a few thin gold answers (volumediscountolist, volumediscountulist, docusign-connect); these are flagged in the dissertation rather than silently dropped.",
+        "minProperties": 1,
+        "additionalProperties": { "type": "string" }
+      }
+    }
+  }
+}
